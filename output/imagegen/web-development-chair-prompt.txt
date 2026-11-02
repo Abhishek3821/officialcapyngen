@@ -1,0 +1,4 @@
+Tool: built-in image_gen
+Asset: public/images/web-development/chair.webp
+
+Use case: product-mockup. A premium photorealistic studio product photograph for a creative website gallery tile: one sculptural rounded tub armchair upholstered in rich cobalt-blue velvet, a low softly rounded back, thick curved arms, one plush rounded seat cushion, four integrated thick rounded blue upholstered legs. Front three-quarter view, the entire chair visible and centered in a portrait composition. Seamless monochromatic royal-blue floor and deep-blue studio backdrop, soft directional studio lighting from upper left, realistic velvet texture with subtle highlights, natural contact shadow beneath chair. Contemporary minimalist editorial furniture photography. No other furniture, no props, no logos, no text, no watermark. Leave a little breathing room around all chair edges.
