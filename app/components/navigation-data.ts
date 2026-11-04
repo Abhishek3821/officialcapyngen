@@ -13,8 +13,8 @@ export const industryGroups = [
 ];
 
 export const pageLinks = [
-  { label: "Company Overview", href: "/#about" },
+  { label: "Company Overview", href: "/company-overview" },
   { label: "Careers", href: "/#contact" },
-  { label: "News & Updates", href: "/#journal" },
-  { label: "Contact Us", href: "/#contact" },
+  { label: "News & Updates", href: "/news-and-updates" },
+  { label: "Contact Us", href: "/contact-us" },
 ];

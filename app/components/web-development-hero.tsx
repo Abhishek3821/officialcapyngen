@@ -16,7 +16,7 @@ export default function WebDevelopmentHero() {
           Tell us what you have in mind. We’ll turn it into a fast, responsive website that looks great and works beautifully on every screen.
         </p>
         <div className="mt-7 flex shrink-0 flex-wrap items-center gap-3 lg:mt-8">
-          <Link href="/#contact" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#1c1e1c] px-6 py-3.5 text-sm font-medium text-white transition-colors hover:bg-[#3b4439] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1c1e1c] lg:min-h-[54px] lg:px-7">Start Your Project</Link>
+          <Link href="/contact-us#quote" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#1c1e1c] px-6 py-3.5 text-sm font-medium text-white transition-colors hover:bg-[#3b4439] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1c1e1c] lg:min-h-[54px] lg:px-7">Start Your Project</Link>
           <Link href="/#work" className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#e2e5de] bg-white px-6 py-3.5 text-sm font-medium text-[#242823] transition-colors hover:border-[#b9c2b2] hover:bg-[#f8f9f5] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1c1e1c] lg:min-h-[54px] lg:px-7">Explore Our Work</Link>
         </div>
         <div className="mt-9 flex shrink-0 items-center gap-4 md:mt-[clamp(36px,7svh,76px)]">

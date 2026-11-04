@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CleaningCta() {
   return (
@@ -13,9 +14,9 @@ export default function CleaningCta() {
           <p className="mt-5 max-w-[410px] text-xs leading-[1.75] text-[#e1eaff] lg:mt-7 lg:text-sm">
             Join the movement toward sustainable living! Learn simple tips to switch to eco-friendly cleaning products and practices for a healthier home and a cleaner planet.
           </p>
-          <a href="/#contact" className="mt-7 inline-flex items-center justify-center rounded-full bg-[#c4ed81] px-6 py-2.5 text-xs font-medium text-[#2455cc] transition-colors hover:bg-[#daf4ac] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white lg:mt-9 lg:px-8 lg:py-3 lg:text-sm">
+          <Link href="/contact-us" className="mt-7 inline-flex items-center justify-center rounded-full bg-[#c4ed81] px-6 py-2.5 text-xs font-medium text-[#2455cc] transition-colors hover:bg-[#daf4ac] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white lg:mt-9 lg:px-8 lg:py-3 lg:text-sm">
             Contact Us
-          </a>
+          </Link>
         </div>
 
         <div className="relative aspect-[1.43] w-full min-w-0 overflow-hidden rounded-[20px] bg-[#d7dfce] md:min-h-[300px] lg:rounded-[26px]">
