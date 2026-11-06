@@ -1,4 +1,4 @@
-import { Photo, Polaroid, appBlue } from "./visuals";
+import { Photo, Polaroid } from "./visuals";
 
 const conceptLabel = <span className="text-[10px] font-bold tracking-[.2em] text-[#2d80a8] uppercase">App concept / Case study</span>;
 
@@ -22,18 +22,18 @@ export function AppAirlineCaseStudy() {
 
 export function AppResortCaseStudy() {
   return (
-    <section id="app-resort-case-study" aria-labelledby="app-resort-heading" className={`${appBlue} overflow-hidden text-white`}>
+    <section id="app-resort-case-study" aria-labelledby="app-resort-heading" className="overflow-hidden bg-[#dfe9dc] text-[#26382d]">
       <div className="mx-auto grid max-w-[1550px] items-center gap-8 px-5 py-16 sm:px-8 lg:min-h-[700px] lg:grid-cols-[minmax(0,1.1fr)_minmax(0,.9fr)] lg:gap-14 lg:px-12">
         <div className="relative h-[430px] sm:h-[550px]">
-          <Photo src="/images/app-development/resort-pool.webp" alt="Oceanfront resort infinity pool" className="absolute top-[4%] right-[5%] h-[88%] w-[72%] rounded-[24px] border border-white/35" />
-          <Photo src="/images/app-development/resort-terrace.webp" alt="Tropical beachfront lounge" className="absolute top-[15%] left-0 h-[68%] w-[40%] rounded-[20px] border border-white/35" />
+          <Photo src="/images/app-development/resort-pool.webp" alt="Oceanfront resort infinity pool" className="absolute top-[4%] right-[5%] h-[88%] w-[72%] rounded-[24px] border border-white/80" />
+          <Photo src="/images/app-development/resort-terrace.webp" alt="Tropical beachfront lounge" className="absolute top-[15%] left-0 h-[68%] w-[40%] rounded-[20px] border border-white/80" />
           <Polaroid src="/images/destinations/los-lances.webp" alt="Coastal view" className="absolute top-[2%] left-[25%] z-10 h-[32%] w-[28%] -rotate-6" />
           <Polaroid src="/images/app-development/resort-terrace.webp" alt="Resort dining terrace" className="absolute bottom-[3%] left-[23%] z-10 h-[34%] w-[29%] rotate-5" />
         </div>
         <div className="max-w-[490px]">
-          <p className="text-[11px] font-bold tracking-[.2em] text-white/75 uppercase">Hospitality / App concept</p>
+          <p className="text-[11px] font-bold tracking-[.2em] text-[#657767] uppercase">Hospitality / App concept</p>
           <h2 id="app-resort-heading" className="mt-3 text-[clamp(42px,4.4vw,72px)] leading-[.9] font-bold tracking-[-.065em] uppercase">Villa Stay<br /><span className="font-serif font-normal normal-case">Beachfront resort</span></h2>
-          <p className="mt-7 text-sm leading-[1.75] text-white/85 sm:text-base">A guest experience concept that brings the best of a resort into one easy-to-use app: discover a stay, explore amenities, plan experiences, and find everything in one place.</p>
+          <p className="mt-7 text-sm leading-[1.75] text-[#53675a] sm:text-base">A guest experience concept that brings the best of a resort into one easy-to-use app: discover a stay, explore amenities, plan experiences, and find everything in one place.</p>
           <ul className="mt-7 space-y-2 text-xs font-semibold tracking-[.04em] uppercase sm:text-sm"><li>+ Easy room discovery</li><li>+ Experiences at a glance</li><li>+ A smoother guest journey</li></ul>
         </div>
       </div>

@@ -39,6 +39,11 @@ main > section {
   overflow-wrap: anywhere;
 }
 
+/* Let hero artwork sit behind the floating navigation on every page. */
+main > section:first-child:not(.destination-hero) {
+  padding-top: var(--site-header-height);
+}
+
 main :where(.grid, .flex) > * {
   min-width: 0;
 }
@@ -66,7 +71,7 @@ button { cursor: pointer; }
   isolation: isolate;
   height: 100svh;
   min-height: 600px;
-  margin-top: calc(-1 * var(--site-header-height));
+  margin-top: 0;
   overflow: hidden;
   color: #fff;
   background: #26332d;

@@ -1,32 +1,32 @@
 export const destinations = [
   {
-    id: "swiss-alps", region: "Different Path", title: ["Saint", "Antönien"],
-    description: "Leave ordinary technology behind. Follow a smarter digital path, breathe in innovation, and find a different kind of growth with the Best IT company in India.",
+    id: "swiss-alps", region: "Switzerland Alps", title: ["Saint", "Antönien"],
+    description: "Leave the everyday behind. Follow alpine trails, breathe in the mountain air, and find a different kind of freedom in the Swiss Alps.",
     position: "center center",
   },
   {
-    id: "nagano", region: "Build Smarter", title: ["Grow", "Faster"],
-    description: "Top IT company in India, building custom software, websites, mobile apps, and business solutions for modern needs.",
+    id: "nagano", region: "Japan Alps", title: ["Nagano", "Prefecture"],
+    description: "Slow down and look a little closer. A quiet encounter, a mountain landscape, and a moment that stays with you long after the journey.",
     position: "center center",
   },
   {
-    id: "merzouga", region: "One Team", title: ["Every", "Solution"],
-    description: "Best IT Services Provider offering reliable web development, CRM, AI, and digital marketing services under one roof.",
+    id: "merzouga", region: "Sahara Desert · Morocco", title: ["Marrakech", "Merzouga"],
+    description: "Trade the familiar for an open horizon. Follow the light across golden dunes and discover the extraordinary beauty of a simpler landscape.",
     position: "center center",
   },
   {
-    id: "yosemite", region: "Less Complexity", title: ["More", "Clarity"],
-    description: "A leading IT company in India, providing Top IT Services and solutions to simplify business operations with advanced technology.",
+    id: "yosemite", region: "Sierra Nevada · United States", title: ["Yosemite", "National Park"],
+    description: "Some views put everything into perspective. Step beyond the ordinary, take the scenic route, and make a little room for wonder.",
     position: "center center",
   },
   {
-    id: "los-lances", region: "Proven Skill", title: ["Real", "Results"],
-    description: "Among the Best IT Services companies and top IT Companies, delivering Top IT Company Software solutions and expertise like Top software companies for modern businesses.",
+    id: "los-lances", region: "Tarifa · Spain", title: ["Los Lances", "Beach"],
+    description: "Find your rhythm where the wind meets the water. Open skies, salt in the air, and the feeling that your next adventure has just begun.",
     position: "center center",
   },
   {
-    id: "goreme", region: "Built Once", title: ["Supported", "Always"],
-    description: "A Top IT company in India that stays with you after launch — supporting, maintaining, and improving your systems as your business grows.",
+    id: "goreme", region: "Cappadocia · Turkey", title: ["Göreme", "Valley"],
+    description: "Watch a new day unfold from a different perspective. Let the landscape surprise you and turn a fleeting moment into a lasting memory.",
     position: "center center",
   },
 ];

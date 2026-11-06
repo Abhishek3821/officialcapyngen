@@ -59,19 +59,19 @@ const feedback = [
 
 export function AppTestimonials() {
   return (
-    <section id="app-testimonials" aria-labelledby="app-testimonials-heading" className={`${appBlue} text-white`}>
+    <section id="app-testimonials" aria-labelledby="app-testimonials-heading" className="bg-[#f0ede7] text-[#26332e]">
       <div className="mx-auto max-w-[1450px] px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
-        <p className="text-center text-[11px] font-bold tracking-[.2em] text-white/70 uppercase">Illustrative feedback</p>
+        <p className="text-center text-[11px] font-bold tracking-[.2em] text-[#69756a] uppercase">Illustrative feedback</p>
         <h2 id="app-testimonials-heading" className="mt-2 text-center text-[clamp(39px,4.8vw,72px)] leading-none font-bold tracking-[-.06em] uppercase">Testimonials</h2>
         <div className="mt-11 grid gap-9 md:grid-cols-3 md:gap-6 lg:gap-10">
           {feedback.map((item, index) => (
             <article key={item.title} className="min-w-0">
               <div className="relative mx-auto h-[310px] max-w-[370px] sm:h-[380px] md:h-[300px] lg:h-[380px]">
                 <Polaroid src={item.image} alt="Travel-inspired product concept" className={`absolute inset-x-[6%] top-0 bottom-[7%] ${index === 1 ? "rotate-3" : "-rotate-3"}`} sizes="(max-width: 768px) 80vw, 28vw" />
-                <span className="absolute right-[9%] bottom-[10%] z-10 bg-[#174d75] px-3 py-1 text-[10px] font-semibold">Sample client quote</span>
+                <span className="absolute right-[9%] bottom-[10%] z-10 bg-[#446b56] px-3 py-1 text-[10px] font-semibold text-white">Sample client quote</span>
               </div>
               <h3 className="mt-2 font-serif text-2xl tracking-[-.03em]">{item.title}</h3>
-              <p className="mt-3 max-w-[360px] text-sm leading-[1.65] text-white/85">“{item.quote}”</p>
+              <p className="mt-3 max-w-[360px] text-sm leading-[1.65] text-[#536159]">“{item.quote}”</p>
             </article>
           ))}
         </div>
@@ -94,12 +94,12 @@ const gallery = [
 
 export function AppSnapshot() {
   return (
-    <section id="app-snapshot" aria-labelledby="app-snapshot-heading" className={`${appBlue} overflow-hidden text-white`}>
+    <section id="app-snapshot" aria-labelledby="app-snapshot-heading" className="overflow-hidden bg-[#f7eee1] text-[#28352c]">
       <div className="mx-auto max-w-[1350px] px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
-        <p className="text-center text-[11px] font-bold tracking-[.22em] text-white/70 uppercase">Moments that inspire the product</p>
+        <p className="text-center text-[11px] font-bold tracking-[.22em] text-[#7a725f] uppercase">Moments that inspire the product</p>
         <h2 id="app-snapshot-heading" className="mt-2 text-center leading-[.9] tracking-[-.06em]"><span className="block text-[clamp(42px,5vw,77px)] font-bold uppercase">Product</span><span className="block font-serif text-[clamp(49px,5.5vw,84px)] font-normal">Snapshot</span></h2>
         <div className="relative mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
-          {gallery.map((item, index) => <Photo key={`${item.src}-${index}`} src={item.src} alt={item.alt} className="aspect-[1.18] rounded-[16px] border border-white/20 sm:aspect-[1.3]" sizes="(max-width: 640px) 50vw, 30vw" />)}
+          {gallery.map((item, index) => <Photo key={`${item.src}-${index}`} src={item.src} alt={item.alt} className="aspect-[1.18] rounded-[16px] border border-white/80 sm:aspect-[1.3]" sizes="(max-width: 640px) 50vw, 30vw" />)}
           <Polaroid src="/images/app-development/resort-terrace.webp" alt="Oceanfront hospitality scene" className="absolute top-[26%] left-[27%] z-10 hidden h-[45%] w-[43%] rotate-[-7deg] sm:block" sizes="35vw" />
         </div>
       </div>

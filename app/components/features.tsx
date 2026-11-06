@@ -2,23 +2,23 @@ import Image from "next/image";
 
 const features = [
   {
-    title: "Real-time analytics - ",
-    description: "Make decisions with live data, not last month's reports.",
+    title: "Real-time analytics",
+    description: "Gain actionable insights with our real-time analytics feature",
     icon: "analytics",
   },
   {
-    title: "AI-Powered Solutions - ",
-    description: "Automate processes, improve efficiency, and unlock new business opportunities with intelligent AI technology.",
+    title: "Customizable reports",
+    description: "Streamline your financial processes with automated workflows",
     icon: "reports",
   },
   {
-    title: "Mobile-first platforms - ",
-    description: "Your business should work wherever your customers are, built by a Top IT Company Software team.",
+    title: "Mobile accessibility",
+    description: "Manage your finances on the go with our mobile-friendly platform",
     icon: "mobile",
   },
   {
-    title: "Security by design - ",
-    description: "Every solution from this Best IT Services Provider is built with protection at its core, not added later.",
+    title: "Enhanced security",
+    description: "Protect your sensitive financial data with our state-of-the-art security measures",
     icon: "security",
   },
 ] as const;
@@ -54,11 +54,10 @@ export default function Features() {
       <div className="mx-auto max-w-[1344px]">
         <div className="mx-auto max-w-[620px] text-center">
           <h2 id="features-heading" className="text-[clamp(28px,3.5vw,48px)] leading-[1.18] font-normal tracking-[-0.045em] text-[#f4f6f3]">
-            Build Smarter, Grow Faster with<br className="hidden sm:block" />Capyngen - Best IT Company in India
-
+            Core features that set us<br className="hidden sm:block" /> apart from the competition
           </h2>
           <p className="mx-auto mt-5 max-w-[460px] text-sm leading-[1.5] text-[#a8beb6] lg:text-base">
-            We build solutions that fit, scale, and perform — which is why businesses searching for a Top IT company in India choose us.
+            Explore our standout features designed to deliver exceptional performance and value, distinguishing us from the competition.
           </p>
         </div>
 

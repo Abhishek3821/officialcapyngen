@@ -31,7 +31,7 @@ export function AppPortfolioHero() {
 
 export function AppAboutSection() {
   return (
-    <section id="app-about" aria-labelledby="app-about-heading" className="bg-white text-[#17232b]">
+    <section id="app-about" aria-labelledby="app-about-heading" className="bg-[#e7f1f6] text-[#17232b]">
       <div className="mx-auto grid max-w-[1460px] items-center gap-10 px-5 py-20 sm:px-8 lg:min-h-[680px] lg:grid-cols-[minmax(0,1.04fr)_minmax(0,.96fr)] lg:gap-16 lg:px-12">
         <div className="relative h-[420px] sm:h-[530px]">
           <Photo src="/images/agenda/photo-1600210492486-724fe5c67fb0.jpg" alt="Warm contemporary interior" className="absolute top-0 left-[5%] h-[66%] w-[43%] rounded-[16px]" />

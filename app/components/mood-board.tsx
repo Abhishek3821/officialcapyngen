@@ -36,24 +36,23 @@ export default function MoodBoard() {
     <section aria-labelledby="mood-board-heading" className="overflow-hidden bg-black px-5 py-8 text-white sm:px-7 lg:px-8 lg:py-5">
       <div className="mx-auto grid max-w-[1440px] items-center gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] lg:gap-6">
         <div className="relative z-10 flex h-full flex-col lg:py-1">
-          
+          <p className="text-[10px] font-semibold tracking-[0.35em] sm:text-xs">WWW.EXAMPLE.COM</p>
+
           <div className="mt-9 sm:mt-12 lg:mt-14">
-            <p className="font-serif text-[46px] leading-[.8] font-normal italic tracking-[-0.07em] text-[#f5cf80] sm:text-[54px]">Our</p>
-            <h2 id="mood-board-heading" className="mt-2 text-[clamp(30px,3.5vw,52px)] leading-none font-extrabold tracking-[-0.035em]">Approach</h2>
+            <p className="font-serif text-[46px] leading-[.8] font-normal italic tracking-[-0.07em] text-[#f5cf80] sm:text-[54px]">Brand</p>
+            <h2 id="mood-board-heading" className="mt-2 text-[clamp(30px,3.5vw,52px)] leading-none font-extrabold tracking-[-0.035em]">MOOD BOARD</h2>
           </div>
 
-          {/* Top Approach item (01) */}
           <div className="mt-9 max-w-[440px] lg:mt-12">
-            <h3 className="text-xs font-bold sm:text-sm">01. Innovation First</h3>
+            <h3 className="text-xs font-bold sm:text-sm">PROJECT NAME</h3>
             <p className="mt-3 max-w-[400px] text-[10px] leading-[1.35] uppercase text-white/85 sm:text-[11px]">
-              We use modern technologies and fresh ideas to create solutions for changing business needs.
+              A brand inspired by wide-open spaces, warm desert light, and the freedom to explore. Natural textures and bold geometry bring a sense of adventure to every detail.
             </p>
           </div>
 
-          {/* Color Swatches and Typography Section */}
           <div className="mt-8 grid max-w-[440px] grid-cols-1 items-center gap-5 sm:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] sm:gap-5">
             <div>
-              <h3 className="text-xs font-bold">02. Customer-Focused</h3>
+              <h3 className="text-xs font-bold">COLOR</h3>
               <div className="mt-3 flex gap-3">
                 {[{ color: "#ffffff", label: "#000000" }, { color: "#df8a30", label: "#DF8A30" }, { color: "#f5c160", label: "#F5C160" }].map((swatch) => (
                   <div key={swatch.label} className="min-w-0 flex-1">
@@ -70,23 +69,17 @@ export default function MoodBoard() {
             </div>
           </div>
 
-          {/* Notes and Mood Board Split Section with New Content */}
           <div className="mt-8 grid max-w-[440px] grid-cols-2 gap-5 border-y border-white/55 py-5 sm:gap-7">
             <div>
-              <h3 className="text-[11px] font-bold sm:text-xs">03. Quality &amp; Reliability</h3>
-              <p className="mt-3 text-[9px] leading-[1.35] uppercase text-white/85 sm:text-[10px]">
-                We focus on delivering secure, scalable, and dependable digital solutions.
-              </p>
+              <h3 className="text-[11px] font-bold sm:text-xs">MOOD BOARD 2025–29</h3>
+              <p className="mt-3 text-[9px] leading-[1.35] uppercase text-white/85 sm:text-[10px]">Warm tones, sculptural landscapes, and quiet moments. A visual direction rooted in nature and exploration.</p>
             </div>
             <div className="border-l-2 border-white/80 pl-5 sm:pl-7">
-              <h3 className="text-[11px] font-bold sm:text-xs">04. Growth-Driven Strategy</h3>
-              <p className="mt-3 text-[9px] leading-[1.35] uppercase text-white/85 sm:text-[10px]">
-                We combine technology and smart strategies to support long-term business growth.
-              </p>
+              <h3 className="text-[11px] font-bold sm:text-xs">NOTES</h3>
+              <p className="mt-3 text-[9px] leading-[1.35] uppercase text-white/85 sm:text-[10px]">Pair minimal typography with cinematic imagery. Keep the palette earthy and give each composition room to breathe.</p>
             </div>
           </div>
 
-          {/* Footer branding details */}
           <div className="mt-3 flex max-w-[440px] flex-wrap items-end justify-between gap-3 text-[9px] font-semibold">
             <div><p className="text-xs font-bold sm:text-sm">MATTHEW SMITH</p><p className="mt-1">DESIGN BY</p></div>
             <span aria-hidden="true" className="text-[#df8a30]">▮</span>
@@ -94,7 +87,6 @@ export default function MoodBoard() {
             <span aria-hidden="true" className="text-[#df8a30]">▮</span>
             <span>BRAND</span>
           </div>
-
         </div>
 
         <div className="min-w-0"><DesertCollage /></div>
