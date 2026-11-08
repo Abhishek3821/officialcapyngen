@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import UiUxHero from "../components/ui-ux-design/hero";
+import UiUxSections from "../components/ui-ux-design/sections";
 
 export const metadata: Metadata = {
   title: "UI/UX Design | Capyngen",
@@ -14,6 +15,7 @@ export default function UiUxDesignPage() {
       <Navbar />
       <main id="main-content" tabIndex={-1} className="min-w-0 max-w-full outline-none">
         <UiUxHero />
+        <UiUxSections />
       </main>
       <Footer />
     </>
