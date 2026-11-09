@@ -4,6 +4,8 @@ import assert from "node:assert/strict";
 // errors that Next.js deliberately omits from the production build.
 const origin = process.argv[2] ?? "http://localhost:3000";
 const pages = {
+  "/digital-marketing": ["digital-marketing-heading", "collections-heading", "fashion-search-heading", "worldwide-heading", "travel-company-heading", "travel-inspiration-heading", "tour-types-heading", "world-secrets-heading"],
+  "/cms-design": ["cms-hero-heading", "trending-heading", "wellness-heading", "featured-heading", "readers-heading", "editors-heading", "travel-heading"],
   "/ui-ux-design": ["school-heading", "academics-heading", "approach-heading", "strategy-heading", "growth-heading", "implementation-heading"],
   "/website-design": ["website-design-heading", "work-heading", "voices-heading", "podcast-heading", "subscribe-heading", "benefits-heading", "episodes-heading"],
 };
@@ -33,6 +35,11 @@ for (const [path, headings] of Object.entries(pages)) {
 }
 
 for (const image of [
+  "/images/digital-marketing/casual-style.webp",
+  "/images/cms-design/editorial-hero.webp",
+  "/images/cms-design/coast.jpg",
+  "/images/cms-design/food.jpg",
+  "/images/cms-design/wellness.jpg",
   "/images/ui-ux-design/campus.jpg",
   "/images/ui-ux-design/classroom.jpg",
   "/images/website-design/editorial-desk.webp",

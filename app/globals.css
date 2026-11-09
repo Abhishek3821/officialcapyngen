@@ -39,8 +39,18 @@ main > section {
   overflow-wrap: anywhere;
 }
 
-/* Let hero artwork sit behind the floating navigation on every page. */
-main > section:first-child:not(.destination-hero) {
+/* The fixed navbar overlays the first section on every route. Keep its
+   clearance inside the hero so the hero background reaches the page top. */
+#main-content {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#main-content > section:first-child {
+  margin-top: 0;
+}
+
+#main-content > section:first-child:not(.destination-hero) {
   padding-top: var(--site-header-height);
 }
 

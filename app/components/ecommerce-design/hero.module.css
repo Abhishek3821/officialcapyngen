@@ -1,0 +1,152 @@
+.hero { background: #f6f5ef; color: #202b27; }
+.container { max-width: 1530px; margin-inline: auto; padding: 16px 55px 0; }
+.heroGrid { display: grid; grid-template-columns: 1fr 1.05fr; align-items: start; gap: 38px; }
+.copy { position: relative; z-index: 2; padding-block: 20px 30px; }
+.eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+.eyebrow > span { width: 7px; height: 7px; border-radius: 50%; background: #698c47; box-shadow: 0 0 0 4px #698c4715; }
+.copy h1 { margin-top: 30px; font-size: clamp(52px, 5.1vw, 80px); font-weight: 550; letter-spacing: -.075em; line-height: 1.04; }
+.copy h1 > span { color: #667c4a; }
+.copy h1 em { font-family: Georgia, "Times New Roman", serif; font-weight: 400; letter-spacing: -.07em; }
+.description { max-width: 420px; margin-top: 27px; font-size: 14px; line-height: 1.85; color: #7c8279; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin-top: 31px; }
+.primary, .secondary { display: inline-flex; align-items: center; justify-content: space-between; gap: 25px; min-height: 48px; font-size: 12px; font-weight: 600; }
+.primary { padding: 14px 22px; border-radius: 5px; background: #f77443; color: #1c2a21; transition: background .2s; }
+.primary:hover { background: #ff9368; }
+.primary > span { font-size: 20px; line-height: 1; }
+.secondary { border-bottom: 1px solid #bbc1b4; min-height: 40px; }
+.secondary:hover { border-color: #263e28; }
+.designNote { display: flex; align-items: center; gap: 14px; margin-top: 42px; }
+.designNote > span { font-size: 37px; color: #a8ad88; }
+.designNote p { font-size: 11px; line-height: 1.65; color: #94988b; }
+.designNote strong { font-weight: 500; color: #54604c; }
+.stage { position: relative; min-width: 0; min-height: 600px; padding: 20px 14px 45px 50px; }
+.orbit { position: absolute; top: 7%; right: -4%; width: 94%; aspect-ratio: 1; border-radius: 50%; background: #e5e7d7; }
+.orbit::before { content: ""; position: absolute; inset: -20px; border: 1px solid #d9ddcb; border-radius: 50%; }
+.storefront { position: relative; margin-top: 12px; border: 1px solid #d7d9ce; border-radius: 15px; background: #fcfcf7; overflow: hidden; box-shadow: 0 30px 70px #34462c1c, 0 6px 18px #34462c0a; transform: rotate(-3deg); }
+.browserBar { display: flex; align-items: center; gap: 5px; height: 30px; padding: 0 13px; border-bottom: 1px solid #e7e8df; background: #f1f2eb; }
+.browserBar > span:not(:last-child) { width: 5px; height: 5px; border-radius: 50%; background: #ced3c4; }
+.browserBar > span:first-child { background: #d3ad9e; }
+.browserBar p { margin: auto; color: #959b8c; font-size: 7px; }
+.browserPlus { color: #848d79; font-size: 15px; }
+.storeNav { display: flex; justify-content: space-between; align-items: center; gap: 15px; padding: 16px 24px; }
+.storeLogo { font: 600 27px/.9 Georgia, serif; letter-spacing: -.07em; }
+.storeLogo > span { font: 8px Arial, sans-serif; vertical-align: top; margin-left: 3px; }
+.storeNavLabel { font-size: 6px; font-weight: 600; letter-spacing: .16em; }
+.bagToggle { display: flex; align-items: center; gap: 6px; font-size: 8px; }
+.bagToggle svg { width: 15px; height: 17px; }
+.storeImage { position: relative; height: 365px; margin: 0 13px; overflow: hidden; border-radius: 3px; background: #5e6746; color: #fff9e9; }
+.storeImage::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, #182414a3, transparent 60%); pointer-events: none; }
+.productPhoto { object-fit: cover; }
+.storeImage .productPhoto { object-position: center 58%; }
+.collectionLabel { position: absolute; left: 20px; top: 19px; z-index: 1; font-size: 6px; font-weight: 500; letter-spacing: .17em; }
+.collectionCopy { position: absolute; left: 24px; bottom: 25px; z-index: 1; }
+.collectionCopy > p { font: 400 clamp(24px, 2.5vw, 36px)/1.05 Georgia, serif; letter-spacing: -.04em; }
+.collectionCopy > span { display: flex; gap: 22px; margin-top: 15px; font-size: 8px; }
+.imageNumber { position: absolute; bottom: 23px; right: 20px; z-index: 1; font-size: 7px; letter-spacing: .12em; }
+.productBar { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 21px 24px; }
+.productBar > div > span { color: #90977f; font-size: 6px; letter-spacing: .13em; }
+.productBar h2 { margin-top: 4px; font: 500 18px/1.2 Georgia, serif; letter-spacing: -.04em; }
+.productBar p { margin-top: 6px; color: #9a9e90; font-size: 7px; }
+.productBar > button { display: flex; align-items: center; justify-content: space-between; gap: 19px; min-width: 120px; min-height: 38px; padding: 10px 15px; border-radius: 2px; background: #253e27; color: #fff; font-size: 9px; }
+.productBar > button:hover { background: #496348; }
+.productBar > button > span { font-size: 15px; }
+.phone { position: absolute; left: -5px; bottom: 30px; z-index: 2; width: 155px; padding: 10px 7px 14px; border: 5px solid #283329; border-radius: 25px; background: #faf8ec; box-shadow: 0 18px 35px #1c2a292b; transform: rotate(7deg); }
+.phoneSpeaker { width: 35px; height: 4px; margin: -5px auto 10px; border-radius: 10px; background: #283329; }
+.phoneNav { display: flex; justify-content: space-between; padding: 3px 6px 9px; font: 600 15px Georgia, serif; letter-spacing: -.05em; }
+.phoneNav > span { font: 12px Arial, sans-serif; }
+.phonePhoto { position: relative; height: 150px; overflow: hidden; border-radius: 3px; }
+.phonePhoto img { object-position: center 66%; }
+.phone > p { padding: 12px 6px 9px; font: 18px/.98 Georgia, serif; letter-spacing: -.05em; }
+.phoneButton { display: block; margin: 0 4px; padding: 7px 4px; background: #233c28; color: #fff; text-align: center; font-size: 6px; }
+.previewStatus { position: absolute; right: 20px; bottom: -4px; max-width: calc(100% - 170px); text-align: right; font-size: 7px; line-height: 1.5; letter-spacing: .09em; color: #a0a492; }
+.bagPanel { position: absolute; inset: 91px 13px auto; z-index: 4; padding: 23px; border: 1px solid #d2d7c9; border-radius: 5px; background: #fcfdf4; box-shadow: 0 20px 40px #15250c30; }
+.bagPanel[hidden] { display: none; }
+.bagPanel > div { display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+.bagPanel h3 { font: 22px Georgia, serif; letter-spacing: -.04em; }
+.bagPanel > div > button { display: grid; place-items: center; width: 28px; height: 28px; border: 1px solid #d4d9c8; border-radius: 50%; font-size: 21px; }
+.bagPanel > p { margin-top: 22px; font-size: 12px; }
+.bagPanel small { display: block; margin-top: 12px; color: #8b927c; font-size: 9px; line-height: 1.5; }
+.bagPanel > a { display: inline-flex; gap: 20px; margin-top: 18px; padding: 11px 14px; border-radius: 3px; background: #253e27; color: #fff; font-size: 10px; }
+.heroFooter { display: flex; align-items: center; justify-content: space-between; gap: 25px; margin-top: 20px; padding: 25px 0 29px; border-top: 1px solid #dedfd5; }
+.heroFooter > p { font-size: 10px; line-height: 1.65; color: #979d8c; }
+.heroFooter strong { font-weight: 500; color: #626e55; }
+.heroFooter ul { display: flex; flex-wrap: wrap; gap: 35px; }
+.heroFooter li { display: flex; align-items: center; gap: 10px; font-size: 10px; color: #68725f; }
+.heroFooter li > span { color: #a4ae91; font: italic 16px Georgia, serif; }
+.heroFooter > a { display: grid; place-items: center; width: 37px; height: 37px; flex-shrink: 0; border: 1px solid #d3d8c7; border-radius: 50%; font-size: 19px; color: #68755a; }
+.container :is(a, button):focus-visible { outline: 3px solid #8a64b8; outline-offset: 4px; }
+@media (max-width: 1100px) {
+  .container { padding: 16px 32px 0; }
+  .heroGrid { gap: 15px; }
+  .copy h1 { font-size: 5.6vw; }
+  .description { font-size: 13px; max-width: 360px; }
+  .actions { gap: 17px; }
+  .primary { padding-inline: 17px; }
+  .primary, .secondary { font-size: 11px; }
+  .stage { min-height: 590px; padding-left: 30px; padding-right: 5px; }
+  .storeNav { padding-inline: 18px; }
+  .storeImage { height: 320px; }
+  .productBar { padding-inline: 16px; gap: 10px; }
+  .productBar h2 { font-size: 15px; }
+  .productBar > button { min-width: 95px; padding-inline: 10px; font-size: 8px; gap: 10px; }
+  .phone { width: 135px; left: -8px; bottom: 30px; }
+  .phonePhoto { height: 127px; }
+  .phone > p { font-size: 16px; }
+  .heroFooter ul { gap: 18px; }
+  .heroFooter li { font-size: 9px; }
+}
+@media (max-width: 800px) {
+  .heroGrid { grid-template-columns: 1fr; gap: 0; }
+  .copy { padding-bottom: 15px; }
+  .copy h1 { font-size: clamp(52px, 8.8vw, 76px); }
+  .description { max-width: 450px; font-size: 14px; }
+  .designNote { margin-top: 25px; }
+  .stage { width: 100%; max-width: 600px; min-height: 650px; margin: 0 auto 20px; padding-left: 65px; padding-top: 50px; }
+  .storeImage { height: 365px; }
+  .phone { width: 155px; bottom: 20px; left: 0; }
+  .phonePhoto { height: 150px; }
+  .collectionCopy > p { font-size: 33px; }
+  .heroFooter { margin-top: 10px; }
+  .heroFooter > p { display: none; }
+  .heroFooter ul { gap: 15px; }
+}
+@media (max-width: 550px) {
+  .container { padding: 12px 20px 0; }
+  .eyebrow { font-size: 9px; letter-spacing: .1em; }
+  .copy h1 { font-size: clamp(43px, 10.2vw, 57px); margin-top: 25px; line-height: 1.05; }
+  .description { margin-top: 22px; font-size: 12px; line-height: 1.8; }
+  .actions { margin-top: 24px; gap: 18px; }
+  .primary, .secondary { font-size: 10px; gap: 15px; }
+  .primary { min-height: 45px; padding-inline: 15px; }
+  .designNote p { font-size: 10px; }
+  .designNote > span { font-size: 30px; }
+  .stage { min-height: 535px; padding: 50px 0 60px 22px; margin-bottom: 10px; }
+  .storefront { border-radius: 11px; }
+  .browserBar { height: 25px; }
+  .storeNav { padding: 13px 15px; gap: 10px; }
+  .storeLogo { font-size: 24px; }
+  .storeNavLabel { font-size: 5px; }
+  .storeImage { height: 278px; margin-inline: 8px; }
+  .collectionLabel { top: 14px; left: 15px; font-size: 5px; }
+  .collectionCopy { left: 16px; bottom: 22px; }
+  .collectionCopy > p { font-size: 26px; }
+  .collectionCopy > span { font-size: 6px; }
+  .imageNumber { right: 12px; font-size: 6px; }
+  .productBar { padding: 16px 14px; }
+  .productBar p { display: none; }
+  .productBar h2 { font-size: 13px; }
+  .productBar > button { min-width: 90px; font-size: 7px; padding-inline: 8px; min-height: 32px; }
+  .phone { width: 115px; bottom: 18px; left: -4px; padding: 9px 5px 10px; border-width: 4px; border-radius: 19px; }
+  .phoneNav { font-size: 12px; padding-bottom: 7px; }
+  .phonePhoto { height: 105px; }
+  .phone > p { font-size: 14px; }
+  .phoneButton { font-size: 4px; padding-block: 6px; }
+  .phoneSpeaker { height: 3px; width: 27px; }
+  .previewStatus { right: 5px; bottom: -10px; max-width: calc(100% - 125px); font-size: 6px; }
+  .bagPanel { inset: 75px 8px auto; padding: 17px; }
+  .bagPanel h3 { font-size: 19px; }
+  .heroFooter { margin-top: 15px; padding-block: 24px; gap: 12px; }
+  .heroFooter ul { display: grid; gap: 11px; }
+  .heroFooter li { font-size: 10px; }
+}
+@media (prefers-reduced-motion: reduce) { .container * { transition: none !important; } }
