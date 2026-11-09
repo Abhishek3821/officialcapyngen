@@ -1,0 +1,365 @@
+.container { width: min(1350px, calc(100% - 80px)); margin-inline: auto; }
+.photo { position: relative; overflow: hidden; background: #e1ebe4; }
+.image { object-fit: cover; }
+.eyebrow { color: #64917e; font-size: 9px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+.business { padding: 65px 0 60px; background: #fff; color: #20392d; }
+.sectionHeader { text-align: center; }
+.sectionHeader .eyebrow { letter-spacing: .03em; text-transform: none; }
+.sectionHeader h2 { margin-top: 17px; font-size: clamp(31px, 3.7vw, 50px); font-weight: 650; line-height: 1.04; letter-spacing: -.045em; }
+.businessGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 38px; }
+.businessGrid article { display: grid; grid-template-columns: .85fr 1.45fr; gap: 22px; min-height: 210px; overflow: hidden; border: 1px solid #f1f3ee; border-radius: 15px; background: #fff; box-shadow: 0 8px 30px #294b2c04; }
+.businessGrid article > .photo { min-height: 210px; }
+.businessGrid article > div:last-child { padding: 24px 24px 22px 0; }
+.businessGrid h3 { font-size: 16px; font-weight: 650; letter-spacing: -.025em; }
+.businessGrid article p { max-width: 310px; margin-top: 13px; color: #9aa496; font-size: 11px; line-height: 1.8; }
+.businessGrid article button { display: inline-flex; align-items: center; gap: 16px; margin-top: 20px; color: #58715a; font-size: 10px; font-weight: 600; }
+.businessGrid article button:hover { text-decoration: underline; text-underline-offset: 4px; }
+.powerWorld { padding: 40px 0 55px; background: #fff; color: #28352d; }
+.powerHeader { text-align: center; }
+.powerHeader h2 { font-size: clamp(31px, 3.8vw, 53px); font-weight: 500; line-height: 1.25; letter-spacing: -.05em; }
+.powerHeader h2 > span:not(.inlineIcon) { color: #a6ada1; }
+.inlineIcon { display: inline-flex; align-items: center; justify-content: center; width: 37px; height: 37px; margin: 0 5px; border-radius: 9px; background: linear-gradient(135deg, #a2cdb1, #2e8557); color: #e6f6e1; vertical-align: middle; box-shadow: inset 0 0 5px #ffffff52; }
+.inlineIcon svg { width: 21px; height: 21px; }
+.powerHeader > p { max-width: 1050px; margin: 25px auto 0; font-size: clamp(15px, 1.7vw, 22px); line-height: 1.5; color: #666e63; }
+.solarHome { position: relative; min-height: 490px; margin-top: 38px; overflow: hidden; border-radius: 22px; background: #a2b290; }
+.solarHome > .image { object-position: center 43%; }
+.homeBenefits { position: absolute; bottom: 20px; left: 20px; right: 20px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 17px; }
+.homeBenefits article { min-height: 160px; padding: 20px 22px; border: 1px solid #e6eee1; border-radius: 12px; background: #fffffff7; }
+.homeBenefits article > span { display: grid; place-items: center; width: 31px; height: 31px; border-radius: 7px; background: #edf4e4; color: #73976b; }
+.homeBenefits article svg { width: 19px; height: 19px; }
+.homeBenefits h3 { margin-top: 13px; color: #72916b; font-size: 18px; font-weight: 600; letter-spacing: -.03em; }
+.homeBenefits p { max-width: 330px; margin-top: 9px; color: #9aaa8e; font-size: 11px; line-height: 1.7; }
+.solarAbout { padding: 40px 0 60px; background: #fff; color: #214e4d; }
+.solarAboutGrid { display: grid; grid-template-columns: .8fr 1.2fr; align-items: stretch; gap: 55px; }
+.solarPhotos { display: grid; grid-template-rows: repeat(3, 1fr); gap: 15px; }
+.solarPhotos > .photo { min-height: 180px; border-radius: 14px; }
+.solarAboutCopy { padding-top: 3px; }
+.solarAboutCopy h2 { margin-top: 15px; font-size: clamp(29px, 3.1vw, 43px); font-weight: 600; line-height: 1.08; letter-spacing: -.045em; }
+.solarAboutCopy h2 > span { color: #37a45c; }
+.solarAboutCopy > p:not(:first-child) { max-width: 630px; margin-top: 23px; color: #8ba4a2; font-size: 13px; line-height: 1.75; }
+.greenButton, .blackButton { display: inline-flex; align-items: center; justify-content: center; gap: 23px; min-height: 40px; margin-top: 22px; border-radius: 30px; padding: 11px 20px; background: linear-gradient(100deg, #62be65, #008b4a); color: #fff; font-size: 11px; font-weight: 500; transition: background .2s; }
+.greenButton:hover { background: #2f9e59; }
+.solarFeatures { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 27px; }
+.solarFeatures article { padding: 20px 23px; border-radius: 9px; background: #eff8f4; }
+.solarFeatures svg { width: 31px; height: 31px; color: #40996c; }
+.solarFeatures h3 { margin-top: 11px; font-size: 16px; font-weight: 550; letter-spacing: -.03em; }
+.solarFeatures p { max-width: 250px; margin-top: 9px; color: #94aba4; font-size: 11px; line-height: 1.65; }
+.solarServiceSection { padding: 20px 0 55px; background: #fff; color: #e6f1ea; }
+.solarServicePanel { position: relative; isolation: isolate; display: grid; grid-template-columns: 1.1fr 40px 1.2fr 32px; align-items: center; gap: 25px; min-height: 330px; padding: 35px 32px; overflow: hidden; border-radius: 24px; background: #072b23; }
+.solarServicePanel::before { position: absolute; inset: 0; z-index: -1; content: ""; background: repeating-linear-gradient(135deg, transparent, transparent 100px, #3ac57c04 100px, #3ac57c04 103px); }
+.servicePill { display: inline-flex; border: 1px solid #8cc6b044; border-radius: 30px; padding: 8px 14px; background: #ffffff08; font-size: 10px; text-transform: uppercase; }
+.serviceIntro h2 { margin-top: 26px; font-size: clamp(30px, 3vw, 42px); font-weight: 600; line-height: 1.12; letter-spacing: -.045em; }
+.serviceIntro h2 > span { color: #83d86c; }
+.serviceIntro > p:not(:first-child) { max-width: 360px; margin-top: 20px; color: #a3c2af; font-size: 12px; line-height: 1.8; }
+.carouselPrevious, .carouselNext { display: grid; place-items: center; width: 35px; height: 35px; flex-shrink: 0; border: 1px solid #8dc5ab45; border-radius: 50%; background: #ffffff05; color: #c6e0d0; font-size: 24px; }
+.carouselPrevious:hover { background: #ffffff15; }
+.serviceSpotlight { display: grid; grid-template-columns: 1fr 1.05fr; gap: 22px; min-height: 235px; padding: 12px; border: 1px solid #94c4b032; border-radius: 15px; background: #ffffff04; }
+.serviceSpotlight > .photo { min-height: 215px; border-radius: 12px; }
+.serviceSpotlight > div:last-child { display: flex; flex-direction: column; align-items: flex-start; padding: 6px 7px 6px 0; }
+.spotlightLabel { border-radius: 20px; padding: 4px 8px; background: #53b8611c; color: #9ace78; font-size: 8px; }
+.serviceSpotlight h3 { margin-top: 13px; font-size: 16px; line-height: 1.3; font-weight: 550; letter-spacing: -.025em; }
+.serviceSpotlight p { margin-top: 11px; color: #a6c3ae; font-size: 10px; line-height: 1.75; }
+.outlineButton { display: inline-flex; align-items: center; justify-content: space-between; gap: 19px; min-height: 34px; margin-top: auto; border: 1px solid #8bcb74; border-radius: 25px; padding: 7px 14px; color: #b9d99e; font-size: 9px; }
+.outlineButton:hover { background: #5abf6720; }
+.serviceControls { display: flex; flex-direction: column; align-items: center; gap: 28px; }
+.carouselNext { background: #86dc54; color: #fff; border: 0; font-size: 22px; }
+.carouselNext:hover { background: #a2ed76; }
+.serviceControls > div { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.serviceControls > div > button { width: 5px; height: 5px; border-radius: 50%; background: #c1dcc38c; }
+.serviceControls > div > button[aria-pressed="true"] { height: 32px; border-radius: 4px; background: #80cf5a; }
+.wellness { padding: 40px 0 65px; background: #fff; color: #262c23; }
+.wellnessHeader { display: grid; grid-template-columns: 1fr 2.1fr 1fr; align-items: center; gap: clamp(20px, 3vw, 46px); text-align: center; }
+.wellnessHeading { min-width: 0; }
+.wellnessHeader h2 { margin-top: 17px; font-size: clamp(35px, 4.2vw, 60px); font-weight: 600; line-height: 1.06; letter-spacing: -.055em; }
+.wellnessHeader h2 > span { color: #385d4b; }
+.wellnessHeader h2 > em { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; color: #648c6c; letter-spacing: -.06em; }
+.wellnessHeading > p:last-of-type { max-width: 340px; margin: 20px auto 0; color: #7e897b; font-size: 12px; line-height: 1.75; }
+.headingFlourish { display: flex; align-items: center; justify-content: center; gap: 13px; margin-top: 17px; color: #8dab7c; font-size: 19px; }
+.headingFlourish > span { width: 42px; height: 1px; background: #d2dfcd; }
+.pauseCard, .intentionCard { position: relative; overflow: hidden; min-width: 0; padding: 24px; border: 1px solid #e3eadd; border-radius: 24px; background: #f2f6ec; text-align: left; }
+.pauseCard { transform: rotate(-3deg); }
+.intentionCard { transform: rotate(3deg); background: #f4f0fa; border-color: #e9e2f1; }
+.wellnessCardIcon { display: grid; place-items: center; width: 37px; height: 37px; margin-bottom: 18px; border-radius: 50%; background: #e1ecd6; color: #55764c; }
+.wellnessCardIcon svg { width: 21px; height: 21px; }
+.intentionCard .wellnessCardIcon { background: #e9def5; color: #926cb4; }
+.wellnessCardLabel { color: #7b8b6d; font-size: 8px; font-weight: 600; letter-spacing: .13em; }
+.intentionCard .wellnessCardLabel { color: #9b83aa; }
+.pauseCard h3, .intentionCard h3 { margin-top: 10px; color: #3b5035; font-size: clamp(17px, 1.7vw, 23px); font-weight: 550; line-height: 1.2; letter-spacing: -.035em; }
+.intentionCard h3 { color: #655074; }
+.pauseCard > p:last-of-type { max-width: 190px; margin-top: 12px; color: #7d8b72; font-size: 11px; line-height: 1.6; }
+.breathingLine { display: flex; align-items: center; gap: 6px; height: 28px; margin-top: 17px; }
+.breathingLine > span { width: 4px; height: 10px; border-radius: 4px; background: #a3bd8b; }
+.breathingLine > span:nth-child(2n) { height: 18px; }
+.breathingLine > span:nth-child(3n) { height: 26px; }
+.intentionCard ul { display: grid; gap: 11px; margin-top: 20px; color: #877392; font-size: 11px; }
+.intentionCard li { display: flex; align-items: center; gap: 8px; }
+.intentionCard li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #bfa8d4; flex-shrink: 0; }
+.wellnessGrid { display: grid; grid-template-columns: .9fr 1fr .55fr; grid-template-rows: 245px 205px; gap: 18px; margin-top: 40px; }
+.wellnessPhoto { grid-row: 1 / 3; border-radius: 23px; }
+.wellnessPhoto img { object-position: center 55%; }
+.wellnessSpace { position: relative; grid-column: 2 / 4; overflow: hidden; padding: 27px; border-radius: 22px; background: #f0f7fe; }
+.wellnessSpace > div:first-child { position: relative; z-index: 2; max-width: 230px; }
+.wellnessSpace h3 { font-size: 20px; font-weight: 550; line-height: 1.12; letter-spacing: -.04em; }
+.wellnessSpace p { margin-top: 14px; color: #a2ada6; font-size: 11px; line-height: 1.7; }
+.wellnessOrbs { position: absolute; inset: 0; }
+.wellnessOrbs > span { position: absolute; display: grid; place-items: center; }
+.orbBlue { top: 18%; right: 18%; width: 100px; height: 100px; border-radius: 50%; background: radial-gradient(circle at 47% 42%, #8bf6ff 0%, #4d78ff 35%, #dceaff 65%, #ffffff00 74%); filter: drop-shadow(0 6px 14px #7b9cfe38); color: #a6fbff; font-size: 42px; }
+.orbPink { right: 37%; bottom: 9%; width: 65px; height: 65px; border-radius: 50%; background: radial-gradient(circle at 46% 42%, #ff9ff1, #d72df6 37%, #f6deff 65%, #ffffff00 74%); color: #f0aaff; font-size: 27px; }
+.orbLime { top: 45%; right: 5%; width: 75px; height: 75px; border-radius: 50%; background: radial-gradient(circle at 46% 44%, #dfff47, #c0ed10 34%, #eff9be 64%, #ffffff00 74%); color: #5e9d33; font-size: 34px; }
+.wellnessOrbs .orbLabelOne, .wellnessOrbs .orbLabelTwo { padding: 8px 12px; border: 1px solid #f0f3ef; border-radius: 3px; background: #fff; color: #8e9d85; font-size: 9px; box-shadow: 0 3px 10px #435d2c08; }
+.orbLabelOne { top: 62%; right: 13%; }
+.orbLabelTwo { bottom: 14%; right: 47%; }
+.wellnessJourney { position: relative; overflow: hidden; padding: 23px; border-radius: 22px; background: #f5f5eb; }
+.wellnessJourney > span { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: #a073ef; color: white; font-size: 19px; }
+.wellnessJourney h3 { margin-top: 14px; font-size: 17px; font-weight: 550; letter-spacing: -.035em; }
+.wellnessJourney p { margin-top: 9px; color: #aaa994; font-size: 10px; line-height: 1.6; }
+.blackButton { position: absolute; right: 20px; bottom: 18px; min-height: 34px; margin: 0; padding: 8px 13px; border-radius: 5px; background: #151b15; color: #fff; font-size: 8px; gap: 16px; }
+.blackButton:hover { background: #414d3c; }
+.balanceCard { display: flex; flex-direction: column; justify-content: space-between; padding: 21px; border: 1px solid #e8e8de; border-radius: 22px; background: #fff; }
+.balanceCard > span { color: #9ea9a0; font-size: 22px; }
+.balanceCard strong { font-size: 23px; font-weight: 500; line-height: 1.1; letter-spacing: -.05em; }
+.balanceCard p { color: #a8ae9e; font-size: 10px; line-height: 1.6; }
+.consulting { padding: 35px 0 60px; background: #fff; color: #285147; }
+.consultingGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+.consultingCard { position: relative; display: flex; flex-direction: column; align-items: flex-start; min-height: 435px; overflow: hidden; padding: 29px 24px 0; border-radius: 24px; background: #f6f4f1; text-align: left; }
+.storyTag { display: inline-flex; align-items: center; min-height: 23px; padding: 5px 10px; border: 1px solid #e2e9e0; border-radius: 30px; color: #97aa9b; font-size: 7px; font-weight: 600; text-transform: uppercase; }
+.storyArrow { position: absolute; top: 26px; right: 22px; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: #fff; color: #7ca098; font-size: 20px; transition: transform .2s; }
+.consultingCard:hover .storyArrow { transform: rotate(45deg); }
+.consultingCard h3 { max-width: 250px; min-height: 80px; margin-top: 17px; font-size: 19px; font-weight: 500; line-height: 1.3; letter-spacing: -.02em; }
+.consultingCard > .photo { width: 100%; min-height: 250px; margin-top: 22px; border-radius: 17px 17px 0 0; }
+.limeStory { padding-top: 0; padding-bottom: 29px; background: #b8ed15; color: #507b38; }
+.collaborationPhoto { position: relative; width: calc(100% + 48px); height: 275px; margin-left: -24px; overflow: hidden; }
+.collaborationPhoto > .photo { position: absolute; inset: 0; border-radius: 0 0 43% 0; }
+.collaborationPhoto > span { position: absolute; bottom: -81px; right: -36px; width: 230px; height: 230px; border-radius: 45%; background: #b8ed15; color: #b8ed15; font-size: 170px; transform: rotate(-25deg); }
+.limeStory > .storyTag { margin-top: 18px; border-color: #95bf2929; color: #7d9e3e; }
+.limeStory h3 { min-height: auto; max-width: 260px; }
+.limeStory .storyArrow { top: auto; bottom: 27px; }
+.reportPhoto { position: relative; min-height: 250px; width: 100%; margin-top: 22px; border-radius: 17px 17px 0 0; overflow: hidden; background: #55745a; }
+.reportImage { object-fit: contain; object-position: center bottom; }
+.food { padding: 30px 0 70px; background: #fff; color: #212b25; }
+.foodGrid { display: grid; grid-template-columns: 1fr 1.12fr; gap: 20px; padding: 17px; overflow: hidden; border-radius: 25px; background: #f5f6f4; }
+.foodCopy { display: flex; flex-direction: column; justify-content: space-between; padding: 6px 20px 18px 8px; }
+.foodNav { display: flex; align-items: center; gap: 8px; }
+.foodNav > span:first-child { min-width: 120px; padding: 10px 25px; border-radius: 30px; background: #0d1a1e; color: white; text-align: center; font-size: 10px; }
+.foodNav > span:last-child { display: grid; place-items: center; width: 35px; height: 35px; border-radius: 50%; background: #0d1a1e; color: white; font-size: 22px; }
+.foodCopy > div:nth-child(2) { padding-block: 38px 25px; }
+.foodCopy > div:nth-child(2) > p:first-child { color: #9caaa0; font-size: 11px; }
+.foodCopy h2 { margin-top: 16px; font-size: clamp(37px, 4.5vw, 62px); font-weight: 600; line-height: 1.08; letter-spacing: -.055em; }
+.foodCopy > div:nth-child(2) > p:not(:first-child) { max-width: 350px; margin-top: 20px; color: #9ca89a; font-size: 15px; line-height: 1.6; }
+.foodLink { display: inline-flex; align-items: center; gap: 22px; margin-top: 25px; padding-bottom: 5px; border-bottom: 1px solid #c5d1bf; color: #6e8665; font-size: 11px; }
+.foodLink:hover { color: #354c2e; }
+.foodFootnote { color: #a5b09d; font-size: 9px; }
+.foodPhotos { position: relative; display: grid; grid-template-rows: 1.6fr 1fr; gap: 12px; min-height: 490px; }
+.burgerPhoto { border-radius: 18px; }
+.burgerPhoto img { object-position: center 53%; }
+.ingredientsPhoto { border-radius: 18px; }
+.ingredientsPhoto img { object-position: center 60%; }
+.foodSeal { position: absolute; top: 59%; left: 50%; transform: translate(-50%, -50%); display: grid; place-content: center; width: 65px; height: 65px; border: 5px solid #f5f6f4; border-radius: 50%; background: #fff; color: #596a59; text-align: center; font-size: 11px; font-weight: 650; }
+.foodSeal > span { margin-top: 2px; font-size: 6px; color: #a6b09d; font-weight: 400; }
+.detailDialog { position: fixed; inset: 0; width: min(620px, calc(100% - 36px)); max-height: calc(100svh - 40px); margin: auto; padding: 0; overflow: auto; border: 1px solid #d8e5d7; border-radius: 18px; background: #fbfdf8; color: #2d493a; }
+.detailDialog::backdrop { background: #122719bd; backdrop-filter: blur(5px); }
+.closeDialog { position: absolute; top: 15px; right: 15px; z-index: 3; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: #ffffffed; color: #385440; font-size: 26px; }
+.detailPhoto { height: 270px; }
+.detailCopy { padding: 30px; }
+.detailCopy h2 { margin-top: 17px; font-size: 34px; font-weight: 600; line-height: 1.1; letter-spacing: -.045em; }
+.detailCopy > p:not(:first-child) { margin-top: 20px; color: #93a189; font-size: 14px; line-height: 1.85; }
+.container :is(a, button):focus-visible, .detailDialog :is(a, button):focus-visible { outline: 3px solid #7cbf94; outline-offset: 4px; }
+.srOnly { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 1100px) {
+  .container { width: calc(100% - 48px); }
+  .businessGrid { gap: 18px; }
+  .businessGrid article { gap: 17px; }
+  .businessGrid article > div:last-child { padding: 20px 17px 20px 0; }
+  .businessGrid h3 { font-size: 15px; }
+  .homeBenefits { gap: 12px; left: 15px; right: 15px; bottom: 15px; }
+  .homeBenefits article { padding: 18px; }
+  .homeBenefits h3 { font-size: 17px; }
+  .solarAboutGrid { gap: 35px; }
+  .solarAboutCopy h2 { font-size: 34px; }
+  .solarFeatures { gap: 13px; }
+  .solarFeatures article { padding: 18px; }
+  .solarFeatures h3 { font-size: 14px; }
+  .solarServicePanel { grid-template-columns: 1fr 30px 1.25fr 28px; gap: 17px; padding: 28px; }
+  .serviceIntro h2 { font-size: 32px; }
+  .serviceSpotlight { gap: 15px; }
+  .serviceSpotlight h3 { font-size: 14px; }
+  .serviceSpotlight p { font-size: 9px; }
+  .serviceSpotlight > .photo { min-height: 225px; }
+  .wellnessGrid { grid-template-columns: .9fr 1fr .55fr; gap: 14px; }
+  .wellnessSpace { padding: 23px; }
+  .wellnessSpace > div:first-child { max-width: 190px; }
+  .wellnessSpace h3 { font-size: 18px; }
+  .wellnessSpace p { font-size: 10px; }
+  .orbBlue { right: 13%; }
+  .orbPink { right: 30%; }
+  .orbLime { right: 1%; }
+  .balanceCard { padding: 18px; }
+  .balanceCard strong { font-size: 21px; }
+  .wellnessJourney { padding: 20px; }
+  .wellnessJourney h3 { font-size: 15px; }
+  .consultingGrid { gap: 18px; }
+  .consultingCard { padding-inline: 20px; }
+  .consultingCard h3 { font-size: 17px; }
+  .collaborationPhoto { width: calc(100% + 40px); margin-left: -20px; }
+  .foodCopy > div:nth-child(2) > p:not(:first-child) { font-size: 13px; }
+}
+@media (max-width: 800px) {
+  .wellnessHeader { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .wellnessHeading { grid-column: 1 / -1; grid-row: 1; }
+  .pauseCard, .intentionCard { height: 100%; transform: none; }
+  .wellnessHeading > p:last-of-type { max-width: 370px; }
+
+  .businessGrid { grid-template-columns: 1fr; }
+  .businessGrid article { grid-template-columns: .7fr 1.3fr; min-height: 195px; }
+  .businessGrid article > .photo { min-height: 195px; }
+  .businessGrid article > div:last-child { padding: 25px 25px 25px 0; }
+  .businessGrid h3 { font-size: 19px; }
+  .businessGrid article p { font-size: 12px; }
+  .powerHeader h2 { font-size: 37px; }
+  .powerHeader > p { font-size: 17px; }
+  .homeBenefits article { padding: 16px; }
+  .homeBenefits p { font-size: 10px; }
+  .solarAboutGrid { grid-template-columns: 1fr; }
+  .solarPhotos { grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr; }
+  .solarPhotos > .photo { min-height: 200px; }
+  .solarAboutCopy h2 { font-size: 40px; }
+  .solarAboutCopy h2 br { display: none; }
+  .solarFeatures h3 { font-size: 17px; }
+  .solarFeatures p { font-size: 12px; }
+  .solarServicePanel { grid-template-columns: 32px 1fr 32px; gap: 20px; }
+  .serviceIntro { grid-column: 1 / -1; }
+  .serviceIntro h2 { font-size: 40px; }
+  .serviceIntro > p:not(:first-child) { max-width: 530px; }
+  .serviceSpotlight h3 { font-size: 19px; }
+  .serviceSpotlight p { font-size: 11px; }
+  .wellnessGrid { grid-template-columns: 1fr 1fr; grid-template-rows: 290px 220px 210px; }
+  .wellnessPhoto { grid-column: 1; grid-row: 1 / 3; }
+  .wellnessSpace { grid-column: 2; grid-row: 1 / 3; }
+  .wellnessSpace > div:first-child { max-width: 100%; }
+  .wellnessSpace h3 { font-size: 21px; }
+  .wellnessSpace p { max-width: 220px; font-size: 12px; }
+  .wellnessOrbs { top: 190px; }
+  .orbBlue { right: 22%; }
+  .orbPink { right: 49%; }
+  .orbLime { right: 0; }
+  .orbLabelOne { top: 64%; right: 6%; }
+  .orbLabelTwo { right: 51%; bottom: 11%; }
+  .wellnessJourney { grid-column: 1; }
+  .balanceCard { grid-column: 2; }
+  .balanceCard strong { font-size: 29px; }
+  .consultingGrid { gap: 15px; }
+  .consultingCard { min-height: 420px; padding: 22px 16px 0; }
+  .consultingCard h3 { font-size: 16px; min-height: 105px; }
+  .storyArrow { width: 28px; height: 28px; top: 20px; right: 14px; font-size: 17px; }
+  .consultingCard > .photo, .reportPhoto { min-height: 245px; }
+  .limeStory { padding-top: 0; padding-bottom: 25px; }
+  .collaborationPhoto { width: calc(100% + 32px); margin-left: -16px; height: 270px; }
+  .limeStory h3 { min-height: auto; }
+  .foodGrid { grid-template-columns: 1fr 1.1fr; }
+  .foodCopy { padding-right: 5px; }
+  .foodNav > span:first-child { min-width: 85px; padding-inline: 18px; }
+  .foodNav > span:last-child { width: 30px; height: 30px; }
+  .foodPhotos { min-height: 440px; }
+}
+@media (max-width: 550px) {
+  .container { width: calc(100% - 36px); }
+  .business { padding-block: 42px; }
+  .sectionHeader h2 { font-size: 34px; }
+  .businessGrid { gap: 17px; margin-top: 27px; }
+  .businessGrid article { grid-template-columns: .8fr 1.2fr; gap: 16px; }
+  .businessGrid article > div:last-child { padding: 20px 17px 20px 0; }
+  .businessGrid h3 { font-size: 16px; }
+  .businessGrid article p { font-size: 10px; line-height: 1.75; }
+  .businessGrid article button { margin-top: 16px; font-size: 9px; }
+  .powerWorld { padding-block: 20px 38px; }
+  .powerHeader h2 { font-size: 30px; }
+  .inlineIcon { width: 27px; height: 27px; margin-inline: 2px; border-radius: 7px; }
+  .inlineIcon svg { width: 16px; height: 16px; }
+  .powerHeader > p { font-size: 14px; line-height: 1.7; margin-top: 21px; }
+  .powerHeader > p br { display: none; }
+  .solarHome { display: flex; flex-direction: column; justify-content: flex-end; min-height: 760px; margin-top: 25px; padding-top: 260px; border-radius: 18px; }
+  .solarHome > .image { object-position: 64% top; }
+  .homeBenefits { position: relative; inset: auto; grid-template-columns: 1fr; gap: 11px; padding: 12px; }
+  .homeBenefits article { min-height: auto; padding: 17px; }
+  .homeBenefits article > span { float: left; margin-right: 12px; }
+  .homeBenefits h3 { margin-top: 4px; font-size: 18px; }
+  .homeBenefits p { clear: both; padding-top: 9px; margin-top: 0; max-width: 100%; font-size: 11px; }
+  .solarAbout { padding-block: 15px 40px; }
+  .solarPhotos { gap: 10px; }
+  .solarPhotos > .photo { min-height: 160px; border-radius: 10px; }
+  .solarAboutGrid { gap: 27px; }
+  .solarAboutCopy h2 { font-size: 33px; }
+  .solarAboutCopy > p:not(:first-child) { font-size: 12px; margin-top: 18px; }
+  .solarFeatures { gap: 12px; margin-top: 24px; }
+  .solarFeatures article { padding: 17px; }
+  .solarFeatures h3 { font-size: 14px; }
+  .solarFeatures p { font-size: 10px; }
+  .solarFeatures svg { width: 27px; height: 27px; }
+  .solarServiceSection { padding-block: 10px 40px; }
+  .solarServicePanel { grid-template-columns: 1fr 1fr; gap: 22px; padding: 26px 22px; border-radius: 20px; }
+  .serviceIntro h2 { font-size: 34px; margin-top: 22px; }
+  .serviceIntro > p:not(:first-child) { font-size: 11px; }
+  .serviceSpotlight { grid-column: 1 / -1; grid-row: 2; grid-template-columns: 1fr; padding: 12px; }
+  .serviceSpotlight > .photo { min-height: 210px; }
+  .serviceSpotlight > div:last-child { padding: 5px 7px 8px; }
+  .serviceSpotlight h3 { font-size: 21px; }
+  .serviceSpotlight p { font-size: 12px; }
+  .outlineButton { margin-top: 20px; font-size: 10px; }
+  .carouselPrevious { grid-column: 1; grid-row: 3; }
+  .serviceControls { grid-column: 2; grid-row: 3; flex-direction: row-reverse; justify-content: space-between; gap: 15px; }
+  .serviceControls > div { flex-direction: row; gap: 8px; }
+  .serviceControls > div > button[aria-pressed="true"] { width: 25px; height: 5px; }
+  .wellness { padding-block: 20px 40px; }
+  .wellnessHeader h2 { font-size: 39px; }
+  .wellnessHeader { gap: 14px; }
+  .wellnessHeader h2 { font-size: clamp(35px, 9vw, 43px); }
+  .wellnessHeading > p:last-of-type { font-size: 12px; }
+  .pauseCard, .intentionCard { padding: 18px 15px; border-radius: 18px; }
+  .wellnessCardIcon { width: 31px; height: 31px; margin-bottom: 13px; }
+  .wellnessCardLabel { font-size: 7px; letter-spacing: .07em; }
+  .pauseCard h3, .intentionCard h3 { font-size: 18px; }
+  .pauseCard > p:last-of-type, .intentionCard ul { font-size: 10px; }
+
+  .wellnessGrid { grid-template-columns: 1fr 1fr; grid-template-rows: 370px 300px auto; gap: 13px; margin-top: 27px; }
+  .wellnessPhoto { grid-column: 1 / -1; grid-row: 1; border-radius: 19px; }
+  .wellnessPhoto img { object-position: center 48%; }
+  .wellnessSpace { grid-column: 1 / -1; grid-row: 2; padding: 23px; border-radius: 19px; }
+  .wellnessSpace > div:first-child { max-width: 190px; }
+  .wellnessSpace h3 { font-size: 19px; }
+  .wellnessSpace p { font-size: 10px; }
+  .wellnessOrbs { top: 90px; }
+  .orbBlue { top: -22%; right: 4%; width: 85px; height: 85px; }
+  .orbPink { right: 40%; bottom: 5%; }
+  .orbLime { top: 49%; right: 2%; }
+  .orbLabelOne { top: 38%; right: 2%; }
+  .orbLabelTwo { right: 54%; bottom: 4%; }
+  .wellnessJourney { grid-column: 1 / -1; grid-row: 3; min-height: 210px; border-radius: 19px; }
+  .wellnessJourney h3 { font-size: 19px; }
+  .wellnessJourney p { font-size: 12px; }
+  .blackButton { font-size: 9px; padding-inline: 15px; }
+  .balanceCard { grid-column: 1 / -1; min-height: 160px; padding: 22px; border-radius: 19px; }
+  .balanceCard strong { font-size: 30px; }
+  .balanceCard strong br { display: none; }
+  .balanceCard p br { display: none; }
+  .consulting { padding-block: 15px 35px; }
+  .consultingGrid { grid-template-columns: 1fr; gap: 20px; }
+  .consultingCard { min-height: 430px; padding: 25px 24px 0; border-radius: 21px; }
+  .consultingCard h3 { min-height: 60px; max-width: 270px; font-size: 22px; }
+  .consultingCard > .photo, .reportPhoto { min-height: 270px; }
+  .storyArrow { width: 34px; height: 34px; top: 24px; right: 22px; font-size: 20px; }
+  .limeStory { padding-top: 0; padding-bottom: 25px; }
+  .collaborationPhoto { width: calc(100% + 48px); margin-left: -24px; height: 300px; }
+  .limeStory h3 { min-height: auto; max-width: 260px; }
+  .food { padding-block: 10px 45px; }
+  .foodGrid { grid-template-columns: 1fr; gap: 20px; padding: 13px; border-radius: 20px; }
+  .foodCopy { padding: 8px 11px 5px; }
+  .foodCopy > div:nth-child(2) { padding-block: 30px 25px; }
+  .foodCopy h2 { font-size: 45px; }
+  .foodCopy > div:nth-child(2) > p:not(:first-child) { font-size: 15px; }
+  .foodPhotos { min-height: 440px; gap: 10px; }
+  .burgerPhoto, .ingredientsPhoto { border-radius: 14px; }
+  .detailPhoto { height: 230px; }
+  .detailCopy { padding: 25px; }
+  .detailCopy h2 { font-size: 30px; }
+}
+@media (prefers-reduced-motion: reduce) { .container *, .detailDialog * { transition: none !important; } }

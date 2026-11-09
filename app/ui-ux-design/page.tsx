@@ -6,7 +6,7 @@ import UiUxSections from "../components/ui-ux-design/sections";
 
 export const metadata: Metadata = {
   title: "UI/UX Design | Capyngen",
-  description: "Explore thoughtful healthcare UI/UX design experiences by Capyngen.",
+  description: "Explore thoughtful UI/UX design by Capyngen, featuring a bold land discovery experience and inspiring digital layouts.",
 };
 
 export default function UiUxDesignPage() {

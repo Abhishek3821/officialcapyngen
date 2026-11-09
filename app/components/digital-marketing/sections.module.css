@@ -36,12 +36,12 @@
 .smallLabel { color: #939b91; font-size: 10px; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; }
 .searchCopy h2 { margin-top: 17px; font-size: clamp(35px, 4.2vw, 61px); font-weight: 750; line-height: 1.12; letter-spacing: -.05em; }
 .searchCopy > p:not(:first-child) { margin-top: 23px; max-width: 370px; color: #92948d; font-size: 12px; line-height: 1.75; }
-.searchForm { display: flex; max-width: 450px; align-items: center; gap: 12px; margin-top: 34px; padding: 6px; border: 1px solid #f2f0ed; border-radius: 9px; background: #fff; box-shadow: 0 10px 35px #242c190b; }
-.searchForm input { flex: 1; min-width: 0; padding: 12px 15px; font-size: 12px; color: #484a43; outline: none; }
-.searchForm input::placeholder { color: #b9beb3; }
-.searchForm:focus-within { outline: 2px solid #ffa087; outline-offset: 3px; }
-.searchForm button { display: grid; place-items: center; width: 41px; height: 41px; border-radius: 9px; background: #ff7052; color: #fff; }
-.searchForm svg { width: 19px; height: 19px; }
+.styleEdit { max-width: 450px; margin-top: 28px; padding: 22px 24px; border-left: 3px solid #ff8a6b; border-radius: 0 12px 12px 0; background: #fff7f2; }
+.styleEdit > span { color: #cb8b73; font-size: 9px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; }
+.styleEdit h3 { margin-top: 10px; color: #45483f; font-size: 21px; font-weight: 600; line-height: 1.25; letter-spacing: -.035em; }
+.styleEdit p { margin-top: 12px; color: #9b9b8f; font-size: 12px; line-height: 1.75; }
+.styleEdit > button { display: inline-flex; align-items: center; gap: 18px; margin-top: 17px; color: #dc7957; font-size: 11px; font-weight: 600; }
+.styleEdit > button:hover { text-decoration: underline; text-underline-offset: 4px; }
 .trendTags { margin-top: 30px; }
 .trendTags > p { color: #9da292; font-size: 9px; letter-spacing: .07em; text-transform: uppercase; }
 .trendTags > div { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 13px; }
