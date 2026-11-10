@@ -14,11 +14,9 @@ const destinations = [
 
 export default function ConsultingHero() {
   const [active, setActive] = useState(0);
-  const [explored, setExplored] = useState(0);
   const scene = useRef<HTMLElement>(null);
   const stage = useRef<HTMLDivElement>(null);
   const destination = destinations[active];
-  const exploredDestination = destinations[explored];
 
   useEffect(() => {
     let frame = 0;
@@ -57,7 +55,7 @@ export default function ConsultingHero() {
       }}>
         <div className={s.backgrounds} aria-hidden="true">{destinations.map((place, index) => <Image key={place.name} src={place.image} alt="" fill sizes="100vw" preload={index === 0} className={`${s.background} ${index === active ? s.visible : ""}`} />)}</div>
         <div className={s.shade} />
-        <div className={s.copy}><div className={s.badge}><span>New</span>Travel Beyond Expectations</div><h1 id="consulting-heading">Travel Beyond the Ordinary</h1><p>Explore extraordinary places, compare travel options, and uncover experiences that match your travel style. Travel smarter, discover more, and make every moment count.</p><a href="#consulting-destinations" className={s.cta} onClick={() => setExplored(active)}>Explore Destinations <span aria-hidden="true">↗</span></a></div>
+        <div className={s.copy}><div className={s.badge}><span>New</span>Travel Beyond Expectations</div><h1 id="consulting-heading">Travel Beyond the Ordinary</h1><p>Explore extraordinary places, compare travel options, and uncover experiences that match your travel style. Travel smarter, discover more, and make every moment count.</p><a href="#consulting-destinations" className={s.cta}>Explore Destinations <span aria-hidden="true">↗</span></a></div>
         <div className={s.destinationRail} role="group" aria-label="Choose a destination">{destinations.map((place, index) => {
           const offset = ((index - active + 2 + destinations.length) % destinations.length) - 2;
           return <button key={place.name} type="button" className={`${s.destination} ${index === active ? s.selected : ""}`} style={{ "--offset": offset, "--curve": Math.abs(offset) * 43 } as CSSProperties} aria-label={`Explore ${place.name}, ${place.location}`} aria-pressed={index === active} onClick={() => select(index)}><span className={s.placeLabel}><strong>{place.name}</strong><span>{place.location}</span></span><span className={s.circle}><Image src={place.image} alt="" fill sizes="(max-width: 700px) 65px, 145px" draggable={false} /></span></button>;
@@ -67,6 +65,5 @@ export default function ConsultingHero() {
         <p id="consulting-scroll-help" className={s.srOnly}>Scroll or swipe to change destinations. You can also select a circular image or navigation dot. Use the arrow keys, Home, or End when the hero is focused.</p>
       </div>
     </section>
-    <section id="consulting-destinations" className={s.details} aria-labelledby="consulting-details-heading"><div className={s.detailPhoto}><Image src={exploredDestination.image} alt={exploredDestination.alt} fill sizes="(max-width: 700px) 90vw, 45vw" /></div><div><span className={s.eyebrow}>YOUR NEXT CHAPTER STARTS HERE</span><h2 id="consulting-details-heading">A new place.<br />A fresh perspective.</h2><h3>{exploredDestination.name}</h3><span className={s.location}>{exploredDestination.location}</span><p>{exploredDestination.description}</p><a className={s.plan} href={`/contact-us?destination=${encodeURIComponent(exploredDestination.name)}#quote`}>Plan your journey <span aria-hidden="true">↗</span></a></div></section>
   </>;
 }
