@@ -1,0 +1,117 @@
+.hero { background: #fff; color: #171e19; }
+.clipDefinitions { position: absolute; pointer-events: none; }
+.container { max-width: 1550px; margin-inline: auto; padding: 14px 30px 28px; }
+.scene { position: relative; height: min(810px, calc(100svh - var(--site-header-height) - 42px)); container-type: size; }
+.landscape { position: absolute; inset: 0; overflow: hidden; border-radius: 34px; clip-path: url(#ui-ux-landscape-clip); background: #c9dcae; }
+.landscapeImage { object-fit: cover; object-position: 65% center; }
+.sunlight { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at 67% 29%, #fffde627 0%, transparent 40%), linear-gradient(0deg, #1f471a15, transparent 55%); }
+.limePanel { position: absolute; inset: 0; clip-path: url(#ui-ux-lime-clip); background: #c9ef79; }
+.copy { position: absolute; z-index: 1; top: 0; left: 0; width: 57%; padding: 38px 38px 0; }
+.eyebrow { margin-bottom: 17px; color: #647a3a; font-size: 9px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; }
+.copy h1 { font-size: clamp(38px, 4.3vw, 65px); font-weight: 750; line-height: 1.02; letter-spacing: -.055em; }
+.copy h1 > span { display: inline-block; padding: 0 6px 3px; border-radius: 9px; background: #fffffff2; }
+.copy > p:not(:first-child) { max-width: 360px; margin-top: 23px; color: #3e512b; font-size: 12px; line-height: 1.7; }
+.cta { display: inline-flex; align-items: center; justify-content: space-between; gap: 28px; min-height: 42px; margin-top: 21px; padding: 12px 22px; border-radius: 9px; background: #fff; color: #253a1b; font-size: 11px; font-weight: 600; transition: background .2s, transform .2s; }
+.cta:hover { transform: translateY(-2px); background: #f5ffe7; }
+.cta:focus-visible { outline: 3px solid #3a713b; outline-offset: 4px; }
+.realtors { position: absolute; top: 67%; left: .5%; width: 32%; padding: 22px 27px; border: 1px dashed #7b8a72; border-radius: 27px; background: #fff; transform: rotate(5deg); }
+.realtorsInner { transform: rotate(-5deg); }
+.realtors strong { font-size: clamp(35px, 3.3vw, 49px); line-height: 1; font-weight: 750; letter-spacing: -.05em; }
+.realtorsInner > p { margin-top: 6px; font-size: 18px; font-weight: 500; letter-spacing: -.025em; }
+.avatars { display: flex; align-items: center; margin-top: 17px; }
+.avatars img { width: 43px; height: 43px; border: 2px solid #fff; border-radius: 50%; object-fit: cover; }
+.avatars img + img { margin-left: -13px; }
+.review { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 17px; color: #41553b; font-size: 9px; }
+.stars { display: inline-flex; align-items: center; gap: 2px; }
+.stars > span { display: grid; place-items: center; width: 15px; height: 15px; background: #49a876; color: #fff; font-size: 12px; }
+.reviewLabel { color: #63966b; font-size: 8px; }
+.realtorsInner > small { display: block; margin-top: 10px; color: #a3b097; font-size: 7px; }
+.agro { position: absolute; top: 44%; left: 62%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; width: 135px; height: 135px; padding: 17px; border-radius: 23px; background: #cbef79; color: #224b23; transform: rotate(17deg); box-shadow: 0 10px 25px #1e411a0a; }
+.agro svg { width: 42px; height: 37px; }
+.agro > span { font-size: 22px; font-weight: 600; letter-spacing: -.045em; }
+.location { position: absolute; top: 56%; right: 9%; display: grid; place-content: center; width: 100px; height: 100px; border-radius: 50%; background: #fff; color: #1d2c18; text-align: center; font-size: 11px; line-height: 1.4; transform: rotate(18deg); }
+.location strong { font-weight: 500; }
+.unimproved { position: absolute; left: 47%; bottom: 8%; display: grid; place-content: center; width: 143px; height: 143px; border-radius: 50%; background: #16472c; color: #e3f5ad; text-align: center; transform: rotate(-20deg); font-size: 21px; line-height: 1.15; letter-spacing: -.035em; }
+.acreage { position: absolute; left: 67%; bottom: 17%; border-radius: 15px; padding: 13px 23px; background: #fff; color: #26321f; font-size: 23px; font-weight: 600; letter-spacing: -.045em; transform: rotate(-17deg); white-space: nowrap; }
+.greenTag { position: absolute; right: 5%; bottom: 5%; display: grid; place-items: center; width: 125px; height: 115px; padding-top: 20px; border-radius: 22px; background: #c4eb6f; color: #3d5b20; font-size: 23px; font-weight: 600; letter-spacing: -.04em; clip-path: polygon(50% 0, 100% 100%, 0 100%); transform: rotate(16deg); }
+@media (max-width: 1100px) {
+  .container { padding-inline: 22px; }
+  .copy { padding: 30px 28px 0; }
+  .copy h1 { font-size: clamp(35px, 4.2vw, 48px); }
+  .copy > p:not(:first-child) { font-size: 11px; max-width: 300px; margin-top: 20px; }
+  .eyebrow { font-size: 8px; }
+  .agro { width: 115px; height: 115px; border-radius: 19px; gap: 8px; }
+  .agro > span { font-size: 20px; }
+  .agro svg { width: 37px; height: 33px; }
+  .location { right: 7%; width: 85px; height: 85px; font-size: 9px; }
+  .unimproved { left: 44%; width: 125px; height: 125px; font-size: 19px; }
+  .acreage { font-size: 21px; left: 66%; padding: 12px 19px; }
+  .greenTag { right: 3%; width: 105px; height: 100px; font-size: 21px; }
+  .realtors { padding: 22px; }
+  .realtorsInner > p { font-size: 16px; }
+  .avatars img { width: 36px; height: 36px; }
+  .review { gap: 7px; font-size: 8px; }
+  .stars > span { width: 13px; height: 13px; font-size: 10px; }
+}
+/* Scale the composition to the space below the fixed navbar. */
+@media (min-width: 751px) {
+  .copy { padding: 4.5cqh 3cqw 0; }
+  .copy h1 { font-size: min(4.3vw, 8cqh, 65px); }
+  .copy > p:not(:first-child) { margin-top: 2.5cqh; font-size: min(12px, 1.8cqh); line-height: 1.6; }
+  .cta { min-height: 0; margin-top: 2.5cqh; padding: 1.5cqh 1.8cqw; font-size: min(11px, 1.7cqh); }
+  .realtors { top: auto; bottom: 3.5cqh; padding: 2.5cqh 2cqw; }
+  .realtors strong { font-size: min(49px, 6cqh); }
+  .realtorsInner > p { margin-top: .8cqh; font-size: min(18px, 2.5cqh); }
+  .avatars { margin-top: 1.8cqh; }
+  .avatars img { width: min(43px, 5.5cqh); height: min(43px, 5.5cqh); }
+  .avatars img + img { margin-left: -1.6cqh; }
+  .review { margin-top: 1.8cqh; gap: .8cqw; font-size: min(9px, 1.4cqh); }
+  .stars > span { width: min(15px, 2cqh); height: min(15px, 2cqh); font-size: min(12px, 1.6cqh); }
+  .reviewLabel { font-size: min(8px, 1.3cqh); }
+  .realtorsInner > small { margin-top: 1cqh; font-size: min(7px, 1.1cqh); }
+  .agro { width: min(135px, 18cqh); height: min(135px, 18cqh); padding: 2cqh; gap: 1.5cqh; border-radius: 3cqh; }
+  .agro svg { width: 5.5cqh; height: 5cqh; }
+  .agro > span { font-size: min(22px, 3cqh); }
+  .location { width: min(100px, 13cqh); height: min(100px, 13cqh); font-size: min(11px, 1.5cqh); }
+  .unimproved { width: min(143px, 19cqh); height: min(143px, 19cqh); font-size: min(21px, 2.9cqh); }
+  .acreage { padding: 1.8cqh 1.8cqw; font-size: min(23px, 3cqh); }
+  .greenTag { width: min(125px, 16cqh); height: min(115px, 15cqh); padding-top: 2.5cqh; font-size: min(23px, 3cqh); }
+}
+@media (max-width: 750px) {
+  .container { padding: 14px 18px 24px; }
+  .scene { min-height: 0; height: auto; container-type: normal; display: grid; grid-template-columns: 1fr; gap: 17px; }
+  .limePanel { display: none; }
+  .copy { position: relative; width: 100%; grid-row: 1; padding: 28px 29px; border-radius: 25px; background: #c9ef79; }
+  .copy h1 { font-size: clamp(39px, 6.5vw, 49px); }
+  .copy > p:not(:first-child) { max-width: 100%; font-size: 12px; }
+  .eyebrow { font-size: 8px; }
+  .landscape { position: relative; inset: auto; grid-row: 3; height: 440px; clip-path: none; border-radius: 25px; }
+  .landscapeImage { object-position: 65% center; }
+  .realtors { position: relative; inset: auto; grid-row: 2; width: 100%; padding: 22px 25px; border-radius: 22px; transform: none; }
+  .realtorsInner { display: grid; grid-template-columns: 1fr 1.2fr; column-gap: 20px; align-items: center; transform: none; }
+  .realtorsInner > strong { grid-column: 1; grid-row: 1; font-size: 40px; }
+  .realtorsInner > p { grid-column: 1; grid-row: 2; margin-top: 5px; }
+  .avatars { grid-column: 2; grid-row: 1; margin-top: 0; }
+  .avatars img { width: 39px; height: 39px; }
+  .review { grid-column: 2; grid-row: 2; margin-top: 10px; }
+  .realtorsInner > small { grid-column: 1 / -1; margin-top: 14px; }
+  .agro { top: auto; bottom: 225px; left: 30%; width: 110px; height: 110px; }
+  .location { top: auto; bottom: 290px; right: 7%; width: 87px; height: 87px; }
+  .unimproved { left: 7%; bottom: 50px; width: 120px; height: 120px; font-size: 18px; }
+  .acreage { left: 45%; bottom: 120px; font-size: 20px; }
+  .greenTag { right: 5%; bottom: 20px; width: 100px; height: 93px; font-size: 20px; }
+}
+@media (max-width: 400px) {
+  .copy { padding: 26px 23px; }
+  .copy h1 { font-size: 36px; }
+  .copy h1 br { display: none; }
+  .copy > p:not(:first-child) { font-size: 11px; }
+  .copy > p:not(:first-child) br { display: none; }
+  .realtorsInner { grid-template-columns: 1fr; }
+  .avatars { grid-column: 1; grid-row: 3; margin-top: 15px; }
+  .review { grid-column: 1; grid-row: 4; margin-top: 15px; }
+  .realtorsInner > small { grid-row: 5; }
+  .agro { left: 24%; }
+  .acreage { left: 42%; font-size: 18px; padding-inline: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { .cta { transition: none; } }

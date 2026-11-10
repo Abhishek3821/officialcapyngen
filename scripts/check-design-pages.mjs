@@ -4,6 +4,13 @@ import assert from "node:assert/strict";
 // errors that Next.js deliberately omits from the production build.
 const origin = process.argv[2] ?? "http://localhost:3000";
 const pages = {
+  "/enterprise-solutions": ["enterprise-heading", "enterprise-resorts-heading", "enterprise-lisbon-heading", "enterprise-blog-heading", "enterprise-gallery-heading", "enterprise-articles-heading", "enterprise-school-heading", "enterprise-property-heading", "enterprise-perspectives-heading"],
+  "/network-solutions-services": ["network-solutions-heading", "network-stats-heading", "network-packages-heading", "network-memories-heading", "network-destinations-heading", "network-about-heading", "network-platform-heading", "network-islands-heading"],
+  "/cybersecurity": ["cybersecurity-heading", "cyber-about-heading", "cyber-principles-heading", "cyber-services-heading", "cyber-solution-heading", "cyber-offers-heading", "cyber-explore-heading", "cyber-planning-heading", "cyber-travelers-heading"],
+  "/artificial-intelligence": ["artificial-intelligence-heading", "ai-team-features-heading", "ai-workflows-heading", "ai-consulting-heading", "ai-enrollment-heading", "ai-services-heading", "ai-growth-heading"],
+  "/pay-per-click-advertising": ["ppc-heading", "ppc-banking-heading", "ppc-strategy-heading", "ppc-village-heading", "ppc-destination-heading", "ppc-care-heading", "ppc-services-heading"],
+  "/social-media-marketing": ["social-media-heading", "smm-business-heading", "power-world-heading", "solar-about-heading", "solar-services-heading", "wellness-heading", "consulting-heading", "food-heading"],
+  "/search-engine-optimization": ["seo-heading", "business-products-heading", "recognition-heading", "financial-heading", "banking-heading", "seo-travel-heading", "energy-heading", "impact-heading", "community-heading"],
   "/digital-marketing": ["digital-marketing-heading", "collections-heading", "fashion-search-heading", "worldwide-heading", "travel-company-heading", "travel-inspiration-heading", "tour-types-heading", "world-secrets-heading"],
   "/cms-design": ["cms-hero-heading", "trending-heading", "wellness-heading", "featured-heading", "readers-heading", "editors-heading", "travel-heading"],
   "/ui-ux-design": ["school-heading", "academics-heading", "approach-heading", "strategy-heading", "growth-heading", "implementation-heading"],
@@ -35,6 +42,16 @@ for (const [path, headings] of Object.entries(pages)) {
 }
 
 for (const image of [
+  "/images/social-media-marketing/solar-home.webp",
+  "/images/social-media-marketing/mindful-morning.webp",
+  "/images/social-media-marketing/plant-burger.webp",
+  "/images/social-media-marketing/solar-installation.jpg",
+  "/images/seo/business-card.webp",
+  "/images/seo/banking-friends.webp",
+  "/images/seo/running-community.webp",
+  "/images/seo/solar.jpg",
+  "/images/seo/wind.jpg",
+  "/images/seo/seo-specialist.webp",
   "/images/digital-marketing/casual-style.webp",
   "/images/cms-design/editorial-hero.webp",
   "/images/cms-design/coast.jpg",

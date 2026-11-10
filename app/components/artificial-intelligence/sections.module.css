@@ -1,0 +1,204 @@
+.container { width: min(1280px, calc(100% - 80px)); margin-inline: auto; }
+.photo { position: relative; min-width: 0; overflow: hidden; background: #e7ebe4; }
+.image { object-fit: cover; }
+.eyebrow { margin-bottom: 14px; color: #839174; font-size: 9px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; }
+.centerHeading { text-align: center; }
+.centerHeading h2 { font-size: clamp(31px, 3.4vw, 48px); font-weight: 600; line-height: 1.12; letter-spacing: -.045em; }
+.centerHeading h2 em { font-family: Georgia, serif; font-weight: 400; color: #667250; }
+.centerHeading > p:last-child:not(:first-child) { max-width: 660px; margin: 18px auto 0; color: #a19a8c; font-size: 12px; line-height: 1.8; }
+.teamFeatures { padding-top: 55px; background: #fff8ee; color: #272b23; }
+.featuresLayout { display: grid; grid-template-columns: 1fr 1.1fr 1fr; align-items: center; gap: 40px; max-width: 1020px; margin: 24px auto 0; }
+.featurePortrait { position: relative; height: 515px; align-self: end; }
+.cutout { object-fit: contain; object-position: center bottom; }
+.leftFeatures, .rightFeatures { display: grid; gap: 32px; padding-block: 20px 50px; }
+.leftFeatures { text-align: right; }
+.leftFeatures article, .rightFeatures article { position: relative; }
+.leftFeatures article > span, .rightFeatures article > span { display: inline-flex; align-items: center; justify-content: center; width: 27px; height: 27px; margin-bottom: 8px; border-radius: 50%; background: #eee9db; color: #77825f; }
+.featuresLayout svg { width: 15px; height: 15px; }
+.featuresLayout h3 { font-family: Georgia, serif; font-size: 21px; letter-spacing: -.035em; }
+.featuresLayout p { max-width: 260px; margin-top: 9px; color: #a59e8e; font-size: 11px; line-height: 1.8; }
+.leftFeatures p { margin-left: auto; }
+.workflows { padding: 65px 0 0; background: #5e6d50; color: #edf5e4; overflow: hidden; }
+.workflowLayout { display: grid; grid-template-columns: 1fr 1.05fr; align-items: center; gap: 65px; }
+.phoneVisual { position: relative; align-self: end; height: 610px; }
+.phoneImage { object-fit: contain; object-position: center bottom; }
+.phoneBadge { position: absolute; bottom: 55px; right: 6%; display: flex; align-items: center; gap: 12px; padding: 16px 20px; border: 1px solid #ffffff5c; border-radius: 15px; background: #f0f8dff0; color: #6d7959; box-shadow: 0 12px 30px #24321e21; }
+.phoneBadge > span { font-size: 28px; color: #7d9162; }
+.phoneBadge > div { font-size: 10px; line-height: 1.6; }
+.phoneBadge strong { display: block; font-size: 12px; font-weight: 550; color: #415037; }
+.workflowCopy { padding-bottom: 60px; }
+.lightEyebrow { margin-bottom: 15px; color: #c4d3af; font-size: 9px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; }
+.workflowCopy h2 { font-size: clamp(31px, 3vw, 43px); font-weight: 550; line-height: 1.12; letter-spacing: -.045em; }
+.workflowCopy > p:not(:first-child) { max-width: 490px; margin-top: 18px; color: #b4c0a1; font-size: 12px; line-height: 1.8; }
+.workflowCards { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 26px; }
+.workflowCards article { position: relative; min-height: 180px; padding: 21px 22px; border: 1px solid #d4edb4; border-radius: 18px; background: #e9ffcc; color: #6b8054; }
+.cardRule { display: block; width: 100%; height: 4px; border-radius: 3px; background: #c8e2aa; }
+.cardNumber { display: block; margin-top: 13px; color: #9fb780; font-size: 9px; }
+.workflowCards h3 { max-width: 195px; margin-top: 6px; font-size: 17px; line-height: 1.15; font-weight: 550; letter-spacing: -.035em; }
+.workflowCards p { margin-top: 10px; color: #94a879; font-size: 11px; line-height: 1.7; }
+.consulting { padding: 80px 0; background: #fff; color: #242328; }
+.consultingLayout { display: grid; grid-template-columns: 1fr 1.05fr; gap: 65px; align-items: center; }
+.consultingVisual { position: relative; height: 425px; }
+.consultingPhotoOne { position: absolute; top: 0; left: 0; width: 48%; height: 85%; border-radius: 14px; }
+.consultingPhotoTwo { position: absolute; bottom: 0; right: 0; width: 58%; height: 88%; border: 7px solid #fff; border-radius: 17px; }
+.dots { position: absolute; top: -22px; left: -22px; width: 120px; height: 120px; background: radial-gradient(#df7b60 1.5px, transparent 2px) 0 0 / 12px 12px; border-radius: 40%; transform: rotate(-15deg); }
+.consultingSeal { position: absolute; bottom: -18px; left: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; width: 116px; height: 116px; border: 6px solid #fff; border-radius: 50%; background: #272a81; color: #fff; font-size: 7px; letter-spacing: .1em; transform: rotate(-15deg); }
+.consultingSeal > span { font-size: 30px; }
+.coralEyebrow { display: inline-flex; margin-bottom: 16px; padding: 6px 9px; border-radius: 3px; background: #fff0e9; color: #d28b76; font-size: 10px; font-weight: 600; text-transform: uppercase; }
+.consultingCopy h2 { font-size: clamp(31px, 3vw, 43px); font-weight: 600; line-height: 1.15; letter-spacing: -.04em; }
+.consultingCopy > p:not(:first-child) { margin-top: 20px; max-width: 520px; color: #9a9494; font-size: 13px; line-height: 1.8; }
+.consultingBenefits { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 23px; }
+.consultingBenefits > span { display: inline-flex; align-items: center; gap: 10px; padding: 12px 15px; border-radius: 8px; background: #f6f4f8; color: #786f7b; font-size: 11px; font-weight: 500; }
+.consultingBenefits svg { width: 22px; height: 22px; color: #d5a899; }
+.coralButton, .amberButton, .greenButton { display: inline-flex; align-items: center; justify-content: center; gap: 25px; min-height: 42px; margin-top: 25px; padding: 12px 19px; border-radius: 6px; background: #ed6f49; color: white; font-size: 11px; font-weight: 500; }
+.enrollment { padding: 55px 0 70px; background: #fff; color: #282828; }
+.enrollmentLayout { display: grid; grid-template-columns: .95fr 1.2fr; align-items: center; gap: 85px; }
+.enrollmentPills { display: grid; justify-items: start; gap: 19px; max-width: 470px; }
+.enrollmentPills > div { display: flex; align-items: center; gap: 15px; width: 92%; padding: 16px 22px 16px 15px; border: 1px solid #e7e5f3; border-radius: 60px; background: #f2f1f9; }
+.enrollmentPills > div:nth-child(2) { justify-self: end; background: #e9f7f1; border-color: #d5ebe1; }
+.enrollmentPills > div:nth-child(3) { background: #fff8e7; border-color: #f2e7c9; }
+.enrollmentPills > div > span { display: grid; place-items: center; flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: #fff; color: #87ad9d; }
+.enrollmentPills svg { width: 23px; height: 23px; }
+.enrollmentPills h3 { font-size: 14px; font-weight: 550; letter-spacing: -.025em; }
+.enrollmentPills p { margin-top: 5px; color: #a3a69d; font-size: 10px; line-height: 1.5; }
+.enrollmentCopy h2 { font-size: clamp(31px, 3vw, 43px); font-weight: 600; line-height: 1.12; letter-spacing: -.04em; }
+.enrollmentCopy h2 em { font-style: normal; color: #b38c45; }
+.enrollmentCopy > p:not(:first-child) { max-width: 540px; margin-top: 19px; color: #a19c93; font-size: 12px; line-height: 1.8; }
+.amberButton { min-height: 37px; padding: 10px 18px; border-radius: 30px; background: #e8a118; font-size: 10px; }
+.services { padding: 65px 0 85px; background: #edf5ef; color: #253b31; }
+.services .centerHeading h2 em { color: #6a8d79; }
+.servicesGrid { display: grid; grid-template-columns: repeat(4, 1fr); align-items: start; gap: 22px; margin-top: 42px; }
+.servicesGrid article { display: flex; flex-direction: column; min-height: 280px; padding: 27px 23px; border: 1px solid #ceddd1; border-radius: 14px; background: #fffffff0; box-shadow: 0 4px 0 #dfe9e2; }
+.servicesGrid article:nth-child(even) { margin-top: 26px; }
+.serviceIcon { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 9px; background: #e6f2dd; color: #648667; }
+.serviceIcon svg { width: 23px; height: 23px; }
+.servicesGrid h3 { margin-top: 21px; font-size: 19px; font-weight: 600; line-height: 1.2; letter-spacing: -.035em; }
+.servicesGrid p { margin-block: 15px 25px; color: #97a59b; font-size: 12px; line-height: 1.75; }
+.servicesGrid a { display: inline-flex; align-items: center; gap: 15px; margin-top: auto; color: #547563; font-size: 10px; font-weight: 650; text-transform: uppercase; }
+.growth { padding: 65px 0 55px; background: #edf5ef; color: #193c33; }
+.growthLayout { display: grid; grid-template-columns: 1fr 1.1fr; align-items: center; gap: 45px; }
+.growthCopy h2 { font-size: clamp(32px, 3.2vw, 46px); font-weight: 650; line-height: 1.1; letter-spacing: -.045em; }
+.growthCopy h2 em { color: #4b8167; font-weight: 500; }
+.growthBenefits { display: grid; gap: 0; max-width: 550px; margin-top: 26px; }
+.growthBenefits article { display: flex; gap: 16px; padding-block: 17px; border-bottom: 1px solid #dbe7dc; }
+.growthBenefits article:last-child { border-bottom: 0; }
+.growthBenefits article > span { display: grid; place-items: center; flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: #dcece0; color: #407b5f; }
+.growthBenefits svg { width: 19px; height: 19px; }
+.growthBenefits h3 { font-size: 15px; font-weight: 600; letter-spacing: -.015em; }
+.growthBenefits p { margin-top: 8px; color: #8c9e91; font-size: 11px; line-height: 1.8; }
+.greenButton { background: #2b6750; border-radius: 30px; }
+.growthVisual { position: relative; height: 490px; }
+.growthImage { object-fit: contain; object-position: center; }
+.container a { transition: background .2s, transform .2s; }
+.container a:hover { filter: brightness(.95); transform: translateY(-2px); }
+.container a:focus-visible { outline: 3px solid #97a687; outline-offset: 5px; }
+@media (max-width: 1100px) {
+  .container { width: calc(100% - 48px); }
+  .featuresLayout { gap: 25px; }
+  .featurePortrait { height: 480px; }
+  .featuresLayout h3 { font-size: 19px; }
+  .leftFeatures, .rightFeatures { gap: 25px; }
+  .workflowLayout { gap: 35px; }
+  .phoneVisual { height: 590px; }
+  .phoneBadge { right: 0; padding: 13px 15px; }
+  .workflowCards { gap: 12px; }
+  .workflowCards article { padding: 19px; }
+  .workflowCards h3 { font-size: 16px; }
+  .workflowCards p { font-size: 10px; }
+  .consultingLayout { gap: 40px; }
+  .consultingVisual { height: 390px; }
+  .consultingBenefits { gap: 10px; }
+  .consultingBenefits > span { padding: 10px; font-size: 10px; }
+  .enrollmentLayout { gap: 45px; }
+  .enrollmentPills > div { width: 98%; padding-right: 14px; }
+  .enrollmentPills h3 { font-size: 12px; }
+  .servicesGrid { gap: 15px; }
+  .servicesGrid article { min-height: 300px; padding: 23px 19px; }
+  .servicesGrid h3 { font-size: 17px; }
+  .servicesGrid p { font-size: 11px; }
+  .growthVisual { height: 410px; }
+}
+@media (max-width: 800px) {
+  .featuresLayout { gap: 15px; grid-template-columns: 1fr 1.1fr 1fr; }
+  .featurePortrait { height: 500px; }
+  .featuresLayout h3 { font-size: 18px; }
+  .featuresLayout p { font-size: 10px; }
+  .workflowLayout { grid-template-columns: 1fr; gap: 20px; }
+  .workflowCopy { grid-row: 1; padding-bottom: 0; }
+  .workflowCopy h2 { font-size: 37px; }
+  .workflowCopy > p:not(:first-child) { max-width: 580px; }
+  .workflowCards article { min-height: 170px; }
+  .workflowCards h3 { font-size: 19px; }
+  .workflowCards p { font-size: 12px; }
+  .phoneVisual { width: min(470px, 100%); height: 480px; margin-inline: auto; }
+  .consultingLayout { grid-template-columns: 1fr; gap: 50px; }
+  .consultingVisual { height: 420px; max-width: 600px; width: 100%; }
+  .consultingCopy h2 { font-size: 37px; }
+  .consultingCopy > p:not(:first-child) { max-width: 600px; }
+  .consultingBenefits > span { padding: 12px 16px; font-size: 11px; }
+  .enrollmentLayout { grid-template-columns: 1fr; gap: 35px; }
+  .enrollmentCopy { grid-row: 1; }
+  .enrollmentPills { width: 100%; margin-inline: auto; }
+  .enrollmentPills > div { width: 90%; }
+  .enrollmentPills h3 { font-size: 14px; }
+  .enrollmentPills p { font-size: 11px; }
+  .servicesGrid { grid-template-columns: 1fr 1fr; gap: 23px; }
+  .servicesGrid article { min-height: 270px; padding: 26px; }
+  .servicesGrid article:nth-child(even) { margin-top: 0; }
+  .servicesGrid h3 { font-size: 21px; }
+  .servicesGrid p { font-size: 12px; }
+  .growthLayout { grid-template-columns: 1fr; gap: 20px; }
+  .growthBenefits { max-width: 100%; }
+  .growthVisual { height: 430px; }
+}
+@media (max-width: 550px) {
+  .container { width: calc(100% - 36px); }
+  .teamFeatures { padding-top: 35px; }
+  .centerHeading h2 { font-size: 32px; }
+  .centerHeading > p:last-child:not(:first-child) { font-size: 11px; }
+  .centerHeading > p br { display: none; }
+  .featuresLayout { grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 10px; }
+  .featurePortrait { grid-column: 1 / -1; grid-row: 1; width: 100%; height: 410px; }
+  .leftFeatures, .rightFeatures { align-self: start; padding-block: 0 35px; gap: 26px; text-align: left; }
+  .featuresLayout h3 { font-size: 19px; }
+  .featuresLayout p { font-size: 11px; }
+  .workflows { padding-top: 37px; }
+  .workflowCopy h2 { font-size: 32px; }
+  .workflowCopy h2 br { display: none; }
+  .workflowCards { gap: 12px; margin-top: 22px; }
+  .workflowCards article { min-height: 215px; padding: 18px 15px; border-radius: 14px; }
+  .workflowCards h3 { font-size: 17px; }
+  .workflowCards p { font-size: 11px; }
+  .phoneVisual { height: 410px; }
+  .phoneBadge { bottom: 30px; right: 2%; }
+  .consulting { padding-block: 50px; }
+  .consultingVisual { height: 325px; }
+  .dots { width: 90px; height: 90px; top: -15px; left: -10px; }
+  .consultingSeal { width: 95px; height: 95px; font-size: 6px; left: 28%; }
+  .consultingCopy h2 { font-size: 32px; }
+  .consultingCopy h2 br { display: none; }
+  .consultingCopy > p:not(:first-child) { font-size: 12px; }
+  .consultingBenefits { gap: 9px; }
+  .consultingBenefits > span { padding: 10px; font-size: 10px; gap: 7px; }
+  .consultingBenefits svg { width: 18px; height: 18px; }
+  .enrollment { padding-block: 25px 45px; }
+  .enrollmentCopy h2 { font-size: 32px; }
+  .enrollmentCopy h2 br { display: none; }
+  .enrollmentPills { gap: 15px; }
+  .enrollmentPills > div { width: 96%; padding: 14px 15px; gap: 12px; }
+  .enrollmentPills h3 { font-size: 12px; }
+  .enrollmentPills p { font-size: 10px; }
+  .enrollmentPills > div > span { width: 36px; height: 36px; }
+  .services { padding-block: 40px 45px; }
+  .servicesGrid { grid-template-columns: 1fr; gap: 17px; margin-top: 28px; }
+  .servicesGrid article { min-height: 0; padding: 25px; }
+  .servicesGrid h3 { margin-top: 17px; }
+  .servicesGrid p { margin-block: 13px 22px; }
+  .growth { padding-block: 20px 40px; }
+  .growthCopy h2 { font-size: 34px; }
+  .growthBenefits { margin-top: 18px; }
+  .growthBenefits article { gap: 13px; }
+  .growthBenefits p { font-size: 12px; }
+  .growthVisual { height: 310px; }
+}
+@media (prefers-reduced-motion: reduce) { .container a { transition: none; } }

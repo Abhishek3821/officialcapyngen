@@ -4,7 +4,7 @@ import MoodBoard from "./components/mood-board";
 import AtAGlance from "./components/at-a-glance";
 import Adventure from "./components/adventure";
 import Architecture from "./components/architecture";
-import CrmGrowth from "./components/crm-growth";
+import StrategicFinance from "./components/strategic-finance";
 import Projects from "./components/projects";
 import LivingSpaces from "./components/living-spaces";
 import Agenda from "./components/agenda";
@@ -26,7 +26,7 @@ export default function Home() {
       <AtAGlance />
       <Adventure />
       <Architecture />
-      <CrmGrowth />
+      <StrategicFinance />
       <Projects />
       <LivingSpaces />
       <IndustriesWeServe />
