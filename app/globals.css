@@ -2,12 +2,14 @@
 
 :root {
   --site-header-height: 88px;
+  --site-nav-height: 64px;
+  --site-nav-top: calc((var(--site-header-height) - var(--site-nav-height)) / 2);
   --background: #ffffff;
   --foreground: #171717;
 }
 
 @media (min-width: 768px) {
-  :root { --site-header-height: 88px; }
+  :root { --site-header-height: 88px; --site-nav-height: 68px; }
 }
 
 html { scroll-padding-top: calc(var(--site-header-height) + 16px); }
@@ -52,6 +54,15 @@ main > section {
 
 #main-content > section:first-child:not(.destination-hero) {
   padding-top: var(--site-header-height);
+}
+
+/* Industry backgrounds reach the page top beneath the floating navbar. */
+#main-content > section[data-industry-hero]:first-child {
+  margin-top: 0;
+  padding-top: var(--site-header-height);
+  height: 100svh;
+  min-height: 0;
+  max-height: none;
 }
 
 main :where(.grid, .flex) > * {

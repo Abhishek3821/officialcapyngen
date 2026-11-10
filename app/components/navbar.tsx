@@ -29,7 +29,7 @@ function OfferContent({ onNavigate }: { onNavigate: () => void }) {
 
 function IndustryContent({ onNavigate }: { onNavigate: () => void }) {
   return <div className="grid grid-cols-1 gap-x-12 gap-y-1 sm:grid-cols-2 xl:grid-cols-3 xl:gap-x-16 xl:gap-y-5">
-    {industryGroups.map((group, index) => <ul key={index} className="min-w-0 space-y-2">{group.map((label) => <li key={label}><MenuLink label={label} href="/#work" onClick={onNavigate} /></li>)}</ul>)}
+    {industryGroups.map((group, index) => <ul key={index} className="min-w-0 space-y-2">{group.map((label) => <li key={label}><MenuLink label={label} href={label === "Banking" ? "/banking" : label === "Education" ? "/education" : label === "Capital Market" ? "/capital-market" : label === "Life Science" ? "/life-science" : label === "Healthcare & Fitness" ? "/healthcare-fitness" : label === "Energy, Resources & Utilities" ? "/energy-resources-utilities" : label === "Manufacturing & Automotive" ? "/manufacturing-automotive" : "/#work"} onClick={onNavigate} /></li>)}</ul>)}
   </div>;
 }
 

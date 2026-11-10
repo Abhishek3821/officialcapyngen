@@ -1,5 +1,7 @@
 "use client";
 
+import DismissibleDialog from "./dismissible-dialog";
+
 import Image from "next/image";
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { destinations } from "./destination-data";
@@ -215,13 +217,13 @@ export default function Hero() {
         <div className="travel-counter" aria-label={`Destination ${active + 1} of ${count}`}><span>{String(active + 1).padStart(2, "0")}</span><span className="travel-total">/ {String(count).padStart(2, "0")}</span></div>
       </div>
 
-      <dialog ref={dialog} aria-labelledby="destination-detail-title" onClose={() => setDetailsOpen(false)} onClick={(event) => { if (event.target === event.currentTarget) setDetailsOpen(false); }} className="travel-dialog">
+      <DismissibleDialog ref={dialog} aria-labelledby="destination-detail-title" onClose={() => setDetailsOpen(false)} className="travel-dialog">
         <div className="relative overflow-hidden rounded-[22px] bg-[#18231f] text-white">
           <Image src={imagePath(copyIndex)} alt={destination.title.join(" ")} width={900} height={500} unoptimized className="aspect-[16/8] w-full object-cover" />
           <button type="button" aria-label="Close destination details" onClick={() => setDetailsOpen(false)} className="absolute top-4 right-4 flex size-9 items-center justify-center rounded-full bg-black/50 text-white focus-visible:outline-2 focus-visible:outline-[#e9b544]">✕</button>
           <div className="p-6 sm:p-8"><p className="text-xs text-[#e9b544]">{destination.region}</p><h2 id="destination-detail-title" className="mt-3 font-[family-name:var(--font-oswald)] text-3xl uppercase">{destination.title.join(" ")}</h2><p className="mt-4 text-sm leading-relaxed text-white/70">{destination.description}</p><button type="button" onClick={() => setDetailsOpen(false)} className="mt-6 rounded-full border border-white/30 px-5 py-2.5 text-xs text-white hover:bg-white/10">Back to exploring</button></div>
         </div>
-      </dialog>
+      </DismissibleDialog>
     </section>
   );
 }

@@ -1,0 +1,546 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "Skip to content" [ref=e4] [cursor=pointer]:
+        - /url: "#main-content"
+      - navigation "Main navigation" [ref=e5]:
+        - link "Capyngen home" [ref=e6] [cursor=pointer]:
+          - /url: /#home
+          - img "Capyngen Private Limited" [ref=e7]
+        - generic [ref=e8]:
+          - button "What We Offer" [ref=e9] [cursor=pointer]
+          - button "Industries" [ref=e12] [cursor=pointer]
+          - link "Company Overview" [ref=e15] [cursor=pointer]:
+            - /url: /company-overview
+          - link "Careers" [ref=e16] [cursor=pointer]:
+            - /url: /#contact
+          - link "News & Updates" [ref=e17] [cursor=pointer]:
+            - /url: /news-and-updates
+          - link "Contact Us" [ref=e18] [cursor=pointer]:
+            - /url: /contact-us
+    - main [ref=e19]:
+      - region [ref=e20]:
+        - generic [ref=e21]:
+          - paragraph [ref=e22]: Industries / Banking
+          - generic [ref=e23]:
+            - heading "A more human way to experience banking." [level=1] [ref=e24]: A more humanway to experiencebanking.
+            - paragraph [ref=e26]: Thoughtful technology. Effortless experiences. We help banks bring people closer to their financial future, one digital interaction at a time.
+            - link "Explore our banking solutions" [ref=e27] [cursor=pointer]:
+              - /url: "#banking-solutions"
+              - text: ↓
+          - generic [ref=e28]:
+            - heading "Built around your customers." [level=2] [ref=e29]
+            - paragraph [ref=e30]: From the first hello to everyday transactions, make every moment feel connected.
+            - generic "Our capabilities" [ref=e31]:
+              - generic [ref=e32]: DESIGN
+              - generic [ref=e33]: BUILD
+              - generic [ref=e34]: CONNECT
+              - generic [ref=e35]: GROW ↗
+            - link "Let’s build what’s next" [ref=e36] [cursor=pointer]:
+              - /url: /contact-us
+              - text: Let’s build what’s next
+              - generic [aria-hidden] [ref=e37]: ↗
+        - generic [ref=e38]:
+          - img "A light-filled interior with a grey sofa, peach cushions and green plants" [ref=e39]
+          - generic [ref=e40]: A familiar feeling.A fresh perspective.
+          - generic [ref=e42]:
+            - paragraph [ref=e43]: Designed for people.Engineered for possibility.
+            - link "Start a conversation" [ref=e44] [cursor=pointer]:
+              - /url: /contact-us
+              - text: Start a conversation
+              - generic [aria-hidden] [ref=e45]: ↗
+          - generic [ref=e46]:
+            - generic [ref=e47]: CAPYNGEN / BANKING
+            - generic [ref=e48]: Comfort in every connection.
+            - generic [ref=e49]: 01 — 01
+      - region [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - img "A charcoal presentation box on a pale grey shelf" [ref=e53]
+            - img "A black leather handbag and reed diffuser on a floating shelf" [ref=e54]
+            - img "Cream and black leather handbags on a grey plinth" [ref=e55]
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - paragraph [ref=e58]: Every detail matters
+              - heading [level=2] [ref=e59]:
+                - text: Great experiences.
+                - emphasis [ref=e60]: Everyday confidence.
+              - paragraph [ref=e61]: Bring the same care to every customer moment. Banking that feels considered, connected and comfortably familiar.
+              - link "Explore our approach" [ref=e62] [cursor=pointer]:
+                - /url: "#banking-solutions"
+                - text: Explore our approach
+                - generic [aria-hidden] [ref=e63]: ↗
+              - generic [ref=e64]:
+                - generic [ref=e65]: Human first
+                - generic [ref=e66]: Thoughtfully digital
+            - img "A soft grey sofa styled with grey and warm taupe cushions" [ref=e67]
+          - generic [ref=e68]:
+            - generic [ref=e69]:
+              - generic [ref=e70]:
+                - img "A grey armchair surrounded by green indoor plants" [ref=e71]
+                - img "Sculptural objects and a plant on dark floating shelves" [ref=e72]
+              - link "Make room for better" [ref=e73] [cursor=pointer]:
+                - /url: /contact-us
+                - text: Make room for better
+                - generic [aria-hidden] [ref=e74]: ↗
+            - generic [ref=e75]:
+              - generic [ref=e76]:
+                - paragraph [ref=e77]: Designed to connect
+                - heading "Small details. Meaningful differences." [level=3] [ref=e78]: Small details.Meaningful differences.
+                - link "Let’s create yours ↗" [ref=e79] [cursor=pointer]:
+                  - /url: /contact-us
+              - img "A geometric copper sculpture and ceramic objects on a charcoal cabinet" [ref=e80]
+        - complementary "Connected experiences" [ref=e81]:
+          - generic [ref=e82]:
+            - paragraph [ref=e83]: People & possibilities
+            - heading [level=3] [ref=e84]:
+              - text: One connected world.
+              - emphasis [ref=e85]: A more personal experience.
+            - paragraph [ref=e86]: From discovering something new to making it yours, build digital journeys that bring everything together.
+            - link "Discover more ↗" [ref=e87] [cursor=pointer]:
+              - /url: "#banking-solutions"
+          - generic [ref=e88]:
+            - paragraph [ref=e89]: Considered / Collected
+            - generic [ref=e90]:
+              - img "Black perfume bottle" [ref=e92]
+              - img "Charcoal presentation box" [ref=e94]
+              - img "Black and white sneaker" [ref=e96]
+              - generic [ref=e97]:
+                - img "Cream and black leather bags" [ref=e98]
+                - generic [aria-hidden] [ref=e99]: For you
+              - img "Sculptural sneaker profile" [ref=e101]
+              - img "Grey sofa" [ref=e103]
+              - img "Geometric home accessories" [ref=e105]
+              - img "Black leather handbag" [ref=e107]
+              - img "Objects on floating shelves" [ref=e109]
+            - generic [ref=e110]:
+              - generic [ref=e111]: A world of possibilities.
+              - generic [ref=e112]: 01 / 09
+          - link "Find your next chapter" [ref=e113] [cursor=pointer]:
+            - /url: /contact-us
+            - text: Find your next chapter
+            - generic [aria-hidden] [ref=e114]: ↗
+      - region [ref=e115]:
+        - generic [ref=e116]:
+          - paragraph [ref=e117]: Considered.
+          - heading "Good design makes room for better experiences." [level=2] [ref=e118]: Good design makes roomfor better experiences.
+          - paragraph [ref=e119]: Bring simplicity to the everyday. Create banking journeys that feel natural, personal and reassuring at every step.
+          - generic [aria-hidden] [ref=e120]:
+            - generic [ref=e121]: ↗
+            - generic [ref=e122]: ◎
+            - generic [ref=e123]: ✳
+          - paragraph [ref=e125]: From the first interaction to the moments that matter most, we bring thoughtful design and connected technology together. A little less complexity. A little more confidence.
+          - link "Create something better" [ref=e126] [cursor=pointer]:
+            - /url: /contact-us
+            - text: Create something better
+            - generic [aria-hidden] [ref=e127]: ↗
+        - img "A grey lounge chair and ottoman with a draped blanket, beside sheer curtains and a green plant" [ref=e129]
+        - article [ref=e130]:
+          - generic [ref=e131]:
+            - generic [ref=e132]:
+              - paragraph [ref=e133]: Feels right.
+              - paragraph [ref=e134]: Thoughtful by design. Effortless by nature.
+              - generic [aria-hidden] [ref=e135]:
+                - generic [ref=e136]: ◉
+                - generic [ref=e137]: ◐
+                - generic [ref=e138]: ●
+            - generic [aria-hidden] [ref=e139]: ↟
+          - generic [ref=e141]:
+            - paragraph [ref=e142]: Everyday, elevated
+            - heading "Make every connection feel a little more human." [level=3] [ref=e143]: Make every connectionfeel a little more human.
+            - paragraph [ref=e144]: Build experiences around the people who use them.Clearer journeys. Closer relationships.
+            - link "Explore the possibilities" [ref=e145] [cursor=pointer]:
+              - /url: "#banking-solutions"
+              - text: Explore the possibilities
+              - generic [aria-hidden] [ref=e146]: ↗
+      - region [ref=e147]:
+        - generic [ref=e148]:
+          - paragraph [ref=e149]:
+            - generic [aria-hidden] [ref=e150]: ✦
+            - text: Our projects
+          - generic [ref=e151]:
+            - heading [level=2] [ref=e152]:
+              - text: Creative
+              - generic [ref=e153]: projects thatdefine
+              - text: our style.
+            - paragraph [ref=e154]: A collection of considered spaces and fresh perspectives. Explore the details that make every experience distinctive.
+          - generic "Project gallery controls" [ref=e155]:
+            - button "Previous projects" [ref=e156] [cursor=pointer]: ←
+            - button "Next projects" [ref=e157] [cursor=pointer]: →
+        - region "Creative project gallery" [ref=e158]:
+          - generic [ref=e159]:
+            - article [aria-hidden] [ref=e160]:
+              - button [ref=e161] [cursor=pointer]:
+                - generic [ref=e163]:
+                  - generic [ref=e164]: Architecture
+                  - generic [ref=e165]: Design concept
+                - generic [ref=e166]:
+                  - text: View
+                  - generic [aria-hidden] [ref=e167]: ↗
+              - heading [level=3] [ref=e168]: Quiet Form
+              - paragraph [ref=e169]: Interior collection / 01
+            - article [aria-hidden] [ref=e170]:
+              - button [ref=e171] [cursor=pointer]:
+                - generic [ref=e173]:
+                  - generic [ref=e174]: Residential
+                  - generic [ref=e175]: Design concept
+                - generic [ref=e176]:
+                  - text: View
+                  - generic [aria-hidden] [ref=e177]: ↗
+              - heading [level=3] [ref=e178]: Luxury Skyline
+              - paragraph [ref=e179]: Interior collection / 02
+            - article [aria-hidden] [ref=e180]:
+              - button [ref=e181] [cursor=pointer]:
+                - generic [ref=e183]:
+                  - generic [ref=e184]: Residential
+                  - generic [ref=e185]: Design concept
+                - generic [ref=e186]:
+                  - text: View
+                  - generic [aria-hidden] [ref=e187]: ↗
+              - heading [level=3] [ref=e188]: Bohemian Rhapsody
+              - paragraph [ref=e189]: Interior collection / 03
+            - article [aria-hidden] [ref=e190]:
+              - button [ref=e191] [cursor=pointer]:
+                - generic [ref=e193]:
+                  - generic [ref=e194]: Residential
+                  - generic [ref=e195]: Design concept
+                - generic [ref=e196]:
+                  - text: View
+                  - generic [aria-hidden] [ref=e197]: ↗
+              - heading [level=3] [ref=e198]: Vintage Glamour
+              - paragraph [ref=e199]: Interior collection / 04
+            - article [aria-hidden] [ref=e200]:
+              - button [ref=e201] [cursor=pointer]:
+                - generic [ref=e203]:
+                  - generic [ref=e204]: Interior design
+                  - generic [ref=e205]: Design concept
+                - generic [ref=e206]:
+                  - text: View
+                  - generic [aria-hidden] [ref=e207]: ↗
+              - heading [level=3] [ref=e208]: Living Innovation
+              - paragraph [ref=e209]: Interior collection / 05
+            - article [ref=e210]:
+              - button "View Quiet Form" [ref=e211] [cursor=pointer]:
+                - 'img "Quiet Form: Light, proportion and sculptural lines bring a fresh perspective to a quiet interior." [ref=e212]'
+                - generic [ref=e213]:
+                  - generic [ref=e214]: Architecture
+                  - generic [ref=e215]: Design concept
+                - generic [ref=e216]:
+                  - text: View
+                  - generic [aria-hidden] [ref=e217]: ↗
+              - heading "Quiet Form" [level=3] [ref=e218]
+              - paragraph [ref=e219]: Interior collection / 01
+            - article [ref=e220]:
+              - button "View Luxury Skyline" [ref=e221] [cursor=pointer]:
+                - 'img "Luxury Skyline: Rich textures, soft curtains and considered details make room for meaningful moments." [ref=e222]'
+                - generic [ref=e223]:
+                  - generic [ref=e224]: Residential
+                  - generic [ref=e225]: Design concept
+                - generic [ref=e226]:
+                  - text: View
+                  - generic [aria-hidden] [ref=e227]: ↗
+              - heading "Luxury Skyline" [level=3] [ref=e228]
+              - paragraph [ref=e229]: Interior collection / 02
+            - article [ref=e230]:
+              - button "View Bohemian Rhapsody" [ref=e231] [cursor=pointer]:
+                - 'img "Bohemian Rhapsody: An exploration of space and light, shaped by a beautifully simple architectural gesture." [ref=e232]'
+                - generic [ref=e233]:
+                  - generic [ref=e234]: Residential
+                  - generic [ref=e235]: Design concept
+                - generic [ref=e236]:
+                  - text: View
+                  - generic [aria-hidden] [ref=e237]: ↗
+              - heading "Bohemian Rhapsody" [level=3] [ref=e238]
+              - paragraph [ref=e239]: Interior collection / 03
+            - article [ref=e240]:
+              - button "View Vintage Glamour" [ref=e241] [cursor=pointer]:
+                - 'img "Vintage Glamour: Classic proportions meet contemporary comfort in a calm, layered living space." [ref=e242]'
+                - generic [ref=e243]:
+                  - generic [ref=e244]: Residential
+                  - generic [ref=e245]: Design concept
+                - generic [ref=e246]:
+                  - text: View
+                  - generic [aria-hidden] [ref=e247]: ↗
+              - heading "Vintage Glamour" [level=3] [ref=e248]
+              - paragraph [ref=e249]: Interior collection / 04
+            - article [ref=e250]:
+              - button "View Living Innovation" [ref=e251] [cursor=pointer]:
+                - 'img "Living Innovation: Thoughtful materials and warm neutral tones turn everyday spaces into personal experiences." [ref=e252]'
+                - generic [ref=e253]:
+                  - generic [ref=e254]: Interior design
+                  - generic [ref=e255]: Design concept
+                - generic [ref=e256]:
+                  - text: View
+                  - generic [aria-hidden] [ref=e257]: ↗
+              - heading "Living Innovation" [level=3] [ref=e258]
+              - paragraph [ref=e259]: Interior collection / 05
+            - article [aria-hidden] [ref=e260]:
+              - button [ref=e261] [cursor=pointer]:
+                - generic [ref=e263]:
+                  - generic [ref=e264]: Architecture
+                  - generic [ref=e265]: Design concept
+                - generic [ref=e266]:
+                  - text: View
+                  - generic [aria-hidden] [ref=e267]: ↗
+              - heading [level=3] [ref=e268]: Quiet Form
+              - paragraph [ref=e269]: Interior collection / 01
+            - article [aria-hidden] [ref=e270]:
+              - button [ref=e271] [cursor=pointer]:
+                - generic [ref=e273]:
+                  - generic [ref=e274]: Residential
+                  - generic [ref=e275]: Design concept
+                - generic [ref=e276]:
+                  - text: View
+                  - generic [aria-hidden] [ref=e277]: ↗
+              - heading [level=3] [ref=e278]: Luxury Skyline
+              - paragraph [ref=e279]: Interior collection / 02
+            - article [aria-hidden] [ref=e280]:
+              - button [ref=e281] [cursor=pointer]:
+                - generic [ref=e283]:
+                  - generic [ref=e284]: Residential
+                  - generic [ref=e285]: Design concept
+                - generic [ref=e286]:
+                  - text: View
+                  - generic [aria-hidden] [ref=e287]: ↗
+              - heading [level=3] [ref=e288]: Bohemian Rhapsody
+              - paragraph [ref=e289]: Interior collection / 03
+            - article [aria-hidden] [ref=e290]:
+              - button [ref=e291] [cursor=pointer]:
+                - generic [ref=e293]:
+                  - generic [ref=e294]: Residential
+                  - generic [ref=e295]: Design concept
+                - generic [ref=e296]:
+                  - text: View
+                  - generic [aria-hidden] [ref=e297]: ↗
+              - heading [level=3] [ref=e298]: Vintage Glamour
+              - paragraph [ref=e299]: Interior collection / 04
+            - article [aria-hidden] [ref=e300]:
+              - button [ref=e301] [cursor=pointer]:
+                - generic [ref=e303]:
+                  - generic [ref=e304]: Interior design
+                  - generic [ref=e305]: Design concept
+                - generic [ref=e306]:
+                  - text: View
+                  - generic [aria-hidden] [ref=e307]: ↗
+              - heading [level=3] [ref=e308]: Living Innovation
+              - paragraph [ref=e309]: Interior collection / 05
+      - 'region "Interior architecture: a fresh perspective" [ref=e310]':
+        - generic [ref=e311]:
+          - paragraph [aria-hidden] [ref=e312]: Interior
+          - img "A long, low glass pavilion with a slender roof, black window frames and softly lit interiors, floating above stepped platforms" [ref=e313]
+      - region [ref=e314]:
+        - generic [ref=e315]:
+          - paragraph [ref=e316]:
+            - generic [aria-hidden] [ref=e317]: ✦
+            - text: Our clients say
+          - heading [level=2] [ref=e318]:
+            - text: Here’s what
+            - generic [ref=e319]: warm wordsfrom our clients
+            - text: sound like.
+        - generic [ref=e320]:
+          - img "Two architects in yellow safety helmets discussing plans beside surveying equipment in a concrete building" [ref=e322]
+          - generic [ref=e323]:
+            - generic [ref=e324]:
+              - generic [ref=e325]:
+                - generic [ref=e326]: "4.80"
+                - generic [ref=e327]:
+                  - 'generic "Illustrative rating: 4.8 out of 5" [ref=e328]': ★★★★★
+                  - paragraph [ref=e329]: Illustrative rating
+              - paragraph [ref=e330]: From the first idea to the final detail, thoughtful collaboration makes the difference.
+            - figure "Morgan Dufresne Sample client story" [ref=e331]:
+              - blockquote [ref=e332]: “I absolutely love my new modern living room! The clean lines, neutral tones and thoughtful details create such a calming atmosphere. Every part of the space feels beautifully considered.”
+              - generic [ref=e333]:
+                - generic [aria-hidden] [ref=e334]: MD
+                - generic [ref=e335]:
+                  - strong [ref=e336]: Morgan Dufresne
+                  - generic [ref=e337]: Sample client story
+        - paragraph [ref=e340]:
+          - text: Thoughtful spaces.
+          - strong [ref=e341]: Shared possibilities.
+        - generic "Concept partner identities" [ref=e343]:
+          - generic [ref=e347]:
+            - generic [ref=e348]: Architect
+            - generic [ref=e349]: Real estate
+          - generic [ref=e353]:
+            - generic [ref=e354]: Trend
+            - generic [ref=e355]: Interiors
+          - generic [ref=e359]:
+            - generic [ref=e360]: Interior
+            - generic [ref=e361]: Living
+          - generic [ref=e366]:
+            - generic [ref=e367]: Building
+            - generic [ref=e368]: Construction
+          - generic [ref=e372]:
+            - generic [ref=e373]: Real Estate
+            - generic [ref=e374]: Architecture
+          - generic [ref=e378]:
+            - generic [ref=e379]: Building
+            - generic [ref=e380]: Design studio
+        - paragraph [ref=e381]: Illustrative testimonial and partner identities for this design concept.
+      - region [ref=e382]:
+        - generic [ref=e383]:
+          - generic [ref=e384]:
+            - paragraph [ref=e385]: The villa collection
+            - heading "Plans & pricing" [level=2] [ref=e386]
+          - button "View all villas" [ref=e387] [cursor=pointer]:
+            - text: View all villas
+            - generic [aria-hidden] [ref=e388]: →
+        - generic [ref=e389]:
+          - article [ref=e390]:
+            - button "Explore Villa A1" [ref=e391] [cursor=pointer]:
+              - 'img "Villa A1: contemporary villa with a landscaped garden and swimming pool" [ref=e392]'
+            - generic [ref=e393]:
+              - heading "Villa A1" [level=3] [ref=e394]
+              - generic [ref=e395]:
+                - generic [ref=e396]:
+                  - term [ref=e397]: Bedrooms
+                  - definition [ref=e398]: 3 bedrooms
+                - generic [ref=e399]:
+                  - term [ref=e400]: Bathrooms
+                  - definition [ref=e401]: 3 bathrooms
+                - generic [ref=e402]:
+                  - term [ref=e403]: Floor area
+                  - definition [ref=e404]: 180 m²
+              - generic [ref=e405]:
+                - paragraph [ref=e406]: From €445,000
+                - button "View Villa A1 plans and pricing" [ref=e407] [cursor=pointer]: →
+          - article [ref=e408]:
+            - button "Explore Villa B2" [ref=e409] [cursor=pointer]:
+              - 'img "Villa B2: contemporary villa with a landscaped garden and swimming pool" [ref=e410]'
+            - generic [ref=e411]:
+              - heading "Villa B2" [level=3] [ref=e412]
+              - generic [ref=e413]:
+                - generic [ref=e414]:
+                  - term [ref=e415]: Bedrooms
+                  - definition [ref=e416]: 4 bedrooms
+                - generic [ref=e417]:
+                  - term [ref=e418]: Bathrooms
+                  - definition [ref=e419]: 4 bathrooms
+                - generic [ref=e420]:
+                  - term [ref=e421]: Floor area
+                  - definition [ref=e422]: 220 m²
+              - generic [ref=e423]:
+                - paragraph [ref=e424]: From €675,000
+                - button "View Villa B2 plans and pricing" [ref=e425] [cursor=pointer]: →
+          - article [ref=e426]:
+            - button "Explore Villa C3" [ref=e427] [cursor=pointer]:
+              - 'img "Villa C3: contemporary villa with a landscaped garden and swimming pool" [ref=e428]'
+            - generic [ref=e429]:
+              - heading "Villa C3" [level=3] [ref=e430]
+              - generic [ref=e431]:
+                - generic [ref=e432]:
+                  - term [ref=e433]: Bedrooms
+                  - definition [ref=e434]: 5 bedrooms
+                - generic [ref=e435]:
+                  - term [ref=e436]: Bathrooms
+                  - definition [ref=e437]: 5 bathrooms
+                - generic [ref=e438]:
+                  - term [ref=e439]: Floor area
+                  - definition [ref=e440]: 300 m²
+              - generic [ref=e441]:
+                - paragraph [ref=e442]: From €890,000
+                - button "View Villa C3 plans and pricing" [ref=e443] [cursor=pointer]: →
+        - paragraph [ref=e444]: Illustrative villa concepts and starting prices.
+      - region [ref=e445]:
+        - generic [ref=e446]:
+          - paragraph [ref=e447]: Thoughtfully connected
+          - heading [level=2] [ref=e448]:
+            - text: Complex banking.
+            - emphasis [ref=e449]: Beautifully simplified.
+          - paragraph [ref=e450]: We bring design and engineering together to create digital banking experiences that work better for everyone.
+        - generic [ref=e451]:
+          - article [ref=e452]:
+            - generic [ref=e453]:
+              - generic [ref=e454]: "01"
+              - generic [aria-hidden] [ref=e455]: ↗
+            - heading "Digital banking experiences" [level=3] [ref=e456]
+            - paragraph [ref=e457]: Clear, intuitive web and mobile journeys that make managing money feel simple.
+            - generic [ref=e458]: UX strategy / Interface design
+          - article [ref=e459]:
+            - generic [ref=e460]:
+              - generic [ref=e461]: "02"
+              - generic [aria-hidden] [ref=e462]: ⌘
+            - heading "Connected banking platforms" [level=3] [ref=e463]
+            - paragraph [ref=e464]: Bring customer touchpoints and everyday workflows together with purpose-built applications.
+            - generic [ref=e465]: Web platforms / Integration
+          - article [ref=e466]:
+            - generic [ref=e467]:
+              - generic [ref=e468]: "03"
+              - generic [aria-hidden] [ref=e469]: ✳
+            - heading "Smarter customer relationships" [level=3] [ref=e470]
+            - paragraph [ref=e471]: Help teams understand customer needs and deliver more useful, personal service.
+            - generic [ref=e472]: CRM / Data & analytics
+        - generic [ref=e473]:
+          - paragraph [ref=e474]:
+            - text: Let’s make your next
+            - emphasis [ref=e475]: connection count.
+          - link "Talk to our team" [ref=e476] [cursor=pointer]:
+            - /url: /contact-us
+            - text: Talk to our team
+            - generic [aria-hidden] [ref=e477]: ↗
+  - contentinfo "Footway footer" [ref=e478]:
+    - generic [ref=e719]:
+      - generic [ref=e720]:
+        - generic [ref=e721]:
+          - heading "Footway’s Newsletter" [level=2] [ref=e722]
+          - generic [ref=e723]:
+            - generic [ref=e724]: Your email
+            - textbox "Your email" [ref=e725]
+            - button "SUBSCRIBE" [ref=e726] [cursor=pointer]
+            - status
+        - generic [ref=e727]:
+          - heading "Terms and conditions" [level=2] [ref=e728]
+          - generic [ref=e729]:
+            - group [ref=e730]:
+              - generic "Free returns!" [ref=e731] [cursor=pointer]
+            - group [ref=e732]:
+              - generic "30 days return policy!" [ref=e733] [cursor=pointer]
+            - group [ref=e734]:
+              - generic "All shoes in stock!" [ref=e735] [cursor=pointer]
+          - generic [ref=e736]:
+            - generic [ref=e737]: Follow Footway
+            - link "Footway on Facebook" [ref=e738] [cursor=pointer]:
+              - /url: https://www.facebook.com/footway
+            - link "Footway on Instagram" [ref=e741] [cursor=pointer]:
+              - /url: https://www.instagram.com/footway
+        - generic [ref=e746]:
+          - heading "Information" [level=2] [ref=e747]
+          - generic [ref=e748]:
+            - group [ref=e749]:
+              - generic "FAQs" [ref=e750] [cursor=pointer]
+            - group [ref=e751]:
+              - generic "About us at Footway" [ref=e752] [cursor=pointer]
+            - group [ref=e753]:
+              - generic "Footway Legal" [ref=e754] [cursor=pointer]
+          - generic [ref=e755]:
+            - link "0800 098 8300" [ref=e756] [cursor=pointer]:
+              - /url: tel:08000988300
+            - link "myfriends@footway.co.uk" [ref=e757] [cursor=pointer]:
+              - /url: mailto:myfriends@footway.co.uk
+        - generic [ref=e758]:
+          - heading "Contact" [level=2] [ref=e759]
+          - paragraph [ref=e760]: Footway
+          - paragraph [ref=e761]: "Company number: 559063-2377"
+          - paragraph [ref=e762]: "Head office:"
+          - generic [ref=e763]: Victoria Tower, Nolsögatan 3,164 40 Kista, Sweden
+      - generic [ref=e764]:
+        - generic "Trust and security marks shown in the design" [ref=e765]:
+          - generic [ref=e766]:
+            - generic [ref=e767]: e
+            - generic [ref=e768]: TRUSTEDSHOPS
+          - generic [ref=e769]:
+            - generic [ref=e770]: PCI✓
+            - generic [ref=e771]:
+              - text: DSS
+              - generic [ref=e772]: COMPLIANT
+        - generic [ref=e773]:
+          - paragraph [ref=e774]: Part of Footway Group, publicly traded on Nasdaq OMX.
+          - link "myfriends@footway.co.uk" [ref=e775] [cursor=pointer]:
+            - /url: mailto:myfriends@footway.co.uk
+          - text: ", 0800 098 8300"
+          - paragraph [ref=e776]: 🇸🇪 🇳🇴 🇫🇮 🇩🇰 🇵🇱 🇬🇧 🇩🇪 🇳🇱 🇦🇹 🇫🇷 🇨🇭
+          - paragraph [ref=e777]: © 2010–2026 Footway. All rights reserved.
+        - 'generic "Payment methods illustrated: Adyen, Mastercard, Visa" [ref=e778]':
+          - generic [ref=e779]: adyen
+          - generic [ref=e783]: VISA
+  - button "Open Next.js Dev Tools" [ref=e789] [cursor=pointer]

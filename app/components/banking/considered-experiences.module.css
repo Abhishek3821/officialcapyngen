@@ -1,0 +1,33 @@
+.section { display: grid; grid-template-columns: 1.05fr 1fr 1fr; gap: 30px; align-items: stretch; padding: 85px 8vw; background: #fff; color: #3c4045; }
+.intro { padding: 0 20px 0 0; }
+.wordmark { font-family: var(--font-oswald), sans-serif; font-size: clamp(27px, 2.7vw, 42px); text-transform: uppercase; letter-spacing: -.045em; line-height: 1; margin: 0 0 28px; }
+.intro h2 { font-size: clamp(24px, 2vw, 32px); line-height: 1.65; font-weight: 500; }
+.lead { margin-top: 12px; font-size: 16px; line-height: 1.7; color: #60676c; }
+.marks { display: flex; gap: 5px; color: #d79979; margin-top: 20px; }
+.marks span { display: grid; place-items: center; width: 20px; height: 20px; border: 1px solid currentColor; border-radius: 7px; font-size: 16px; }
+.rule { height: 1px; background: #e4d8d0; margin: 20px 0; }
+.description { font-size: 16px; line-height: 1.7; color: #60676c; max-width: 420px; }
+.peachButton, .darkButton { display: inline-flex; align-items: center; justify-content: space-between; gap: 22px; font-size: 14px; padding: 15px 22px; border-radius: 5px; transition: background .2s; }
+.peachButton { margin-top: 29px; background: #e6a582; color: #34383e; }
+.peachButton:hover { background: #d3906f; }
+.portrait { align-self: stretch; position: relative; min-height: 410px; background: #e5e7e8; }
+.photo { object-fit: cover; }
+.card { display: flex; flex-direction: column; min-height: 410px; background: #eceef1; }
+.cardTop { flex-shrink: 0; padding: 35px 25px 25px; display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; min-height: auto; }
+.cardWordmark { font-size: clamp(23px, 2vw, 33px); line-height: 1.1; letter-spacing: -.06em; font-weight: 600; }
+.cardTop p:not(.cardWordmark) { font-size: 16px; line-height: 1.65; margin-top: 14px; }
+.cardMarks { display: flex; gap: 4px; margin-top: 18px; font-size: 17px; }
+.seal { flex-shrink: 0; display: grid; place-items: center; width: 49px; height: 49px; border-radius: 50%; background: #e3a17d; color: white; font-size: 25px; margin-top: 12px; box-shadow: 0 6px 12px #ae806220; }
+.cardBottom { position: relative; flex: 1; background: #d4d9dd; overflow: hidden; }
+.cardPhoto { object-fit: cover; object-position: 55% 65%; opacity: .17; filter: grayscale(1); }
+.cardBottom::after { content: ''; position: absolute; inset: 0; background: linear-gradient(110deg, #d4d9dd 5%, #d4d9ddcc 50%, transparent); }
+.cardContent { position: relative; z-index: 1; padding: 23px 25px; }
+.eyebrow { font-size: 12px; letter-spacing: .15em; text-transform: uppercase; font-weight: 600; margin-bottom: 15px; }
+.cardContent h3 { font-size: 22px; line-height: 1.7; font-weight: 500; }
+.cardContent > p:not(.eyebrow) { font-size: 16px; line-height: 1.7; margin-top: 9px; color: #515c65; }
+.darkButton { background: #414851; color: #fff; margin-top: 22px; padding: 13px 18px; font-size: 16px; }
+.darkButton:hover { background: #282e35; }
+.section a:focus-visible { outline: 2px solid #b77859; outline-offset: 5px; }
+@media(min-width: 1700px) { .section { padding-top: 110px; padding-bottom: 110px; gap: 40px; } .portrait, .card { min-height: 530px; } .lead { font-size: 16px; } .description { font-size: 16px; max-width: 420px; } .cardTop { flex-shrink: 0; padding: 45px 35px 30px; } .cardContent { padding: 30px 35px; } .cardContent h3 { font-size: 22px; } .cardTop p:not(.cardWordmark), .cardContent > p:not(.eyebrow) { font-size: 16px; } }
+@media(max-width: 1000px) { .section { grid-template-columns: 1fr 1fr; padding: 55px 6vw; gap: 30px; } .intro { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; column-gap: 30px; padding: 0; } .wordmark { grid-column: 1 / -1; } .intro h2 { font-size: 26px; } .lead { margin: 0; font-size: 16px; } .marks { grid-column: 1; } .rule { grid-column: 1 / -1; } .description { font-size: 16px; } .peachButton { justify-self: start; align-self: start; margin-top: 0; } .portrait, .card { min-height: 420px; } }
+@media(max-width: 640px) { .section { grid-template-columns: 1fr; padding: 45px 22px; gap: 28px; } .intro { display: block; } .wordmark { font-size: 35px; margin-bottom: 24px; } .lead { margin-top: 12px; } .peachButton { margin-top: 24px; } .portrait { min-height: 0; aspect-ratio: 4 / 5; } .card { min-height: 420px; } .cardWordmark { font-size: 32px; } .cardTop { flex-shrink: 0; padding: 30px; } .cardContent { padding: 25px 30px; } .cardTop p:not(.cardWordmark), .cardContent > p:not(.eyebrow) { font-size: 16px; } .cardContent h3 { font-size: 22px; } .eyebrow { font-size: 16px; } .darkButton { font-size: 16px; } }

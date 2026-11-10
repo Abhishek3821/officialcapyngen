@@ -1,0 +1,157 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+      - /url: "#main-content"
+    - navigation "Main navigation" [ref=e4]:
+      - link "Capyngen home" [ref=e5] [cursor=pointer]:
+        - /url: /#home
+        - img "Capyngen Private Limited" [ref=e6]
+      - generic [ref=e7]:
+        - button "What We Offer" [ref=e8] [cursor=pointer]
+        - button "Industries" [ref=e11] [cursor=pointer]
+        - link "Company Overview" [ref=e14] [cursor=pointer]:
+          - /url: /company-overview
+        - link "Careers" [ref=e15] [cursor=pointer]:
+          - /url: /#contact
+        - link "News & Updates" [ref=e16] [cursor=pointer]:
+          - /url: /news-and-updates
+        - link "Contact Us" [ref=e17] [cursor=pointer]:
+          - /url: /contact-us
+  - main [ref=e18]:
+    - region [ref=e19]:
+      - generic [ref=e20]:
+        - paragraph [ref=e21]: Industries / Banking
+        - generic [ref=e22]:
+          - heading "A more human way to experience banking." [level=1] [ref=e23]: A more humanway to experiencebanking.
+          - paragraph [ref=e25]: Thoughtful technology. Effortless experiences. We help banks bring people closer to their financial future, one digital interaction at a time.
+          - link "Explore our banking solutions" [ref=e26] [cursor=pointer]:
+            - /url: "#banking-solutions"
+            - text: ↓
+        - generic [ref=e27]:
+          - heading "Built around your customers." [level=2] [ref=e28]
+          - paragraph [ref=e29]: From the first hello to everyday transactions, make every moment feel connected.
+          - generic "Our capabilities" [ref=e30]:
+            - generic [ref=e31]: DESIGN
+            - generic [ref=e32]: BUILD
+            - generic [ref=e33]: CONNECT
+            - generic [ref=e34]: GROW ↗
+          - link "Let’s build what’s next" [ref=e35] [cursor=pointer]:
+            - /url: /contact-us
+            - text: Let’s build what’s next
+            - generic [aria-hidden] [ref=e36]: ↗
+      - generic [ref=e37]:
+        - img "A light-filled interior with a grey sofa, peach cushions and green plants" [ref=e38]
+        - generic [ref=e39]: A familiar feeling.A fresh perspective.
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Designed for people.Engineered for possibility.
+          - link "Start a conversation" [ref=e43] [cursor=pointer]:
+            - /url: /contact-us
+            - text: Start a conversation
+            - generic [aria-hidden] [ref=e44]: ↗
+        - generic [ref=e45]:
+          - generic [ref=e46]: CAPYNGEN / BANKING
+          - generic [ref=e47]: Comfort in every connection.
+          - generic [ref=e48]: 01 — 01
+    - region [ref=e49]:
+      - generic [ref=e50]:
+        - paragraph [ref=e51]: Thoughtfully connected
+        - heading [level=2] [ref=e52]:
+          - text: Complex banking.
+          - emphasis [ref=e53]: Beautifully simplified.
+        - paragraph [ref=e54]: We bring design and engineering together to create digital banking experiences that work better for everyone.
+      - generic [ref=e55]:
+        - article [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]: "01"
+            - generic [aria-hidden] [ref=e59]: ↗
+          - heading "Digital banking experiences" [level=3] [ref=e60]
+          - paragraph [ref=e61]: Clear, intuitive web and mobile journeys that make managing money feel simple.
+          - generic [ref=e62]: UX strategy / Interface design
+        - article [ref=e63]:
+          - generic [ref=e64]:
+            - generic [ref=e65]: "02"
+            - generic [aria-hidden] [ref=e66]: ⌘
+          - heading "Connected banking platforms" [level=3] [ref=e67]
+          - paragraph [ref=e68]: Bring customer touchpoints and everyday workflows together with purpose-built applications.
+          - generic [ref=e69]: Web platforms / Integration
+        - article [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]: "03"
+            - generic [aria-hidden] [ref=e73]: ✳
+          - heading "Smarter customer relationships" [level=3] [ref=e74]
+          - paragraph [ref=e75]: Help teams understand customer needs and deliver more useful, personal service.
+          - generic [ref=e76]: CRM / Data & analytics
+      - generic [ref=e77]:
+        - paragraph [ref=e78]:
+          - text: Let’s make your next
+          - emphasis [ref=e79]: connection count.
+        - link "Talk to our team" [ref=e80] [cursor=pointer]:
+          - /url: /contact-us
+          - text: Talk to our team
+          - generic [aria-hidden] [ref=e81]: ↗
+  - contentinfo "Footway footer" [ref=e82]:
+    - generic [ref=e323]:
+      - generic [ref=e324]:
+        - generic [ref=e325]:
+          - heading "Footway’s Newsletter" [level=2] [ref=e326]
+          - generic [ref=e327]:
+            - generic [ref=e328]: Your email
+            - textbox "Your email" [ref=e329]
+            - button "SUBSCRIBE" [ref=e330] [cursor=pointer]
+            - status
+        - generic [ref=e331]:
+          - heading "Terms and conditions" [level=2] [ref=e332]
+          - generic [ref=e333]:
+            - group [ref=e334]:
+              - generic "Free returns!" [ref=e335] [cursor=pointer]
+            - group [ref=e336]:
+              - generic "30 days return policy!" [ref=e337] [cursor=pointer]
+            - group [ref=e338]:
+              - generic "All shoes in stock!" [ref=e339] [cursor=pointer]
+          - generic [ref=e340]:
+            - generic [ref=e341]: Follow Footway
+            - link "Footway on Facebook" [ref=e342] [cursor=pointer]:
+              - /url: https://www.facebook.com/footway
+            - link "Footway on Instagram" [ref=e345] [cursor=pointer]:
+              - /url: https://www.instagram.com/footway
+        - generic [ref=e350]:
+          - heading "Information" [level=2] [ref=e351]
+          - generic [ref=e352]:
+            - group [ref=e353]:
+              - generic "FAQs" [ref=e354] [cursor=pointer]
+            - group [ref=e355]:
+              - generic "About us at Footway" [ref=e356] [cursor=pointer]
+            - group [ref=e357]:
+              - generic "Footway Legal" [ref=e358] [cursor=pointer]
+          - generic [ref=e359]:
+            - link "0800 098 8300" [ref=e360] [cursor=pointer]:
+              - /url: tel:08000988300
+            - link "myfriends@footway.co.uk" [ref=e361] [cursor=pointer]:
+              - /url: mailto:myfriends@footway.co.uk
+        - generic [ref=e362]:
+          - heading "Contact" [level=2] [ref=e363]
+          - paragraph [ref=e364]: Footway
+          - paragraph [ref=e365]: "Company number: 559063-2377"
+          - paragraph [ref=e366]: "Head office:"
+          - generic [ref=e367]: Victoria Tower, Nolsögatan 3,164 40 Kista, Sweden
+      - generic [ref=e368]:
+        - generic "Trust and security marks shown in the design" [ref=e369]:
+          - generic [ref=e370]:
+            - generic [ref=e371]: e
+            - generic [ref=e372]: TRUSTEDSHOPS
+          - generic [ref=e373]:
+            - generic [ref=e374]: PCI✓
+            - generic [ref=e375]:
+              - text: DSS
+              - generic [ref=e376]: COMPLIANT
+        - generic [ref=e377]:
+          - paragraph [ref=e378]: Part of Footway Group, publicly traded on Nasdaq OMX.
+          - link "myfriends@footway.co.uk" [ref=e379] [cursor=pointer]:
+            - /url: mailto:myfriends@footway.co.uk
+          - text: ", 0800 098 8300"
+          - paragraph [ref=e380]: 🇸🇪 🇳🇴 🇫🇮 🇩🇰 🇵🇱 🇬🇧 🇩🇪 🇳🇱 🇦🇹 🇫🇷 🇨🇭
+          - paragraph [ref=e381]: © 2010–2026 Footway. All rights reserved.
+        - 'generic "Payment methods illustrated: Adyen, Mastercard, Visa" [ref=e382]':
+          - generic [ref=e383]: adyen
+          - generic [ref=e387]: VISA
+  - button "Open Next.js Dev Tools" [ref=e393] [cursor=pointer]
