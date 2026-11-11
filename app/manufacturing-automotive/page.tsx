@@ -5,7 +5,7 @@ import ManufacturingExperience from "../components/industries/manufacturing";
 
 export const metadata: Metadata = {
   title: "Manufacturing & Automotive | Capyngen",
-  description: "Go beyond the expected with connected digital experiences for manufacturing and automotive teams.",
+  description: "Explore the world with thoughtful journeys, inspiring destinations, travel guides, and a fresh perspective from Capyngen.",
 };
 
 export default function ManufacturingPage() {

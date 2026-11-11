@@ -12,6 +12,25 @@ export const industryGroups = [
   ["Insurance", "Communication, Media & Information Services", "Real Estate", "Gaming"],
 ];
 
+export const industryRoutes: Record<string, string> = {
+  Banking: "/banking",
+  Education: "/education",
+  "Capital Market": "/capital-market",
+  "Life Science": "/life-science",
+  "Healthcare & Fitness": "/healthcare-fitness",
+  "Energy, Resources & Utilities": "/energy-resources-utilities",
+  "Manufacturing & Automotive": "/manufacturing-automotive",
+  "Public Service": "/public-service",
+  "E-Commerce": "/e-commerce",
+  "High Tech": "/high-tech",
+  "Travel & Logistics": "/travel-logistics",
+  "Consumer Packaged Goods & Distribution": "/consumer-packaged-goods-distribution",
+  Insurance: "/insurance",
+  "Communication, Media & Information Services": "/communication-media-information-services",
+  "Real Estate": "/real-estate",
+  Gaming: "/gaming",
+};
+
 export const pageLinks = [
   { label: "Company Overview", href: "/company-overview" },
   { label: "Careers", href: "/#contact" },
