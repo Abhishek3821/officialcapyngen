@@ -5,8 +5,8 @@ import UiUxHero from "../components/ui-ux-design/hero";
 import UiUxSections from "../components/ui-ux-design/sections";
 
 export const metadata: Metadata = {
-  title: "UI/UX Design | Capyngen",
-  description: "Explore thoughtful UI/UX design by Capyngen, featuring a bold land discovery experience and inspiring digital layouts.",
+  title: "Best UI/UX Design Services in India | Capyngen",
+  description: "Capyngen develops interfaces that feel natural, solve your users' needs, and are welcoming, user-friendly, and personalised.",
 };
 
 export default function UiUxDesignPage() {

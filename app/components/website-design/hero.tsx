@@ -17,38 +17,38 @@ export default function WebsiteDesignHero() {
   return (
     <section id="website-design-hero" aria-labelledby="website-design-heading" className={`${styles.hero} ${anton.variable}`}>
       <div className={styles.inner}>
-        <h1 id="website-design-heading" className={styles.heading}><span>Words That Rank.</span><span>Stories That Sell.</span></h1>
+        <h1 id="website-design-heading" className={styles.heading}><span>Best Website Design Company</span><span>That Understand Your Business.</span></h1>
         <div className={styles.grid}>
           <article className={styles.featured}>
-            <Image src="/images/website-design/editorial-desk.webp" alt="Sunlit editorial desk with a travel magazine, Mediterranean photography and a website displayed on a tablet" fill preload sizes="(max-width: 700px) 100vw, 35vw" className={styles.featuredImage} />
+            <Image src="/images/website-design/editorial-desk.webp" alt="Sunlit editorial desk with a magazine, photography and a website displayed on a tablet" fill preload sizes="(max-width: 700px) 100vw, 35vw" className={styles.featuredImage} />
             <div className={styles.freshIdeas}>
-              <div className={styles.freshHeader}><h2>#FRESH IDEAS</h2><Link href="/news-and-updates" className={styles.orangeArrow} aria-label="Discover fresh ideas and updates"><Arrow /></Link></div>
-              <p>See more of what’s new.<br />Fresh ideas.<br />Clear messaging.<br />Your next growth story starts here.</p>
+              <div className={styles.freshHeader}><h2>#GURUGRAM</h2><a href="#website-services" className={styles.orangeArrow} aria-label="Our Website Design Services"><Arrow /></a></div>
+              <p>Corporate Website Design<br />for Gurugram and<br />Whole India.</p>
             </div>
           </article>
           <article className={styles.banner}>
-            <Image src="/images/website-design/content-studio.webp" alt="A carefully designed travel website on a desktop monitor beside an editorial mood board" fill preload sizes="(max-width: 700px) 100vw, 65vw" className={styles.bannerImage} />
+            <Image src="/images/website-design/content-studio.webp" alt="A carefully designed website on a desktop monitor beside a mood board" fill preload sizes="(max-width: 700px) 100vw, 65vw" className={styles.bannerImage} />
             <div className={styles.contactNotch}><Link href="/contact-us" className={styles.contact}>CONTACT US <Mail /></Link></div>
-            <h2 className={styles.bannerLabel}>#CONTENT THAT CONNECTS</h2>
+            <h2 className={styles.bannerLabel}>#WEBSITE DESIGN THAT WORKS</h2>
           </article>
           <details className={styles.faq}>
             <summary>
-              <span className={styles.faqIntro}>Have a question?<br />Talk to our content team</span>
-              <span className={styles.faqBottom}><span className={styles.faqTitle}>#FAQ</span><span className={styles.popular}>Popular</span></span>
+              <span className={styles.faqIntro}>Have a question?<br />Frequently Asked Questions</span>
+              <span className={styles.faqBottom}><span className={styles.faqTitle}>#FAQ</span><span className={styles.popular}>Q1–Q10</span></span>
             </summary>
             <div className={styles.faqAnswers}>
-              <h3>What can you help with?</h3><p>Website design, clear website copy, landing pages, and content that connects with your audience.</p>
-              <h3>How do we get started?</h3><p>Tell us about your business, your audience, and what you want your website to achieve.</p>
-              <Link href="/contact-us">Talk about your project <span aria-hidden="true">↗</span></Link>
+              <h3>Do you offer custom website design services?</h3><p>Yes. Our Custom Website Design Services are centered on your branding, the expectations of your audience, and your growth goals.</p>
+              <h3>Do you provide responsive website design?</h3><p>Absolutely. Our Responsive Website Design approach guarantees seamless performance on mobile, tablet, and desktop devices.</p>
+              <a href="#website-faq">Frequently Asked Questions <span aria-hidden="true">↗</span></a>
             </div>
           </details>
-          <Link href="/#work" className={styles.quality} aria-label="Explore the quality of our work">
+          <a href="#website-best" className={styles.quality} aria-label="Why Capyngen is the Best Website Design Company">
             <Image src="/images/website-design/editorial-desk.webp" alt="Close-up of thoughtfully composed magazine pages" fill sizes="(max-width: 700px) 100vw, 22vw" className={styles.qualityImage} />
             <span className={styles.qualityLabel}>#QUALITY</span><span className={styles.plus} aria-hidden="true" />
-          </Link>
-          <Link href="/news-and-updates" className={styles.content}>
-            <div className={styles.contentInner}><div className={styles.contentHeader}><h2>CONTENT</h2><span className={styles.contentArrow}><Arrow /></span></div><p>Blogs. Guides.<br />Case studies. Landing pages.</p></div>
-          </Link>
+          </a>
+          <a href="#website-process" className={styles.content}>
+            <div className={styles.contentInner}><div className={styles.contentHeader}><h2>PROCESS</h2><span className={styles.contentArrow}><Arrow /></span></div><p>Discover &amp; Plan. Design &amp; Develop.<br />Launch &amp; Optimize.</p></div>
+          </a>
         </div>
       </div>
     </section>

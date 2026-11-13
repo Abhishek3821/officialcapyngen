@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import CleaningCta from "../components/cleaning-cta";
+import AppDevelopmentCta from "../components/app-development/cta";
+import AppDevelopmentFaq from "../components/app-development/faq";
 import { AppPortfolioHero, AppAboutSection, AppContactStrip } from "../components/app-development/intro";
 import { AppAirlineCaseStudy, AppResortCaseStudy, AppBaliCaseStudy } from "../components/app-development/case-studies";
 import { AppStatsStrip, AppServicesSection, AppTestimonials, AppSnapshot } from "../components/app-development/details";
 
 export const metadata: Metadata = {
-  title: "App Development | Capyngen",
-  description: "Explore Capyngen's mobile app development approach, services, and travel-inspired product concepts.",
+  title: "Best App Development Company in Gurgaon | Capyngen",
+  description: "From app concept to a real app, as a top app development company in Gurugram we help brands build fully functional apps that their customers will want to use.",
 };
 
 export default function AppDevelopmentPage() {
@@ -26,7 +27,8 @@ export default function AppDevelopmentPage() {
         <AppResortCaseStudy />
         <AppSnapshot />
         <AppBaliCaseStudy />
-        <CleaningCta />
+        <AppDevelopmentFaq />
+        <AppDevelopmentCta />
       </main>
       <Footer />
     </>

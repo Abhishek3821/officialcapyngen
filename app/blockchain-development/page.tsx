@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { BlockchainHero, BlockchainVision, BlockchainPricing, BlockchainMoodboard, BlockchainServices } from "../components/blockchain-development/intro";
-import { BlockchainStrategy, BlockchainChallenge, BlockchainSwot } from "../components/blockchain-development/strategy";
+import { BlockchainStrategy, BlockchainChallenge, BlockchainSwot, BlockchainFaq } from "../components/blockchain-development/strategy";
 
 export const metadata: Metadata = {
-  title: "Blockchain Development | Capyngen",
-  description: "Explore Capyngen's blockchain development strategy, services, challenges, and opportunities.",
+  title: "Custom Blockchain Development Company in India | Capyngen",
+  description: "Developing Custom Blockchain Solutions That Perform at Scale. Your Trusted Partner for building and Scaling Web3 with security and Customization.",
 };
 
 export default function BlockchainDevelopmentPage() {
@@ -21,6 +21,7 @@ export default function BlockchainDevelopmentPage() {
       <BlockchainStrategy />
       <BlockchainChallenge />
       <BlockchainSwot />
+      <BlockchainFaq />
     </main>
     <Footer />
   </>;

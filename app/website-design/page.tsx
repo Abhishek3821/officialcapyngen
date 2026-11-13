@@ -5,8 +5,8 @@ import WebsiteDesignHero from "../components/website-design/hero";
 import WebsiteDesignSections from "../components/website-design/sections";
 
 export const metadata: Metadata = {
-  title: "Website Design | Capyngen",
-  description: "Explore thoughtful website design services from Capyngen.",
+  title: "Best Website Design Company in Gurugram & India | Capyngen",
+  description: "Best Website Design Company That Understand Your Business. Corporate Website Design for Gurugram and Whole India.",
 };
 
 export default function WebsiteDesignPage() {

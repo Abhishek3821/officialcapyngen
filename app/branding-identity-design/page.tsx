@@ -12,8 +12,8 @@ import {
 } from "../components/application-solutions/sustainable";
 
 export const metadata: Metadata = {
-  title: "Branding & Identity Design | Capyngen",
-  description: "Explore Capyngen's branding and identity design concepts.",
+  title: "Best Branding and Identity Design Services in India | Capyngen",
+  description: "We are a brand identity design company, and we ensure your brand maintains a consistent look and feel at each touchpoint.",
 };
 
 export default function BrandingIdentityDesignPage() {

@@ -15,13 +15,13 @@ export default function UiUxHero() {
     <div className={styles.container}><div className={styles.scene}>
       <div className={styles.landscape}><Image src="/images/application-solutions/fields.webp" alt="Green agricultural land and open countryside in warm morning sunlight" fill preload sizes="(max-width: 700px) 100vw, 80vw" className={styles.landscapeImage} /><div className={styles.sunlight} /></div>
       <div className={styles.limePanel} aria-hidden="true" />
-      <div className={styles.copy}><h1 id="ui-ux-heading">Buy <span>land plots</span> for<br />construction and<br />business.</h1><p>Looking to sell or buy land?<br />The Area is designed as a place to find land<br />for sale, real estate, farms, and ranches.</p><Link href="/contact-us" className={styles.cta}>Get started <span aria-hidden="true">&#8599;</span></Link></div>
-      <div className={styles.realtors}><div className={styles.realtorsInner}><strong>500+</strong><p>Top realtors</p><div className={styles.avatars}>{[1, 2, 3, 4, 1, 3].map((n, index) => <Image key={index} src={`/images/client-${n}.jpg`} alt="" width={43} height={43} />)}</div><div className={styles.review}><span>Excellent</span><span className={styles.stars} aria-label="Five decorative stars">{[1, 2, 3, 4, 5].map(n => <span key={n}>&#9733;</span>)}</span><span className={styles.reviewLabel}>Client stories</span></div><small>Illustrative property community</small></div></div>
-      <div className={styles.agro}><Leaf /><span>For agro</span></div>
-      <div className={styles.location}>Cunningham,<br /><strong>KS 67035</strong></div>
-      <div className={styles.unimproved}>Unimproved<br />Land</div>
-      <div className={styles.acreage}>79.40 acres</div>
-      <div className={styles.greenTag}>Green</div>
+      <div className={styles.copy}><h1 id="ui-ux-heading">Best <span>UI/UX Design</span><br />Services in India</h1><p>Capyngen develops interfaces that feel natural, solve your users&apos; needs, and are welcoming, user-friendly, and personalised.</p><p>Our solutions will not only excite your target audience but also generate deeper interactions, higher conversions and increase your business.</p><Link href="/contact-us" className={styles.cta}>Contact us <span aria-hidden="true">&#8599;</span></Link></div>
+      <div className={styles.realtors}><div className={styles.realtorsInner}><strong>UI/UX</strong><p>Design Services</p><div className={styles.avatars}>{[1, 2, 3, 4, 1, 3].map((n, index) => <Image key={index} src={`/images/client-${n}.jpg`} alt="" width={43} height={43} />)}</div><div className={styles.review}><span>Natural</span><span className={styles.stars} aria-label="Five decorative stars">{[1, 2, 3, 4, 5].map(n => <span key={n}>&#9733;</span>)}</span><span className={styles.reviewLabel}>User-friendly</span></div><small>Welcoming, user-friendly, and personalised</small></div></div>
+      <div className={styles.agro}><Leaf /><span>For web</span></div>
+      <div className={styles.location}>Mobile &amp;<br /><strong>Web App UI</strong></div>
+      <div className={styles.unimproved}>Higher<br />Conversions</div>
+      <div className={styles.acreage}>Engagement</div>
+      <div className={styles.greenTag}>UX</div>
     </div></div>
   </section>;
 }

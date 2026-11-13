@@ -28,41 +28,56 @@ function Photo({ name, alt, className = "", sizes = "(max-width: 767px) 100vw, 4
   return <div className={`${styles.photo} ${className}`}><Image src={src} alt={alt} fill sizes={sizes} className={styles.image} /></div>;
 }
 
-const stats: { value: string; label: string; icon: IconName }[] = [
-  { value: "20+", label: "Years of Excellence", icon: "award" },
-  { value: "3,500+", label: "Students", icon: "people" },
-  { value: "150+", label: "Expert Educators", icon: "book" },
-  { value: "40+", label: "Clubs & Activities", icon: "person" },
-  { value: "100%", label: "University Acceptance", icon: "award" },
+const techStats: { value: string; label: string; icon: IconName }[] = [
+  { value: "HTML5", label: "Languages", icon: "book" },
+  { value: "CSS3", label: "Languages", icon: "book" },
+  { value: "JavaScript", label: "Languages", icon: "book" },
+  { value: "React", label: "Frameworks", icon: "chart" },
+  { value: "Figma", label: "Tools", icon: "star" },
 ];
 
-const pathways: { title: string; text: string; detail: string; icon: IconName }[] = [
-  { title: "Early Years", text: "Nurturing curiosity and creativity in a warm and stimulating environment.", detail: "Play-based learning, early language skills, and caring guidance help every child feel confident from the very beginning.", icon: "people" },
-  { title: "Primary School", text: "Building strong foundations in academics, character, and confidence.", detail: "An engaging curriculum connects literacy, numeracy, science, and the arts with meaningful everyday experiences.", icon: "book" },
-  { title: "Middle School", text: "Encouraging exploration, critical thinking, and independent learning.", detail: "Subject specialists, collaborative projects, and personal mentoring support a growing sense of independence.", icon: "cap" },
-  { title: "High School", text: "Preparing students for university and a successful future.", detail: "Focused academic pathways, career guidance, and leadership opportunities prepare students for their next chapter.", icon: "person" },
-  { title: "Co-Curricular", text: "Sports, arts, leadership, and clubs for all-round growth.", detail: "From the playing field to the stage, students discover their interests, build friendships, and develop new skills.", icon: "star" },
+const investReasons: { title: string; text: string; icon: IconName }[] = [
+  { title: "Better User Engagement", text: "SILVER Collaboration drives the creation of easy-to-use and seamless interfaces and gateways between businesses and users. With seamless and intuitive interfaces, businesses can open up channels for users to engage with the platform easily and improve engagement.", icon: "people" },
+  { title: "Improved Conversion Rates", text: "We optimise designs so that users can perform their desired tasks with as little effort as possible and achieve better conversions.", icon: "chart" },
+  { title: "Improved Customer Retention", text: "Creating a positive user experience makes users want to return to the platform. It supports long-term customer loyalty and helps with growth.", icon: "handshake" },
+  { title: "Optimised Mobile Experiences", text: "Our UI/UX design experts work hard to make sure that your UI/UX design services work perfectly on any device for a superior experience on mobile and extended reach.", icon: "person" },
+  { title: "Better ROI", text: "You can accomplish fast time to market with proficient UI/UX development services and lower development costs to propagate the long-term benefits for the business.", icon: "award" },
 ];
 
-const services: { title: string; text: string; icon: IconName; theme: string; target: string }[] = [
-  { title: "Next-gen human Resources", text: "We provide expert business consulting services that help companies grow.", icon: "briefcase", theme: "white", target: "implementation-1" },
-  { title: "Market growth Consulting", text: "Identify new opportunities and accelerate sustainable business growth.", icon: "chart", theme: "lime", target: "implementation-2" },
-  { title: "Business process Improvement", text: "Optimize workflows to increase efficiency, productivity, and performance.", icon: "handshake", theme: "dark", target: "implementation-3" },
+const purpose: { title: string; text: string; icon: IconName; theme: string }[] = [
+  { title: "Expertise & Skill", text: "Our extensive experience and deep knowledge in the field enable us to create solutions that will have a real impact on your target market. Top UI UX design company can help your enterprise reach the right audience with great effectiveness.", icon: "briefcase", theme: "white" },
+  { title: "Our Mission", text: "Ease the burden of technology on your end-users.", icon: "star", theme: "lime" },
+  { title: "Our Vision", text: "Design built to give your business the confidence, momentum, and growth it needs to succeed.", icon: "award", theme: "dark" },
 ];
 
-const growth = [
-  { title: "Data Integration", text: "Eliminating silos to create a unified view of your customer. We build smart, scalable systems that let you track behavior from anywhere in real time.", image: "research", alt: "Team collaborating on a digital project", tag: "Core Tech", color: "purple" },
-  { title: "UX/UI Optimization", text: "Removing friction from the digital journey. We design intuitive interfaces that guide users to checkout with zero distractions.", image: "designer", alt: "Portrait of a creative professional", tag: "Design Hub", color: "purple" },
-  { title: "Accelerated Revenue", text: "Leveraging automated tools to reach new audiences. We focus on high-LTV segments to ensure every dollar delivers maximum ROI.", image: "office", alt: "Modern light-filled office interior", tag: "Marketing", color: "green" },
+const offerings = ["Custom UI/UX Design Services", "Mobile & Web App UI Design", "User-Centered Design Solutions", "Usability Testing & Research", "Wireframing & Prototyping", "UI/UX Consulting & Strategy"];
+
+const team = [
+  { title: "UI/UX Designers", text: "We have a complete team of UI & UX designers who are visually talented to produce engaging & intuitive designs. Besides, we have professional illustrators, animators & other creative minds in our studio.", image: "research", alt: "Team collaborating on a digital project", tag: "UI/UX", color: "purple" },
+  { title: "Brand Designers", text: "The personaL of different & businesses can't be fawazed, but our brand specialists and inventive directors make design tales an instant. Our real-time specialists acquire a number of design structures and aids to cater to every consumer's needs.", image: "designer", alt: "Portrait of a creative professional", tag: "Brand", color: "purple" },
+  { title: "Product Designers", text: "You need industry experts to create digital products that should perform well in the marketplace. And we've got such industry specialists who specialise in delivering design services to a wide range of industries.", image: "office", alt: "Modern light-filled office interior", tag: "Product", color: "green" },
 ];
 
-const implementation = [
-  { title: "Integrate Circular Design Principles", text: "Design products for durability, reparability, and recyclability." },
-  { title: "Develop Closed-Loop Supply Chains", text: "Source materials that can be recycled or are biodegradable." },
-  { title: "Enhance Manufacturing", text: "Implement lean manufacturing techniques to minimize waste." },
-  { title: "Promote Product-as-a-Service Models", text: "Offer leasing, renting, or subscription services instead of one-time sales." },
-  { title: "Foster Collaboration and Partnerships", text: "Engage in industry coalitions and partnerships to drive circular initiatives." },
-  { title: "Educate & Engage Stakeholders", text: "Train employees on circular economy principles and practices." },
+const reasons = [
+  { title: "Complete Mobile & Web UI/UX Expertise", text: "Strong expertise in mobile and web ui/ux design services with deep knowledge of multiple platforms and devices." },
+  { title: "User-Centered Original Design", text: "Designs originated and built with end-users in mind, for startups and volume companies." },
+  { title: "Global Delivery at Competitive Prices", text: "Global delivery at competitive prices, with options that can be increased or decreased on demand." },
+  { title: "Focus on Engagement & Conversions", text: "Focus on engagement, retention, and conversions, not design only." },
+  { title: "Skilled Team with Modern Tools", text: "A dedicated team, armed with the latest technology and modern design practices." },
+  { title: "Reliable, User-Friendly Digital Experiences", text: "Global track record of delivering intuitive digital experiences." },
+];
+
+const faqs = [
+  { question: "What are UI/UX design services, and why do they matter?", answer: "UI/UX design services. The research, design, and usability testing of digital interfaces that users find intuitive. Proper design can have a direct impact on engagement, conversions, and customer retention; this is why good design is more than just good looks." },
+  { question: "What makes Capyngen a leading UI UX design company?", answer: "We integrate user research, authentic design thinking, and contemporary tooling. Our UI UX design studio concentrates on results — engagement, conversions, and retention — not merely delivering screens." },
+  { question: "How is Capyngen different from other UI/UX design agencies?", answer: "Most agencies end at the visual design stage. Our UI/UX design agency goes further, adopting a user-centric process that builds in research, wireframes, prototyping, usability testing, and post-launch tuning." },
+  { question: "What is included in your custom UI/UX design services?", answer: "Our expert UI/UX design services comprise user research, wireframes, prototypes, UI design for mobile and web, usability testing and UX consultancy. Each project is uniquely designed to ensure that you get the best for your product and consumers." },
+  { question: "Do you provide both user interface design services and user experience design services?", answer: "Yes. All our user interface design services include interaction design, and all our user experience design services include research, flows, information architecture and usability. Our services work hand-in-hand." },
+  { question: "Which tools and technologies do you use for design?", answer: "Designs are crafted in Figma, Adobe XD and Sketch, while we implement using HTML5, CSS3, JavaScript, React, Vue.js and Angular so that the design can be developed and not only visualised." },
+  { question: "How do you measure the success of a UI/UX project?", answer: "We measure engagement metrics, conversion rates, task completion, retention, and usability testing outcomes. Success is predetermined with transparent benchmarks that are based on your business objectives, not on a gut feeling." },
+  { question: "Can you redesign an existing website or application?", answer: "Absolutely. It's an integral aspect of our UI/UX design offering. We give the existing experience an audit, smooth out the bumps, and recreate the interface, all without changing the functionality you already have in place." },
+  { question: "Do you design for both mobile and web platforms?", answer: "Q. Do you design UI for mobile apps? Yes. We do UI design for mobile applications and web applications, giving a similar experience on desktop and mobile platforms." },
+  { question: "How do I get started with Capyngen's UI/UX design services?", answer: "Contact us via our contact form. We will give you a discovery call to get a better understanding of your product, your users and your goals, and then draw up a realistic design plan of action free of charge." },
 ];
 
 export default function UiUxSections() {
@@ -71,34 +86,34 @@ export default function UiUxSections() {
       <div className={styles.container}>
         <div className={styles.schoolGrid}>
           <div className={styles.schoolIntro}>
-            <p className={styles.goldEyebrow}>About us</p>
-            <h2 id="school-heading">More Than a School,<br />It’s a Community.</h2>
-            <p>At Elmwood, we believe every child has a unique potential. Our mission is to provide a supportive community where students thrive academically, socially, and emotionally.</p>
-            <a href="#academics" className={styles.goldButton}>Discover Our Story <Arrow /></a>
+            <p className={styles.goldEyebrow}>Tech Stack</p>
+            <h2 id="school-heading">Tech Stack for Exceptional UI UX Designs Services.</h2>
+            <p>Our designers and developers use the most current design and development tools to deliver groundbreaking solutions to high-performance interfaces.</p>
+            <a href="#academics" className={styles.goldButton}>Why Invest in UI/UX Design Services? <Arrow /></a>
           </div>
-          <Photo name="campus" alt="School campus surrounded by trees and open green space" className={styles.campus} />
+          <Photo name="campus" alt="Campus surrounded by trees and open green space" className={styles.campus} />
           <div className={styles.schoolHighlights}>
             <div className={styles.schoolHighlight}>
-              <Photo name="classroom" alt="Students learning together in a bright classroom" />
-              <div><h3>Innovative Classrooms</h3><p>Modern spaces for<br />smarter learning.</p></div>
+              <Photo name="classroom" alt="People learning together in a bright room" />
+              <div><h3>Tools</h3><p>Adobe XD · Sketch<br />· Figma</p></div>
             </div>
             <div className={styles.schoolHighlight}>
-              <Photo name="sports" alt="Green football field for outdoor sports and activities" />
-              <div><h3>Vibrant Campus Life</h3><p>Activities that inspire<br />and connect.</p></div>
+              <Photo name="sports" alt="Green football field" />
+              <div><h3>Frameworks</h3><p>React · Vue.js · Angular<br />· Bootstrap</p></div>
             </div>
           </div>
         </div>
-        <div className={styles.stats} aria-label="Elmwood at a glance">
-          {stats.map(item => <div className={styles.stat} key={item.label}><Icon name={item.icon} /><div><p>{item.value}</p><span>{item.label}</span></div></div>)}
+        <div className={styles.stats} aria-label="Languages: HTML5, CSS3, JavaScript, Bootstrap">
+          {techStats.map(item => <div className={styles.stat} key={item.value}><Icon name={item.icon} /><div><p className={item.value.length > 6 ? "!text-[clamp(18px,1.9vw,28px)] whitespace-nowrap" : undefined}>{item.value}</p><span>{item.label}</span></div></div>)}
         </div>
       </div>
     </section>
 
     <section id="academics" className={styles.academics} aria-labelledby="academics-heading">
       <div className={styles.container}>
-        <header className={styles.academicHeader}><p className={styles.goldEyebrow}>Academics</p><h2 id="academics-heading">Pathways to Success</h2><span /></header>
+        <header className={styles.academicHeader}><p className={styles.goldEyebrow}>Why Invest</p><h2 id="academics-heading">Why Invest in UI/UX Design Services?</h2><span /></header>
         <div className={styles.pathways}>
-          {pathways.map(item => <article key={item.title} className={styles.pathway}><div className={styles.pathwayIcon}><Icon name={item.icon} /></div><h3>{item.title}</h3><p>{item.text}</p><details className={styles.learnMore}><summary>Learn More <Arrow /></summary><p>{item.detail}</p></details></article>)}
+          {investReasons.map(item => <article key={item.title} className={styles.pathway}><div className={styles.pathwayIcon}><Icon name={item.icon} /></div><h3>{item.title}</h3><p>{item.text}</p></article>)}
         </div>
       </div>
     </section>
@@ -106,21 +121,21 @@ export default function UiUxSections() {
     <section className={styles.approach} aria-labelledby="approach-heading">
       <div className={styles.container}>
         <div className={styles.approachHeader}>
-          <div><p className={styles.smallEyebrow}><span aria-hidden="true">✳</span> Our Approach</p><h2 id="approach-heading">Essential features for<br />modern business<br />success</h2></div>
-          <p>Explore integrated consulting approaches that improve processes, increase productivity, and support long-term organizational growth.</p>
+          <div><p className={styles.smallEyebrow}><span aria-hidden="true">✳</span> A Leading UI UX Design Company</p><h2 id="approach-heading">Create Purposeful<br />Designs with<br />Capyngen</h2></div>
+          <p>A user-friendly app can take your business to the next level for user engagement. It can motivate users to perform the required action and can also help in acquiring more users for your business.</p>
         </div>
-        <div className={styles.services}>{services.map(item => <article key={item.title} className={`${styles.service} ${styles[item.theme]}`}><Icon name={item.icon} /><h3>{item.title}</h3><p>{item.text}</p><a href={`#${item.target}`} className={styles.explore}>Explore More <Arrow /></a></article>)}</div>
+        <div className={styles.services}>{purpose.map(item => <article key={item.title} className={`${styles.service} ${styles[item.theme]}`}><Icon name={item.icon} /><h3>{item.title}</h3><p>{item.text}</p><a href="#strategy" className={styles.explore}>UI/UX Design Services <Arrow /></a></article>)}</div>
       </div>
     </section>
 
     <section id="strategy" className={styles.strategy} aria-labelledby="strategy-heading">
       <div className={styles.container}>
-        <div className={styles.sectionMeta}><span className={styles.pill}><span>15</span> Success Story</span><p>Digital Marketing / Concept Showcase</p></div>
+        <div className={styles.sectionMeta}><span className={styles.pill}><span>6</span> Services</span><p>UI/UX Design / Capyngen</p></div>
         <div className={styles.strategyGrid}>
-          <div className={styles.strategyCopy}><h2 id="strategy-heading">Why Choose<br />Our Strategy?</h2><h3>Project Overview</h3><p>Navigating the shift from traditional retail to a fully integrated e-commerce model presents technical and strategic hurdles that many brands fail to overcome. High acquisition costs, low retention rates and technological debt are the primary factors preventing sustainable scaling in the digital age.</p><p>Our goal is to identify these gaps and build a robust foundation for long-term growth.</p><a href="#growth" className={styles.caseLink}><Arrow diagonal /> Explore the solution</a></div>
+          <div className={styles.strategyCopy}><h2 id="strategy-heading">UI/UX Design<br />Services We Offer</h2><h3>A well-known UI/UX design company</h3><p>As a well-known UI/UX design company, Capyngen specialises in creating visually attractive and high-performing web and mobile user interfaces that enable users to interact effectively and boost conversions.</p><ul className="mt-4 space-y-2 text-[14px] leading-[1.5] text-[#333835]">{offerings.map(item => <li key={item} className="flex gap-2"><span aria-hidden="true" className="text-[#7c61ef]">↗</span>{item}</li>)}</ul><a href="#growth" className={styles.caseLink}><Arrow diagonal /> UX Team That Thinks, Innovates, &amp; Creates</a></div>
           <div className={styles.strategyVisual}>
             <Photo name="strategy" alt="Woman using her phone" className={styles.strategyPortrait} />
-            <div className={styles.metric}><strong>38K</strong><p>Monthly active users acquired via optimized organic search traffic</p><span>Illustrative project metric</span></div>
+            <div className={styles.metric}><strong>UI/UX</strong><p>Visually attractive and high-performing web and mobile user interfaces</p><span>Boost conversions</span></div>
             <div className={styles.portraitInset}><Photo name="strategy" alt="" /><span aria-hidden="true">↗</span></div>
           </div>
         </div>
@@ -129,10 +144,10 @@ export default function UiUxSections() {
 
     <section id="growth" className={styles.growth} aria-labelledby="growth-heading">
       <div className={styles.container}>
-        <div className={styles.sectionMeta}><span className={styles.pill}><span>6</span> The Solution</span><p>Digital Marketing</p></div>
+        <div className={styles.sectionMeta}><span className={styles.pill}><span>3</span> UX Team</span><p>Thinks, Innovates, &amp; Creates</p></div>
         <div className={styles.growthGrid}>
-          <div className={styles.growthIntro}><h2 id="growth-heading">How We<br />Drive<br />Growth?</h2><p>Our implementation framework focuses on three core pillars designed to eliminate market gaps and maximize your digital performance across all platforms.</p><a href="#implementation" aria-label="Explore implementation strategies" className={styles.largeArrow}><Arrow diagonal /></a></div>
-          <div className={styles.growthCards}>{growth.map((item, i) => <article className={styles.growthCard} key={item.title}>
+          <div className={styles.growthIntro}><h2 id="growth-heading">UX Team That Thinks, Innovates, &amp; Creates</h2><p>Our creative Team is composed of a lot of talented people from around the world, handpicked from unique demographics. Our every single design resources are qualified SM person who know the need for the client and offers high quality of design standards.</p><a href="#implementation" aria-label="Why Choose Capyngen for UI/UX Design" className={styles.largeArrow}><Arrow diagonal /></a></div>
+          <div className={styles.growthCards}>{team.map((item, i) => <article className={styles.growthCard} key={item.title}>
             {item.image === "office" ? <div className={styles.photo}><Image src="/images/company-about-office-v2.webp" alt={item.alt} fill sizes="(max-width: 600px) 100vw, 25vw" className={styles.image} /></div> : <Photo name={item.image} alt={item.alt} sizes="(max-width: 600px) 100vw, 25vw" />}
             <span className={styles.cardNumber}>{i + 1}</span><div className={styles.growthCardCopy}><h3>{item.title}</h3><p>{item.text}</p><a href={`#implementation-${i + 1}`} className={`${styles.cardTag} ${item.color === "green" ? styles.greenTag : ""}`}>{item.tag}<span aria-hidden="true">↘</span></a></div>
           </article>)}</div>
@@ -142,9 +157,19 @@ export default function UiUxSections() {
 
     <section id="implementation" className={styles.implementation} aria-labelledby="implementation-heading">
       <div className={styles.container}>
-        <header><p className={styles.smallEyebrow}>From ideas to impact</p><h2 id="implementation-heading">Implementation Strategies</h2><p>A practical framework for building a more circular business.<br />Small, intentional changes. Meaningful, lasting impact.</p></header>
-        <ol className={styles.implementationGrid}>{implementation.map((item, i) => <li id={`implementation-${i + 1}`} key={item.title}><span>{i + 1}</span><h3>{item.title}</h3><p>{item.text}</p></li>)}</ol>
-        <div className={styles.implementationCta}><p>Ready to put your next idea into motion?</p><Link href="/contact-us">Let’s talk <Arrow diagonal /></Link></div>
+        <header><p className={styles.smallEyebrow}>Engagement, satisfaction, and retention</p><h2 id="implementation-heading">Why Choose Capyngen for UI/UX Design</h2><p>Our UI UX Design Services in India help businesses by improving their engagement, satisfaction, and retention.</p></header>
+        <ol className={styles.implementationGrid}>{reasons.map((item, i) => <li id={`implementation-${i + 1}`} key={item.title}><span>{i + 1}</span><h3>{item.title}</h3><p>{item.text}</p></li>)}</ol>
+        <div className={styles.implementationCta}><p>Contact us via our contact form.</p><Link href="/contact-us">Contact us <Arrow diagonal /></Link></div>
+      </div>
+    </section>
+
+    <section id="ui-ux-faq" className={styles.academics} aria-labelledby="ui-ux-faq-heading">
+      <div className={styles.container}>
+        <header className={styles.academicHeader}><p className={styles.goldEyebrow}>FAQ</p><h2 id="ui-ux-faq-heading">Frequently Asked Questions</h2><span /></header>
+        <div className="mx-auto mt-8 max-w-[980px] space-y-3">{faqs.map((faq, index) => <details key={faq.question} className="group rounded-[7px] border border-[#f6f4ee] bg-[#f9f8f5] p-5 sm:px-7">
+          <summary className="flex cursor-pointer list-none items-start justify-between gap-5 text-base leading-[1.5] font-semibold text-[#202722] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#bd9644] [&::-webkit-details-marker]:hidden"><span><span className="mr-2 text-[#bd9644]">Q{index + 1}.</span>{faq.question}</span><span aria-hidden="true" className="flex size-8 shrink-0 items-center justify-center rounded-full bg-[#073c2c] text-base text-[#d2af4e] transition-transform group-open:rotate-45">+</span></summary>
+          <p className="mt-3 pr-10 text-sm leading-[1.7] text-[#5b625d]">{faq.answer}</p>
+        </details>)}</div>
       </div>
     </section>
   </>;

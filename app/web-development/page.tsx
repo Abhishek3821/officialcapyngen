@@ -5,15 +5,16 @@ import WebDevelopmentHero from "../components/web-development-hero";
 import InsideStories from "../components/inside-stories";
 import RecentAccolades from "../components/recent-accolades";
 import VisualDiary from "../components/visual-diary";
-import BrandVision from "../components/brand-vision";
+import BrandVision from "../components/web-development/brand-vision";
 import FashionMarket from "../components/fashion-market";
-import BrandsShine from "../components/brands-shine";
-import SocialProjects from "../components/social-projects";
-import CleaningCta from "../components/cleaning-cta";
+import BrandsShine from "../components/web-development/brands-shine";
+import SocialProjects from "../components/web-development/social-projects";
+import WebDevelopmentFaq from "../components/web-development/faq";
+import WebDevelopmentCta from "../components/web-development/cta";
 
 export const metadata: Metadata = {
-  title: "Web Development | Capyngen",
-  description: "Bring your ideas to life with custom web design and development from Capyngen. Explore our work and start your next website project.",
+  title: "Best Website Development Company in Gurugram | Capyngen",
+  description: "As a top web development company in Gurugram, we provide in-depth requirement analysis, captivating UI/UX design, robust development structure, and hassle-free maintenance and support.",
 };
 
 export default function WebDevelopmentPage() {
@@ -29,7 +30,8 @@ export default function WebDevelopmentPage() {
         <FashionMarket />
         <BrandsShine />
         <SocialProjects />
-        <CleaningCta />
+        <WebDevelopmentFaq />
+        <WebDevelopmentCta />
       </main>
       <Footer />
     </>

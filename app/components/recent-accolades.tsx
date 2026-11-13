@@ -1,9 +1,11 @@
-const accolades = [
-  { publication: "TIME", title: "TIME’s World’s Most Sustainable Companies 2026", wordmark: "font-serif text-[clamp(48px,4.8vw,70px)] font-normal tracking-[-.065em]" },
-  { publication: "Newsweek", title: "Newsweek America’s Most Responsible Companies 2026", wordmark: "font-serif text-[clamp(38px,4.1vw,61px)] font-black tracking-[-.065em]" },
-  { publication: "Forbes", title: "Forbes Most Trusted Companies in America 2025", wordmark: "font-serif text-[clamp(48px,4.8vw,70px)] font-bold tracking-[-.065em]" },
-  { publication: "USA TODAY", title: "USA Today America’s Climate Leaders 2026", wordmark: "text-[clamp(24px,2.7vw,40px)] font-black tracking-[-.055em]" },
-  { publication: "FINANCIAL TIMES", title: "The Financial Times Best Employers Asia-Pacific 2026", wordmark: "font-serif text-[clamp(18px,2vw,31px)] font-bold tracking-[-.045em]" },
+const wordmark = "font-serif text-[clamp(48px,4.8vw,70px)] font-normal tracking-[-.065em]";
+
+const features = [
+  { number: "01", title: "SEO-Ready Development", description: "Every website is built with clean structure, fast loading, and proper indexing from day one." },
+  { number: "02", title: "Mobile-First Design", description: "Layouts are designed for small screens first, then scaled up to tablets and desktops." },
+  { number: "03", title: "Secure Code Architecture", description: "SSL, input validation, and secure authentication practices are standard on every project." },
+  { number: "04", title: "Transparent Timelines", description: "You get clear milestones and weekly updates, with no surprise delays or hidden work." },
+  { number: "05", title: "Post-Launch Support", description: "Maintenance, security patches, and performance checks continue after your site goes live." },
 ];
 
 function LightTrails() {
@@ -31,17 +33,17 @@ export default function RecentAccolades() {
         <LightTrails />
         <div id="recent-accolades-list" className="relative mx-auto grid max-w-[1400px] grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           <div className="flex flex-col items-start justify-center pb-5 sm:col-span-2 lg:col-span-1 lg:pb-8">
-            <h2 id="recent-accolades-heading" className="text-[clamp(28px,2.8vw,42px)] leading-[1.12] font-bold tracking-[-.045em]">RECENT ACCOLADES</h2>
-            <p className="mt-6 max-w-[350px] text-[clamp(18px,1.65vw,24px)] leading-[1.35] tracking-[-.025em] text-[#b8c8d2]">Reinforcing our commitment to excellence and innovation.</p>
-            <a href="#accolades-complete-list" className="mt-7 inline-flex items-center gap-2 rounded-sm text-sm font-bold text-[#ff5400] transition-colors hover:text-[#ff9b51] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ff8c40]">VIEW ALL <svg aria-hidden="true" width="9" height="20" viewBox="0 0 9 20"><path d="M1 0 8 10 1 20Z" fill="currentColor" /></svg></a>
+            <h2 id="recent-accolades-heading" className="text-[clamp(28px,2.8vw,42px)] leading-[1.12] font-bold tracking-[-.045em]">OUR FEATURES</h2>
+            <p className="mt-6 max-w-[350px] text-[clamp(18px,1.65vw,24px)] leading-[1.35] tracking-[-.025em] text-[#b8c8d2]">Five Features That Set Capyngen as the Best Web Development Company in India</p>
+            <a href="#visual-diary" className="mt-7 inline-flex items-center gap-2 rounded-sm text-sm font-bold text-[#ff5400] transition-colors hover:text-[#ff9b51] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ff8c40]">OUR WEB DEVELOPMENT SERVICES <svg aria-hidden="true" width="9" height="20" viewBox="0 0 9 20"><path d="M1 0 8 10 1 20Z" fill="currentColor" /></svg></a>
           </div>
-          {accolades.map((award, index) => (
-            <article key={award.publication} id={index === 2 ? "accolades-complete-list" : undefined} className="flex min-h-[230px] flex-col justify-between border border-[#d3e0e5]/70 bg-[#b8c6ce] px-7 py-8 text-[#071c31] sm:min-h-[250px] lg:aspect-[1.65/1] lg:min-h-0 lg:px-8 lg:py-9">
-              <h3 className={`flex min-h-20 items-center whitespace-nowrap leading-none text-black ${award.wordmark}`}>
-                {award.publication === "USA TODAY" && <span aria-hidden="true" className="mr-2.5 inline-block size-[clamp(36px,3.7vw,56px)] shrink-0 rounded-full bg-black" />}
-                {award.publication}
-              </h3>
-              <p className="mt-6 max-w-[350px] text-[17px] leading-[1.4] font-normal tracking-[-.015em] lg:text-[clamp(16px,1.3vw,20px)]">{award.title}</p>
+          {features.map((feature) => (
+            <article key={feature.number} className="flex min-h-[230px] flex-col justify-between border border-[#d3e0e5]/70 bg-[#b8c6ce] px-7 py-8 text-[#071c31] sm:min-h-[250px] lg:aspect-[1.65/1] lg:min-h-autolg:px-8 lg:py-9">
+              <h3 className={`flex min-h-20 items-center whitespace-nowrap leading-none text-black ${wordmark}`}>{feature.number}</h3>
+              <div className="mt-6 max-w-[350px]">
+                <p className="text-[17px] leading-[1.4] font-normal tracking-[-.015em] lg:text-[clamp(16px,1.3vw,20px)]">{feature.title}</p>
+                <p className="mt-2 text-[14px] leading-[1.45] font-normal tracking-[-.01em] text-[#071c31]/75 lg:text-[clamp(13px,1vw,15px)]">{feature.description}</p>
+              </div>
             </article>
           ))}
         </div>

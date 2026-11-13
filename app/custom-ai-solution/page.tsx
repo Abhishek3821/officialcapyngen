@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { AiHero, AiAbout, AiContents } from "../components/custom-ai/intro";
-import { AiApproach, AiServices, AiResults } from "../components/custom-ai/services";
+import { AiReimagined, AiServices, AiResults } from "../components/custom-ai/services";
 import { AiGrowthChart, AiProcessCase, AiCommerceCase } from "../components/custom-ai/cases";
+import { AiFaq } from "../components/custom-ai/faq";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "Custom AI Solution | Capyngen",
-  description: "Explore Capyngen's custom AI approach, services, and illustrative business use cases.",
+  title: "Custom AI Solutions That Transform Business | Capyngen",
+  description: "The top custom AI solution company in India focuses on your operational pain point as our first step, then creates the minimum viable platform that demonstrates value, and then expands from there.",
 };
 
 export default function CustomAiSolutionPage() {
@@ -19,12 +20,14 @@ export default function CustomAiSolutionPage() {
         <AiHero />
         <AiAbout />
         <AiContents />
-        <AiApproach />
+        <AiReimagined />
         <AiServices />
         <AiResults />
-        <AiGrowthChart />
+        {/* Wrapped so these taller sections can grow beyond the fixed one-screen height in page.module.css. */}
+        <div><AiGrowthChart /></div>
         <AiProcessCase />
         <AiCommerceCase />
+        <div><AiFaq /></div>
       </main>
       <Footer />
     </>
