@@ -1,13 +1,7 @@
-const steps = [
-  { number: "01", title: "Analysis & audit", description: "Understand your data, workflow, and the opportunity." },
-  { number: "02", title: "Strategy & plan", description: "Choose the right use case and design a practical roadmap." },
-  { number: "03", title: "Build & implement", description: "Create, integrate, and support the solution in real work." },
-  { number: "04", title: "Grow & improve", description: "Track results and keep refining as needs change." },
-];
-
 type Step = { number: string; title: string; description: string };
 
-function StepsSection({ id, headingId, eyebrow, heading, intro, items }: { id: string; headingId: string; eyebrow: string; heading: string; intro?: string; items: Step[] }) {
+// Shared with the e-commerce design page.
+export function StepsSection({ id, headingId, eyebrow, heading, intro, items }: { id: string; headingId: string; eyebrow: string; heading: string; intro?: string; items: Step[] }) {
   return (
     <section id={id} aria-labelledby={headingId} className="bg-[#d3e5f0] text-[#15395f]">
       <div className="mx-auto max-w-[1500px] px-5 py-16 sm:px-8 lg:min-h-[590px] lg:px-12 lg:py-20">
@@ -21,11 +15,6 @@ function StepsSection({ id, headingId, eyebrow, heading, intro, items }: { id: s
       </div>
     </section>
   );
-}
-
-// Used by the e-commerce design page.
-export function AiApproach() {
-  return <StepsSection id="ai-approach" headingId="ai-approach-heading" eyebrow="From analysis to results" heading="Our approach" items={steps} />;
 }
 
 const challenges = [

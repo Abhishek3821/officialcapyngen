@@ -4,8 +4,8 @@ import Footer from "../components/footer";
 import Magazine from "../components/cms-design/magazine";
 
 export const metadata: Metadata = {
-  title: "CMS Design | Capyngen",
-  description: "Explore a beautifully designed editorial experience: inspiring stories, curated collections, reader voices, and a thoughtful magazine layout by Capyngen.",
+  title: "Best CMS Website Design Services | Capyngen",
+  description: "Capyngen, Best CMS Design Company in India. Safe, scalable, and world-class CMS-enabled websites ready to meet international web standards.",
 };
 
 export default function CmsDesignPage() {
