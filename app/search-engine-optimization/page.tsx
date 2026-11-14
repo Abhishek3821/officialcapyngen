@@ -5,8 +5,8 @@ import SeoHero from "../components/seo/hero";
 import SeoSections from "../components/seo/sections";
 
 export const metadata: Metadata = {
-  title: "Search Engine Optimization (SEO) | Capyngen",
-  description: "Unlock your business potential with search engine optimization by Capyngen. Clear strategy, useful content, and a stronger technical foundation for organic growth.",
+  title: "AI-Powered SEO Services | Search Engine Optimization | Capyngen",
+  description: "Boost your brand visibility with AI-Powered SEO Services. Capyngen offers cost-effective, results-focused Search Engine Optimization services that put your business first and keep it there.",
 };
 
 export default function SeoPage() {

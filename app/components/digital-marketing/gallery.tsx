@@ -59,7 +59,7 @@ export default function MarketingGallery() {
     }
   }
 
-  return <div ref={region} className={styles.gallery} role="region" aria-roledescription="carousel" aria-label="Creative inspiration gallery" aria-describedby="marketing-gallery-help" tabIndex={0}
+  return <div ref={region} className={styles.gallery} role="region" aria-roledescription="carousel" aria-label="Digital marketing gallery" aria-describedby="marketing-gallery-help" tabIndex={0}
     onKeyDown={event => {
       if (event.target !== event.currentTarget) return;
       if (event.key === "ArrowRight" || event.key === "ArrowLeft") { event.preventDefault(); move(event.key === "ArrowRight" ? 1 : -1); }

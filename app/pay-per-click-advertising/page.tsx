@@ -5,8 +5,8 @@ import PpcHero from "../components/pay-per-click-advertising/hero";
 import PpcSections from "../components/pay-per-click-advertising/sections";
 
 export const metadata: Metadata = {
-  title: "Pay-Per-Click Advertising (PPC) | Capyngen",
-  description: "Connect with the right audience through thoughtful pay-per-click advertising, purposeful creative, and campaigns built around meaningful results.",
+  title: "PPC Services That Turn Your Clicks Into Conversions | Capyngen",
+  description: "Capyngen helps you rank your website with targeted Google Ads campaigns (PPC). Immediate visibility, hyper-niche targeting, and total budget control.",
 };
 
 export default function PayPerClickAdvertisingPage() {

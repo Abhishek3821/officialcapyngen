@@ -12,8 +12,6 @@
 .businessGrid article > div:last-child { padding: 24px 24px 22px 0; }
 .businessGrid h3 { font-size: 16px; font-weight: 650; letter-spacing: -.025em; }
 .businessGrid article p { max-width: 310px; margin-top: 13px; color: #9aa496; font-size: 11px; line-height: 1.8; }
-.businessGrid article button { display: inline-flex; align-items: center; gap: 16px; margin-top: 20px; color: #58715a; font-size: 10px; font-weight: 600; }
-.businessGrid article button:hover { text-decoration: underline; text-underline-offset: 4px; }
 .powerWorld { padding: 40px 0 55px; background: #fff; color: #28352d; }
 .powerHeader { text-align: center; }
 .powerHeader h2 { font-size: clamp(31px, 3.8vw, 53px); font-weight: 500; line-height: 1.25; letter-spacing: -.05em; }
@@ -156,14 +154,7 @@
 .ingredientsPhoto img { object-position: center 60%; }
 .foodSeal { position: absolute; top: 59%; left: 50%; transform: translate(-50%, -50%); display: grid; place-content: center; width: 65px; height: 65px; border: 5px solid #f5f6f4; border-radius: 50%; background: #fff; color: #596a59; text-align: center; font-size: 11px; font-weight: 650; }
 .foodSeal > span { margin-top: 2px; font-size: 6px; color: #a6b09d; font-weight: 400; }
-.detailDialog { position: fixed; inset: 0; width: min(620px, calc(100% - 36px)); max-height: calc(100svh - 40px); margin: auto; padding: 0; overflow: auto; border: 1px solid #d8e5d7; border-radius: 18px; background: #fbfdf8; color: #2d493a; }
-.detailDialog::backdrop { background: #122719bd; backdrop-filter: blur(5px); }
-.closeDialog { position: absolute; top: 15px; right: 15px; z-index: 3; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: #ffffffed; color: #385440; font-size: 26px; }
-.detailPhoto { height: 270px; }
-.detailCopy { padding: 30px; }
-.detailCopy h2 { margin-top: 17px; font-size: 34px; font-weight: 600; line-height: 1.1; letter-spacing: -.045em; }
-.detailCopy > p:not(:first-child) { margin-top: 20px; color: #93a189; font-size: 14px; line-height: 1.85; }
-.container :is(a, button):focus-visible, .detailDialog :is(a, button):focus-visible { outline: 3px solid #7cbf94; outline-offset: 4px; }
+.container :is(a, button):focus-visible { outline: 3px solid #7cbf94; outline-offset: 4px; }
 .srOnly { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 @media (max-width: 1100px) {
   .container { width: calc(100% - 48px); }
@@ -270,7 +261,6 @@
   .businessGrid article > div:last-child { padding: 20px 17px 20px 0; }
   .businessGrid h3 { font-size: 16px; }
   .businessGrid article p { font-size: 10px; line-height: 1.75; }
-  .businessGrid article button { margin-top: 16px; font-size: 9px; }
   .powerWorld { padding-block: 20px 38px; }
   .powerHeader h2 { font-size: 30px; }
   .inlineIcon { width: 27px; height: 27px; margin-inline: 2px; border-radius: 7px; }
@@ -358,8 +348,5 @@
   .foodCopy > div:nth-child(2) > p:not(:first-child) { font-size: 15px; }
   .foodPhotos { min-height: 440px; gap: 10px; }
   .burgerPhoto, .ingredientsPhoto { border-radius: 14px; }
-  .detailPhoto { height: 230px; }
-  .detailCopy { padding: 25px; }
-  .detailCopy h2 { font-size: 30px; }
 }
-@media (prefers-reduced-motion: reduce) { .container *, .detailDialog * { transition: none !important; } }
+@media (prefers-reduced-motion: reduce) { .container * { transition: none !important; } }

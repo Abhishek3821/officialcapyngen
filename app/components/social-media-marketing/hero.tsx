@@ -6,13 +6,13 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./hero.module.css";
 
 const places = [
-  { name: "Yosemite", category: "Wild horizons", src: "/images/destinations/yosemite.webp", position: "center" },
-  { name: "Swiss Alps", category: "Mountain air", src: "/images/destinations/swiss-alps.webp", position: "center" },
-  { name: "Cappadocia", category: "A different perspective", src: "/images/destinations/goreme.webp", position: "center" },
-  { name: "Merzouga", category: "Follow your curiosity", src: "/images/destinations/merzouga.webp", position: "center" },
-  { name: "Los Lances", category: "Coastal calm", src: "/images/destinations/los-lances.webp", position: "center" },
-  { name: "Lakeside Escape", category: "A slower kind of day", src: "/images/application-solutions/lake-cabin.webp", position: "center" },
-  { name: "Alpine Trails", category: "Find your own path", src: "/images/application-solutions/hiker.webp", position: "center" },
+  { name: "Instagram", category: "Carousel decks", src: "/images/destinations/yosemite.webp", position: "center" },
+  { name: "Facebook", category: "Community management", src: "/images/destinations/swiss-alps.webp", position: "center" },
+  { name: "LinkedIn", category: "LinkedIn Sponsored Content", src: "/images/destinations/goreme.webp", position: "center" },
+  { name: "Meta", category: "Meta Ads", src: "/images/destinations/merzouga.webp", position: "center" },
+  { name: "YouTube", category: "YouTube Ads", src: "/images/destinations/los-lances.webp", position: "center" },
+  { name: "X", category: "Reputation monitoring", src: "/images/application-solutions/lake-cabin.webp", position: "center" },
+  { name: "Video Reels", category: "Short-form video creation", src: "/images/application-solutions/hiker.webp", position: "center" },
 ];
 
 export default function SocialMediaHero() {
@@ -76,11 +76,11 @@ export default function SocialMediaHero() {
     <div className={styles.backgrounds} aria-hidden="true">{places.map((place, index) => <Image key={place.name} src={place.src} alt="" fill preload={index === 3} sizes="100vw" className={`${styles.background} ${active === index ? styles.backgroundActive : ""}`} style={{ objectPosition: place.position }} />)}</div>
     <div className={styles.shade} />
     <div className={styles.stage}>
-      <div className={styles.copy}><p className={styles.eyebrow}>A little curiosity. A world of possibilities.</p><h1 id="social-media-heading">Explore The Best<br />Natural Places</h1><p className={styles.description}>We organize tours, photo stops, and guided routes to scenic<br />spots with clear schedules and easy booking.</p><Link href="/contact-us" className={styles.cta}><span>Start Your Trip</span><span aria-hidden="true">↗</span></Link></div>
+      <div className={styles.copy}><p className={styles.eyebrow}>Social Media Marketing (SMM)</p><h1 id="social-media-heading">Growth-Driven SMM <br />Services That Convert</h1><p className={styles.description}>We grow and scale your social presence with data-driven content plans <br />and designed paid ads to generate viral engagement.</p><Link href="/contact-us" className={styles.cta}><span>Make Your Brand Go Viral</span><span aria-hidden="true">↗</span></Link></div>
       <div className={styles.galleryArea}>
-        <div className={styles.galleryMeta}><span>Explore the extraordinary</span><span aria-live="polite" aria-atomic="true">{places[active].name} <span aria-hidden="true">/</span> {String(active + 1).padStart(2, "0")}</span></div>
-        <p id="social-gallery-help" className={styles.srOnly}>Scroll horizontally, use the mouse wheel over the images, swipe, or use the left and right arrow keys to explore destinations. The selected destination updates the hero background.</p>
-        <div ref={viewport} className={styles.viewport} data-ready={ready} role="region" aria-roledescription="carousel" aria-label="Explore natural places" aria-describedby="social-gallery-help" onScroll={updateActive}
+        <div className={styles.galleryMeta}><span>Platforms we cover</span><span aria-live="polite" aria-atomic="true">{places[active].name} <span aria-hidden="true">/</span> {String(active + 1).padStart(2, "0")}</span></div>
+        <p id="social-gallery-help" className={styles.srOnly}>Scroll horizontally, use the mouse wheel over the images, swipe, or use the left and right arrow keys to explore the platforms we cover.</p>
+        <div ref={viewport} className={styles.viewport} data-ready={ready} role="region" aria-roledescription="carousel" aria-label="Social media platforms" aria-describedby="social-gallery-help" onScroll={updateActive}
           onPointerDown={event => {
             if (event.pointerType !== "mouse" || event.button !== 0) return;
             event.preventDefault(); didDrag.current = false; event.currentTarget.dataset.dragging = "true";
@@ -108,10 +108,10 @@ export default function SocialMediaHero() {
           onClickCapture={event => { if (didDrag.current) { event.preventDefault(); event.stopPropagation(); didDrag.current = false; } }}>
           {places.map((place, index) => {
             const offset = Math.max(-3, Math.min(3, index - active));
-            return <button ref={element => { cards.current[index] = element; }} key={place.name} data-place={index} type="button" aria-label={`Explore ${place.name}`} aria-pressed={active === index} className={styles.card} style={{ transform: `perspective(850px) translateY(${Math.abs(offset) * 9}px) rotateY(${offset * -16}deg) scale(${1 - Math.abs(offset) * .055})` }} onClick={() => centerCard(index)} onKeyDown={event => { if (event.key === "ArrowLeft" || event.key === "ArrowRight") { event.preventDefault(); const next = Math.max(0, Math.min(places.length - 1, index + (event.key === "ArrowRight" ? 1 : -1))); centerCard(next); cards.current[next]?.focus({ preventScroll: true }); } else if (event.key === "Home" || event.key === "End") { event.preventDefault(); const next = event.key === "Home" ? 0 : places.length - 1; centerCard(next); cards.current[next]?.focus({ preventScroll: true }); } }}><Image src={place.src} alt={place.name} fill draggable={false} sizes="(max-width: 600px) 170px, 240px" className={styles.cardImage} /><span className={styles.cardShade} /><span className={styles.cardCopy}><span>{place.category}</span><strong>{place.name}</strong></span></button>;
+            return <button ref={element => { cards.current[index] = element; }} key={place.name} data-place={index} type="button" aria-label={`${place.name}: ${place.category}`} aria-pressed={active === index} className={styles.card} style={{ transform: `perspective(850px) translateY(${Math.abs(offset) * 9}px) rotateY(${offset * -16}deg) scale(${1 - Math.abs(offset) * .055})` }} onClick={() => centerCard(index)} onKeyDown={event => { if (event.key === "ArrowLeft" || event.key === "ArrowRight") { event.preventDefault(); const next = Math.max(0, Math.min(places.length - 1, index + (event.key === "ArrowRight" ? 1 : -1))); centerCard(next); cards.current[next]?.focus({ preventScroll: true }); } else if (event.key === "Home" || event.key === "End") { event.preventDefault(); const next = event.key === "Home" ? 0 : places.length - 1; centerCard(next); cards.current[next]?.focus({ preventScroll: true }); } }}><Image src={place.src} alt={place.name} fill draggable={false} sizes="(max-width: 600px) 170px, 240px" className={styles.cardImage} /><span className={styles.cardShade} /><span className={styles.cardCopy}><span>{place.category}</span><strong>{place.name}</strong></span></button>;
           })}
         </div>
-        <div className={styles.galleryFooter}><span>Scroll to discover <span aria-hidden="true">↔</span></span><div><button type="button" aria-label="Previous destination" disabled={active === 0} onClick={() => centerCard(active - 1)}>←</button><button type="button" aria-label="Next destination" disabled={active === places.length - 1} onClick={() => centerCard(active + 1)}>→</button></div></div>
+        <div className={styles.galleryFooter}><span>Scroll to discover <span aria-hidden="true">↔</span></span><div><button type="button" aria-label="Previous platform" disabled={active === 0} onClick={() => centerCard(active - 1)}>←</button><button type="button" aria-label="Next platform" disabled={active === places.length - 1} onClick={() => centerCard(active + 1)}>→</button></div></div>
       </div>
     </div>
   </section>;

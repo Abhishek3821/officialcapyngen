@@ -5,8 +5,8 @@ import SocialMediaHero from "../components/social-media-marketing/hero";
 import SocialMediaSections from "../components/social-media-marketing/sections";
 
 export const metadata: Metadata = {
-  title: "Social Media Marketing (SMM) | Capyngen",
-  description: "Explore visual storytelling and creative social media experiences by Capyngen, brought to life through an immersive, scrollable destination gallery.",
+  title: "Growth-Driven SMM Services That Convert | Capyngen",
+  description: "Capyngen grows and scales your social presence with data-driven content plans and designed paid ads to generate viral engagement.",
 };
 
 export default function SocialMediaMarketingPage() {

@@ -5,8 +5,8 @@ import DigitalMarketingHero from "../components/digital-marketing/hero";
 import DigitalMarketingSections from "../components/digital-marketing/sections";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing | Capyngen",
-  description: "Bring your ideas to life with distinctive campaign visuals, creative direction, and AI-powered digital marketing by Capyngen.",
+  title: "Digital Marketing Services That Drive Real Growth | Capyngen",
+  description: "Capyngen is a full-funnel digital marketing agency in India offering SEO, SMM, PPC, content marketing, email marketing, and CRO services that drive real growth.",
 };
 
 export default function DigitalMarketingPage() {
