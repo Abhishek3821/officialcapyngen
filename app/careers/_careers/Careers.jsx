@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { useNavigate } from './navState';
 import { careerRoutes } from './careerRoutes';
 
@@ -155,7 +156,17 @@ const Careers = () => {
           <p className="text-gray-200 text-base sm:text-lg md:text-xl font-light mb-10 md:mb-12 max-w-2xl">
             Build the Future with Capyngen
           </p>
-        
+          <div>
+            <Link
+              href={careerRoutes.jobs('India')}
+              className="group inline-flex items-center gap-3 rounded-full bg-[#2A61F5] px-7 py-3.5 text-sm sm:text-base font-semibold tracking-[0.12em] uppercase text-white shadow-lg shadow-black/20 transition-all duration-300 hover:bg-[#1f4fd6] hover:gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              All Jobs
+              <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
 
         {/* Subtle scroll cue */}
