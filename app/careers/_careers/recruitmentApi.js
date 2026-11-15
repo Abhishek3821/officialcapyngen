@@ -2,15 +2,12 @@ import { htmlToPlainText } from "./jobDescription";
 
 // Public recruitment API (Orinite HRMS) used by the Careers section.
 // Returns active jobs + branding so the site can render the job list dynamically.
-// The API origin-gates requests to https://capyngen.com, so in dev the calls
-// go through the local proxy route (app/recruitment-api/[...path]/route.ts),
-// which forwards them with the allowed Origin.
-// NEXT_PUBLIC_RECRUITMENT_API_BASE still overrides both.
+// The API origin-gates requests to https://capyngen.com, so calls go through
+// the local proxy route (app/recruitment-api/[...path]/route.ts), which
+// forwards them with the allowed Origin — works on localhost, preview and
+// production domains alike. NEXT_PUBLIC_RECRUITMENT_API_BASE overrides it.
 const RECRUITMENT_ROOT =
-  process.env.NEXT_PUBLIC_RECRUITMENT_API_BASE ||
-  (process.env.NODE_ENV === "development"
-    ? "/recruitment-api"
-    : "https://api.orinite.com/api/v1/public/recruitment");
+  process.env.NEXT_PUBLIC_RECRUITMENT_API_BASE || "/recruitment-api";
 const RECRUITMENT_BASE = `${RECRUITMENT_ROOT}/jobs`;
 const RECRUITMENT_TENANT_ID = "6a47a7e1ec2ba07354500c19";
 
@@ -252,6 +249,14 @@ const DEFAULT_SUBMISSION = {
 // change only this constant if the backend confirms a different key.
 const SCREENING_ANSWERS_FIELD = "screeningAnswers";
 
+// The API's submission spec names the absolute apply URL; route it through
+// RECRUITMENT_ROOT (the proxy) so the origin gate doesn't block it.
+const API_ORIGIN_ROOT = "https://api.orinite.com/api/v1/public/recruitment";
+const viaProxy = (submission) =>
+  typeof submission.url === "string" && submission.url.startsWith(API_ORIGIN_ROOT)
+    ? { ...submission, url: `${RECRUITMENT_ROOT}${submission.url.slice(API_ORIGIN_ROOT.length)}` }
+    : submission;
+
 // Fetch the dynamic application-form field config for the company.
 export const fetchApplicationFields = async (signal) => {
   const response = await fetch(
@@ -269,7 +274,7 @@ export const fetchApplicationFields = async (signal) => {
     fields,
     resume: data.resume || null,
     labels: data.labels || {},
-    submission: { ...DEFAULT_SUBMISSION, ...(data.submission || {}) },
+    submission: viaProxy({ ...DEFAULT_SUBMISSION, ...(data.submission || {}) }),
     requiredFieldNames: data.requiredFieldNames || [],
   };
 };

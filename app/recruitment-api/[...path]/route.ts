@@ -1,7 +1,7 @@
-// Dev proxy for the public recruitment API used by the Careers pages.
-// The API origin-gates requests to https://capyngen.com, so a localhost page
-// can't call it directly (403). This forwards the request with the allowed
-// Origin (same as the old Vite dev proxy).
+// Proxy for the public recruitment API used by the Careers pages.
+// The API origin-gates requests to https://capyngen.com, so a page on any
+// other origin (localhost, preview domains) can't call it directly (403).
+// This forwards the request server-side with the allowed Origin.
 
 const TARGET = "https://api.orinite.com/api/v1/public/recruitment";
 const ALLOWED_ORIGIN = "https://capyngen.com";
