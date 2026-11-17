@@ -1,13 +1,19 @@
 import Image from "next/image";
 import styles from "./client-voices.module.css";
 
-const partners = [
-  { name: "Architect", kind: "Real estate", icon: 0 },
-  { name: "Trend", kind: "Interiors", icon: 1 },
-  { name: "Interior", kind: "Living", icon: 2 },
-  { name: "Building", kind: "Construction", icon: 3 },
-  { name: "Real Estate", kind: "Architecture", icon: 4 },
-  { name: "Building", kind: "Design studio", icon: 0 },
+const sectors = [
+  { name: "Retail Banking", kind: "Large retail networks", icon: 0 },
+  { name: "Corporate Banking", kind: "Business lines", icon: 1 },
+  { name: "Investment Banking", kind: "Financial services", icon: 2 },
+  { name: "Microfinance Institutions", kind: "Full financial spectrum", icon: 3 },
+  { name: "FinTech Startups", kind: "Nimble disruptors", icon: 4 },
+  { name: "Payment Providers", kind: "Real-time transactions", icon: 0 },
+];
+const reasons = [
+  { title: "Built for Compliance", text: "Security-first architecture designed around RBI, PCI, and GDPR requirements." },
+  { title: "Legacy Integration", text: "Seamless compatibility with existing core systems and third-party platforms." },
+  { title: "Scalable by Design", text: "Microservices architecture built to handle millions of concurrent users." },
+  { title: "AI-Ready", text: "Machine learning and predictive analytics embedded where they create real value." },
 ];
 
 function PartnerMark({ variant }: { variant: number }) {
@@ -22,16 +28,16 @@ function PartnerMark({ variant }: { variant: number }) {
 
 export default function BankingClientVoices() {
   return <section className={styles.section} aria-labelledby="client-voices-title">
-    <div className={styles.heading}><p className={styles.eyebrow}><span aria-hidden="true">✦</span> Our clients say</p><h2 id="client-voices-title">Here’s what <span>warm words<br />from our clients</span> sound like.</h2></div>
+    <div className={styles.heading}><p className={styles.eyebrow}><span aria-hidden="true">✦</span> Why Capyngen</p><h2 id="client-voices-title">Why Banks <span>Choose <br />Capyngen</span></h2></div>
     <div className={styles.testimonial}>
-      <div className={styles.photo}><Image src="/images/banking/site-team.png" alt="Two architects in yellow safety helmets discussing plans beside surveying equipment in a concrete building" fill sizes="(max-width: 760px) 100vw, 40vw" className={styles.image} /></div>
+      <div className={styles.photo}><Image src="/images/banking/site-team.png" alt="Why banks choose Capyngen" fill sizes="(max-width: 760px) 100vw, 40vw" className={styles.image} /></div>
       <div className={styles.story}>
-        <div className={styles.ratingRow}><div className={styles.rating}><span className={styles.score}>4.80</span><div><span className={styles.stars} aria-label="Illustrative rating: 4.8 out of 5">★★★★★</span><p>Illustrative rating</p></div></div><p className={styles.summary}>From the first idea to the final detail,<br /> thoughtful collaboration makes the difference.</p></div>
-        <figure className={styles.quote}><blockquote>“I absolutely love my new modern living room! The clean lines, neutral tones and thoughtful details create such a calming atmosphere. Every part of the space feels beautifully considered.”</blockquote><figcaption><span className={styles.avatar} aria-hidden="true">MD</span><span><strong>Morgan Dufresne</strong><span className={styles.sample}>Sample client story</span></span></figcaption></figure>
+        <div className={styles.ratingRow}><div className={styles.rating}><span className={styles.score}>04</span><div><span className={styles.stars}>Outcomes</span><p>That matter</p></div></div><p className={styles.summary}>As a Banking Software Development Company, we focus on the outcomes that matter: reliability, compliance, and customer trust.</p></div>
+        <ul className={styles.reasons}>{reasons.map(item => <li key={item.title}><strong>{item.title}</strong><span>{item.text}</span></li>)}</ul>
       </div>
     </div>
-    <div className={styles.partnerIntro}><span /><p>Thoughtful spaces. <strong>Shared possibilities.</strong></p><span /></div>
-    <div className={styles.partners} aria-label="Concept partner identities">{partners.map((partner,index)=><div className={styles.partner} key={index}><PartnerMark variant={partner.icon} /><div><span className={styles.partnerName}>{partner.name}</span><span className={styles.partnerKind}>{partner.kind}</span></div></div>)}</div>
-    <p className={styles.note}>Illustrative testimonial and partner identities for this design concept.</p>
+    <div className={styles.partnerIntro}><span /><p>Serving Every Banking &amp; <strong>Financial Sector</strong></p><span /></div>
+    <div className={styles.partners} aria-label="Banking and financial sectors we serve">{sectors.map(sector => <div className={styles.partner} key={sector.name}><PartnerMark variant={sector.icon} /><div><span className={styles.partnerName}>{sector.name}</span><span className={styles.partnerKind}>{sector.kind}</span></div></div>)}</div>
+    <p className={styles.note}>From large retail networks to nimble fintech disruptors, we cater to the full financial spectrum.</p>
   </section>;
 }

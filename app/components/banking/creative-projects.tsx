@@ -1,27 +1,25 @@
 "use client";
 
-import DismissibleDialog from "../dismissible-dialog";
 
-import { useEffect, useRef, useState, type PointerEvent } from "react";
+import Link from "next/link";
+import { useEffect, useRef, type PointerEvent } from "react";
 import styles from "./creative-projects.module.css";
 
 const projects = [
-  { title: "Quiet Form", scene: 1, type: "Architecture", text: "Light, proportion and sculptural lines bring a fresh perspective to a quiet interior." },
-  { title: "Luxury Skyline", scene: 0, type: "Residential", text: "Rich textures, soft curtains and considered details make room for meaningful moments." },
-  { title: "Bohemian Rhapsody", scene: 1, type: "Residential", text: "An exploration of space and light, shaped by a beautifully simple architectural gesture." },
-  { title: "Vintage Glamour", scene: 2, type: "Residential", text: "Classic proportions meet contemporary comfort in a calm, layered living space." },
-  { title: "Living Innovation", scene: 0, type: "Interior design", text: "Thoughtful materials and warm neutral tones turn everyday spaces into personal experiences." },
+  { title: "Core Modernisation", scene: 1, type: "Core banking" },
+  { title: "Digital Wallets", scene: 0, type: "Mobile" },
+  { title: "Lending Platforms", scene: 1, type: "Lending" },
+  { title: "Payments Infrastructure", scene: 2, type: "Payments" },
+  { title: "Open Banking APIs", scene: 0, type: "Integration" },
 ];
 
 export default function BankingCreativeProjects() {
   const track = useRef<HTMLDivElement>(null);
   const rail = useRef<HTMLDivElement>(null);
-  const dialog = useRef<HTMLDialogElement>(null);
   const position = useRef(0);
   const pitch = useRef(0);
   const frame = useRef(0);
   const drag = useRef({ id: -1, startX: 0, startPosition: 0, moved: false });
-  const [selected, setSelected] = useState(0);
 
   function paint(next: number) {
     const cycle = pitch.current * projects.length;
@@ -96,10 +94,10 @@ export default function BankingCreativeProjects() {
     <svg className={styles.blueprint} viewBox="0 0 700 260" fill="none" aria-hidden="true"><g stroke="currentColor" strokeWidth="1"><path d="M20 220 240 150 650 180 450 245 20 220ZM90 190V80l215-50 310 90v82M90 80l320 70 205-30M240 150V45m170 105v88M110 100l280 61 200-24M110 120l280 60 200-24M110 140l280 59 200-25M110 160l280 57 200-25M305 30v132M350 44v128M460 76v60M510 90v40M560 104v20" /></g></svg>
     <div className={styles.heading}>
       <p className={styles.eyebrow}><span aria-hidden="true">✦</span> Our projects</p>
-      <div><h2 id="creative-projects-title">Creative <span>projects that<br />define</span> our style.</h2><p className={styles.description}>A collection of considered spaces and fresh perspectives.<br /> Explore the details that make every experience distinctive.</p></div>
+      <div><h2 id="creative-projects-title">Banking platforms <span>that define <br /></span> reliability.</h2><p className={styles.description}>A collection of Banking Application Development engagements <br /> where thoughtful architecture made a measurable difference.</p></div>
       <div className={styles.controls} aria-label="Project gallery controls"><button type="button" onClick={() => move(-1)} aria-label="Previous projects">←</button><button type="button" onClick={() => move(1)} aria-label="Next projects">→</button></div>
     </div>
-    <div className={styles.track} ref={track} role="region" aria-roledescription="carousel" aria-label="Creative project gallery" tabIndex={0}
+    <div className={styles.track} ref={track} role="region" aria-roledescription="carousel" aria-label="Banking project gallery" tabIndex={0}
       onPointerDown={startDrag} onPointerMove={updateDrag} onPointerUp={endDrag} onPointerCancel={endDrag}
       onPointerLeave={() => { if (!drag.current.moved) drag.current.id = -1; }}
       onLostPointerCapture={() => { drag.current.id = -1; if (track.current) delete track.current.dataset.dragging; }}
@@ -107,21 +105,16 @@ export default function BankingCreativeProjects() {
       onKeyDown={(event) => { if (event.key === "ArrowRight" || event.key === "ArrowLeft") { event.preventDefault(); move(event.key === "ArrowRight" ? 1 : -1); } }}>
       <div className={styles.rail} ref={rail}>
       {[0, 1, 2].flatMap(copy => projects.map((project, index) => <article key={`${copy}-${project.title}`} className={styles.project} data-staggered={index % 2 === 1} aria-hidden={copy !== 1 ? true : undefined}>
-        <button type="button" tabIndex={copy === 1 ? 0 : -1} className={styles.imageButton}
+        <Link href="/contact-us" draggable={false} tabIndex={copy === 1 ? 0 : -1} className={styles.imageButton}
           onFocus={(event) => { if (copy === 1 && pitch.current && event.currentTarget.matches(":focus-visible")) { window.cancelAnimationFrame(frame.current); paint(index * pitch.current); } }}
-          onClick={() => { setSelected(index); dialog.current?.showModal(); }} aria-label={`View ${project.title}`}>
-          <span className={styles.image} style={{ backgroundPosition: `${project.scene * 50}% 50%` }} role="img" aria-label={`${project.title}: ${project.text}`} />
-          <span className={styles.badges}><span>{project.type}</span><span>Design concept</span></span>
+          aria-label={`Contact us about ${project.title}`}>
+          <span className={styles.image} style={{ backgroundPosition: `${project.scene * 50}% 50%` }} role="img" aria-label={project.title} />
+          <span className={styles.badges}><span>{project.type}</span><span>Banking platform</span></span>
           <span className={styles.view}>View <span aria-hidden="true">↗</span></span>
-        </button>
-        <h3>{project.title}</h3><p className={styles.meta}>Interior collection / 0{index + 1}</p>
+        </Link>
+        <h3>{project.title}</h3><p className={styles.meta}>Banking Application Development / 0{index + 1}</p>
       </article>))}
       </div>
     </div>
-    <DismissibleDialog ref={dialog} className={styles.dialog} aria-label={projects[selected].title}>
-      <button type="button" className={styles.close} onClick={() => dialog.current?.close()} aria-label="Close project">×</button>
-      <div role="img" aria-label={projects[selected].text} className={styles.dialogImage} style={{ backgroundPosition: `${projects[selected].scene * 50}% 50%` }} />
-      <div className={styles.dialogCopy}><p className={styles.eyebrow}>Design concept</p><h3>{projects[selected].title}</h3><p>{projects[selected].text}</p></div>
-    </DismissibleDialog>
   </section>;
 }

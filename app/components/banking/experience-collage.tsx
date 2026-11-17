@@ -5,55 +5,57 @@ function Photo({ tile, label, className = "" }: { tile: number; label: string; c
   return <div role="img" aria-label={label} className={`${styles.photo} ${className}`} style={{ backgroundPosition: `${(tile % 3) * 50}% ${Math.floor(tile / 3) * 50}%` }} />;
 }
 
+const techStack = "Banking systems cannot afford downtime, delays, or weak security. Every layer of the stack — from the database to the mobile app — has to work reliably at scale. We build resilient, cloud-ready, and high-security technologies that are proven in mission-critical banking operations. Our teams work across legacy integration and modern microservices, so your platform stays stable today while remaining ready for whatever comes next.";
+
 const products = [
-  { tile: 7, label: "Black perfume bottle" },
-  { tile: 0, label: "Charcoal presentation box" },
-  { tile: 6, label: "Black and white sneaker" },
-  { tile: 2, label: "Cream and black leather bags" },
-  { tile: 6, label: "Sculptural sneaker profile" },
-  { tile: 3, label: "Grey sofa" },
-  { tile: 8, label: "Geometric home accessories" },
-  { tile: 1, label: "Black leather handbag" },
-  { tile: 5, label: "Objects on floating shelves" },
+  { tile: 7, label: "Programming languages" },
+  { tile: 0, label: "Databases and storage" },
+  { tile: 6, label: "Frameworks and libraries" },
+  { tile: 2, label: "Cloud platforms" },
+  { tile: 6, label: "Security technologies" },
+  { tile: 3, label: "AI and analytics" },
+  { tile: 8, label: "Legacy integration" },
+  { tile: 1, label: "Modern microservices" },
+  { tile: 5, label: "Mission-critical banking operations" },
 ];
 
 export default function BankingExperienceCollage() {
   return <section className={styles.section} aria-labelledby="banking-experience-title">
     <div className={styles.editorial}>
       <div className={styles.gallery}>
-        <Photo tile={0} label="A charcoal presentation box on a pale grey shelf" />
-        <Photo tile={1} label="A black leather handbag and reed diffuser on a floating shelf" />
-        <Photo tile={2} label="Cream and black leather handbags on a grey plinth" />
+        <Photo tile={0} label="Account opening" />
+        <Photo tile={1} label="Payments" />
+        <Photo tile={2} label="Lending" />
       </div>
       <div className={styles.middle}>
         <div className={styles.copy}>
-          <p className={styles.eyebrow}>Every detail matters</p>
-          <h2 id="banking-experience-title">Great experiences.<br /><em>Everyday confidence.</em></h2>
-          <p>Bring the same care to every customer moment. Banking that feels considered, connected and comfortably familiar.</p>
-          <Link href="#banking-solutions" className={styles.textLink}>Explore our approach <span aria-hidden="true">↗</span></Link>
-          <div className={styles.pills}><span>Human first</span><span>Thoughtfully digital</span></div>
+          <p className={styles.eyebrow}>Banking Software Solutions</p>
+          <h2 id="banking-experience-title">Banking Software Solutions <br /><em>That People Actually Want to Use</em></h2>
+          <p>Great banking technology is invisible. It works quietly in the background, removing friction instead of adding it. We build Banking Software Solutions that feel intuitive to customers and dependable to operations teams.</p>
+          <Link href="#banking-solutions" className={styles.textLink}>Our solutions <span aria-hidden="true">↗</span></Link>
+          <div className={styles.pills}><span>Intuitive to customers</span><span>Dependable to operations</span></div>
         </div>
-        <Photo tile={3} label="A soft grey sofa styled with grey and warm taupe cushions" className={styles.sofa} />
+        <Photo tile={3} label="Banking software solutions" className={styles.sofa} />
       </div>
       <div className={styles.bottom}>
         <div className={styles.darkFeature}>
-          <div className={styles.featureImages}><Photo tile={4} label="A grey armchair surrounded by green indoor plants" /><Photo tile={5} label="Sculptural objects and a plant on dark floating shelves" /></div>
-          <Link href="/contact-us" className={styles.smallButton}>Make room for better <span aria-hidden="true">↗</span></Link>
+          <div className={styles.featureImages}><Photo tile={4} label="Removing friction" /><Photo tile={5} label="Dependable operations" /></div>
+          <Link href="/contact-us" className={styles.smallButton}>Contact Us <span aria-hidden="true">↗</span></Link>
         </div>
         <div className={styles.detailFeature}>
-          <div><p className={styles.eyebrow}>Designed to connect</p><h3>Small details.<br />Meaningful differences.</h3><Link href="/contact-us" className={styles.textLink}>Let’s create yours ↗</Link></div>
-          <Photo tile={8} label="A geometric copper sculpture and ceramic objects on a charcoal cabinet" />
+          <div><p className={styles.eyebrow}>Removing friction</p><h3>Great banking technology <br />is invisible.</h3><Link href="/contact-us" className={styles.textLink}>Contact Us ↗</Link></div>
+          <Photo tile={8} label="Great banking technology" />
         </div>
       </div>
     </div>
-    <aside className={styles.sidebar} aria-label="Connected experiences">
-      <div className={styles.sidebarCopy}><p className={styles.eyebrow}>People & possibilities</p><h3>One connected world.<br /><em>A more personal experience.</em></h3><p>From discovering something new to making it yours, build digital journeys that bring everything together.</p><Link href="#banking-solutions" className={styles.textLink}>Discover more ↗</Link></div>
+    <aside className={styles.sidebar} aria-label="Modern tech stack for banking excellence">
+      <div className={styles.sidebarCopy}><p className={styles.eyebrow}>Every layer of the stack</p><h3>Modern Tech Stack <br /><em>for Banking Excellence</em></h3><p>{techStack}</p><div className={styles.pills}>{["Programming Languages", "Databases & Storage", "Frameworks & Libraries", "Cloud Platforms", "Security Technologies", "AI & Analytics"].map(item => <span key={item}>{item}</span>)}</div></div>
       <div className={styles.board}>
-        <p className={styles.boardLabel}>Considered / Collected</p>
-        <div className={styles.productGrid}>{products.map((product, index) => <div key={index} className={styles.product}><Photo tile={product.tile} label={product.label} />{index === 3 && <span className={styles.peachDisc} aria-hidden="true">For you</span>}</div>)}</div>
-        <div className={styles.boardFooter}><span>A world of possibilities.</span><span>01 / 09</span></div>
+        <p className={styles.boardLabel}>Cloud-ready / High-security</p>
+        <div className={styles.productGrid}>{products.map((product, index) => <div key={index} className={styles.product}><Photo tile={product.tile} label={product.label} />{index === 3 && <span className={styles.peachDisc} aria-hidden="true">Ready</span>}</div>)}</div>
+        <div className={styles.boardFooter}><span>Stable today. Ready for what comes next.</span><span>01 / 09</span></div>
       </div>
-      <Link href="/contact-us" className={styles.button}>Find your next chapter <span aria-hidden="true">↗</span></Link>
+      <Link href="/contact-us" className={styles.button}>Contact Us <span aria-hidden="true">↗</span></Link>
     </aside>
   </section>;
 }

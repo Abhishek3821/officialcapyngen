@@ -5,8 +5,8 @@ import EnterpriseHero from "../components/enterprise-solutions/hero";
 import EnterpriseSections from "../components/enterprise-solutions/sections";
 
 export const metadata: Metadata = {
-  title: "Enterprise Solutions | Capyngen",
-  description: "Explore new perspectives with Capyngen’s Enterprise Solutions, brought to life through an immersive mountain landscape and a scrollable image gallery.",
+  title: "Advanced Enterprise Solutions for IT and Clouds | Capyngen",
+  description: "Capyngen is one of the best enterprise solutions for your business, with years of experience assisting customers and clients with digital transformation.",
 };
 
 export default function EnterpriseSolutionsPage() {

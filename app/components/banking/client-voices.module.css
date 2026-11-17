@@ -32,3 +32,9 @@
 .note { text-align: center; margin-top: 32px; color: #666e60; font-size: 12px; line-height: 1.6; }
 @media(max-width: 1150px) { .section { padding-inline: 6vw; } .ratingRow { flex-wrap: wrap; gap: 20px; padding-bottom: 24px; } .summary { max-width: none; } .summary br { display: none; } .partners { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px 35px; } .partner { justify-content: center; } }
 @media(max-width: 760px) { .section { padding: 48px 22px 35px; } .heading { grid-template-columns: 1fr; gap: 22px; margin-bottom: 30px; } .heading h2 { font-size: 36px; } .testimonial { grid-template-columns: 1fr; gap: 28px; } .photo { min-height: 0; aspect-ratio: 1.25; } .ratingRow { padding-bottom: 24px; } .quote { margin-top: 24px; } .quote blockquote { font-size: 22px; } .partnerIntro { gap: 14px; margin: 48px 0 30px; } .partnerIntro p { max-width: 210px; } .partners { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 26px 18px; } .partner { justify-content: flex-start; gap: 7px; } .partner svg { width: 32px; height: 32px; } .partnerName { font-size: 12px; letter-spacing: .07em; } }
+.stars { white-space: nowrap; }
+.reasons { display: grid; grid-template-columns: 1fr 1fr; gap: 26px 30px; margin-top: 30px; }
+.reasons li { display: grid; gap: 8px; padding-top: 16px; border-top: 2px solid #a39464; }
+.reasons strong { font-size: clamp(18px, 1.5vw, 22px); font-weight: 600; letter-spacing: -.02em; }
+.reasons span { font-size: 14px; line-height: 1.6; color: #61685d; }
+@media(max-width: 760px) { .reasons { grid-template-columns: 1fr; gap: 20px; } }

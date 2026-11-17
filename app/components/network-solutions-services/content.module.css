@@ -321,3 +321,31 @@
   .islandsCopy h2 br { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { .container a, .destinationCard > .image { transition: none; } }
+.packageCopy h2.missionHeading { font-size: clamp(30px, 3.2vw, 44px); line-height: 1.1; }
+.missionList { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; max-width: 470px; }
+.missionList li { padding: 10px 15px; border: 1px solid #aabdb8; border-radius: 30px; color: #7f9690; font-size: 12px; text-align: center; }
+.benefitGrid { display: grid; grid-template-columns: repeat(3, max-content); gap: 20px 30px; }
+.islandsCopy > div > h3 { margin-top: 20px; color: #839d93; font-size: 13px; font-weight: 600; }
+.islandsCopy > div > p { margin-top: 8px; color: #99aaa4; font-size: 12px; line-height: 1.8; }
+.faq { padding: 65px 0 75px; background: #edf8f5; color: #202927; }
+.faqList { display: grid; gap: 12px; max-width: 900px; margin: 38px auto 0; }
+.faqList details { border: 1px solid #d3e7e2; border-radius: 16px; background: #fff; }
+.faqList summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 19px 23px; cursor: pointer; font-size: 15px; font-weight: 600; line-height: 1.4; letter-spacing: -.02em; list-style: none; }
+.faqList summary::-webkit-details-marker { display: none; }
+.faqList summary span { display: grid; place-items: center; flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: #30b8c8; color: #fff; font-size: 16px; transition: transform .2s; }
+.faqList details[open] summary span { transform: rotate(45deg); }
+.faqList p { padding: 0 23px 21px; color: #8fa5a0; font-size: 12px; line-height: 1.8; }
+.faqList summary:focus-visible { outline: 3px solid #4ba9b2; outline-offset: 3px; border-radius: 16px; }
+@media (max-width: 500px) {
+  .packageCopy h2.missionHeading { font-size: 30px; }
+  .missionList li { padding: 9px 10px; font-size: 11px; }
+  .benefitGrid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .faq { padding-block: 40px 50px; }
+  .faqList { margin-top: 26px; gap: 10px; }
+  .faqList summary { padding: 16px 17px; font-size: 13px; }
+  .faqList p { padding: 0 17px 17px; font-size: 11px; }
+}
+@media (min-width: 501px) {
+  .hero h1 { font-size: clamp(38px, 5vw, 72px); }
+  .heroMosaic { margin-top: 25px; }
+}

@@ -4,8 +4,8 @@ import Footer from "../components/footer";
 import { CybersecurityHero, CybersecuritySections } from "../components/cybersecurity/content";
 
 export const metadata: Metadata = {
-  title: "Cybersecurity | Capyngen",
-  description: "Thoughtful cybersecurity guidance, strategic planning, and practical insight to help your business move forward with confidence.",
+  title: "Cybersecurity Services: Protect Your Applications and Networks | Capyngen",
+  description: "Capyngen delivers end-to-end information cybersecurity services to business organisations, reducing cyber risk and preventing cybersecurity incidents and compliance infractions.",
 };
 
 export default function CybersecurityPage() {

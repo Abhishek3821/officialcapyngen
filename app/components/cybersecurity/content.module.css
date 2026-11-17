@@ -5,7 +5,7 @@
 .hero { background: #fff; color: #242625; }
 .heroLayout { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 80px; min-height: min(740px, calc(100svh - var(--site-header-height))); padding-block: 35px 45px; }
 .heroCopy h1 { font-size: clamp(39px, 4.6vw, 65px); font-weight: 650; line-height: 1.1; letter-spacing: -.045em; }
-.heroCopy h1 > span { color: #3c3e3b; }
+.heroCopy h1 > span { display: block; color: #3c3e3b; font-size: .72em; }
 .heroCopy > p:not(:first-child) { max-width: 500px; margin-top: 25px; color: #8d918b; font-size: 13px; line-height: 1.8; }
 .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 27px; }
 .orangeButton, .outlineButton { display: inline-flex; align-items: center; justify-content: center; gap: 22px; min-height: 42px; padding: 12px 21px; border: 1px solid #fa6935; border-radius: 30px; background: #fa6935; color: #fff; font-size: 10px; font-weight: 550; }
@@ -190,7 +190,8 @@
   .approachSteps strong { font-size: 31px; }
   .approachSteps span { font-size: 9px; line-height: 1.6; }
   .principles { padding-block: 28px; }
-  .principlesGrid span { font-size: 21px; }
+  .principlesGrid span { font-size: 17px; }
+  .principlesGrid > div { gap: 8px; }
   .principlesGrid svg { width: 26px; height: 26px; }
   .servicesLayout { grid-template-columns: 1fr; gap: 28px; }
   .serviceIntro h2 { font-size: 34px; }
@@ -220,3 +221,25 @@
   .travelersGrid p { font-size: 9px; }
 }
 @media (prefers-reduced-motion: reduce) { .container a, .bannerCopy a { transition: none; } }
+.offeringList { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 25px; max-width: 530px; margin-top: 22px; }
+.offeringList li { position: relative; padding-left: 18px; color: #67765d; font-size: 12px; font-weight: 550; line-height: 1.5; }
+.offeringList li::before { position: absolute; top: 6px; left: 0; width: 7px; height: 7px; border-radius: 50%; background: #fa6935; content: ""; }
+.faq { padding: 70px 0; background: #fff1e8; color: #30312d; }
+.faq header { text-align: center; }
+.faq header h2 { font-size: clamp(31px, 3.6vw, 50px); font-weight: 600; line-height: 1.1; letter-spacing: -.04em; }
+.faqList { display: grid; gap: 12px; max-width: 900px; margin: 38px auto 0; }
+.faqList details { border: 1px solid #efddce; border-radius: 14px; background: #fff; }
+.faqList summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 19px 23px; cursor: pointer; font-size: 15px; font-weight: 600; line-height: 1.4; letter-spacing: -.02em; list-style: none; }
+.faqList summary::-webkit-details-marker { display: none; }
+.faqList summary span { display: grid; place-items: center; flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: #fa6935; color: #fff; font-size: 16px; transition: transform .2s; }
+.faqList details[open] summary span { transform: rotate(45deg); }
+.faqList p { padding: 0 23px 21px; color: #a59485; font-size: 12px; line-height: 1.8; }
+.faqList summary:focus-visible { outline: 3px solid #e99e7c; outline-offset: 3px; border-radius: 14px; }
+@media (max-width: 500px) {
+  .offeringList { grid-template-columns: 1fr; }
+  .faq { padding-block: 40px 50px; }
+  .faq header h2 { font-size: 34px; }
+  .faqList { margin-top: 26px; gap: 10px; }
+  .faqList summary { padding: 16px 17px; font-size: 13px; }
+  .faqList p { padding: 0 17px 17px; font-size: 11px; }
+}

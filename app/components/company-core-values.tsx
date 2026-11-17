@@ -4,13 +4,13 @@ const values = [
   {
     number: "01",
     title: "Excellence",
-    description: "We bring care, craft, and clear thinking to every project, from the first idea to the final detail.",
-    details: ["Quality in every delivery", "Always improving our work"],
+    description: "We apply care, craft, and clear judgment to every project, from the first requirement to the final deployment.",
+    details: ["Quality in every delivery", "Constantly refining our work"],
   },
   {
     number: "02",
     title: "Teamwork",
-    description: "Good work grows through open conversation, shared ownership, and respect for every perspective.",
+    description: "Strong work grows through open dialogue, shared ownership, and respect for every viewpoint.",
     details: ["One team with our clients", "Better ideas through collaboration"],
   },
 ];
@@ -32,19 +32,19 @@ export default function CompanyCoreValues() {
               <article className="min-h-[112px] rounded-[18px] bg-[#202a30] px-4 py-4 text-white shadow-[0_14px_30px_#14242d26] sm:min-h-[130px] sm:px-6 sm:py-5">
                 <span aria-hidden="true" className="mb-2 block text-xl leading-none text-[#7ed5f0]">✧</span>
                 <h3 className="text-base font-semibold sm:text-lg">Integrity</h3>
-                <p className="mt-1 text-[11px] leading-[1.45] text-white/70 sm:text-xs">Honest choices. Lasting trust.</p>
+                <p className="mt-1 text-[11px] leading-[1.45] text-white/70 sm:text-xs">Honest decisions. Enduring trust.</p>
               </article>
               <article className="min-h-[112px] rounded-[18px] bg-[#299ecc] px-4 py-4 text-white shadow-[0_14px_30px_#14577526] sm:min-h-[130px] sm:px-6 sm:py-5">
                 <span aria-hidden="true" className="mb-2 block text-xl leading-none text-white">✦</span>
                 <h3 className="text-base font-semibold sm:text-lg">Innovation</h3>
-                <p className="mt-1 text-[11px] leading-[1.45] text-white/85 sm:text-xs">Fresh thinking that moves us forward.</p>
+                <p className="mt-1 text-[11px] leading-[1.45] text-white/85 sm:text-xs">New thinking that pushes us forward.</p>
               </article>
             </div>
           </div>
         </div>
 
         <div className="min-w-0 lg:pt-14">
-          <p className="max-w-[480px] text-base leading-[1.65] text-[#687984] sm:text-lg">The principles behind every experience we create and every partnership we build.</p>
+          <p className="max-w-[480px] text-base leading-[1.65] text-[#687984] sm:text-lg">The principles behind every system we build and every partnership we maintain.</p>
           <div className="mt-6 border-t border-[#dfe8ec] sm:mt-9">
             {values.map((value) => (
               <article key={value.number} className="grid grid-cols-[52px_minmax(0,1fr)] gap-4 border-b border-[#dfe8ec] py-7 sm:grid-cols-[68px_minmax(0,1fr)] sm:gap-6 sm:py-9">

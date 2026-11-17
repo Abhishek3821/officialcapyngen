@@ -7,7 +7,7 @@
 .eyebrow { margin-bottom: 20px; color: #dfedf3c4; font-size: 9px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; }
 .copy h1 { font-size: clamp(42px, 5vw, 73px); font-weight: 400; line-height: 1.08; letter-spacing: -.045em; text-wrap: balance; }
 .copy h1 em { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
-.description { margin-top: 22px; color: #e1edf0d4; font-size: 13px; line-height: 1.8; }
+.description { margin-top: 22px; color: #e1edf0d4; font-size: 13px; line-height: 1.8; max-width: 560px; }
 .cta { display: inline-flex; align-items: center; gap: 24px; min-height: 46px; margin-top: 25px; padding: 6px 7px 6px 22px; border: 1px solid #ffffffad; border-radius: 30px; background: #f4fbffed; color: #477993; font-size: 11px; font-weight: 550; transition: background .2s, transform .2s; }
 .cta > span:last-child { display: grid; place-items: center; width: 33px; height: 33px; border-radius: 50%; background: #4386aa; color: #f4fcff; font-size: 23px; }
 .cta:hover { background: #fff; transform: translateY(-2px); }

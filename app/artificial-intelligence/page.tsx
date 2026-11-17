@@ -5,8 +5,8 @@ import ArtificialIntelligenceHero from "../components/artificial-intelligence/he
 import ArtificialIntelligenceSections from "../components/artificial-intelligence/sections";
 
 export const metadata: Metadata = {
-  title: "Artificial Intelligence | Capyngen",
-  description: "Bring your people, projects, and ideas together with thoughtful AI solutions that simplify workflows and make room for better collaboration.",
+  title: "Artificial Intelligence Services and Solutions | Capyngen",
+  description: "AI allows businesses to automate processing flows, evaluate data, and create intelligent components in current applications.",
 };
 
 export default function ArtificialIntelligencePage() {

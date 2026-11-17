@@ -12,8 +12,8 @@ import CompanyVisionStatement from "../components/company-vision-statement";
 import CompanyOverviewCta from "../components/company-overview-cta";
 
 export const metadata: Metadata = {
-  title: "Company Overview | Capyngen",
-  description: "Explore Capyngen's company profile and the digital experiences we create through strategy, design and technology.",
+  title: "Company Overview | Building India's Most Trusted Technology Partnerships | Capyngen",
+  description: "We create dependable digital infrastructure through clear strategy, careful engineering, and technology that helps businesses grow.",
 };
 
 export default function CompanyOverviewPage() {

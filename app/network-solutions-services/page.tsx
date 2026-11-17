@@ -4,8 +4,8 @@ import Footer from "../components/footer";
 import { NetworkSolutionsHero, NetworkSolutionsSections } from "../components/network-solutions-services/content";
 
 export const metadata: Metadata = {
-  title: "Network Solutions & Services | Capyngen",
-  description: "Discover connected ideas, thoughtful service, and new perspectives with Capyngen’s Network Solutions & Services.",
+  title: "Creative Network Solutions Services for Businesses | Capyngen",
+  description: "At Capyngen, we offer the most reliable, secure, and easily deployable technology network solutions services to help grow your business to its full potential.",
 };
 
 export default function NetworkSolutionsServicesPage() {

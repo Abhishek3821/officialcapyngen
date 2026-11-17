@@ -202,3 +202,19 @@
   .growthVisual { height: 310px; }
 }
 @media (prefers-reduced-motion: reduce) { .container a { transition: none; } }
+.faq { padding: 65px 0 85px; background: #fff8ee; color: #272b23; }
+.faq .centerHeading h2 em { color: #667250; }
+.faqList { display: grid; gap: 12px; max-width: 900px; margin: 38px auto 0; }
+.faqList details { border: 1px solid #eee3d1; border-radius: 14px; background: #fff; }
+.faqList summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 19px 23px; cursor: pointer; font-size: 15px; font-weight: 600; line-height: 1.4; letter-spacing: -.02em; list-style: none; }
+.faqList summary::-webkit-details-marker { display: none; }
+.faqList summary span { display: grid; place-items: center; flex-shrink: 0; width: 27px; height: 27px; border-radius: 50%; background: #eee9db; color: #77825f; font-size: 16px; transition: transform .2s; }
+.faqList details[open] summary span { transform: rotate(45deg); }
+.faqList p { padding: 0 23px 21px; color: #a59e8e; font-size: 12px; line-height: 1.8; }
+.faqList summary:focus-visible { outline: 3px solid #97a687; outline-offset: 3px; border-radius: 14px; }
+@media (max-width: 550px) {
+  .faq { padding-block: 40px 50px; }
+  .faqList { margin-top: 26px; gap: 10px; }
+  .faqList summary { padding: 16px 17px; font-size: 13px; }
+  .faqList p { padding: 0 17px 17px; font-size: 11px; }
+}

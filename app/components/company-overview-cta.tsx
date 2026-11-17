@@ -10,13 +10,13 @@ export default function CompanyOverviewCta() {
 
         <div className="relative z-10 max-w-[690px]">
           <p className="mb-5 flex items-center gap-3 text-[11px] font-semibold tracking-[.2em] text-[#a8e8f5] uppercase"><span className="h-px w-9 bg-[#a8e8f5]" aria-hidden="true" /> Let&apos;s create together</p>
-          <h2 id="company-cta-heading" className="text-[clamp(38px,4.4vw,68px)] leading-[1.03] font-semibold tracking-[-.065em]">Your next big idea deserves a brilliant digital future.</h2>
-          <p className="mt-6 max-w-[540px] text-sm leading-[1.75] text-white/75 sm:text-base">Tell us what you&apos;re building. We&apos;ll bring the strategy, design, and technology to help make it real.</p>
+          <h2 id="company-cta-heading" className="text-[clamp(38px,4.4vw,68px)] leading-[1.03] font-semibold tracking-[-.065em]">Your next big idea deserves a dependable technology partner.</h2>
+          <p className="mt-6 max-w-[540px] text-sm leading-[1.75] text-white/75 sm:text-base">Tell us what you&apos;re building. We&apos;ll bring the strategy, engineering, and support to make it real.</p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/contact-us" className="inline-flex min-h-12 items-center justify-center gap-5 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#173d52] transition-colors hover:bg-[#dcf5fb] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:px-7">
-              Start a conversation <span aria-hidden="true" className="text-lg font-normal">↗</span>
+              Contact Us <span aria-hidden="true" className="text-lg font-normal">↗</span>
             </Link>
-            <Link href="/web-development" className="inline-flex min-h-12 items-center justify-center border-b border-white/50 px-1 text-sm font-medium text-white transition-colors hover:border-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">Explore our work</Link>
+            <Link href="/web-development" className="inline-flex min-h-12 items-center justify-center border-b border-white/50 px-1 text-sm font-medium text-white transition-colors hover:border-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">Explore our services</Link>
           </div>
         </div>
 
@@ -27,11 +27,11 @@ export default function CompanyOverviewCta() {
           <div aria-hidden="true" className="absolute bottom-[12%] left-[8%] size-2 rounded-full bg-white/80 shadow-[0_0_24px_#fff]" />
 
           <div className="relative w-[78%] rotate-[-5deg] rounded-[24px] border border-white/60 bg-white px-6 py-7 text-[#24333b] shadow-[0_30px_65px_#091e2980] backdrop-blur-xl sm:px-8 sm:py-9">
-            <div className="flex items-center justify-between border-b border-[#dce9ef] pb-3 text-[9px] font-bold tracking-[.18em] text-[#66828f] uppercase sm:text-[10px]"><span>Capyngen</span><span>Digital / 2026</span></div>
+            <div className="flex items-center justify-between border-b border-[#dce9ef] pb-3 text-[9px] font-bold tracking-[.18em] text-[#66828f] uppercase sm:text-[10px]"><span>Capyngen</span><span>Technology Partner</span></div>
             <Image src="/images/capyngen-logo.png" alt="Capyngen Private Limited" width={500} height={300} sizes="(max-width: 640px) 200px, 270px" className="mx-auto mt-2 h-28 w-auto object-contain sm:h-36" />
-            <p className="border-t border-[#dce9ef] pt-4 text-center text-xs font-semibold tracking-[.04em] sm:text-sm">Strategy. Design. Technology.</p>
+            <p className="border-t border-[#dce9ef] pt-4 text-center text-xs font-semibold tracking-[.04em] sm:text-sm">Strategy. Engineering. Support.</p>
           </div>
-          <div className="absolute right-0 bottom-3 rotate-[5deg] rounded-full border border-white/25 bg-white/15 px-4 py-2 text-[10px] font-semibold tracking-[.08em] text-white uppercase backdrop-blur-md sm:bottom-6 sm:text-xs">From idea to launch ↗</div>
+          <div className="absolute right-0 bottom-3 rotate-[5deg] rounded-full border border-white/25 bg-white/15 px-4 py-2 text-[10px] font-semibold tracking-[.08em] text-white uppercase backdrop-blur-md sm:bottom-6 sm:text-xs">From first requirement to launch ↗</div>
         </div>
       </div>
     </section>

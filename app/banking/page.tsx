@@ -12,8 +12,8 @@ import BankingClientVoices from "../components/banking/client-voices";
 import BankingVillaPlans from "../components/banking/villa-plans";
 
 export const metadata: Metadata = {
-  title: "Banking | Capyngen",
-  description: "Thoughtful digital experiences for modern banking. Explore Capyngen's banking design, platform development and connected customer journeys.",
+  title: "Banking Software Development Services | Capyngen",
+  description: "Banking technology that feels less like infrastructure and more like an advantage. We help banks connect people to their financial goals through digital experiences that actually work.",
 };
 
 export default function BankingPage() {

@@ -51,6 +51,7 @@
   .eyebrow { font-size: 7px; }
   .heading h1 > span { font-size: 30px; }
   .heading h1 > strong { max-width: 360px; margin-top: 7px; font-size: 36px; line-height: 1.05; }
+  .description br { display: none; }
   .description { font-size: 12px; }
   .gallery { width: 220vw; height: 240px; margin-block: 15px 5px; gap: 8px; }
   .portrait { border-radius: 9px; }

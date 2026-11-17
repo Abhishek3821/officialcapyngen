@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const stages = [
   { label: "Discover", height: 35 },
-  { label: "Design", height: 51 },
+  { label: "Engineer", height: 51 },
   { label: "Build", height: 68 },
   { label: "Scale", height: 88 },
 ];
@@ -16,17 +16,17 @@ export default function CompanyBusinessOverview() {
           <h2 id="business-overview-heading" className="text-[clamp(47px,5.2vw,82px)] leading-[.94] font-bold tracking-[-.07em] uppercase">
             Business<br /><span className="text-[#55bde1]">Overview</span>
           </h2>
-          <p className="mt-6 max-w-[410px] text-sm leading-[1.7] text-[#b6c4cb] sm:text-base">Connecting strategy, design, and technology to turn ambitious ideas into useful digital experiences.</p>
+          <p className="mt-6 max-w-[410px] text-sm leading-[1.7] text-[#b6c4cb] sm:text-base">Connecting strategy, engineering, and support to turn ambitious ideas into working technology.</p>
 
           <div className="mt-10 max-w-[475px] border-t border-white/15 pt-6 sm:mt-12">
             <div className="flex items-end justify-between gap-4">
               <div>
                 <p className="text-xs font-medium tracking-[.12em] text-[#aab9c1] uppercase">Our approach</p>
-                <p className="mt-1 text-2xl font-semibold tracking-[-.045em] sm:text-3xl">From idea to impact</p>
+                <p className="mt-1 text-2xl font-semibold tracking-[-.045em] sm:text-3xl">From requirement to launch</p>
               </div>
               <span className="rounded-full border border-[#62c4e4]/35 px-3 py-1 text-xs font-semibold text-[#87d5ed]">04 stages</span>
             </div>
-            <div className="mt-7 grid h-[205px] grid-cols-4 items-end gap-4 border-b border-white/20 sm:h-[235px] sm:gap-7" aria-label="Discover, design, build, and scale are the four stages of our approach">
+            <div className="mt-7 grid h-[205px] grid-cols-4 items-end gap-4 border-b border-white/20 sm:h-[235px] sm:gap-7" aria-label="Discover, engineer, build, and scale are the four stages of our approach">
               {stages.map((stage) => (
                 <div key={stage.label} className="flex h-full flex-col justify-end gap-3">
                   <div className="relative flex-1">
@@ -44,12 +44,12 @@ export default function CompanyBusinessOverview() {
           <div className="relative h-[250px] overflow-hidden rounded-[22px] bg-[#34434c] sm:h-[270px] lg:h-[min(33vh,310px)] lg:min-h-[220px]">
             <Image src="/images/company-about-office.webp" alt="Colleagues discussing a project at a table" fill sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 29vw" className="object-cover object-[center_40%]" />
             <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#101820a8] to-transparent" aria-hidden="true" />
-            <span className="absolute bottom-4 left-5 text-[11px] font-semibold tracking-[.16em] uppercase">Think together</span>
+            <span className="absolute bottom-4 left-5 text-[11px] font-semibold tracking-[.16em] uppercase">Strategy</span>
           </div>
           <div className="relative h-[250px] overflow-hidden rounded-[22px] bg-[#34434c] sm:h-[270px] lg:h-[min(33vh,310px)] lg:min-h-[220px]">
             <Image src="/images/company-overview-meeting.webp" alt="Team members reviewing digital work on laptops" fill sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 29vw" className="object-cover object-[center_52%]" />
             <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#101820a8] to-transparent" aria-hidden="true" />
-            <span className="absolute bottom-4 left-5 text-[11px] font-semibold tracking-[.16em] uppercase">Build with purpose</span>
+            <span className="absolute bottom-4 left-5 text-[11px] font-semibold tracking-[.16em] uppercase">Engineering</span>
           </div>
         </div>
 
@@ -59,16 +59,16 @@ export default function CompanyBusinessOverview() {
               <svg viewBox="0 0 24 24" fill="none" className="size-6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="5.5" stroke="currentColor" strokeWidth="1.8" /><path d="m15 15 5 5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /></svg>
             </div>
             <h3 className="text-xl font-semibold tracking-[-.035em] sm:text-2xl">Business Sector</h3>
-            <p className="mt-3 max-w-[340px] text-sm leading-[1.65] text-[#b2c0c7]">Digital services across web development, design, marketing, and emerging technology.</p>
-            <p className="mt-5 text-sm font-semibold text-[#73cdec]">Strategy · Creativity · Technology</p>
+            <p className="mt-3 max-w-[340px] text-sm leading-[1.65] text-[#b2c0c7]">Technology services spanning software development, cloud infrastructure, cybersecurity, and digital transformation.</p>
+            <p className="mt-5 text-sm font-semibold text-[#73cdec]">Strategy · Engineering · Support</p>
           </article>
           <article className="relative border-t border-white/20 pt-6">
             <div className="mb-5 flex size-12 items-center justify-center rounded-[14px] bg-[#299ecc] text-white">
               <svg viewBox="0 0 24 24" fill="none" className="size-6" aria-hidden="true"><path d="M4 19V5m0 14h16M8 15l4-4 3 2 5-6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </div>
             <h3 className="text-xl font-semibold tracking-[-.035em] sm:text-2xl">Products &amp; Services</h3>
-            <p className="mt-3 max-w-[340px] text-sm leading-[1.65] text-[#b2c0c7]">Connected digital solutions shaped around the needs of each business and its customers.</p>
-            <p className="mt-5 text-sm font-semibold text-[#73cdec]">From first concept to launch</p>
+            <p className="mt-3 max-w-[340px] text-sm leading-[1.65] text-[#b2c0c7]">Connected technology solutions shaped around each business and its customers.</p>
+            <p className="mt-5 text-sm font-semibold text-[#73cdec]">From first requirement to launch</p>
           </article>
         </div>
       </div>

@@ -4,8 +4,8 @@ import Footer from "../components/footer";
 import DataAnalyticsSections from "../components/data-analytics/sections";
 
 export const metadata: Metadata = {
-  title: "Data & Analytics | Capyngen",
-  description: "Thoughtfully designed spaces, connected customer experiences, and the power of data-driven decisions. Explore a new perspective with Capyngen.",
+  title: "Best Data Analytics Services in India | Capyngen",
+  description: "Delivering Actionable Insights, Dashboards, and Reporting for Businesses. Grow your business with Capyngen's Data-driven Methods and analytics services.",
 };
 
 export default function DataAnalyticsPage() {

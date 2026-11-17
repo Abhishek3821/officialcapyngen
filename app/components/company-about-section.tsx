@@ -2,9 +2,9 @@
 import Link from "next/link";
 
 const profilePoints = [
-  { number: "01", title: "Company Background", description: "Capyngen brings strategy, design, and technology together to create digital experiences with purpose." },
-  { number: "02", title: "Business Sector", description: "Our work spans web development, design, digital marketing, and emerging technologies." },
-  { number: "03", title: "Operational Scale", description: "From first concept to launch, we support every stage of a brand’s digital journey." },
+  { number: "01", title: "Company Background", description: "Capyngen unites strategy, engineering, and support to build technology with purpose — from the first architecture decision through to long-term maintenance." },
+  { number: "02", title: "Business Sector", description: "Our expertise covers custom software development, cloud infrastructure, cybersecurity, and digital transformation." },
+  { number: "03", title: "Operational Scale", description: "From initial concept to full deployment, we stand behind every stage of a company's technology journey." },
 ];
 
 export default function CompanyAboutSection() {
@@ -21,8 +21,8 @@ export default function CompanyAboutSection() {
               <span className="mt-2 block text-[#299ecc]">Company</span>
             </h2>
             <div className="mt-8 max-w-[430px] border-l-[3px] border-[#299ecc] pl-5 sm:mt-11">
-              <h3 className="text-lg font-semibold tracking-[-.035em] sm:text-xl">Built around better ideas.</h3>
-              <p className="mt-3 text-sm leading-[1.75] text-[#667780] sm:text-base">We craft meaningful digital experiences through thoughtful strategy, creative design, and technology that helps brands grow.</p>
+              <h3 className="text-lg font-semibold tracking-[-.035em] sm:text-xl">Built around better systems.</h3>
+              <p className="mt-3 text-sm leading-[1.75] text-[#667780] sm:text-base">We create dependable digital infrastructure through clear strategy, careful engineering, and technology that helps businesses grow. As a Top IT company in India, we judge our work by what clients achieve after launch, not by how the launch itself went.</p>
             </div>
             <Link href="/contact-us" className="mt-9 inline-flex min-h-12 items-center justify-center gap-5 rounded-full bg-[#202a30] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#217e9f] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#299ecc] sm:mt-11">
               Let&apos;s work together <span aria-hidden="true" className="text-lg font-normal">↗</span>
@@ -30,14 +30,14 @@ export default function CompanyAboutSection() {
           </div>
 
           <div className="relative min-h-[430px] overflow-hidden rounded-[24px] bg-[#dde9ee] shadow-[0_24px_70px_#1c425321] md:min-h-[560px] lg:min-h-[610px] xl:h-[min(73vh,700px)] xl:min-h-[560px]">
-            <Image src="/images/company-about-office-v2.webp" alt="Three colleagues smiling together over a laptop in a bright office" fill sizes="(max-width: 767px) 100vw, (max-width: 1279px) 55vw, 38vw" className="object-cover object-center" />
+            <Image src="/images/company-about-office-v2.webp" alt="Capyngen team building dependable digital infrastructure" fill sizes="(max-width: 767px) 100vw, (max-width: 1279px) 55vw, 38vw" className="object-cover object-center" />
             <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-[35%] bg-gradient-to-t from-[#102733a8] to-transparent" />
-            <div className="absolute bottom-5 left-5 rounded-full border border-white/35 bg-white/20 px-4 py-2 text-[11px] font-semibold tracking-[.08em] text-white uppercase backdrop-blur-md sm:bottom-7 sm:left-7">People · Purpose · Progress</div>
+            <div className="absolute bottom-5 left-5 rounded-full border border-white/35 bg-white/20 px-4 py-2 text-[11px] font-semibold tracking-[.08em] text-white uppercase backdrop-blur-md sm:bottom-7 sm:left-7">Strategy · Engineering · Support</div>
           </div>
 
           <div id="about-company-points" className="flex flex-col justify-center rounded-[24px] border border-[#dce8ed] bg-white p-6 shadow-[0_15px_50px_#1d4f6210] sm:p-8 md:col-span-2 xl:col-span-1 xl:px-7 xl:py-8 2xl:px-10">
             <p className="text-[11px] font-bold tracking-[.2em] text-[#299ecc] uppercase">What defines us</p>
-            <h3 className="mt-3 mb-3 text-[clamp(23px,2.2vw,34px)] leading-[1.12] font-semibold tracking-[-.055em]">One team. Many ways to make an impact.</h3>
+            <h3 className="mt-3 mb-3 text-[clamp(23px,2.2vw,34px)] leading-[1.12] font-semibold tracking-[-.055em]">One team. Many ways to create impact.</h3>
             <div className="mt-2 grid gap-0 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-1">
               {profilePoints.map((point) => (
                 <article key={point.number} className="flex items-start gap-4 border-t border-[#e6edef] py-5 first:border-t-0 sm:gap-3 sm:border-t-0 sm:border-l sm:px-4 sm:first:border-l-0 sm:first:pl-0 md:gap-4 xl:border-t xl:border-l-0 xl:px-0 xl:first:border-t-0">
