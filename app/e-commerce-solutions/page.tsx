@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import { MedicalHero, MedicalAbout, MedicalMission, MedicalVision, MedicalWhatWeDo, MedicalConnections, MedicalCampaigns, MedicalImpact, EcommerceFaq } from "../components/e-commerce-solutions/medical-presentation";
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function ECommerceSolutionsPage() {
       <MedicalImpact />
       <EcommerceFaq />
     </main>
+    <CleaningCta />
     <Footer />
   </>;
 }

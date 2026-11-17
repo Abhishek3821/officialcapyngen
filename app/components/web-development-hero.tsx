@@ -20,7 +20,7 @@ export default function WebDevelopmentHero() {
           <Link href="#visual-diary" className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#e2e5de] bg-white px-6 py-3.5 text-sm font-medium text-[#242823] transition-colors hover:border-[#b9c2b2] hover:bg-[#f8f9f5] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1c1e1c] lg:min-h-[54px] lg:px-7">Our Web Development Services</Link>
         </div>
         <div className="mt-9 flex shrink-0 items-center gap-4 md:mt-[clamp(36px,7svh,76px)]">
-          <div className="flex shrink-0 -space-x-3" aria-hidden="true">{[1, 2, 3, 4].map((client) => <Image key={client} src={`/images/client-${client}.jpg`} alt="" width={40} height={40} className="size-9 rounded-full border-[3px] border-white object-cover lg:size-10" />)}</div>
+          <div className="flex shrink-0 -space-x-3" aria-hidden="true">{[25, 7, 8, 6].map((client) => <Image key={client} src={`/web development/${client}.png`} alt="" width={40} height={40} style={{ objectPosition: client === 25 ? "50% 25%" : client === 7 ? "40% 30%" : client === 8 ? "80% 30%" : "75% 30%" }} className="size-9 rounded-full border-[3px] border-white object-cover lg:size-10" />)}</div>
           <p className="max-w-[285px] text-xs leading-[1.6] text-[#8b8e88] lg:text-sm">From your first idea to your next launch —<br /><span className="font-medium text-[#626b5f]">designed and developed by Capyngen, a leading web development company in India.</span></p>
         </div>
       </div>

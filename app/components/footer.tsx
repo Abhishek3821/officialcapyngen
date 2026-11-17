@@ -1,6 +1,9 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
+import { industryRoutes } from "./navigation-data";
 
 function FooterLandscape() {
   return (
@@ -20,79 +23,133 @@ function FooterLandscape() {
   );
 }
 
-const linkStyle = "cursor-pointer list-none text-[#d5bddf] transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#df9ddc] [&::-webkit-details-marker]:hidden";
+const offerLinks = [
+  { label: "Web Development", href: "/web-development" },
+  { label: "App Development", href: "/app-development" },
+  { label: "Custom AI Solutions", href: "/custom-ai-solution" },
+  { label: "E-Commerce Solutions", href: "/e-commerce-solutions" },
+  { label: "Blockchain Development", href: "/blockchain-development" },
+  { label: "DevOps Solutions", href: "/devops-solutions" },
+  { label: "Application Solutions", href: "/application-solutions" },
+  { label: "CRM & Management Software", href: "/crm-management-software" },
+  { label: "UI/UX Design", href: "/ui-ux-design" },
+  { label: "Website Design", href: "/website-design" },
+  { label: "Branding & Identity Design", href: "/branding-identity-design" },
+  { label: "Ecommerce Design", href: "/ecommerce-design" },
+  { label: "CMS Design", href: "/cms-design" },
+  { label: "Digital Marketing", href: "/digital-marketing" },
+  { label: "Search Engine Optimization (SEO)", href: "/search-engine-optimization" },
+  { label: "Social Media Marketing (SMM)", href: "/social-media-marketing" },
+  { label: "Pay-Per-Click Advertising (PPC)", href: "/pay-per-click-advertising" },
+  { label: "Artificial Intelligence", href: "/artificial-intelligence" },
+  { label: "Cybersecurity", href: "/cybersecurity" },
+  { label: "Network Solutions & Services", href: "/network-solutions-services" },
+  { label: "Enterprise Solutions", href: "/enterprise-solutions" },
+  { label: "Data & Analytics", href: "/data-analytics" },
+  { label: "Consulting", href: "/consulting" },
+];
+
+const industryLinks = Object.entries(industryRoutes).map(([label, href]) => ({ label, href }));
+
+const companyLinks = [
+  { label: "Company Overview", href: "/company-overview" },
+  { label: "Our Products", href: "/company-overview#company-products-services" },
+  { label: "Careers", href: "/careers" },
+  { label: "News & Updates", href: "/news-and-updates" },
+  { label: "Contact Us", href: "/contact-us" },
+];
+
+const socialLinks = [
+  { label: "Facebook", href: "https://www.facebook.com/capyngen", icon: <path d="M14 22V13h3l.5-4H14V7c0-1.1.3-2 2-2h2V1.4A24 24 0 0 0 15 1c-3 0-5 1.8-5 5v3H7v4h3v9Z" fill="currentColor" /> },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/capyngen/", icon: <path d="M6 9v11M6 5v.01M10 20v-6.5a3.5 3.5 0 0 1 7 0V20m-7-11v11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /> },
+  { label: "Instagram", href: "https://www.instagram.com/capyngen_official/", icon: <><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.8" /><circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.8" /><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" /></> },
+  { label: "Twitter", href: "https://x.com/capyngen", icon: <path d="M22 5.9a8 8 0 0 1-2.4.7 4.1 4.1 0 0 0 1.8-2.3 8.2 8.2 0 0 1-2.6 1 4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.7a4.1 4.1 0 0 0 1.3 5.5 4 4 0 0 1-1.9-.5v.1a4.1 4.1 0 0 0 3.3 4 4.1 4.1 0 0 1-1.8.1 4.1 4.1 0 0 0 3.8 2.8A8.2 8.2 0 0 1 2 18.4a11.6 11.6 0 0 0 6.3 1.8c7.5 0 11.7-6.3 11.7-11.7v-.5A8.3 8.3 0 0 0 22 5.9Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /> },
+  { label: "YouTube", href: "https://www.youtube.com/@Capyngen_official", icon: <><rect x="2.5" y="5" width="19" height="14" rx="4" stroke="currentColor" strokeWidth="1.8" /><path d="m10 9 5 3-5 3Z" fill="currentColor" /></> },
+];
+
+const dnbUrl = "https://dunsregistered.dnb.com";
+
+const headingStyle = "relative mb-7 pb-2 text-lg font-semibold text-white after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-10 after:rounded-full after:bg-linear-to-r after:from-[#a32c82] after:to-[#c969b5]";
+const linkStyle = "text-sm text-[#d5bddf] transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#df9ddc]";
+const VISIBLE_LINKS = 10;
+
+function LinkColumn({ id, title, links }: { id: string; title: string; links: { label: string; href: string }[] }) {
+  const [expanded, setExpanded] = useState(false);
+  const shown = expanded ? links : links.slice(0, VISIBLE_LINKS);
+  return (
+    <nav aria-labelledby={`${id}-heading`} className="min-w-0">
+      <h2 id={`${id}-heading`} className={headingStyle}>{title}</h2>
+      <ul id={`${id}-list`} className="space-y-3">
+        {shown.map((link) => <li key={link.href}><Link href={link.href} className={linkStyle}>{link.label}</Link></li>)}
+      </ul>
+      {links.length > VISIBLE_LINKS && <button type="button" aria-expanded={expanded} aria-controls={`${id}-list`} onClick={() => setExpanded((value) => !value)} className="mt-4 text-sm font-semibold text-[#e3a6ff] transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#df9ddc]">{expanded ? "Show Less" : "Show More"}</button>}
+    </nav>
+  );
+}
 
 export default function Footer() {
-  const [newsletterMessage, setNewsletterMessage] = useState("");
-
   return (
-    <footer id="contact" aria-label="Footway footer" className="relative isolate overflow-hidden bg-white pt-6 sm:pt-12">
+    <footer id="contact" aria-label="Capyngen footer" className="relative isolate overflow-hidden bg-white pt-6 sm:pt-12">
       <FooterLandscape />
-      <div className="-mt-px bg-[#35084e] px-5 pt-8 pb-7 text-[#f3eaf6] sm:px-7 sm:pt-12 lg:px-12 lg:pt-14 lg:pb-9">
+      <div className="-mt-px bg-[#35084e] px-5 pt-10 pb-8 text-[#f3eaf6] sm:px-7 sm:pt-12 lg:px-12 lg:pt-16 lg:pb-10">
         <div className="mx-auto max-w-[1280px]">
-          <div className="grid grid-cols-1 gap-9 sm:grid-cols-2 sm:gap-x-10 lg:grid-cols-[minmax(0,1.7fr)_minmax(0,.85fr)_minmax(0,.85fr)_minmax(0,1fr)] lg:gap-12">
-            <div className="min-w-0">
-              <h2 className="text-sm font-semibold">Footway’s Newsletter</h2>
-              <form className="mt-6 max-w-[390px]" onSubmit={(event) => { event.preventDefault(); setNewsletterMessage("Newsletter signup is coming soon. For updates, contact myfriends@footway.co.uk."); }}>
-                <label htmlFor="footer-email" className="sr-only">Your email</label>
-                <input id="footer-email" name="email" type="email" autoComplete="email" required placeholder="Your email" aria-describedby="newsletter-message" className="w-full rounded-sm border border-white/5 bg-[#29033d] px-4 py-3 text-sm text-white placeholder:text-[#967ba4] focus:border-[#c969b5] focus:outline-none focus:ring-2 focus:ring-[#c969b5]/30" />
-                <button type="submit" className="mt-4 rounded-sm bg-linear-to-r from-[#6a238c] to-[#a32c82] px-6 py-2.5 text-xs font-bold tracking-[.05em] text-white transition-opacity hover:opacity-85 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#df9ddc]">SUBSCRIBE</button>
-                <p id="newsletter-message" role="status" className="mt-3 text-xs leading-relaxed text-[#d5bddf]">{newsletterMessage}</p>
-              </form>
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)_minmax(0,1fr)_minmax(0,1.6fr)]">
+            <div className="min-w-0 sm:col-span-2 lg:col-span-1">
+              <Link href="/" aria-label="Capyngen home" className="inline-block rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#df9ddc]">
+                <Image src="/images/capyngen-logo.png" alt="Capyngen Private Limited" width={500} height={300} className="h-24 w-auto object-contain brightness-[1.5]" />
+              </Link>
+              <p className="mt-6 max-w-[440px] text-sm leading-[1.8] text-[#d5bddf]">Transforming businesses through innovative IT solutions. We deliver cutting-edge technology that drives growth and efficiency for modern enterprises.</p>
+              <ul className="mt-7 space-y-5 text-sm">
+                <li className="flex gap-3">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="mt-0.5 size-5 shrink-0 text-[#e3a6ff]"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.8" /><path d="m3.5 6.5 8.5 6 8.5-6" stroke="currentColor" strokeWidth="1.8" /></svg>
+                  <div><p className="text-[#bfa1cc]">Email</p><a href="mailto:query@capyngen.com" className="break-all text-white hover:text-[#e3a6ff]">query@capyngen.com</a></div>
+                </li>
+                <li className="flex gap-3">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="mt-0.5 size-5 shrink-0 text-[#e3a6ff]"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z" stroke="currentColor" strokeWidth="1.8" /><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" strokeWidth="1.8" /></svg>
+                  <div><p className="text-[#bfa1cc]">Address</p><address className="not-italic text-white"><a href="https://www.google.com/maps/search/?api=1&query=Tower+B3+Spaze+i-Tech+Park+Sector+49+Gurugram+Haryana+122018" target="_blank" rel="noreferrer" className="hover:text-[#e3a6ff]">Tower B3, Spaze i-Tech Park, Sector 49, Gurugram, Haryana 122018</a></address></div>
+                </li>
+              </ul>
             </div>
 
-            <div className="min-w-0 text-xs leading-[1.8]">
-              <h2 className="mb-6 text-sm font-semibold">Terms and conditions</h2>
-              <div className="space-y-1">
-                <details><summary className={linkStyle}>Free returns!</summary><p className="py-2 text-[#bfa1cc]">Contact our team for help arranging a return.</p></details>
-                <details><summary className={linkStyle}>30 days return policy!</summary><p className="py-2 text-[#bfa1cc]">For return conditions and order support, email myfriends@footway.co.uk.</p></details>
-                <details><summary className={linkStyle}>All shoes in stock!</summary><p className="py-2 text-[#bfa1cc]">Contact our team to check your preferred style and size.</p></details>
-              </div>
-              <div className="mt-7 flex flex-wrap items-center gap-3">
-                <span className="font-semibold">Follow Footway</span>
-                <a href="https://www.facebook.com/footway" aria-label="Footway on Facebook" target="_blank" rel="noreferrer" className="text-[#dfcbe6] transition-colors hover:text-white"><svg viewBox="0 0 24 24" fill="currentColor" className="size-6" aria-hidden="true"><path d="M14 22V13h3l.5-4H14V7c0-1.1.3-2 2-2h2V1.4A24 24 0 0 0 15 1c-3 0-5 1.8-5 5v3H7v4h3v9Z" /></svg></a>
-                <a href="https://www.instagram.com/footway" aria-label="Footway on Instagram" target="_blank" rel="noreferrer" className="text-[#dfcbe6] transition-colors hover:text-white"><svg viewBox="0 0 24 24" fill="none" className="size-6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.8" /><circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.8" /><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" /></svg></a>
-              </div>
-            </div>
+            <LinkColumn id="footer-offer" title="What We Offer" links={offerLinks} />
+            <LinkColumn id="footer-industries" title="Industries" links={industryLinks} />
 
-            <div className="min-w-0 text-xs leading-[1.8]">
-              <h2 className="mb-6 text-sm font-semibold">Information</h2>
-              <div className="space-y-1">
-                <details><summary className={linkStyle}>FAQs</summary><p className="py-2 text-[#bfa1cc]">Questions about your order? Call or email our customer service team below.</p></details>
-                <details><summary className={linkStyle}>About us at Footway</summary><p className="py-2 text-[#bfa1cc]">Footway is part of Footway Group, based in Kista, Sweden.</p></details>
-                <details><summary className={linkStyle}>Footway Legal</summary><p className="py-2 text-[#bfa1cc]">Company number: 559063-2377. Contact our head office for company information.</p></details>
+            <div className="min-w-0 sm:col-span-2 lg:col-span-1">
+              <div className="grid gap-10 sm:grid-cols-2">
+                <nav aria-labelledby="footer-company-heading">
+                  <h2 id="footer-company-heading" className={headingStyle}>Company</h2>
+                  <ul className="space-y-3">{companyLinks.map((link) => <li key={link.label}><Link href={link.href} className={`${linkStyle} uppercase`}>{link.label}</Link></li>)}</ul>
+                </nav>
+                <div>
+                  <h2 className={headingStyle}>Stay Connected</h2>
+                  <p className="text-sm text-[#d5bddf]">Follow us on social media</p>
+                  <ul className="mt-4 flex flex-wrap gap-3">
+                    {socialLinks.map((social) => <li key={social.label}><a href={social.href} target="_blank" rel="noreferrer" aria-label={`Capyngen on ${social.label}`} className="flex size-11 items-center justify-center rounded-md bg-white/10 text-white transition-colors hover:bg-[#a32c82] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#df9ddc]"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="size-5">{social.icon}</svg></a></li>)}
+                  </ul>
+                </div>
               </div>
-              <div className="mt-6 flex flex-col text-[#d5bddf]">
-                <a href="tel:08000988300" className="hover:text-white">0800 098 8300</a>
-                <a href="mailto:myfriends@footway.co.uk" className="break-all hover:text-white">myfriends@footway.co.uk</a>
-              </div>
-            </div>
 
-            <div className="min-w-0 text-xs leading-[1.8]">
-              <h2 className="mb-6 text-sm font-semibold">Contact</h2>
-              <p className="font-semibold">Footway</p>
-              <p className="text-[#d5bddf]">Company number: 559063-2377</p>
-              <p className="mt-6 font-semibold">Head office:</p>
-              <address className="font-normal text-[#d5bddf] not-italic">Victoria Tower, Nolsögatan 3,<br />164 40 Kista, Sweden</address>
+              <div className="mt-9 flex flex-wrap items-center gap-4 border-t border-white/10 pt-8">
+                <a href={dnbUrl} target="_blank" rel="noreferrer" aria-label="Verify Capyngen's D-U-N-S registration on Dun & Bradstreet" className="block size-30 shrink-0 rounded-md bg-white p-1.5 transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#df9ddc]">
+                  <Image src="/images/dnb/duns-registered-static.webp" alt="D&B D-U-N-S Registered seal" width={512} height={512} sizes="120px" className="size-full object-contain" />
+                </a>
+                <div className="size-30 shrink-0 rounded-md bg-white p-1.5">
+                  <Image src="/images/dnb/company-profile-qr.svg" alt="QR code linking to Capyngen's D&B company profile" width={164} height={164} unoptimized className="size-full object-contain" />
+                </div>
+                <div className="min-w-37.5">
+                  <p className="text-base font-semibold text-white">D-U-N-S Registered</p>
+                  <p className="mt-1 text-xs leading-relaxed text-[#bfa1cc]">Official D&amp;B seal and<br />verification QR.</p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="mt-12 grid items-center gap-8 border-t border-white/10 pt-8 sm:mt-16 lg:mt-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.5fr)_minmax(0,1fr)] lg:gap-6 lg:border-0 lg:pt-0">
-            <div aria-label="Trust and security marks shown in the design" className="flex items-center justify-center gap-6 lg:justify-start">
-              <div className="flex items-center gap-2"><div className="flex size-11 items-center justify-center rounded-full border-[3px] border-[#c1b889] bg-[#f1efe4] font-serif text-3xl font-bold italic text-[#328b89]">e</div><span className="text-[10px] leading-[1.3] font-bold">TRUSTED<br />SHOPS</span></div>
-              <div className="flex items-center gap-1"><span className="-rotate-6 bg-white px-1 text-xl font-black text-[#35084e]">PCI<span className="text-[#75a44a]">✓</span></span><span className="text-sm leading-none font-bold">DSS<small className="block text-[6px] font-normal">COMPLIANT</small></span></div>
-            </div>
-            <div className="text-center text-[11px] leading-[1.9] text-[#c7abd3]">
-              <p>Part of Footway Group, publicly traded on Nasdaq OMX.</p>
-              <a href="mailto:myfriends@footway.co.uk" className="hover:text-white">myfriends@footway.co.uk</a><span>, 0800 098 8300</span>
-              <p className="my-2 text-base tracking-[.12em]" aria-label="Serving customers across Europe">🇸🇪 🇳🇴 🇫🇮 🇩🇰 🇵🇱 🇬🇧 🇩🇪 🇳🇱 🇦🇹 🇫🇷 🇨🇭</p>
-              <p>© 2010–2026 Footway. All rights reserved.</p>
-            </div>
-            <div aria-label="Payment methods illustrated: Adyen, Mastercard, Visa" className="flex items-center justify-center gap-6 lg:justify-end">
-              <span className="text-2xl font-black tracking-[-.06em]">adyen</span>
-              <svg viewBox="0 0 62 40" className="h-9 w-14" aria-hidden="true"><circle cx="23" cy="20" r="18" fill="#ed0026" /><circle cx="40" cy="20" r="18" fill="#ffac00" fillOpacity=".95" /></svg>
-              <span className="text-2xl font-black italic tracking-tight">VISA</span>
-            </div>
+          <div className="relative mt-14 border-t border-white/10 pt-10 lg:mt-16">
+            <a href="#top" aria-label="Back to top" className="absolute -top-6 left-1/2 flex size-12 -translate-x-1/2 items-center justify-center rounded-md border border-[#c969b5]/60 bg-[#35084e] text-[#e3a6ff] transition-colors hover:bg-[#4c1170] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#df9ddc]">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="size-5"><path d="M12 19V5m-6 6 6-6 6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </a>
+            <p className="text-sm leading-relaxed text-[#d5bddf]">Orinite is a proprietary software product brand owned, developed, and operated by Capyngen Private Limited.</p>
+            <p className="mt-3 text-sm text-[#d5bddf]">Official Website: <a href="https://orinite.com" target="_blank" rel="noreferrer" className="text-[#e3a6ff] underline-offset-4 hover:text-white hover:underline">https://orinite.com</a></p>
           </div>
         </div>
       </div>

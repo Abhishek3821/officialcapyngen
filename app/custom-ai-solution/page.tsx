@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import { AiHero, AiAbout, AiContents } from "../components/custom-ai/intro";
 import { AiReimagined, AiServices, AiResults } from "../components/custom-ai/services";
 import { AiGrowthChart, AiProcessCase, AiCommerceCase } from "../components/custom-ai/cases";
@@ -29,6 +30,7 @@ export default function CustomAiSolutionPage() {
         <AiCommerceCase />
         <div><AiFaq /></div>
       </main>
+      <CleaningCta />
       <Footer />
     </>
   );

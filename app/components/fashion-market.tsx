@@ -11,7 +11,7 @@ export default function FashionMarket() {
   return (
     <section id="fashion-market" aria-labelledby="fashion-market-heading" className="relative isolate overflow-hidden bg-[#356383] px-5 pt-8 pb-5 sm:px-7 sm:pt-11 sm:pb-7 lg:px-10 lg:pt-12 lg:pb-9">
       <div aria-hidden="true" className="pointer-events-none absolute -inset-10 -z-10">
-        <Image src="/images/moments/celebration.jpg" alt="" fill sizes="100vw" className="scale-110 object-cover opacity-80 blur-[22px]" />
+        <Image src="/web development/20.png" alt="" fill sizes="100vw" className="scale-110 object-cover opacity-80 blur-[22px]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_18%_26%,#237898b3,transparent_48%),radial-gradient(ellipse_at_80%_70%,#c8438ac4,transparent_45%),radial-gradient(ellipse_at_70%_10%,#74b9d99e,transparent_50%),linear-gradient(90deg,#0f3a5a66,#30284944)]" />
       </div>
       <div className="mx-auto max-w-[1560px]">

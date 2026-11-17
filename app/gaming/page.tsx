@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import GamingExperience from "../components/industries/gaming";
 
 export const metadata: Metadata = {
@@ -9,5 +10,5 @@ export const metadata: Metadata = {
 };
 
 export default function GamingPage() {
-  return <><Navbar /><GamingExperience /><Footer /></>;
+  return <><Navbar /><GamingExperience /><CleaningCta /><Footer /></>;
 }

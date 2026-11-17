@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import WebsiteDesignHero from "../components/website-design/hero";
 import WebsiteDesignSections from "../components/website-design/sections";
 
@@ -17,6 +18,7 @@ export default function WebsiteDesignPage() {
         <WebsiteDesignHero />
         <WebsiteDesignSections />
       </main>
+      <CleaningCta />
       <Footer />
     </>
   );

@@ -4,14 +4,14 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 
 const photos = [
-  { location: "Custom Web Development", image: "/images/moments/travel.jpg", alt: "Colourful coastal buildings overlooking the sea" },
-  { location: "E-commerce Development", image: "/images/destinations/swiss-alps.webp", alt: "An alpine peak framed by green trees" },
-  { location: "Responsive Web Design", image: "/images/destinations/nagano.webp", alt: "A traditional wooden building in a mountain setting" },
-  { location: "Web Application Development", image: "/images/destinations/los-lances.webp", alt: "A quiet beach between dramatic coastal rocks" },
-  { location: "UI/UX Design", image: "/images/destinations/goreme.webp", alt: "Rock formations and hot air balloons over Cappadocia" },
-  { location: "Web Hosting Services", image: "/images/destinations/merzouga.webp", alt: "Warm golden sand dunes in the desert" },
-  { location: "WordPress Development", image: "/images/destinations/yosemite.webp", alt: "The towering granite cliffs and wooded valley of Yosemite" },
-  { location: "JavaScript Development", image: "/images/moments/mountains.jpg", alt: "A sweeping mountain landscape beneath an open sky" },
+  { location: "Custom Web Development", image: "/web development/10.png", alt: "A custom website with development tools and code icons" },
+  { location: "E-commerce Development", image: "/web development/11.png", alt: "An e-commerce website with shopping and delivery graphics" },
+  { location: "Responsive Web Design", image: "/web development/12.png", alt: "A responsive website shown on desktop, tablet, and phone screens" },
+  { location: "Web Application Development", image: "/web development/13.png", alt: "A web application with connected data and cloud services" },
+  { location: "UI/UX Design", image: "/web development/14.png", alt: "UI and UX design tools around a mobile and desktop interface" },
+  { location: "Web Hosting Services", image: "/web development/15.png", alt: "Cloud hosting and server infrastructure illustrated above a laptop" },
+  { location: "WordPress Development", image: "/web development/16.png", alt: "A WordPress website with development tools and plugin graphics" },
+  { location: "JavaScript Development", image: "/web development/17.png", alt: "JavaScript development graphics above a laptop screen" },
 ];
 
 function Arrow({ previous = false }: { previous?: boolean }) {

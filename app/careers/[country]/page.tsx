@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
+import CleaningCta from "../../components/cleaning-cta";
 import CountryCareers from "../_careers/CountryCareers";
 import { CAREER_COUNTRIES, countryToSlug, slugToCountry } from "../_careers/careerRoutes";
 
@@ -24,6 +25,7 @@ export default function CountryCareersPage() {
       <Suspense fallback={<div className="min-h-screen bg-gray-100" />}>
         <CountryCareers />
       </Suspense>
+      <CleaningCta />
       <Footer />
     </>
   );

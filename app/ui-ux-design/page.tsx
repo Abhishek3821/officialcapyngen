@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import UiUxHero from "../components/ui-ux-design/hero";
 import UiUxSections from "../components/ui-ux-design/sections";
 
@@ -17,6 +18,7 @@ export default function UiUxDesignPage() {
         <UiUxHero />
         <UiUxSections />
       </main>
+      <CleaningCta />
       <Footer />
     </>
   );

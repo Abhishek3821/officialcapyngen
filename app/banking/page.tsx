@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import BankingHero from "../components/banking/hero";
 import BankingSolutions from "../components/banking/solutions";
 import BankingExperienceCollage from "../components/banking/experience-collage";
@@ -17,5 +18,5 @@ export const metadata: Metadata = {
 };
 
 export default function BankingPage() {
-  return <><div className={styles.page}><Navbar /><main id="main-content" tabIndex={-1} className="outline-none"><BankingHero /><BankingExperienceCollage /><BankingConsideredExperiences /><BankingCreativeProjects /><BankingInteriorPavilion /><BankingClientVoices /><BankingVillaPlans /><BankingSolutions /></main></div><Footer /></>;
+  return <><div className={styles.page}><Navbar /><main id="main-content" tabIndex={-1} className="outline-none"><BankingHero /><BankingExperienceCollage /><BankingConsideredExperiences /><BankingCreativeProjects /><BankingInteriorPavilion /><BankingClientVoices /><BankingVillaPlans /><BankingSolutions /></main></div><CleaningCta /><Footer /></>;
 }

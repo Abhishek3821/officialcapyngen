@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Photo, Polaroid, appBlue } from "./visuals";
+import { Photo, appBlue } from "./visuals";
 
 export function AppPortfolioHero() {
   return (
@@ -15,10 +15,7 @@ export function AppPortfolioHero() {
           </div>
 
           <div className="relative h-[420px] min-w-0 sm:h-[570px] lg:h-[min(77vh,710px)] lg:min-h-[490px]">
-            <Polaroid src="/images/destinations/swiss-alps.webp" alt="Mountain destination" className="absolute top-[1%] left-[16%] h-[34%] w-[28%] -rotate-6" />
-            <Polaroid src="/images/destinations/los-lances.webp" alt="Coastal destination" className="absolute top-[10%] right-[3%] h-[36%] w-[30%] rotate-8" />
-            <Polaroid src="/images/app-development/resort-pool.webp" alt="Beachfront resort" className="absolute right-[8%] bottom-[9%] h-[35%] w-[31%] -rotate-5" />
-            <div className="absolute inset-x-[8%] bottom-0 z-10 h-[98%]"><Image src="/images/app-development/hero-creator.webp" alt="Creator holding flowers and wearing headphones" fill priority sizes="(max-width: 1023px) 80vw, 48vw" className="object-contain object-bottom" /></div>
+            <div className="absolute inset-0"><Image src="/app development/APP DEVELOPEMENT BANNER.png" alt="A collection of mobile app interfaces displayed on smartphones" fill preload sizes="(max-width: 1023px) 90vw, 48vw" className="object-contain object-center" /></div>
           </div>
         </div>
         <nav aria-label="App development page sections" className="relative z-20 flex flex-wrap gap-x-7 gap-y-3 border-t border-[#dce4e7] py-5 text-[11px] font-bold tracking-[.08em] uppercase sm:gap-x-10 sm:text-xs">
@@ -33,12 +30,8 @@ export function AppAboutSection() {
   return (
     <section id="app-about" aria-labelledby="app-about-heading" className="bg-[#e7f1f6] text-[#17232b]">
       <div className="mx-auto grid max-w-[1460px] items-center gap-10 px-5 py-20 sm:px-8 lg:min-h-[680px] lg:grid-cols-[minmax(0,1.04fr)_minmax(0,.96fr)] lg:gap-16 lg:px-12">
-        <div className="relative h-[420px] sm:h-[530px]">
-          <Photo src="/images/agenda/photo-1600210492486-724fe5c67fb0.jpg" alt="Warm contemporary interior" className="absolute top-0 left-[5%] h-[66%] w-[43%] rounded-[16px]" />
-          <Photo src="/images/app-development/resort-pool.webp" alt="Tropical beachfront pool" className="absolute right-[4%] bottom-0 h-[62%] w-[48%] rounded-[16px]" />
-          <Polaroid src="/images/virtual-card-lifestyle.webp" alt="Person using a mobile phone" className="absolute top-[17%] left-[30%] z-10 h-[53%] w-[38%] rotate-[-8deg]" />
-          <Polaroid src="/images/destinations/los-lances.webp" alt="Sunny coastal view" className="absolute right-[4%] top-[2%] h-[35%] w-[30%] rotate-[6deg]" />
-          <Polaroid src="/images/app-development/resort-terrace.webp" alt="Beachfront terrace" className="absolute bottom-[2%] left-[3%] h-[32%] w-[31%] -rotate-3" />
+        <div className="relative aspect-[3/2] sm:aspect-auto sm:h-[530px]">
+          <Image src="/app development/2.png" alt="App development team, mobile interfaces, and product planning" fill sizes="(max-width: 1023px) 90vw, 50vw" className="object-contain" />
         </div>
         <div className="max-w-[560px]">
           <p className="text-xs font-semibold tracking-[.22em] text-[#347aa8] uppercase">About Us</p>
@@ -59,7 +52,7 @@ export function AppContactStrip() {
         <h2 id="app-contact-strip-heading" className="text-[clamp(31px,3.5vw,59px)] leading-[.9] font-bold tracking-[-.065em] uppercase">Why Capyngen<br /><span className="font-serif font-normal normal-case">for App</span> Development</h2>
         <div className="grid grid-cols-2 gap-x-4 gap-y-3 text-xs font-medium sm:text-sm md:grid-cols-1"><span>✦ Native iOS &amp; Android</span><span>✦ Cross-platform builds</span><span>✦ Product design</span><span>✦ Post-launch support</span></div>
         <div className="text-sm"><p className="text-[10px] font-bold tracking-[.15em] text-white/70 uppercase">Ready to Build Your App?</p><Link href="/contact-us" className="mt-1 inline-block border-b border-white/60 pb-1 font-semibold hover:border-white">Contact Capyngen ↗</Link><p className="mt-4">Seeking an experienced app development company in India that will treat your app as a product and not a project? You&apos;ve come to the right place.</p></div>
-        <div className="grid h-[150px] grid-cols-3 gap-2 md:h-[190px]"><Photo src="/images/app-development/airline-cabin.webp" alt="Airline cabin" className="rounded-[12px]" /><Photo src="/images/app-development/resort-pool.webp" alt="Resort pool" className="rounded-[12px]" /><Photo src="/images/app-development/resort-terrace.webp" alt="Oceanfront terrace" className="rounded-[12px]" /></div>
+        <div className="grid h-[150px] grid-cols-3 gap-2 md:h-[190px]"><Photo src="/app development/3.png" alt="A mobile application with connected features" className="rounded-[12px]" /><Photo src="/app development/4.png" alt="Cross-device application development" className="rounded-[12px]" /><Photo src="/app development/5.png" alt="A smartphone application with digital service tools" className="rounded-[12px]" /></div>
       </div>
     </section>
   );

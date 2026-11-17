@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import PublicServiceExperience from "../components/industries/public-service";
 
 export const metadata: Metadata = {
@@ -9,5 +10,5 @@ export const metadata: Metadata = {
 };
 
 export default function PublicServicePage() {
-  return <><Navbar /><PublicServiceExperience /><Footer /></>;
+  return <><Navbar /><PublicServiceExperience /><CleaningCta /><Footer /></>;
 }

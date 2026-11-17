@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import ECommerceExperience from "../components/industries/e-commerce";
 
 export const metadata: Metadata = {
@@ -9,5 +10,5 @@ export const metadata: Metadata = {
 };
 
 export default function ECommercePage() {
-  return <><Navbar /><ECommerceExperience /><Footer /></>;
+  return <><Navbar /><ECommerceExperience /><CleaningCta /><Footer /></>;
 }

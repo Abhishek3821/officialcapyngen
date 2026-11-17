@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import ContactQuoteForm from "../components/contact-quote-form";
 import ContactDigitalHero from "../components/contact-digital-hero";
 
@@ -40,7 +39,26 @@ export default function ContactPage() {
         <ContactDigitalHero />
 
         <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
-          <section id="contact-details" aria-labelledby="contact-details-heading" className="pt-16 sm:pt-20">
+          <section id="quote" aria-labelledby="quote-heading" className="grid grid-cols-1 items-start gap-8 scroll-mt-28 pt-16 pb-12 lg:grid-cols-[1.35fr_1fr] lg:gap-10 lg:pt-20 lg:pb-16">
+            <div className="rounded-[24px] border border-[#e4ddd3] bg-white p-6 shadow-[0_16px_50px_#442d1005] sm:p-9 lg:p-10">
+              <p className="text-[10px] font-semibold tracking-[.16em] text-[#b56a3f] uppercase">Tell us a little about your idea</p>
+              <h2 id="quote-heading" className="mt-4 text-[34px] leading-tight font-medium tracking-[-.055em] sm:text-[40px]">Let’s make it happen.</h2>
+              <p className="mt-4 text-sm leading-relaxed text-[#82786e]">Share a few details and give your next big idea a place to start.</p>
+              <ContactQuoteForm />
+            </div>
+            <aside aria-labelledby="next-heading" className={`relative isolate overflow-hidden rounded-[24px] px-7 py-9 text-white sm:p-10 lg:mt-8 ${warmBackground}`}>
+              <Orbits className="-top-4 -right-20 -z-10 w-64 text-[#e1a77d]/15" />
+              <p className="text-[10px] font-medium tracking-[.17em] text-[#e5a97d] uppercase">From hello to what’s next</p>
+              <h3 id="next-heading" className="mt-5 text-[36px] leading-[1.12] font-medium tracking-[-.055em]">Your next chapter.<br /><span className="font-serif font-normal italic text-[#f3b789]">Built together.</span></h3>
+              <p className="mt-5 text-sm leading-[1.8] text-[#c3b1a3]">You bring the ambition. We bring the curiosity, creativity and care to help shape it.</p>
+              <ol className="mt-9 space-y-6">
+                {[{ title: "We listen", text: "Your vision, your challenges, and what success looks like to you." }, { title: "We explore", text: "The right approach, with ideas tailored to your goals." }, { title: "We create", text: "A clear path from first conversation to your next launch." }].map((step, index) => <li key={step.title} className="flex gap-4"><span className="flex size-9 shrink-0 items-center justify-center rounded-full border border-[#d3936433] font-mono text-[11px] text-[#f0ad7c]">0{index + 1}</span><div><h4 className="text-sm font-medium">{step.title}</h4><p className="mt-1.5 text-xs leading-[1.7] text-[#b7a698]">{step.text}</p></div></li>)}
+              </ol>
+              <div className="mt-9 flex items-center gap-3 border-t border-white/10 pt-6"><span aria-hidden="true" className="text-xl text-[#f4ad78]">✦</span><p className="text-xs text-[#dbc5b3]">Thoughtful work starts with a good conversation.</p></div>
+            </aside>
+          </section>
+
+          <section id="contact-details" aria-labelledby="contact-details-heading" className="pt-4 sm:pt-6">
             <div className="mx-auto max-w-[600px] text-center">
               <p className="text-[11px] font-semibold tracking-[.17em] text-[#b56a3f] uppercase">Get in touch</p>
               <h2 id="contact-details-heading" className="mt-4 text-[clamp(30px,3.5vw,46px)] leading-[1.12] font-medium tracking-[-.055em]">Good people. Great possibilities.</h2>
@@ -73,26 +91,8 @@ export default function ContactPage() {
             <iframe title="Demo studio location — London Eye, London" src="https://maps.google.com/maps?q=London%20Eye&z=13&output=embed" width="800" height="340" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="block h-[300px] w-full border-0 bg-[#e5eadd] md:h-full md:min-h-[340px]" />
           </section>
 
-          <section id="quote" aria-labelledby="quote-heading" className="grid grid-cols-1 items-start gap-8 py-16 lg:grid-cols-[1.35fr_1fr] lg:gap-10 lg:py-24">
-            <div className="rounded-[24px] border border-[#e4ddd3] bg-white p-6 shadow-[0_16px_50px_#442d1005] sm:p-9 lg:p-10">
-              <p className="text-[10px] font-semibold tracking-[.16em] text-[#b56a3f] uppercase">Tell us a little about your idea</p>
-              <h2 id="quote-heading" className="mt-4 text-[34px] leading-tight font-medium tracking-[-.055em] sm:text-[40px]">Let’s make it happen.</h2>
-              <p className="mt-4 text-sm leading-relaxed text-[#82786e]">Share a few details and give your next big idea a place to start.</p>
-              <ContactQuoteForm />
-            </div>
-            <aside aria-labelledby="next-heading" className={`relative isolate overflow-hidden rounded-[24px] px-7 py-9 text-white sm:p-10 lg:mt-8 ${warmBackground}`}>
-              <Orbits className="-top-4 -right-20 -z-10 w-64 text-[#e1a77d]/15" />
-              <p className="text-[10px] font-medium tracking-[.17em] text-[#e5a97d] uppercase">From hello to what’s next</p>
-              <h3 id="next-heading" className="mt-5 text-[36px] leading-[1.12] font-medium tracking-[-.055em]">Your next chapter.<br /><span className="font-serif font-normal italic text-[#f3b789]">Built together.</span></h3>
-              <p className="mt-5 text-sm leading-[1.8] text-[#c3b1a3]">You bring the ambition. We bring the curiosity, creativity and care to help shape it.</p>
-              <ol className="mt-9 space-y-6">
-                {[{ title: "We listen", text: "Your vision, your challenges, and what success looks like to you." }, { title: "We explore", text: "The right approach, with ideas tailored to your goals." }, { title: "We create", text: "A clear path from first conversation to your next launch." }].map((step, index) => <li key={step.title} className="flex gap-4"><span className="flex size-9 shrink-0 items-center justify-center rounded-full border border-[#d3936433] font-mono text-[11px] text-[#f0ad7c]">0{index + 1}</span><div><h4 className="text-sm font-medium">{step.title}</h4><p className="mt-1.5 text-xs leading-[1.7] text-[#b7a698]">{step.text}</p></div></li>)}
-              </ol>
-              <div className="mt-9 flex items-center gap-3 border-t border-white/10 pt-6"><span aria-hidden="true" className="text-xl text-[#f4ad78]">✦</span><p className="text-xs text-[#dbc5b3]">Thoughtful work starts with a good conversation.</p></div>
-            </aside>
-          </section>
 
-          <section aria-labelledby="contact-cta-heading" className="pb-16 lg:pb-24">
+          <section aria-labelledby="contact-cta-heading" className="py-16 lg:py-24">
             <div className={`relative isolate overflow-hidden rounded-[26px] px-7 py-12 text-center text-white sm:px-14 sm:py-16 ${warmBackground}`}>
               <Orbits className="-bottom-12 -left-12 w-56 text-[#df9c71]/15 sm:left-0" /><Orbits className="-top-12 -right-12 w-56 text-[#df9c71]/20 sm:right-0" />
               <div className="relative mx-auto max-w-[730px]"><p className="text-[10px] font-medium tracking-[.18em] text-[#e3a77c] uppercase">Small beginnings. Big possibilities.</p><h2 id="contact-cta-heading" className="mt-5 text-[clamp(30px,3.8vw,52px)] leading-[1.15] font-medium tracking-[-.055em]">We love a good challenge.<br /><span className="font-serif font-normal italic text-[#f3b789]">What’s yours?</span></h2><p className="mx-auto mt-5 max-w-[470px] text-sm leading-relaxed text-[#c7b5a6]">A new brand, a better website, or something entirely different. Let’s find out what we can make together.</p><a href="#quote" className={`${orangeButton} mt-7`}>Let’s get started <Arrow /></a></div>
@@ -100,6 +100,7 @@ export default function ContactPage() {
           </section>
         </div>
       </main>
+      <CleaningCta />
       <Footer />
     </div>
   );

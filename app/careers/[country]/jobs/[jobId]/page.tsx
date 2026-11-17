@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import Navbar from "../../../../components/navbar";
 import Footer from "../../../../components/footer";
+import CleaningCta from "../../../../components/cleaning-cta";
 import CareerJobDetail from "../../../_careers/CareerJobDetail";
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export default function CareerJobDetailPage() {
       <Suspense fallback={<div className="min-h-screen bg-white" />}>
         <CareerJobDetail />
       </Suspense>
+      <CleaningCta />
       <Footer />
     </>
   );

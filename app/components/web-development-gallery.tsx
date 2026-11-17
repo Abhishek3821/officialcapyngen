@@ -4,15 +4,15 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const pictures = {
-  dog: { name: "dog", alt: "A friendly dog in a natural-light portrait", aspect: "aspect-[1.1]" },
-  chair: { name: "chair", alt: "A sculptural cobalt-blue armchair in a blue studio", aspect: "aspect-[.9]" },
-  product: { name: "product", alt: "A beauty product with soft architectural shadows", aspect: "aspect-[1.05]" },
-  portrait: { name: "portrait", alt: "A creative editorial portrait", aspect: "aspect-[.8]" },
-  lamp: { name: "lamp", alt: "A minimal desk lamp against a pale backdrop", aspect: "aspect-[.92]" },
+  dog: { name: "1", alt: "A website displayed on a laptop in a sunlit workspace", aspect: "aspect-[1.1]" },
+  chair: { name: "2", alt: "A web project displayed on a desk beside a city-view window", aspect: "aspect-[.9]" },
+  product: { name: "3", alt: "A mobile website displayed beside a keyboard and indoor plants", aspect: "aspect-[1.05]" },
+  portrait: { name: "5", alt: "A responsive website displayed on a phone held in one hand", aspect: "aspect-[.8]" },
+  lamp: { name: "6", alt: "A developer working on a website in a bright office", aspect: "aspect-[.92]" },
 };
 
 function GalleryCard({ item, duplicate }: { item: (typeof pictures)[keyof typeof pictures]; duplicate: boolean }) {
-  return <div className={`min-w-0 overflow-hidden rounded-[18px] bg-[#eff0ee] lg:rounded-[22px] ${item.aspect}`}><Image src={`/images/web-development/${item.name}.webp`} alt={duplicate ? "" : item.alt} width={850} height={1100} sizes="(max-width: 767px) 50vw, 25vw" className="h-full w-full object-cover" /></div>;
+  return <div className={`min-w-0 overflow-hidden rounded-[18px] bg-[#eff0ee] lg:rounded-[22px] ${item.aspect}`}><Image src={`/web development/${item.name}.png`} alt={duplicate ? "" : item.alt} width={850} height={1100} sizes="(max-width: 767px) 50vw, 25vw" className="h-full w-full object-cover" /></div>;
 }
 
 export default function WebDevelopmentGallery() {
@@ -87,7 +87,7 @@ export default function WebDevelopmentGallery() {
         <div className="flex h-full w-full -translate-y-8 gap-3 md:-translate-y-12">
           {[false, true].map((duplicate) => <div key={String(duplicate)} ref={duplicate ? undefined : firstGroup} aria-hidden={duplicate || undefined} className="grid w-full shrink-0 grid-cols-2 items-start gap-3">
             <div className="grid min-w-0 gap-3"><GalleryCard item={pictures.dog} duplicate={duplicate} /><GalleryCard item={pictures.chair} duplicate={duplicate} /><GalleryCard item={pictures.product} duplicate={duplicate} /></div>
-            <div className="grid min-w-0 gap-3 pt-1"><div aria-hidden="true" className="h-[74px] rounded-[18px] bg-linear-to-b from-[#f6f7f9] to-[#e7e9ed] lg:h-[100px] lg:rounded-[22px]" /><GalleryCard item={pictures.portrait} duplicate={duplicate} /><GalleryCard item={pictures.lamp} duplicate={duplicate} /></div>
+            <div className="grid min-w-0 gap-3 pt-1"><div aria-hidden="true" className="h-[74px] rounded-[18px] bg-linear-to-b from-[#f6f7f9] to-[#e7e9ed] lg:h-[100px] lg:rounded-[22px]" style={{ position: "relative", overflow: "hidden" }}><Image src="/web development/4.png" alt="" style={{ objectPosition: "center 70%" }} fill sizes="(max-width: 767px) 50vw, 25vw" className="object-cover" /></div><GalleryCard item={pictures.portrait} duplicate={duplicate} /><GalleryCard item={pictures.lamp} duplicate={duplicate} /></div>
           </div>)}
         </div>
       </div>

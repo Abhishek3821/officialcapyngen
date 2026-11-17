@@ -2,19 +2,19 @@ import Image from "next/image";
 
 const stories = [
   {
-    id: "careers", category: "01", title: "Customers Search Online First",
+    id: "careers", image: 7, category: "01", title: "Customers Search Online First",
     description: "Before buying anything, people search on Google. Without a website, your business does not appear in those results at all.",
-    alt: "A diverse group of learners and mentors together at a technology careers programme",
+    alt: "A customer exploring a business website on her phone",
   },
   {
-    id: "wildlife", category: "02", title: "Credibility Comes From a Website",
+    id: "wildlife", image: 8, category: "02", title: "Credibility Comes From a Website",
     description: "A professional website builds trust instantly. Customers judge whether a business is genuine by the quality of its online presence.",
-    alt: "A research team working together on portable genetic analysis equipment",
+    alt: "A developer working on a professional business website",
   },
   {
-    id: "water", category: "03", title: "It Works While You Sleep",
+    id: "water", image: 9, category: "03", title: "It Works While You Sleep",
     description: "A website shares your services, prices, and contact details 24/7. It answers basic questions and captures enquiries even when your team is offline.",
-    alt: "A scientist examining water samples through a microscope in a laboratory",
+    alt: "A business website displayed on a laptop after hours",
   },
 ];
 
@@ -23,7 +23,7 @@ function Story({ story, featured = false }: { story: (typeof stories)[number]; f
     <article className="min-w-0">
       <div className="group block rounded-sm">
         <div className={`relative aspect-[16/9] overflow-hidden bg-[#28303a] ${featured ? "" : "rounded-[3px]"}`}>
-          <Image src={`/images/inside-stories/${story.id}.webp`} alt={story.alt} width={featured ? 1600 : 1000} height={featured ? 900 : 563} sizes={featured ? "(max-width: 767px) 100vw, 66vw" : "(max-width: 639px) 100vw, (max-width: 767px) 50vw, 33vw"} className="h-full w-full object-cover object-[center_45%] transition-transform duration-700 group-hover:scale-[1.025] motion-reduce:transform-none motion-reduce:transition-none" />
+          <Image src={`/web development/${story.image}.png`} alt={story.alt} width={featured ? 1600 : 1000} height={featured ? 900 : 563} sizes={featured ? "(max-width: 767px) 100vw, 66vw" : "(max-width: 639px) 100vw, (max-width: 767px) 50vw, 33vw"} className="h-full w-full object-cover object-[center_45%] transition-transform duration-700 group-hover:scale-[1.025] motion-reduce:transform-none motion-reduce:transition-none" />
         </div>
         <p className="mt-4 flex items-center gap-2 text-xs leading-relaxed font-normal text-[#f0f2f6] lg:text-[13px]"><span aria-hidden="true" className="h-px w-4 shrink-0 bg-[#f0f2f6]" />{story.category}</p>
         <h3 className={`mt-2 font-medium tracking-[-.02em] text-white decoration-white/60 underline-offset-4 group-hover:underline ${featured ? "text-[clamp(21px,2vw,28px)] leading-[1.3]" : "text-[clamp(19px,1.6vw,24px)] leading-[1.3]"}`}>{story.title}</h3>

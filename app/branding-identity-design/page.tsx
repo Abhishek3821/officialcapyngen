@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import {
   SustainableLuxuryHero,
   SustainableProperties,
@@ -29,6 +30,7 @@ export default function BrandingIdentityDesignPage() {
         <BetterReturns />
         <PrecisionGrowing />
       </main>
+      <CleaningCta />
       <Footer />
     </>
   );

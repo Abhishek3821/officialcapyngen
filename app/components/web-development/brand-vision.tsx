@@ -34,7 +34,7 @@ export default function BrandVision() {
                 <Link href="/contact-us" className="mt-auto inline-flex min-h-7 items-center rounded-full bg-[#302d28] px-3 py-1.5 text-[9px] text-white transition-colors hover:bg-[#555044] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#225f90]">Ready to Build?</Link>
               </div>
               <div className="relative min-h-[175px] overflow-hidden rounded-[8px] bg-[#d7b393]">
-                <Image src="/images/hero-woman.jpg" alt="An editorial portrait illuminated by warm studio lights" fill sizes="(max-width: 639px) 30vw, (max-width: 1023px) 18vw, 13vw" className="object-cover object-[54%_center]" />
+                <Image src="/web development/18.png" alt="A web development team collaborating in a bright studio" fill sizes="(max-width: 639px) 30vw, (max-width: 1023px) 18vw, 13vw" className="object-cover object-[54%_center]" />
                 <div aria-hidden="true" className="pointer-events-none absolute inset-x-[-15%] top-[30%] h-3 -rotate-12 bg-[#fff8ef]" />
                 <div aria-hidden="true" className="pointer-events-none absolute inset-x-[-15%] top-[65%] h-3 rotate-12 bg-[#fff8ef]" />
               </div>
@@ -45,7 +45,7 @@ export default function BrandVision() {
             <PreviewHeader />
             <div className="grid flex-1 grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] gap-4">
               <div className="relative min-h-[185px] overflow-hidden rounded-[5px] bg-[#b2d1e2]">
-                <Image src="/images/web-development/portrait.webp" alt="A creative portrait with soft blue studio lighting" fill sizes="(max-width: 639px) 40vw, (max-width: 1023px) 20vw, 15vw" className="object-cover object-center" />
+                <Image src="/web development/19.png" alt="A collage of web development teams planning and building together" fill sizes="(max-width: 639px) 40vw, (max-width: 1023px) 20vw, 15vw" className="object-cover object-center" />
               </div>
               <div>
                 <h3 className="text-[clamp(18px,1.5vw,25px)] leading-tight font-normal tracking-[-.04em]">Our Service Suite</h3>
@@ -58,7 +58,7 @@ export default function BrandVision() {
         </div>
 
         <article aria-labelledby="brand-vision-heading" className="relative isolate grid min-h-[540px] overflow-hidden rounded-[20px] bg-[#296d99] sm:min-h-[570px]">
-          <Image src="/images/web-development/portrait.webp" alt="A contemporary beauty portrait in blue and lilac light" fill sizes="(max-width: 1023px) 100vw, 66vw" className="-z-10 object-cover object-[34%_35%]" />
+          <Image src="/web development/20.png" alt="A website development team collaborating in an open office" fill sizes="(max-width: 1023px) 100vw, 66vw" className="-z-10 object-cover object-[34%_35%]" />
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(90deg,transparent_45%,#17395025)]" />
           <div className="m-4 ml-auto flex w-[44%] min-w-[160px] flex-col justify-between rounded-[5px] bg-[#fff8ef] p-5 text-[#3a332d] sm:m-5 sm:ml-auto sm:w-[35%] sm:p-6 xl:p-7">
             <h3 id="brand-vision-heading" className="text-[clamp(27px,3.1vw,48px)] leading-[1.02] font-normal tracking-[-.055em]">Our Vision</h3>

@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const industries = [
-  { name: "E-Commerce", image: "floral", alt: "Fashion model in a vivid yellow outfit beneath a clear blue sky" },
-  { name: "Healthcare", image: "green", alt: "A red oversized sweatshirt styled for a playful streetwear portrait" },
-  { name: "Finance", image: "coral", alt: "A fashion editorial featuring a powder-blue coat and matching trousers" },
-  { name: "Education", image: "blue", alt: "A burgundy coat styled with sunglasses and a neutral knit top" },
+  { name: "E-Commerce", image: "11", alt: "An e-commerce website and online shopping graphics" },
+  { name: "Healthcare", image: "12", alt: "A responsive web project across desktop and mobile devices" },
+  { name: "Finance", image: "13", alt: "A web application connected to cloud and data tools" },
+  { name: "Education", image: "16", alt: "A WordPress web development project" },
 ];
 
 export default function BrandsShine() {
@@ -17,7 +17,7 @@ export default function BrandsShine() {
         <div className="grid grid-cols-2 items-start gap-x-3 gap-y-6 sm:grid-cols-4 sm:gap-x-4 lg:gap-x-5">
           {industries.map((industry, index) => (
             <figure key={industry.image} className={`group relative aspect-[.72] min-w-0 overflow-hidden rounded-[5px] bg-[#e9e1d6] ring-1 ring-white/70 ${index % 2 === 1 ? "mt-10 sm:mt-16 lg:mt-20" : ""}`}>
-              <Image src={`/images/brands-shine/${industry.image}.webp`} alt={industry.alt} fill sizes="(max-width: 639px) 50vw, (max-width: 1640px) 25vw, 375px" className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035] motion-reduce:transform-none" />
+              <Image src={`/web development/${industry.image}.png`} alt={industry.alt} fill sizes="(max-width: 639px) 50vw, (max-width: 1640px) 25vw, 375px" className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035] motion-reduce:transform-none" />
               <span aria-hidden="true" className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-linear-to-t from-black/40 to-transparent" />
               <figcaption className="absolute right-4 bottom-4 left-4 text-left text-xs font-medium tracking-wide text-white sm:text-sm">{industry.name}</figcaption>
             </figure>

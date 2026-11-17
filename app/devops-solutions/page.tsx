@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import { DevOpsHero, DevOpsCapabilities, DevOpsProcess, DevOpsSuite } from "../components/devops-solutions/devops-intro";
 import { TopDestination, MoreThanProperty, OurProperties, DevOpsFaq } from "../components/devops-solutions/travel-details";
 
@@ -22,6 +23,7 @@ export default function DevOpsSolutionsPage() {
       <OurProperties />
       <DevOpsFaq />
     </main>
+    <CleaningCta />
     <Footer />
   </>;
 }

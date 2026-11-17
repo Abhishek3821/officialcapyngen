@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import { BlockchainHero, BlockchainVision, BlockchainPricing, BlockchainMoodboard, BlockchainServices } from "../components/blockchain-development/intro";
 import { BlockchainStrategy, BlockchainChallenge, BlockchainSwot, BlockchainFaq } from "../components/blockchain-development/strategy";
 
@@ -23,6 +24,7 @@ export default function BlockchainDevelopmentPage() {
       <BlockchainSwot />
       <BlockchainFaq />
     </main>
+    <CleaningCta />
     <Footer />
   </>;
 }

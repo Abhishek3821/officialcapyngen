@@ -60,13 +60,33 @@ export function AiContents() {
     <section id="ai-contents" aria-labelledby="ai-contents-heading" className="relative overflow-hidden bg-white text-[#12345c]">
       <div aria-hidden="true" className="absolute -top-44 -right-48 size-[600px] rounded-full border-[75px] border-[#3a98df]/20" />
       <div aria-hidden="true" className="absolute top-6 -right-32 size-[470px] rounded-full border-[60px] border-[#176ac4]/15" />
-      <div className="relative mx-auto max-w-[1510px] px-5 py-16 sm:px-8 lg:min-h-[620px] lg:px-12 lg:py-20">
-        <p className="text-[11px] font-bold tracking-[.2em] text-[#2575b9] uppercase">Custom AI software</p>
-        <h2 id="ai-contents-heading" className="mt-2 text-[clamp(42px,4.6vw,70px)] leading-none font-bold tracking-[-.06em]">Main advantages of Custom AI Solutions</h2>
-        <p className="mt-3 text-base text-[#667b90]">Custom AI software offers 10 key benefits:</p>
-        <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5 lg:gap-5">
-          {advantages.map((item) => <div key={item.number} className="group flex min-h-[116px] flex-col justify-between rounded-[16px] border border-[#dce8f4] bg-white/85 p-4 shadow-[0_8px_22px_#165a9b0b] transition-[transform,box-shadow] hover:-translate-y-1 hover:shadow-[0_14px_30px_#165a9b20] sm:min-h-[132px] sm:p-5"><span className="text-2xl font-semibold tracking-[-.05em] text-[#176ac4] sm:text-3xl">{item.number}</span><span className="mt-3 text-xs font-medium text-[#4f6780] group-hover:text-[#0c5cae] sm:text-sm">{item.label}</span></div>)}
+      <div className="relative mx-auto grid max-w-[1540px] gap-8 px-5 py-14 sm:px-8 sm:py-16 lg:grid-cols-[minmax(0,.85fr)_minmax(0,1.15fr)] lg:items-stretch lg:gap-10 lg:px-12 lg:py-20 xl:gap-14">
+        <div className="flex min-h-0 min-w-0 flex-col">
+          <p className="text-[11px] font-bold tracking-[.2em] text-[#2575b9] uppercase">Custom AI software</p>
+          <h2 id="ai-contents-heading" className="mt-3 text-[clamp(36px,4vw,64px)] leading-[1.02] font-bold tracking-[-.06em]">Main advantages of <span className="text-[#1267ba]">Custom AI Solutions</span></h2>
+          <p className="mt-4 max-w-[500px] text-base leading-[1.7] text-[#667b90]">Custom AI software offers 10 key benefits: built around your workflow, your data and the results you actually need.</p>
+
+          <div className="relative mt-8 flex min-h-[220px] flex-1 flex-col justify-between overflow-hidden rounded-[22px] bg-[#073d79] p-6 text-white shadow-[0_22px_55px_#0a35602e] sm:p-8 lg:mt-10 lg:min-h-0">
+            <div aria-hidden="true" className="absolute -top-24 -right-24 size-[260px] rounded-full border-[40px] border-[#45a7ec]/20" />
+            <div aria-hidden="true" className="absolute -right-6 -bottom-16 size-[180px] rounded-full border-[28px] border-[#c1e8ff]/10" />
+            <span aria-hidden="true" className="relative block h-px w-9 bg-[#c1e8ff]" />
+            <div className="relative mt-8">
+              <p className="text-[clamp(64px,7vw,112px)] leading-[.85] font-bold tracking-[-.08em] text-[#c1e8ff]">10</p>
+              <p className="mt-4 max-w-[340px] text-[clamp(18px,1.6vw,24px)] leading-[1.25] font-medium uppercase">Reasons custom beats off-the-shelf.</p>
+              <p className="mt-3 max-w-[360px] text-sm leading-[1.6] text-white/65">Pay only for what you use, keep control of your data and scale on your own terms.</p>
+            </div>
+          </div>
         </div>
+
+        <ol className="grid min-h-0 min-w-0 grid-cols-1 gap-3 sm:grid-cols-2 sm:auto-rows-fr lg:gap-4">
+          {advantages.map((item) => (
+            <li key={item.number} className="group relative flex min-h-[84px] items-center gap-4 overflow-hidden rounded-[16px] border border-[#dce8f4] bg-white/90 px-5 py-4 shadow-[0_8px_22px_#165a9b0b] backdrop-blur-sm transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-0.5 hover:border-[#9cc8ed] hover:shadow-[0_14px_30px_#165a9b1f] motion-reduce:transition-none motion-reduce:hover:translate-y-0 lg:min-h-0">
+              <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-[#e3f0fb] text-lg font-semibold tracking-[-.04em] text-[#176ac4] transition-colors group-hover:bg-[#1267ba] group-hover:text-white">{item.number}</span>
+              <span className="text-sm leading-snug font-medium text-[#3f5872] group-hover:text-[#0c5cae] sm:text-[15px]">{item.label}</span>
+              <span aria-hidden="true" className="absolute inset-y-0 left-0 w-1 origin-top scale-y-0 bg-linear-to-b from-[#1267ba] to-[#45a7ec] transition-transform duration-300 group-hover:scale-y-100 motion-reduce:transition-none" />
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
   );

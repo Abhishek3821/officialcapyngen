@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import { AppLuxuryHero, AppWhyUs, AppFeaturedGetaway, AppSolutionsFaq } from "../components/application-solutions/luxury";
 import { AppIndiaJourney, AppTourAbout } from "../components/application-solutions/india";
 import { AppBlog, AppMission, AppProtection, AppWayOfLife, AppGuides } from "../components/application-solutions/stories";
@@ -26,6 +27,7 @@ export default function ApplicationSolutionsPage() {
       <AppGuides />
       <AppSolutionsFaq />
     </main>
+    <CleaningCta />
     <Footer />
   </>;
 }

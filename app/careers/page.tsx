@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import Careers from "./_careers/Careers";
 
 export const metadata: Metadata = {
@@ -13,6 +14,7 @@ export default function CareersPage() {
     <>
       <Navbar />
       <Careers />
+      <CleaningCta />
       <Footer />
     </>
   );

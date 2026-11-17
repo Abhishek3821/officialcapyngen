@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import { CrmHero, CrmProcess, CrmAi } from "../components/crm-management-software/crm-intro";
 import { JourneySimplified, LovedPlaces, TravelerTestimonials, TravelerExperiences, CrmFaq } from "../components/crm-management-software/travel-crm";
 
@@ -22,6 +23,7 @@ export default function CrmManagementSoftwarePage() {
       <TravelerExperiences />
       <CrmFaq />
     </main>
+    <CleaningCta />
     <Footer />
   </>;
 }

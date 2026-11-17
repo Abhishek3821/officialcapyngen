@@ -1,15 +1,15 @@
 import Image from "next/image";
 
 const posts = [
-  { image: "/images/brands-shine/floral.webp", alt: "A fashion model wearing a bold yellow outfit", background: "#f2ac50", headline: "SEO", label: "SEO-Ready Development", variant: "launch" },
-  { image: "/images/web-development/portrait.webp", alt: "A beauty portrait with blue and lilac lighting", background: "#c4e7e3", headline: "UI/UX DESIGN", label: "Design That Converts", variant: "editorial" },
-  { image: "/images/web-development/product.webp", alt: "A minimal beauty product styled in soft light", background: "#f3bacc", headline: "CODE THAT PERFORMS", label: "Fast", variant: "product" },
-  { image: "/images/brands-shine/blue.webp", alt: "A fashion portrait with sunglasses and a burgundy coat", background: "#f5a76d", headline: "Websites Built for Growth", label: "Capyngen / Gurugram", variant: "quote" },
-  { image: "/images/hero-woman.jpg", alt: "A beauty editorial portrait beside glowing studio lights", background: "#e9d4d5", headline: "READY TO BUILD?", label: "Capyngen.", variant: "moment" },
-  { image: "/images/brands-shine/green.webp", alt: "A playful streetwear portrait in a bright red sweatshirt", background: "#c2d5b5", headline: "Transparent Timelines", label: "Mobile-First Design", variant: "stickers" },
-  { image: "/images/brands-shine/coral.webp", alt: "A fashion campaign featuring a pastel-blue outfit", background: "#e1c7ea", headline: "SEO DAY ONE", label: "Search Visibility From Day One", variant: "collage" },
-  { image: "/images/web-development/portrait.webp", alt: "A contemporary portrait with blue-toned beauty lighting", background: "#c6b2e9", headline: "design backed by purpose", label: "Design Backed by Purpose", variant: "playful" },
-  { image: "/images/hero-woman.jpg", alt: "An expressive portrait for a beauty campaign", background: "#92cbdc", headline: "POST-LAUNCH SUPPORT", label: "CAPYNGEN", variant: "beauty" },
+  { image: "/web development/21.png", alt: "An orange SEO icon representing search-ready development", background: "#f2ac50", headline: "SEO", label: "SEO-Ready Development", variant: "launch" },
+  { image: "/web development/22.png", alt: "UI and UX design tools in a blue digital illustration", background: "#c4e7e3", headline: "UI/UX DESIGN", label: "Design That Converts", variant: "editorial" },
+  { image: "/web development/23.png", alt: "Clean development code displayed on a laptop", background: "#f3bacc", headline: "CODE THAT PERFORMS", label: "Fast", variant: "product" },
+  { image: "/web development/24.png", alt: "A website mockup on a laptop balanced above a red sphere", background: "#f5a76d", headline: "Websites Built for Growth", label: "Capyngen / Gurugram", variant: "quote" },
+  { image: "/web development/25.png", alt: "A portrait of a professional seated at a desk", background: "#e9d4d5", headline: "READY TO BUILD?", label: "Capyngen.", variant: "moment" },
+  { image: "/web development/26.png", alt: "A mobile website interface with messaging and task graphics", background: "#c2d5b5", headline: "Transparent Timelines", label: "Mobile-First Design", variant: "stickers" },
+  { image: "/web development/27.png", alt: "An SEO search interface with a target and magnifying glass", background: "#e1c7ea", headline: "SEO DAY ONE", label: "Search Visibility From Day One", variant: "collage" },
+  { image: "/web development/28.png", alt: "A glowing UI and UX design graphic", background: "#c6b2e9", headline: "design backed by purpose", label: "Design Backed by Purpose", variant: "playful" },
+  { image: "/web development/29.png", alt: "A rocket launching through blue clouds", background: "#92cbdc", headline: "POST-LAUNCH SUPPORT", label: "CAPYNGEN", variant: "beauty" },
 ];
 
 function SocialPost({ post }: { post: (typeof posts)[number] }) {
@@ -52,7 +52,7 @@ export default function SocialProjects() {
             </ul>
             <p className="mt-4 max-w-[460px] font-[Georgia,'Times_New_Roman',serif] text-[13px] leading-[1.5] text-[#e0e8ee] lg:text-[16px]">For businesses specifically looking for top web development in Gurgaon, our local team means faster communication and in-person meetings. And for clients outside NCR, our reputation as a leading web development company in India means you get the same standard of delivery, wherever you are.</p>
           </div>
-          <h2 id="social-projects-heading" className="mt-8 font-[family-name:var(--font-oswald)] text-[clamp(58px,8.4vw,132px)] leading-[.98] font-medium tracking-[-.045em] uppercase md:mt-5">Local Presence.<br />Global Standards.</h2>
+          <h2 id="social-projects-heading" className="mt-8 max-w-full font-[family-name:var(--font-oswald)] text-[clamp(30px,3.7vw,64px)] leading-[1.08] font-medium tracking-[-.035em] uppercase md:mt-5">Local Presence.<br />Global Standards.</h2>
         </div>
         <div className="grid min-w-0 grid-cols-3 content-center gap-2.5 sm:gap-3 lg:gap-4">
           {posts.map((post) => <SocialPost key={post.variant} post={post} />)}

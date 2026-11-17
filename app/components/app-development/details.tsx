@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Photo, Polaroid, appBlue } from "./visuals";
 
@@ -19,9 +20,9 @@ export function AppStatsStrip() {
 }
 
 const services = [
-  { title: "Native iOS & Android Apps", image: "/images/virtual-card-lifestyle.webp", second: "/images/app-development/airline-cabin.webp", description: "As a best iOS app development company in India, we create apps that look native to your user because they can tell. Everything from the way screens change to the way gestures react is designed to fit the device it runs on.", points: ["Platform-specific UI patterns", "Clean, maintainable codebases", "Help with App Store and Play Store submissions."] },
-  { title: "Cross-Platform Apps", image: "/images/app-development/resort-pool.webp", second: "/images/destinations/los-lances.webp", description: "Speed. Scalability. Cost. Why compromise? To get to market quickly without sacrificing quality.", points: ["Shared business logic", "Consistent user journeys across devices", "Faster release cycles"] },
-  { title: "Product Design & UX", image: "/images/web-development/chair.webp", second: "/images/app-development/resort-terrace.webp", description: "A pretty app that baffles users is a broken app. Our design process doesn't begin with designing the screens; it begins with user flows.", points: ["UX research, user flow mapping", "UI design systems", "Interactive prototyping for testing before development"] },
+  { title: "Native iOS & Android Apps", image: "/app development/7.png", second: "/app development/8.png", description: "As a best iOS app development company in India, we create apps that look native to your user because they can tell. Everything from the way screens change to the way gestures react is designed to fit the device it runs on.", points: ["Platform-specific UI patterns", "Clean, maintainable codebases", "Help with App Store and Play Store submissions."] },
+  { title: "Cross-Platform Apps", image: "/app development/9.png", second: "/app development/10.png", description: "Speed. Scalability. Cost. Why compromise? To get to market quickly without sacrificing quality.", points: ["Shared business logic", "Consistent user journeys across devices", "Faster release cycles"] },
+  { title: "Product Design & UX", image: "/app development/11.png", second: "/app development/12.png", description: "A pretty app that baffles users is a broken app. Our design process doesn't begin with designing the screens; it begins with user flows.", points: ["UX research, user flow mapping", "UI design systems", "Interactive prototyping for testing before development"] },
 ];
 
 export function AppServicesSection() {
@@ -52,9 +53,9 @@ export function AppServicesSection() {
 }
 
 const audiences = [
-  { image: "/images/app-development/resort-pool.webp", alt: "Oceanfront resort pool", badge: "MVP", title: "Startups", text: "You need an MVP that validates the idea, but doesn't blow the entire budget. We help you scope out the minimum viable product, develop it quickly, and put it in the hands of customers to get true feedback." },
-  { image: "/images/app-development/airline-cabin.webp", alt: "Premium airline cabin", badge: "Mobile channel", title: "Growing Businesses", text: "You already sell products/services and require a mobile channel that generates engagement. We develop apps that connect seamlessly with your existing workflows and further your expansion strategies." },
-  { image: "/images/destinations/los-lances.webp", alt: "Sunny beach and sea", badge: "Enterprise-ready", title: "Enterprises", text: "You require an app development service and option that meets security, compliance, and scale needs. Our group builds mobile programs with you on the infrastructure and brings them enterprise-ready." },
+  { image: "/app development/13.png", alt: "A startup team planning and presenting a mobile product", badge: "MVP", title: "Startups", text: "You need an MVP that validates the idea, but doesn't blow the entire budget. We help you scope out the minimum viable product, develop it quickly, and put it in the hands of customers to get true feedback." },
+  { image: "/app development/14.png", alt: "A team discussing mobile apps for growing businesses", badge: "Mobile channel", title: "Growing Businesses", text: "You already sell products/services and require a mobile channel that generates engagement. We develop apps that connect seamlessly with your existing workflows and further your expansion strategies." },
+  { image: "/app development/15.png", alt: "An enterprise team reviewing a mobile application", badge: "Enterprise-ready", title: "Enterprises", text: "You require an app development service and option that meets security, compliance, and scale needs. Our group builds mobile programs with you on the infrastructure and brings them enterprise-ready." },
 ];
 
 export function AppTestimonials() {
@@ -80,18 +81,6 @@ export function AppTestimonials() {
   );
 }
 
-const gallery = [
-  { src: "/images/app-development/resort-terrace.webp", alt: "Tropical resort dining" },
-  { src: "/images/app-development/resort-pool.webp", alt: "Oceanfront infinity pool" },
-  { src: "/images/agenda/photo-1600607687920-4e2a09cf159d.jpg", alt: "Contemporary guest room" },
-  { src: "/images/agenda/photo-1600210492486-724fe5c67fb0.jpg", alt: "Warm interior detail" },
-  { src: "/images/destinations/los-lances.webp", alt: "Sunny beach and sea" },
-  { src: "/images/app-development/airline-cabin.webp", alt: "Premium airline interior" },
-  { src: "/images/destinations/swiss-alps.webp", alt: "Mountain getaway" },
-  { src: "/images/agenda/photo-1497366754035-f200968a6e72.jpg", alt: "Modern space" },
-  { src: "/images/app-development/resort-pool.webp", alt: "Palm-lined resort pool" },
-];
-
 export function AppSnapshot() {
   return (
     <section id="app-gurgaon" aria-labelledby="app-snapshot-heading" className="overflow-hidden bg-[#f7eee1] text-[#28352c]">
@@ -99,9 +88,8 @@ export function AppSnapshot() {
         <p className="text-center text-[11px] font-bold tracking-[.22em] text-[#7a725f] uppercase">Gurugram, Haryana</p>
         <h2 id="app-snapshot-heading" className="mt-2 text-center leading-[.9] tracking-[-.06em]"><span className="block text-[clamp(42px,5vw,77px)] font-bold uppercase">App Development</span><span className="block font-serif text-[clamp(49px,5.5vw,84px)] font-normal">in Gurgaon and Across India</span></h2>
         <p className="mx-auto mt-7 max-w-[760px] text-center text-sm leading-[1.75] text-[#5d6559] sm:text-base">Capyngen is based in Gurugram, Haryana, and has clients throughout India and internationally. When searching for the best app development in Gurgaon, you can count on us to meet in person and be present locally in Gurgaon.</p>
-        <div className="relative mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
-          {gallery.map((item, index) => <Photo key={`${item.src}-${index}`} src={item.src} alt={item.alt} className="aspect-[1.18] rounded-[16px] border border-white/80 sm:aspect-[1.3]" sizes="(max-width: 640px) 50vw, 30vw" />)}
-          <Polaroid src="/images/app-development/resort-terrace.webp" alt="Oceanfront hospitality scene" className="absolute top-[26%] left-[27%] z-10 hidden h-[45%] w-[43%] rotate-[-7deg] sm:block" sizes="35vw" />
+        <div className="relative mt-10 aspect-[1433/1098] w-full">
+          <Image src="/app development/17.png" alt="The Capyngen workspace, Gurugram location, team, and app development projects" fill sizes="(max-width: 1350px) 90vw, 1250px" className="object-contain" />
         </div>
       </div>
     </section>

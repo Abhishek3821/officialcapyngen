@@ -1,4 +1,6 @@
-type Step = { number: string; title: string; description: string };
+import Image from "next/image";
+
+type Step ={ number: string; title: string; description: string };
 
 // Shared with the e-commerce design page.
 export function StepsSection({ id, headingId, eyebrow, heading, intro, items }: { id: string; headingId: string; eyebrow: string; heading: string; intro?: string; items: Step[] }) {
@@ -24,8 +26,58 @@ const challenges = [
   { number: "04", title: "Scalability challenges", description: "Rapidly deploy AI-powered enterprise applications with our custom AI solutions." },
 ];
 
+function ChallengeIcon({ index }: { index: number }) {
+  const common = { fill: "none", stroke: "currentColor", strokeWidth: 1.8, strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="size-6">
+      {index === 0 && <g {...common}><ellipse cx="12" cy="5.5" rx="7" ry="2.5" /><path d="M5 5.5v6c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-6M5 11.5v6c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-6" /></g>}
+      {index === 1 && <g {...common}><circle cx="12" cy="12" r="3" /><path d="M12 2.5v3m0 13v3M2.5 12h3m13 0h3M5.3 5.3l2.1 2.1m9.2 9.2 2.1 2.1M5.3 18.7l2.1-2.1m9.2-9.2 2.1-2.1" /></g>}
+      {index === 2 && <g {...common}><path d="M12 3 5 6v5c0 4.6 3 8.4 7 10 4-1.6 7-5.4 7-10V6Z" /><path d="m9 12 2 2 4-4" /></g>}
+      {index === 3 && <g {...common}><path d="M3 20h18M6 16l4-5 3 3 6-8" /><path d="M15 6h4v4" /></g>}
+    </svg>
+  );
+}
+
 export function AiReimagined() {
-  return <StepsSection id="ai-reimagined" headingId="ai-reimagined-heading" eyebrow="Custom AI App Development" heading="Custom AI App Development, Reimagined" intro="What sets our custom AI software development apart:" items={challenges} />;
+  return (
+    <section id="ai-reimagined" aria-labelledby="ai-reimagined-heading" className="relative overflow-hidden bg-[#d3e5f0] text-[#12345c]">
+      <div aria-hidden="true" className="pointer-events-none absolute -bottom-56 -left-48 size-[520px] rounded-full border-[70px] border-[#3a98df]/10" />
+      <div className="relative mx-auto grid max-w-[1540px] gap-8 px-5 py-14 sm:px-8 sm:py-16 lg:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] lg:items-stretch lg:gap-10 lg:px-12 lg:py-20 xl:gap-14">
+        <div className="flex min-h-0 min-w-0 flex-col">
+          <p className="text-[11px] font-bold tracking-[.2em] text-[#2777bd] uppercase">Custom AI App Development</p>
+          <h2 id="ai-reimagined-heading" className="mt-3 text-[clamp(36px,4vw,64px)] leading-[1.02] font-semibold tracking-[-.065em]">Custom AI App Development, <span className="text-[#1267ba]">Reimagined</span></h2>
+          <p className="mt-4 max-w-[520px] text-base leading-[1.7] text-[#60758c]">What sets our custom AI software development apart: we start from the problem that slows you down, then build the AI that removes it.</p>
+
+          <div className="relative mt-8 flex min-h-[220px] flex-1 flex-col justify-end overflow-hidden rounded-[22px] bg-[#073d79] p-6 text-white shadow-[0_22px_55px_#0a35602e] sm:p-8 lg:mt-10 lg:min-h-0">
+            <Image src="/images/custom-ai/blue-glass-office.webp" alt="" fill sizes="(max-width: 1023px) 100vw, 42vw" className="object-cover object-[70%_center] opacity-35" />
+            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-[#062f5e] via-[#073d79]/80 to-[#073d79]/20" />
+            <div className="relative">
+              <span aria-hidden="true" className="block h-px w-9 bg-[#c1e8ff]" />
+              <p className="mt-5 max-w-[380px] text-[clamp(20px,1.9vw,28px)] leading-[1.2] font-medium uppercase">Four blockers. One custom AI answer.</p>
+              <dl className="mt-6 grid max-w-[420px] grid-cols-2 divide-x divide-white/15 border-t border-white/15 pt-5">
+                <div className="pr-4"><dt className="text-xs text-white/65">Problems solved</dt><dd className="mt-1 text-3xl font-semibold tracking-[-.05em]">04</dd></div>
+                <div className="pl-4"><dt className="text-xs text-white/65">Approach</dt><dd className="mt-1 text-sm leading-snug font-medium">Problem first,<br />model second</dd></div>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <ol className="grid min-h-0 min-w-0 gap-4 sm:grid-cols-2 sm:auto-rows-fr lg:gap-5">
+          {challenges.map((step, index) => (
+            <li key={step.number} className="group relative flex min-h-0 flex-col overflow-hidden rounded-[20px] border border-[#dce8f3] bg-white p-6 shadow-[0_12px_32px_#165da90d] transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_#165da91f] motion-reduce:transition-none motion-reduce:hover:translate-y-0 sm:p-7">
+              <div className="flex items-start justify-between gap-4">
+                <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-[#e3f0fb] text-[#1c70c1] transition-colors group-hover:bg-[#1267ba] group-hover:text-white"><ChallengeIcon index={index} /></span>
+                <span className="text-[clamp(34px,3.2vw,52px)] leading-none font-semibold tracking-[-.06em] text-[#cfe3f4] transition-colors group-hover:text-[#9cc8ed]">{step.number}</span>
+              </div>
+              <h3 className="mt-6 text-xl leading-tight font-semibold tracking-[-.03em] lg:mt-auto lg:pt-6">{step.title}</h3>
+              <p className="mt-3 text-sm leading-[1.65] text-[#6c8094]">{step.description}</p>
+              <span aria-hidden="true" className="absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 bg-linear-to-r from-[#1267ba] to-[#45a7ec] transition-transform duration-300 group-hover:scale-x-100 motion-reduce:transition-none" />
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  );
 }
 
 const services = [

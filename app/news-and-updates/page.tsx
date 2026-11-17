@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CleaningCta from "../components/cleaning-cta";
 import NewsUpdatesContent from "../components/news-updates-content";
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export default function NewsAndUpdatesPage() {
       <main id="main-content" tabIndex={-1} className="min-w-0 outline-none">
         <NewsUpdatesContent />
       </main>
+      <CleaningCta />
       <Footer />
     </>
   );
