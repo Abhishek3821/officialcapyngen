@@ -5,8 +5,8 @@ import CleaningCta from "../components/cleaning-cta";
 import HighTechExperience from "../components/industries/high-tech";
 
 export const metadata: Metadata = {
-  title: "High Tech | Capyngen",
-  description: "Journey to all world corners. Explore extraordinary landscapes, thoughtful travel stories, and new perspectives with Capyngen.",
+  title: "High-Tech Software Development Company | Capyngen",
+  description: "Guiding leaders through complexity with clarity and purpose. Capyngen empowers companies with cutting-edge IT solutions that drive innovation, efficiency, and operational excellence.",
 };
 
 export default function HighTechPage() {

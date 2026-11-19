@@ -5,8 +5,8 @@ import CleaningCta from "../components/cleaning-cta";
 import TravelLogisticsExperience from "../components/industries/travel-logistics";
 
 export const metadata: Metadata = {
-  title: "Travel & Logistics | Capyngen",
-  description: "Discover Asia. Live the journey. Explore thoughtful travel inspiration, nature-led escapes, and beautiful places to stay with Capyngen.",
+  title: "Smart Travel Software Development Company | Capyngen",
+  description: "Intelligent technology solutions for travel, transportation & logistics. Capyngen builds booking platforms, fleet management, warehouse software and AI-powered logistics.",
 };
 
 export default function TravelLogisticsPage() {

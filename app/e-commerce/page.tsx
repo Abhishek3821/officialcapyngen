@@ -5,8 +5,8 @@ import CleaningCta from "../components/cleaning-cta";
 import ECommerceExperience from "../components/industries/e-commerce";
 
 export const metadata: Metadata = {
-  title: "E-Commerce | Capyngen",
-  description: "Discover extraordinary journeys, from Norway’s wild landscapes to the streets of Japan and the coast of Cape Town. Explore a new perspective with Capyngen.",
+  title: "B2B eCommerce Development Services | Capyngen",
+  description: "Scale faster with expert B2B eCommerce development services. Capyngen develops complex B2B workflows, pricing engines and ERP-connected e-commerce stores.",
 };
 
 export default function ECommercePage() {

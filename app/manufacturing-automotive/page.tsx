@@ -5,8 +5,8 @@ import CleaningCta from "../components/cleaning-cta";
 import ManufacturingExperience from "../components/industries/manufacturing";
 
 export const metadata: Metadata = {
-  title: "Manufacturing & Automotive | Capyngen",
-  description: "Explore the world with thoughtful journeys, inspiring destinations, travel guides, and a fresh perspective from Capyngen.",
+  title: "Manufacturing Software Development Company | Capyngen",
+  description: "Capyngen is a manufacturing software development expert: ERP software, supply chain management, IoT-enabled smart factory platforms and custom fleet management solutions.",
 };
 
 export default function ManufacturingPage() {

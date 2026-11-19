@@ -5,8 +5,8 @@ import CleaningCta from "../components/cleaning-cta";
 import PublicServiceExperience from "../components/industries/public-service";
 
 export const metadata: Metadata = {
-  title: "Public Service | Capyngen",
-  description: "Discover a shared perspective on nature, communities, and the places that bring us together. Explore Capyngen’s Public Service experience.",
+  title: "Public Service Software Development | Capyngen",
+  description: "Capyngen brings digital transformation and technology-based solutions to public sector organisations: citizen portals, smart city platforms, public finance ERP and e-government apps.",
 };
 
 export default function PublicServicePage() {
