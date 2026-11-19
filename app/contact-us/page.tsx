@@ -7,7 +7,7 @@ import ContactDigitalHero from "../components/contact-digital-hero";
 
 export const metadata: Metadata = {
   title: "Contact Us | Capyngen",
-  description: "A great project starts with a conversation. Get in touch with Capyngen to discuss your next website, brand or digital experience.",
+  description: "We craft impactful digital experiences through strategy, design, and technology to help your business grow, engage, and lead.",
 };
 
 const warmBackground = "bg-[radial-gradient(ellipse_at_90%_10%,#7b351c_0%,transparent_48%),radial-gradient(ellipse_at_5%_100%,#612e18_0%,transparent_44%),linear-gradient(120deg,#10100f,#20150f)]";
@@ -26,9 +26,9 @@ function ContactIcon({ type }: { type: "phone" | "email" | "office" }) {
 }
 
 const contactCards = [
-  { type: "phone", title: "Let’s talk", detail: "+62 891 234 567", description: "Big ideas are better talked through.", action: "Request a call", href: "#quote" },
-  { type: "email", title: "Drop us a line", detail: "hello@capyngen.example", description: "Tell us what you have in mind.", action: "Write a message", href: "#quote" },
-  { type: "office", title: "Come say hello", detail: "London, United Kingdom", description: "A place for ideas to come together.", action: "Find our office", href: "#office-map" },
+  { type: "phone", title: "Let’s talk", detail: "", description: "Some conversations move faster by voice.", action: "Request a call", href: "#quote" },
+  { type: "email", title: "Send us a note", detail: "sales@capyngen.com", description: "Tell us what’s on your mind.", action: "Write a message", href: "mailto:sales@capyngen.com" },
+  { type: "office", title: "Visit us", detail: "Tower B3, Spaze i-Tech Park, Sector 49, Gurugram, Haryana 122018", description: "Where ideas find a home.", action: "Find our office", href: "#office-map" },
 ] as const;
 
 export default function ContactPage() {
@@ -41,18 +41,18 @@ export default function ContactPage() {
         <div className="mx-auto max-w-[1200px] px-6 sm:px-8">
           <section id="quote" aria-labelledby="quote-heading" className="grid grid-cols-1 items-start gap-8 scroll-mt-28 pt-16 pb-12 lg:grid-cols-[1.35fr_1fr] lg:gap-10 lg:pt-20 lg:pb-16">
             <div className="rounded-[24px] border border-[#e4ddd3] bg-white p-6 shadow-[0_16px_50px_#442d1005] sm:p-9 lg:p-10">
-              <p className="text-[10px] font-semibold tracking-[.16em] text-[#b56a3f] uppercase">Tell us a little about your idea</p>
+              <p className="text-[10px] font-semibold tracking-[.16em] text-[#b56a3f] uppercase">Get in touch</p>
               <h2 id="quote-heading" className="mt-4 text-[34px] leading-tight font-medium tracking-[-.055em] sm:text-[40px]">Let’s make it happen.</h2>
               <p className="mt-4 text-sm leading-relaxed text-[#82786e]">Share a few details and give your next big idea a place to start.</p>
               <ContactQuoteForm />
             </div>
             <aside aria-labelledby="next-heading" className={`relative isolate overflow-hidden rounded-[24px] px-7 py-9 text-white sm:p-10 lg:mt-8 ${warmBackground}`}>
               <Orbits className="-top-4 -right-20 -z-10 w-64 text-[#e1a77d]/15" />
-              <p className="text-[10px] font-medium tracking-[.17em] text-[#e5a97d] uppercase">From hello to what’s next</p>
-              <h3 id="next-heading" className="mt-5 text-[36px] leading-[1.12] font-medium tracking-[-.055em]">Your next chapter.<br /><span className="font-serif font-normal italic text-[#f3b789]">Built together.</span></h3>
-              <p className="mt-5 text-sm leading-[1.8] text-[#c3b1a3]">You bring the ambition. We bring the curiosity, creativity and care to help shape it.</p>
+              <p className="text-[10px] font-medium tracking-[.17em] text-[#e5a97d] uppercase">From First Hello to What Comes Next</p>
+              <h3 id="next-heading" className="mt-5 text-[36px] leading-[1.12] font-medium tracking-[-.055em]">Your next chapter,<br /><span className="font-serif font-normal italic text-[#f3b789]">built together.</span></h3>
+              <p className="mt-5 text-sm leading-[1.8] text-[#c3b1a3]">You bring ambition. We bring curiosity, creativity, and care to help shape it.</p>
               <ol className="mt-9 space-y-6">
-                {[{ title: "We listen", text: "Your vision, your challenges, and what success looks like to you." }, { title: "We explore", text: "The right approach, with ideas tailored to your goals." }, { title: "We create", text: "A clear path from first conversation to your next launch." }].map((step, index) => <li key={step.title} className="flex gap-4"><span className="flex size-9 shrink-0 items-center justify-center rounded-full border border-[#d3936433] font-mono text-[11px] text-[#f0ad7c]">0{index + 1}</span><div><h4 className="text-sm font-medium">{step.title}</h4><p className="mt-1.5 text-xs leading-[1.7] text-[#b7a698]">{step.text}</p></div></li>)}
+                {[{ title: "We Listen", text: "Your vision, your challenges, and what success genuinely looks like to you." }, { title: "We Explore", text: "The right approach, with ideas tailored to your goals — not pulled from a template." }, { title: "We Create", text: "A clear path from first conversation to your next launch, with no surprises along the way." }].map((step, index) => <li key={step.title} className="flex gap-4"><span className="flex size-9 shrink-0 items-center justify-center rounded-full border border-[#d3936433] font-mono text-[11px] text-[#f0ad7c]">0{index + 1}</span><div><h4 className="text-sm font-medium">{step.title}</h4><p className="mt-1.5 text-xs leading-[1.7] text-[#b7a698]">{step.text}</p></div></li>)}
               </ol>
               <div className="mt-9 flex items-center gap-3 border-t border-white/10 pt-6"><span aria-hidden="true" className="text-xl text-[#f4ad78]">✦</span><p className="text-xs text-[#dbc5b3]">Thoughtful work starts with a good conversation.</p></div>
             </aside>
@@ -60,9 +60,9 @@ export default function ContactPage() {
 
           <section id="contact-details" aria-labelledby="contact-details-heading" className="pt-4 sm:pt-6">
             <div className="mx-auto max-w-[600px] text-center">
-              <p className="text-[11px] font-semibold tracking-[.17em] text-[#b56a3f] uppercase">Get in touch</p>
-              <h2 id="contact-details-heading" className="mt-4 text-[clamp(30px,3.5vw,46px)] leading-[1.12] font-medium tracking-[-.055em]">Good people. Great possibilities.</h2>
-              <p className="mt-4 text-sm leading-relaxed text-[#7d756d] sm:text-base">Choose a way to connect. We’ll take it from there.</p>
+              <p className="text-[11px] font-semibold tracking-[.17em] text-[#b56a3f] uppercase">Let’s talk</p>
+              <h2 id="contact-details-heading" className="mt-4 text-[clamp(30px,3.5vw,46px)] leading-[1.12] font-medium tracking-[-.055em]">Great minds. Better outcomes.</h2>
+              <p className="mt-4 text-sm leading-relaxed text-[#7d756d] sm:text-base">Pick the channel that works for you. We’ll handle the rest.</p>
             </div>
             <div className="mt-9 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-5">
               {contactCards.map((card) => (
@@ -71,31 +71,30 @@ export default function ContactPage() {
                   <div className="flex size-12 shrink-0 items-center justify-center rounded-[14px] border border-[#f49c6025] bg-[#f4772e12] text-[#f6a16c]"><ContactIcon type={card.type} /></div>
                   <div className="min-w-0 flex-1 md:w-full">
                   <h3 className="text-[22px] font-medium tracking-[-.035em] md:mt-6">{card.title}</h3>
-                  <p className="mt-2 break-words text-sm leading-relaxed text-[#e2d1c4]">{card.detail}</p>
+                  {card.detail && <p className="mt-2 break-words text-sm leading-relaxed text-[#e2d1c4]">{card.detail}</p>}
                   <p className="mt-2 text-xs leading-relaxed text-[#a99a8d]">{card.description}</p>
                   <a href={card.href} className="mt-4 flex min-h-10 items-center justify-between gap-3 border-t border-[#ffffff14] pt-4 text-xs font-medium text-[#efb38d] transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#f4772e] md:mt-6">{card.action}<Arrow /></a>
                   </div>
                 </article>
               ))}
             </div>
-            <p className="mt-4 text-center text-[11px] text-[#958a7d]">Contact information and office location are for this demo.</p>
           </section>
 
           <section id="office-map" aria-labelledby="office-heading" className="mt-10 grid overflow-hidden rounded-[24px] border border-[#e3ddd4] bg-white shadow-[0_12px_40px_#3d291308] md:grid-cols-[1fr_2fr]">
             <div className="flex flex-col justify-center px-7 py-8 sm:px-8">
               <p className="text-[10px] font-semibold tracking-[.16em] text-[#b56a3f] uppercase">A place to connect</p>
-              <h2 id="office-heading" className="mt-4 text-[28px] leading-tight font-medium tracking-[-.05em]">Our London<br className="hidden md:block" /> studio.</h2>
-              <p className="mt-4 text-sm leading-[1.8] text-[#80766b]">Riverside Building, County Hall<br />London, United Kingdom</p>
-              <a href="https://www.google.com/maps/search/?api=1&query=London+Eye" target="_blank" rel="noreferrer" className="mt-6 inline-flex min-h-11 items-center gap-3 self-start rounded-full border border-[#e1d6c9] px-4 py-2 text-xs font-medium text-[#865233] transition-colors hover:bg-[#faf4ec] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#f4772e]">Open in Google Maps <Arrow /></a>
+              <h2 id="office-heading" className="mt-4 text-[28px] leading-tight font-medium tracking-[-.05em]">Our Gurugram<br className="hidden md:block" /> Office</h2>
+              <p className="mt-4 text-sm leading-[1.8] text-[#80766b]">Tower B3, Spaze i-Tech Park, Sector 49,<br />Gurugram, Haryana 122018, India</p><p className="mt-3 text-xs text-[#a1958a]">Small beginnings. Big possibilities.</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=Tower+B3+Spaze+i-Tech+Park+Sector+49+Gurugram" target="_blank" rel="noreferrer" className="mt-6 inline-flex min-h-11 items-center gap-3 self-start rounded-full border border-[#e1d6c9] px-4 py-2 text-xs font-medium text-[#865233] transition-colors hover:bg-[#faf4ec] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#f4772e]">Open in Google Maps <Arrow /></a>
             </div>
-            <iframe title="Demo studio location — London Eye, London" src="https://maps.google.com/maps?q=London%20Eye&z=13&output=embed" width="800" height="340" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="block h-[300px] w-full border-0 bg-[#e5eadd] md:h-full md:min-h-[340px]" />
+            <iframe title="Capyngen office — Spaze i-Tech Park, Sector 49, Gurugram" src="https://maps.google.com/maps?q=Spaze%20i-Tech%20Park%20Sector%2049%20Gurugram&z=15&output=embed" width="800" height="340" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="block h-[300px] w-full border-0 bg-[#e5eadd] md:h-full md:min-h-[340px]" />
           </section>
 
 
           <section aria-labelledby="contact-cta-heading" className="py-16 lg:py-24">
             <div className={`relative isolate overflow-hidden rounded-[26px] px-7 py-12 text-center text-white sm:px-14 sm:py-16 ${warmBackground}`}>
               <Orbits className="-bottom-12 -left-12 w-56 text-[#df9c71]/15 sm:left-0" /><Orbits className="-top-12 -right-12 w-56 text-[#df9c71]/20 sm:right-0" />
-              <div className="relative mx-auto max-w-[730px]"><p className="text-[10px] font-medium tracking-[.18em] text-[#e3a77c] uppercase">Small beginnings. Big possibilities.</p><h2 id="contact-cta-heading" className="mt-5 text-[clamp(30px,3.8vw,52px)] leading-[1.15] font-medium tracking-[-.055em]">We love a good challenge.<br /><span className="font-serif font-normal italic text-[#f3b789]">What’s yours?</span></h2><p className="mx-auto mt-5 max-w-[470px] text-sm leading-relaxed text-[#c7b5a6]">A new brand, a better website, or something entirely different. Let’s find out what we can make together.</p><a href="#quote" className={`${orangeButton} mt-7`}>Let’s get started <Arrow /></a></div>
+              <div className="relative mx-auto max-w-[730px]"><p className="text-[10px] font-medium tracking-[.18em] text-[#e3a77c] uppercase">Start small. Grow further.</p><h2 id="contact-cta-heading" className="mt-5 text-[clamp(30px,3.8vw,52px)] leading-[1.15] font-medium tracking-[-.055em]">Tell Us the Hard Part.<br /><span className="font-serif font-normal italic text-[#f3b789]">We’ll Take It From There.</span></h2><p className="mx-auto mt-5 max-w-[470px] text-sm leading-relaxed text-[#c7b5a6]">Maybe it’s a rebrand. Maybe it’s a website that finally works. Or maybe you’re not sure yet — that’s fine too.</p><a href="#quote" className={`${orangeButton} mt-7`}>Let’s get started <Arrow /></a></div>
             </div>
           </section>
         </div>

@@ -32,7 +32,8 @@ export const industryRoutes: Record<string, string> = {
 };
 
 export const pageLinks = [
-  { label: "Company Overview", href: "/company-overview" },
+  { label: "About Us", href: "/company-overview" },
+  { label: "Our Products", href: "/our-products" },
   { label: "Careers", href: "/careers" },
   { label: "News & Updates", href: "/news-and-updates" },
   { label: "Contact Us", href: "/contact-us" },

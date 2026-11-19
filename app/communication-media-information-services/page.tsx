@@ -5,8 +5,8 @@ import CleaningCta from "../components/cleaning-cta";
 import CommunicationMediaExperience from "../components/industries/communication-media";
 
 export const metadata: Metadata = {
-  title: "Communication, Media & Information Services | Capyngen",
-  description: "A fresh perspective on memorable experiences and a connected world. Explore on-water inspiration, thoughtful security, and practical digital solutions.",
+  title: "Communication Media IT Software Development | Capyngen",
+  description: "Communication media IT software development for broadcasters, telecom operators and information service providers.",
 };
 
 export default function CommunicationMediaPage() {

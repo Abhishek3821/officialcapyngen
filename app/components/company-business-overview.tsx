@@ -1,10 +1,19 @@
 import Image from "next/image";
 
 const stages = [
-  { label: "Discover", height: 35 },
-  { label: "Engineer", height: 51 },
-  { label: "Build", height: 68 },
-  { label: "Scale", height: 88 },
+  { label: "Products", height: 34 },
+  { label: "SaaS", height: 48 },
+  { label: "Enterprise", height: 62 },
+  { label: "Digital", height: 76 },
+  { label: "Innovation", height: 90 },
+];
+
+const focusAreas = [
+  { title: "Software Product Development", description: "Building technology products designed to solve practical business challenges." },
+  { title: "SaaS Solutions", description: "Developing cloud-based software platforms that businesses can access and manage efficiently." },
+  { title: "Enterprise Applications", description: "Creating business applications that support organisational processes and operational requirements." },
+  { title: "Digital Business Solutions", description: "Helping businesses improve workflows and adopt technology-driven processes." },
+  { title: "Technology Innovation", description: "Exploring modern technologies to develop useful and scalable digital solutions." },
 ];
 
 export default function CompanyBusinessOverview() {
@@ -12,28 +21,28 @@ export default function CompanyBusinessOverview() {
     <section id="business-overview" aria-labelledby="business-overview-heading" className="bg-[#171d23] text-white">
       <div className="mx-auto grid max-w-[1640px] gap-10 px-5 py-16 sm:px-8 lg:min-h-[calc(100svh_-_var(--site-header-height))] lg:grid-cols-[minmax(0,1.05fr)_minmax(0,.82fr)_minmax(0,.78fr)] lg:items-center lg:gap-8 lg:px-12 lg:py-12 2xl:gap-12 2xl:px-16">
         <div className="flex min-w-0 flex-col justify-center">
-          <p className="mb-5 flex items-center gap-3 text-[11px] font-bold tracking-[.22em] text-[#72c9e9] uppercase"><span className="h-px w-9 bg-[#72c9e9]" aria-hidden="true" /> Capyngen at a glance</p>
+          <p className="mb-5 flex items-center gap-3 text-[11px] font-bold tracking-[.22em] text-[#72c9e9] uppercase"><span className="h-px w-9 bg-[#72c9e9]" aria-hidden="true" /> Capyngen at work</p>
           <h2 id="business-overview-heading" className="text-[clamp(47px,5.2vw,82px)] leading-[.94] font-bold tracking-[-.07em] uppercase">
-            Business<br /><span className="text-[#55bde1]">Overview</span>
+            What<br /><span className="text-[#55bde1]">We Do</span>
           </h2>
-          <p className="mt-6 max-w-[410px] text-sm leading-[1.7] text-[#b6c4cb] sm:text-base">Connecting strategy, engineering, and support to turn ambitious ideas into working technology.</p>
+          <p className="mt-6 max-w-[460px] text-sm leading-[1.7] text-[#b6c4cb] sm:text-base">At Capyngen Private Limited, we develop and operate technology solutions designed to support changing business requirements. Our work covers software development, SaaS product development, enterprise applications, and digital solutions.</p>
 
           <div className="mt-10 max-w-[475px] border-t border-white/15 pt-6 sm:mt-12">
             <div className="flex items-end justify-between gap-4">
               <div>
-                <p className="text-xs font-medium tracking-[.12em] text-[#aab9c1] uppercase">Our approach</p>
-                <p className="mt-1 text-2xl font-semibold tracking-[-.045em] sm:text-3xl">From requirement to launch</p>
+                <p className="text-xs font-medium tracking-[.12em] text-[#aab9c1] uppercase">Our key areas of focus</p>
+                <p className="mt-1 text-2xl font-semibold tracking-[-.045em] sm:text-3xl">Five ways we build</p>
               </div>
-              <span className="rounded-full border border-[#62c4e4]/35 px-3 py-1 text-xs font-semibold text-[#87d5ed]">04 stages</span>
+              <span className="rounded-full border border-[#62c4e4]/35 px-3 py-1 text-xs font-semibold text-[#87d5ed]">05 areas</span>
             </div>
-            <div className="mt-7 grid h-[205px] grid-cols-4 items-end gap-4 border-b border-white/20 sm:h-[235px] sm:gap-7" aria-label="Discover, engineer, build, and scale are the four stages of our approach">
+            <div className="mt-7 grid h-[205px] grid-cols-5 items-end gap-3 border-b border-white/20 sm:h-[235px] sm:gap-5" aria-label="Our five key areas of focus: software products, SaaS, enterprise applications, digital solutions, and technology innovation">
               {stages.map((stage) => (
                 <div key={stage.label} className="flex h-full flex-col justify-end gap-3">
                   <div className="relative flex-1">
                     <div className="absolute right-1 bottom-0 left-0 rounded-t-[5px] bg-white/90" style={{ height: `${stage.height}%` }} />
                     <div className="absolute right-0 bottom-0 w-[42%] rounded-t-[5px] bg-[#299ecc]" style={{ height: `${Math.max(stage.height - 12, 18)}%` }} />
                   </div>
-                  <span className="pb-3 text-center text-[10px] font-medium tracking-[.03em] text-[#b8c7cf] sm:text-xs">{stage.label}</span>
+                  <span className="pb-3 text-center text-[9px] font-medium tracking-[.02em] text-[#b8c7cf] sm:text-[11px]">{stage.label}</span>
                 </div>
               ))}
             </div>
@@ -42,34 +51,30 @@ export default function CompanyBusinessOverview() {
 
         <div className="grid min-w-0 gap-5 sm:grid-cols-2 lg:grid-cols-1">
           <div className="relative h-[250px] overflow-hidden rounded-[22px] bg-[#34434c] sm:h-[270px] lg:h-[min(33vh,310px)] lg:min-h-[220px]">
-            <Image src="/images/company-about-office.webp" alt="Colleagues discussing a project at a table" fill sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 29vw" className="object-cover object-[center_40%]" />
+            <Image src="/images/company-about-office.webp" alt="Colleagues planning a software product" fill sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 29vw" className="object-cover object-[center_40%]" />
             <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#101820a8] to-transparent" aria-hidden="true" />
-            <span className="absolute bottom-4 left-5 text-[11px] font-semibold tracking-[.16em] uppercase">Strategy</span>
+            <span className="absolute bottom-4 left-5 text-[11px] font-semibold tracking-[.16em] uppercase">Software Development</span>
           </div>
           <div className="relative h-[250px] overflow-hidden rounded-[22px] bg-[#34434c] sm:h-[270px] lg:h-[min(33vh,310px)] lg:min-h-[220px]">
-            <Image src="/images/company-overview-meeting.webp" alt="Team members reviewing digital work on laptops" fill sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 29vw" className="object-cover object-[center_52%]" />
+            <Image src="/images/company-overview-meeting.webp" alt="Team members building SaaS and enterprise applications" fill sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 29vw" className="object-cover object-[center_52%]" />
             <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#101820a8] to-transparent" aria-hidden="true" />
-            <span className="absolute bottom-4 left-5 text-[11px] font-semibold tracking-[.16em] uppercase">Engineering</span>
+            <span className="absolute bottom-4 left-5 text-[11px] font-semibold tracking-[.16em] uppercase">SaaS &amp; Enterprise</span>
           </div>
         </div>
 
-        <div className="grid min-w-0 gap-7 sm:grid-cols-2 lg:grid-cols-1 lg:gap-12">
-          <article className="relative border-t border-white/20 pt-6">
-            <div className="mb-5 flex size-12 items-center justify-center rounded-[14px] bg-[#299ecc] text-white">
-              <svg viewBox="0 0 24 24" fill="none" className="size-6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="5.5" stroke="currentColor" strokeWidth="1.8" /><path d="m15 15 5 5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /></svg>
-            </div>
-            <h3 className="text-xl font-semibold tracking-[-.035em] sm:text-2xl">Business Sector</h3>
-            <p className="mt-3 max-w-[340px] text-sm leading-[1.65] text-[#b2c0c7]">Technology services spanning software development, cloud infrastructure, cybersecurity, and digital transformation.</p>
-            <p className="mt-5 text-sm font-semibold text-[#73cdec]">Strategy · Engineering · Support</p>
-          </article>
-          <article className="relative border-t border-white/20 pt-6">
-            <div className="mb-5 flex size-12 items-center justify-center rounded-[14px] bg-[#299ecc] text-white">
-              <svg viewBox="0 0 24 24" fill="none" className="size-6" aria-hidden="true"><path d="M4 19V5m0 14h16M8 15l4-4 3 2 5-6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
-            </div>
-            <h3 className="text-xl font-semibold tracking-[-.035em] sm:text-2xl">Products &amp; Services</h3>
-            <p className="mt-3 max-w-[340px] text-sm leading-[1.65] text-[#b2c0c7]">Connected technology solutions shaped around each business and its customers.</p>
-            <p className="mt-5 text-sm font-semibold text-[#73cdec]">From first requirement to launch</p>
-          </article>
+        <div className="min-w-0 border-t border-white/20 pt-6">
+          <p className="text-sm leading-[1.7] text-[#b2c0c7]">We focus on creating products and platforms that help organisations manage their operations more effectively. Our approach combines technology, business understanding, and continuous improvement to deliver solutions that are relevant to modern business environments.</p>
+          <ul className="mt-6 space-y-4">
+            {focusAreas.map((area, index) => (
+              <li key={area.title} className="flex gap-4">
+                <span className="flex size-9 shrink-0 items-center justify-center rounded-[11px] bg-[#299ecc] text-xs font-bold text-white">0{index + 1}</span>
+                <div className="min-w-0">
+                  <h3 className="text-base font-semibold tracking-[-.025em]">{area.title}</h3>
+                  <p className="mt-1 text-[13px] leading-[1.55] text-[#b2c0c7]">{area.description}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

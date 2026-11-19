@@ -12,8 +12,8 @@ import CompanyVisionStatement from "../components/company-vision-statement";
 import CompanyOverviewCta from "../components/company-overview-cta";
 
 export const metadata: Metadata = {
-  title: "Company Overview | Building India's Most Trusted Technology Partnerships | Capyngen",
-  description: "We create dependable digital infrastructure through clear strategy, careful engineering, and technology that helps businesses grow.",
+  title: "About Us | Capyngen Private Limited",
+  description: "Capyngen Private Limited is an IT technology and digital solutions company building innovative software products, SaaS platforms, enterprise applications, and digital business solutions.",
 };
 
 export default function CompanyOverviewPage() {

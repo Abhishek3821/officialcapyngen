@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { industryRoutes } from "./navigation-data";
 
 function FooterLandscape() {
@@ -49,11 +49,26 @@ const offerLinks = [
   { label: "Consulting", href: "/consulting" },
 ];
 
-const industryLinks = Object.entries(industryRoutes).map(([label, href]) => ({ label, href }));
+// Prerendered with a fixed year (no Date read during prerender), then the browser shows the current year.
+const BUILD_YEAR = 2026;
+const subscribeNoop = () => () => {};
+function CopyrightYear() {
+  const year = useSyncExternalStore(subscribeNoop, () => new Date().getFullYear(), () => BUILD_YEAR);
+  return <>{year}</>;
+}
+
+const legalLinks = [
+  { label: "Our Products", href: "/our-products" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
+  { label: "Data Safety Declaration", href: "/data-safety-declaration" },
+];
+
+const industryLinks =Object.entries(industryRoutes).map(([label, href]) => ({ label, href }));
 
 const companyLinks = [
   { label: "Company Overview", href: "/company-overview" },
-  { label: "Our Products", href: "/company-overview#company-products-services" },
+  { label: "Our Products", href: "/our-products" },
   { label: "Careers", href: "/careers" },
   { label: "News & Updates", href: "/news-and-updates" },
   { label: "Contact Us", href: "/contact-us" },
@@ -150,6 +165,15 @@ export default function Footer() {
             </a>
             <p className="text-sm leading-relaxed text-[#d5bddf]">Orinite is a proprietary software product brand owned, developed, and operated by Capyngen Private Limited.</p>
             <p className="mt-3 text-sm text-[#d5bddf]">Official Website: <a href="https://orinite.com" target="_blank" rel="noreferrer" className="text-[#e3a6ff] underline-offset-4 hover:text-white hover:underline">https://orinite.com</a></p>
+          </div>
+
+          <div className="mt-8 flex flex-col gap-4 border-t border-white/10 pt-6 md:flex-row md:items-center md:justify-between">
+            <p className="text-sm text-[#d5bddf]">© <CopyrightYear /> Capyngen Private Limited. All Rights Reserved.</p>
+            <nav aria-label="Legal">
+              <ul className="flex flex-wrap gap-x-7 gap-y-2">
+                {legalLinks.map((link) => <li key={link.href}><Link href={link.href} className={linkStyle}>{link.label}</Link></li>)}
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
