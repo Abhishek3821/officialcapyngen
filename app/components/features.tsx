@@ -3,22 +3,22 @@ import Image from "next/image";
 const features = [
   {
     title: "Real-time analytics",
-    description: "Gain actionable insights with our real-time analytics feature",
+    description: "Make decisions with live data, not last month's reports.",
     icon: "analytics",
   },
   {
-    title: "Customizable reports",
-    description: "Streamline your financial processes with automated workflows",
+    title: "AI-Powered Solutions",
+    description: "Automate processes, improve efficiency, and unlock new business opportunities with intelligent AI technology.",
     icon: "reports",
   },
   {
-    title: "Mobile accessibility",
-    description: "Manage your finances on the go with our mobile-friendly platform",
+    title: "Mobile-first platforms",
+    description: "Your business should work wherever your customers are, built by a Top IT Company Software team.",
     icon: "mobile",
   },
   {
-    title: "Enhanced security",
-    description: "Protect your sensitive financial data with our state-of-the-art security measures",
+    title: "Security by design",
+    description: "Every solution from this Best IT Services Provider is built with protection at its core, not added later.",
     icon: "security",
   },
 ] as const;
@@ -41,8 +41,7 @@ function FeatureCard({ feature }: { feature: (typeof features)[number] }) {
     <article className="flex min-h-[185px] flex-col justify-between gap-8 rounded-[20px] bg-[#20534b] p-5 sm:p-6 lg:min-h-[240px] lg:rounded-[24px] lg:p-7">
       <FeatureIcon type={feature.icon} />
       <p className="max-w-[290px] text-sm leading-[1.5] tracking-[-0.02em] text-[#b0c4be] lg:text-base">
-        <span className="font-medium text-[#f2f6f2]">{feature.title}</span>{" "}
-        {feature.description}
+        <span className="font-medium text-[#f2f6f2]">{feature.title}</span> — {feature.description}
       </p>
     </article>
   );
@@ -52,12 +51,12 @@ export default function Features() {
   return (
     <section id="services" aria-labelledby="features-heading" className="bg-[#083c32] px-5 py-12 sm:px-7 sm:py-14 lg:px-12 lg:py-16">
       <div className="mx-auto max-w-[1344px]">
-        <div className="mx-auto max-w-[620px] text-center">
+        <div className="mx-auto max-w-[860px] text-center">
           <h2 id="features-heading" className="text-[clamp(28px,3.5vw,48px)] leading-[1.18] font-normal tracking-[-0.045em] text-[#f4f6f3]">
-            Core features that set us<br className="hidden sm:block" /> apart from the competition
+            Build Smarter, Grow Faster with Capyngen – Best IT Company in India
           </h2>
-          <p className="mx-auto mt-5 max-w-[460px] text-sm leading-[1.5] text-[#a8beb6] lg:text-base">
-            Explore our standout features designed to deliver exceptional performance and value, distinguishing us from the competition.
+          <p className="mx-auto mt-5 max-w-[560px] text-sm leading-[1.5] text-[#a8beb6] lg:text-base">
+            We build solutions that fit, scale, and perform — which is why businesses searching for a Top IT company in India choose us.
           </p>
         </div>
 

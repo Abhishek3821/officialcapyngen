@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const photos = {
   building: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=90",
@@ -15,13 +16,13 @@ export default function LivingSpaces() {
           <div className="relative isolate flex min-h-[290px] items-center overflow-hidden rounded-[28px] bg-[#164c73] px-6 py-10 sm:min-h-[340px] sm:px-10 lg:min-h-[450px] lg:rounded-[44px] lg:px-16">
             <Image src={photos.building} alt="Modern glass architecture rising against a blue sky" fill unoptimized sizes="(max-width: 1440px) 100vw, 1344px" className="-z-20 object-cover object-[70%_45%]" />
             <div aria-hidden="true" className="absolute inset-0 -z-10 bg-linear-to-r from-[#052438]/95 via-[#123e5b]/80 to-[#246a9b]/5" />
-            <div className="max-w-[680px] text-[#fffdf6]">
-              <p className="mb-5 text-[11px] tracking-[.025em] text-white/85 sm:text-sm lg:mb-7">Crafting Tomorrow’s Living Spaces:</p>
-              <h2 id="living-spaces-heading" className="font-serif text-[clamp(32px,4.9vw,70px)] leading-[1.03] font-normal tracking-[-0.045em]">
-                Set New Standards<br />
-                in <em className="font-normal">Modern Home</em><br />
-                Construction
+            <div className="max-w-[760px] text-[#fffdf6]">
+              <p className="mb-5 text-[11px] tracking-[.025em] text-white/85 sm:text-sm lg:mb-7">Capyngen –</p>
+              <h2 id="living-spaces-heading" className="font-serif text-[clamp(30px,4vw,58px)] leading-[1.05] font-normal tracking-[-0.045em]">
+                Turning Ideas into<br />
+                <em className="font-normal">Powerful Digital</em> Solutions
               </h2>
+              <p className="mt-5 max-w-[640px] text-[13px] leading-[1.8] text-white/85 lg:mt-7 lg:text-base">Capyngen helps businesses move forward with innovative technology and result-driven digital solutions. From custom software and website development to AI, CRM, and digital marketing, we bring the right expertise to support your business goals. Our focus is on creating smart, scalable, and reliable solutions that simplify operations and drive long-term growth.</p>
             </div>
           </div>
         </div>
@@ -34,12 +35,12 @@ export default function LivingSpaces() {
           <div className="order-first col-span-2 mx-auto flex w-full max-w-[480px] flex-col items-center px-1 text-center md:order-none md:col-span-1 md:py-10">
             <svg viewBox="0 0 32 32" fill="none" className="mb-6 size-8 text-[#193f60] lg:mb-8 lg:size-10" aria-hidden="true"><path d="M16 1c1.8 8.5 6.5 13.2 15 15-8.5 1.8-13.2 6.5-15 15C14.2 22.5 9.5 17.8 1 16 9.5 14.2 14.2 9.5 16 1Z" fill="currentColor" /></svg>
             <h3 className="font-serif text-[clamp(29px,3.6vw,50px)] leading-[1.08] tracking-[-0.035em] text-[#282824]">
-              If you can <em>dream it,</em><br />we can <em className="text-[#284f6a]">build it.</em>
+              If you can <em>imagine it,</em><br />we can <em className="text-[#284f6a]">engineer it.</em>
             </h3>
             <p className="mt-5 max-w-[390px] text-[13px] leading-[1.8] text-[#74736c] lg:mt-7 lg:text-base">
-              We adapt a uniquely personalized perspective to each project to deliver stunning spaces of optimal function. Renowned for our architectural understanding and masterful craftsmanship, our portfolio of residential projects.
+              Every engagement starts with your business model, not a template. We map how your teams actually work, then build systems that fit — which is exactly what separates a Top IT company in India from the rest. Good architecture is shaped around reality, not the other way around.
             </p>
-            <button type="button" className="mt-6 rounded-sm bg-[#090b09] px-7 py-3 text-xs font-medium text-[#fffdf6] transition-colors hover:bg-[#234863] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#234863] lg:mt-8 lg:px-9 lg:py-4 lg:text-sm">Get in touch</button>
+            <Link href="/contact-us" className="mt-6 inline-block rounded-sm bg-[#090b09] px-7 py-3 text-xs font-medium text-[#fffdf6] transition-colors hover:bg-[#234863] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#234863] lg:mt-8 lg:px-9 lg:py-4 lg:text-sm">Contact Us</Link>
           </div>
 
           <div className="relative aspect-[.9] overflow-hidden rounded-[24px] bg-[#b6b5a7] md:mt-24 md:aspect-[.85] md:self-end md:rounded-r-none md:rounded-l-[38px]">
@@ -51,12 +52,12 @@ export default function LivingSpaces() {
           <div className="relative isolate min-h-[350px] overflow-hidden rounded-[28px] bg-[#19251e] px-6 py-9 sm:min-h-[390px] sm:px-10 sm:py-12 lg:min-h-[480px] lg:rounded-[44px] lg:px-16 lg:py-16">
             <Image src={photos.kitchen} alt="A thoughtfully designed kitchen with bespoke cabinetry and a generous island" fill unoptimized sizes="(max-width: 1440px) 100vw, 1312px" className="-z-20 object-cover object-[65%_center]" />
             <div aria-hidden="true" className="absolute inset-0 -z-10 bg-linear-to-r from-black/90 via-black/60 to-black/10" />
-            <div className="w-full max-w-[330px] text-[#fffdf6] lg:max-w-[380px]">
-              <h3 className="font-serif text-[clamp(33px,4vw,56px)] leading-[1.02] tracking-[-0.035em]">Our timeless<br /><em>inclusions.</em></h3>
+            <div className="w-full max-w-[360px] text-[#fffdf6] lg:max-w-[440px]">
+              <h3 className="font-serif text-[clamp(33px,4vw,56px)] leading-[1.02] tracking-[-0.035em]">What Every Project<br /><em>Includes</em></h3>
               <p className="mt-5 text-[13px] leading-[1.8] text-white/85 lg:mt-6 lg:text-base">
-                We’ve been creating dream homes our clients are thrilled to call their own. Delighting them with hand-picked finishes, accessories and accents.
+                Documented handover, clean code, trained users, and a support plan. As the Best IT company in India, we do not disappear after launch — that is when the real work of improvement begins.
               </p>
-              <button type="button" className="mt-6 rounded-sm bg-[#fffdf6] px-6 py-3 text-xs font-semibold text-[#242820] transition-colors hover:bg-[#e9e5db] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white lg:mt-8 lg:px-8 lg:py-4 lg:text-sm">View Inclusions</button>
+              <Link href="/contact-us" className="mt-6 inline-block rounded-sm bg-[#fffdf6] px-6 py-3 text-xs font-semibold text-[#242820] transition-colors hover:bg-[#e9e5db] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white lg:mt-8 lg:px-8 lg:py-4 lg:text-sm">Contact Us</Link>
             </div>
           </div>
         </div>

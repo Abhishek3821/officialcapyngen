@@ -1,8 +1,7 @@
 "use client";
 
-import DismissibleDialog from "./dismissible-dialog";
-
 import Image from "next/image";
+import Link from "next/link";
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { destinations } from "./destination-data";
 
@@ -29,8 +28,6 @@ export default function Hero() {
   const [keyboardFocus, setKeyboardFocus] = useState(false);
   const [assetsReady, setAssetsReady] = useState(false);
   const [cycle, setCycle] = useState(0);
-  const [saved, setSaved] = useState<number[]>([]);
-  const [detailsOpen, setDetailsOpen] = useState(false);
   const root = useRef<HTMLElement>(null);
   const incoming = useRef<HTMLDivElement>(null);
   const cardRefs = useRef(new Map<number, HTMLButtonElement>());
@@ -40,7 +37,6 @@ export default function Hero() {
   const animation = useRef<Animation | null>(null);
   const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const touchStart = useRef<{ x: number; y: number } | null>(null);
-  const dialog = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
     mounted.current = true;
@@ -133,7 +129,7 @@ export default function Hero() {
     }
   }, [reducedMotion]);
 
-  const paused = manualPause || reducedMotion || !inView || !pageVisible || keyboardFocus || detailsOpen;
+  const paused = manualPause || reducedMotion || !inView || !pageVisible || keyboardFocus;
   useEffect(() => {
     if (paused || transitioning || !assetsReady) return;
     setCycle((value) => value + 1);
@@ -141,21 +137,8 @@ export default function Hero() {
     return () => clearTimeout(timer);
   }, [active, paused, transitioning, assetsReady, goTo]);
 
-  useEffect(() => {
-    const element = dialog.current;
-    if (!detailsOpen || !element) return;
-    element.showModal();
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      element.close();
-      document.body.style.overflow = previousOverflow;
-    };
-  }, [detailsOpen]);
-
   const destination = destinations[copyIndex];
   const upcoming = Array.from({ length: count - 1 }, (_, slot) => wrap(cardIndex + slot + 1));
-  const savedCurrent = saved.includes(copyIndex);
 
   return (
     <section id="home" ref={root} aria-labelledby="hero-heading" aria-roledescription="carousel" tabIndex={0} className="destination-hero focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-[#e9b544]"
@@ -187,10 +170,7 @@ export default function Hero() {
           <h1 id="hero-heading" className="travel-heading">{destination.title.map((line) => <span key={line}>{line}</span>)}</h1>
           <p className="travel-description">{destination.description}</p>
           <div className="travel-actions">
-            <button type="button" aria-label={`${savedCurrent ? "Unsave" : "Save"} ${destination.title.join(" ")}`} aria-pressed={savedCurrent} onClick={() => setSaved((value) => value.includes(copyIndex) ? value.filter((item) => item !== copyIndex) : [...value, copyIndex])} className="travel-save">
-              <svg viewBox="0 0 24 24" className="size-[18px]" fill={savedCurrent ? "currentColor" : "none"} aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4V4Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>
-            </button>
-            <button type="button" disabled={transitioning} onClick={() => setDetailsOpen(true)} className="travel-discover">Discover location<svg viewBox="0 0 20 20" fill="none" className="size-3.5" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" /></svg></button>
+            <Link href="/contact-us" className="travel-discover">Contact Us<svg viewBox="0 0 20 20" fill="none" className="size-3.5" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" /></svg></Link>
           </div>
         </div>
       </div>
@@ -207,23 +187,16 @@ export default function Hero() {
 
       <div className="travel-controls">
         <div className="flex shrink-0 gap-2.5">
-          <button type="button" aria-label="Previous destination" disabled={transitioning} onClick={() => void goTo(activeRef.current - 1)} className="travel-arrow"><Chevron previous /></button>
-          <button type="button" aria-label="Next destination" disabled={transitioning} onClick={() => void goTo(activeRef.current + 1)} className="travel-arrow"><Chevron /></button>
+          <button type="button" aria-label="Previous slide" disabled={transitioning} onClick={() => void goTo(activeRef.current - 1)} className="travel-arrow"><Chevron previous /></button>
+          <button type="button" aria-label="Next slide" disabled={transitioning} onClick={() => void goTo(activeRef.current + 1)} className="travel-arrow"><Chevron /></button>
         </div>
         <div className="travel-progress" aria-hidden="true"><span style={{ transform: `scaleX(${(active + 1) / count})` }} /></div>
-        <button type="button" aria-label={manualPause || reducedMotion ? "Play destination slideshow" : "Pause destination slideshow"} aria-pressed={manualPause} disabled={reducedMotion} title={reducedMotion ? "Autoplay disabled by your reduced-motion preference" : undefined} onClick={() => { setManualPause((value) => !value); setKeyboardFocus(false); }} className="travel-pause">
+        <button type="button" aria-label={manualPause || reducedMotion ? "Play slideshow" : "Pause slideshow"} aria-pressed={manualPause} disabled={reducedMotion} title={reducedMotion ? "Autoplay disabled by your reduced-motion preference" : undefined} onClick={() => { setManualPause((value) => !value); setKeyboardFocus(false); }} className="travel-pause">
           {paused ? <svg viewBox="0 0 20 20" fill="currentColor" className="size-3.5" aria-hidden="true"><path d="m7 4 9 6-9 6V4Z" /></svg> : <svg viewBox="0 0 20 20" fill="currentColor" className="size-3.5" aria-hidden="true"><path d="M6 4h3v12H6zm5 0h3v12h-3z" /></svg>}
         </button>
-        <div className="travel-counter" aria-label={`Destination ${active + 1} of ${count}`}><span>{String(active + 1).padStart(2, "0")}</span><span className="travel-total">/ {String(count).padStart(2, "0")}</span></div>
+        <div className="travel-counter" aria-label={`Slide ${active + 1} of ${count}`}><span>{String(active + 1).padStart(2, "0")}</span><span className="travel-total">/ {String(count).padStart(2, "0")}</span></div>
       </div>
 
-      <DismissibleDialog ref={dialog} aria-labelledby="destination-detail-title" onClose={() => setDetailsOpen(false)} className="travel-dialog">
-        <div className="relative overflow-hidden rounded-[22px] bg-[#18231f] text-white">
-          <Image src={imagePath(copyIndex)} alt={destination.title.join(" ")} width={900} height={500} unoptimized className="aspect-[16/8] w-full object-cover" />
-          <button type="button" aria-label="Close destination details" onClick={() => setDetailsOpen(false)} className="absolute top-4 right-4 flex size-9 items-center justify-center rounded-full bg-black/50 text-white focus-visible:outline-2 focus-visible:outline-[#e9b544]">✕</button>
-          <div className="p-6 sm:p-8"><p className="text-xs text-[#e9b544]">{destination.region}</p><h2 id="destination-detail-title" className="mt-3 font-[family-name:var(--font-oswald)] text-3xl uppercase">{destination.title.join(" ")}</h2><p className="mt-4 text-sm leading-relaxed text-white/70">{destination.description}</p><button type="button" onClick={() => setDetailsOpen(false)} className="mt-6 rounded-full border border-white/30 px-5 py-2.5 text-xs text-white hover:bg-white/10">Back to exploring</button></div>
-        </div>
-      </DismissibleDialog>
     </section>
   );
 }

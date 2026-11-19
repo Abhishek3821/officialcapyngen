@@ -5,54 +5,53 @@ import { useRef, useState, type KeyboardEvent } from "react";
 
 const industries = [
   {
-    label: "Banking & capital markets",
-    heading: "Banking and capital markets, reimagined for the AI era",
-    description: "From compliance and risk to lending and trading operations, financial institutions face mounting pressure to do more with less. Capyngen brings together data, design and technology to help banks and capital markets firms simplify operations, sharpen decisions and accelerate growth.",
-    format: "White paper", resource: "Bank growth accelerated by data intelligence",
-    image: "/images/agenda/photo-1486406146926-c627a92ad1ab.jpg", alt: "Glass towers rising above a financial district",
+    "label": "Banking & Capital Markets",
+    "description": "From compliance and risk to lending and trading operations, financial institutions face mounting pressure to do more with less. Capyngen brings together data, design, and technology to help banks and capital markets firms simplify operations, sharpen decisions, and accelerate growth. We build secure, scalable platforms that meet regulatory standards — work that positions us among the Top IT Companies for financial services delivery.",
+    "image": "/images/agenda/photo-1486406146926-c627a92ad1ab.jpg",
+    "alt": "Glass towers rising above a financial district"
   },
   {
-    label: "Business & tech services",
-    heading: "Turn technology investments into business results",
-    description: "Growth depends on more than new tools. Capyngen combines industry understanding, thoughtful design and intelligent engineering to help business and technology services organizations improve performance, unlock efficiency and create lasting competitive advantage.",
-    format: "Report", resource: "From AI adoption to enterprise advantage",
-    image: "", alt: "",
+    "label": "Retail & E-Commerce",
+    "description": "Retail brands need platforms that handle high traffic, secure payments, and inventory in real time. We build e-commerce systems with mobile-first design, seamless checkout, and integrations that keep operations running smoothly. Our retail work reflects the standards of a leading IT company in India — fast, reliable, and built to scale with seasonal demand.",
+    "image": "/images/web-development/product.webp",
+    "alt": "A thoughtfully styled consumer product"
   },
   {
-    label: "Communications, media & entertainment",
-    heading: "Create connections that keep audiences coming back",
-    description: "Bring content, customers and technology closer together. We build responsive digital experiences and connected platforms that help media and communications businesses reach new audiences, personalize engagement and turn attention into lasting relationships.",
-    format: "Industry perspective", resource: "Connected experiences. Lasting audience relationships.",
-    image: "/images/moments/photographer.jpg", alt: "A photographer creating visual content outdoors",
+    "label": "Fintech",
+    "description": "Fintech companies operate under tight security and compliance requirements while racing to launch new products. Capyngen builds biometric-enabled mobile apps, payment systems, and account management platforms that meet these demands. Our fintech delivery is backed by the engineering depth of a Top IT Company Software team.",
+    "image": "",
+    "alt": ""
   },
   {
-    label: "Energy & infrastructure",
-    heading: "Build a smarter foundation for a sustainable future",
-    description: "Connect complex operations with clear, accessible technology. From digital service platforms to data-driven workflows, we help energy and infrastructure teams improve visibility, streamline everyday processes and deliver better experiences for the communities they serve.",
-    format: "Industry perspective", resource: "Smarter systems for a changing world",
-    image: "/images/project-showcase/renewasphere.webp", alt: "Green architecture integrating nature and modern infrastructure",
+    "label": "Healthcare",
+    "description": "Hospitals, clinics, and health-tech providers need systems that protect patient data while improving care delivery. We build patient portals, appointment booking systems, records management platforms, and secure communication tools. Healthcare clients trust us as a Best IT Services Provider because we design with privacy and compliance from day one.",
+    "image": "/images/inside-stories/water.webp",
+    "alt": "A scientist working with a microscope in a laboratory"
   },
   {
-    label: "Health & life sciences",
-    heading: "Put people at the heart of digital healthcare",
-    description: "Make essential services easier to access and navigate. We create intuitive websites, connected applications and secure digital workflows that help healthcare and life sciences organizations support their teams and deliver more human experiences.",
-    format: "Industry perspective", resource: "Better digital journeys. More meaningful care.",
-    image: "/images/inside-stories/water.webp", alt: "A scientist working with a microscope in a laboratory",
+    "label": "Logistics & Supply Chain",
+    "description": "Logistics businesses run on real-time visibility — shipments, routes, inventory, and delivery windows. Capyngen builds analytics dashboards, tracking systems, and route optimisation tools that cut reporting time and improve accuracy. Our logistics solutions are part of the complete Top IT Services and solutions we deliver across India.",
+    "image": "/images/project-showcase/renewasphere.webp",
+    "alt": "Green architecture integrating nature and modern infrastructure"
   },
   {
-    label: "Insurance",
-    heading: "Make every insurance interaction simpler",
-    description: "Give customers clarity at every step, from exploring coverage to managing a claim. Our digital platforms and intelligent workflows help insurance businesses simplify complex journeys, improve service and build confidence through better customer experiences.",
-    format: "Industry perspective", resource: "A clearer path from coverage to confidence",
-    image: "/images/agenda/photo-1497366754035-f200968a6e72.jpg", alt: "A bright contemporary workplace",
+    "label": "Manufacturing",
+    "description": "Manufacturers need systems that connect production, inventory, finance, and quality control in one place. We build enterprise-grade ERP platforms, automation tools, and reporting systems that reduce manual work and improve visibility. Manufacturing clients choose Capyngen as one of the Best IT Services companies for enterprise delivery.",
+    "image": "/images/agenda/photo-1497366754035-f200968a6e72.jpg",
+    "alt": "A bright contemporary workplace"
   },
   {
-    label: "Retail & consumer products",
-    heading: "Turn everyday shopping into lasting loyalty",
-    description: "Meet customers wherever they choose to shop. From engaging storefronts to seamless e-commerce platforms, we help retail and consumer brands connect discovery, purchase and support in one consistent digital experience.",
-    format: "Industry perspective", resource: "Commerce designed around your customers",
-    image: "/images/web-development/product.webp", alt: "A thoughtfully styled consumer product",
+    "label": "Education",
+    "description": "Schools, colleges, and edtech platforms need scalable learning systems that handle video delivery, assessments, and progress tracking. We build learning management systems, student portals, and content platforms designed for reliability at scale. Education clients work with us as a Top IT company in India partner for long-term platform growth.",
+    "image": "/images/moments/photographer.jpg",
+    "alt": "A photographer creating visual content outdoors"
   },
+  {
+    "label": "Enterprise & Cybersecurity",
+    "description": "Large organisations face growing security threats and compliance demands. Capyngen builds security assessment platforms with automated reporting, risk scoring, and compliance tracking. Enterprise clients rely on us for the kind of engineering rigor found at Top software companies.",
+    "image": "",
+    "alt": ""
+  }
 ];
 
 function TechnologyArtwork() {
@@ -94,8 +93,8 @@ export default function IndustriesWeServe() {
     <section id="industries" aria-labelledby="industries-heading" className="bg-[linear-gradient(105deg,#faf4f0_0%,#d9d0c9_85%)] px-5 py-10 text-[#193352] sm:px-8 sm:py-12 lg:px-[4.5%]">
       <div className="mx-auto grid max-w-[1560px] grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.65fr)_minmax(0,2fr)] lg:gap-[2%]">
         <div>
-          <h2 id="industries-heading" className="text-[clamp(26px,2.8vw,46px)] leading-[1.05] font-bold tracking-[-.045em]"><span className="block whitespace-nowrap text-[#ff5000]">INDUSTRIES</span><span className="block whitespace-nowrap text-[#00516b]">WE SERVE</span></h2>
-          <div role="tablist" aria-label="Industries we serve" aria-orientation="vertical" className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-1">
+          <h2 id="industries-heading" className="text-[clamp(26px,2.8vw,46px)] leading-[1.05] font-bold tracking-[-.045em]"><span className="block whitespace-nowrap text-[#ff5000] uppercase">Industries</span><span className="block text-[#00516b] uppercase">Capyngen Serves</span></h2>
+          <div role="tablist" aria-label="Industries Capyngen serves" aria-orientation="vertical" className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-1">
             {industries.map((item, index) => (
               <button key={item.label} ref={(node) => { buttons.current[index] = node; }} id={`industry-tab-${index}`} type="button" role="tab" aria-selected={active === index} aria-controls="industry-panel" tabIndex={active === index ? 0 : -1} onClick={() => setActive(index)} onKeyDown={(event) => handleKeyDown(event, index)} className={`min-h-11 rounded-full border px-5 py-3 text-left text-[10px] leading-[1.4] tracking-[.045em] uppercase transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#00516b] ${active === index ? "border-[#08263a] bg-[linear-gradient(100deg,#ff4d00,#ff7914)] font-bold text-white ring-1 ring-[#08263a]" : "border-[#435973] bg-white/10 text-[#102d49] hover:bg-white/50"}`}>
                 {item.label}
@@ -105,15 +104,15 @@ export default function IndustriesWeServe() {
         </div>
         <div id="industry-panel" role="tabpanel" aria-labelledby={`industry-tab-${active}`} tabIndex={0} className="flex min-w-0 flex-col gap-8 outline-none focus-visible:rounded-lg focus-visible:ring-2 focus-visible:ring-[#00516b] lg:col-span-2 lg:grid lg:grid-cols-[minmax(0,1.65fr)_minmax(0,2fr)] lg:gap-[3%]">
           <div className="flex flex-col items-start lg:pt-16">
-            <h3 className="max-w-[520px] text-[clamp(25px,2vw,32px)] leading-[1.06] font-bold tracking-[-.035em]">{industry.heading}</h3>
+            <h3 className="max-w-[520px] text-[clamp(25px,2vw,32px)] leading-[1.06] font-bold tracking-[-.035em]">{industry.label}</h3>
             <p className="mt-4 max-w-[540px] text-[16px] leading-[1.42]">{industry.description}</p>
-            <a href="#contact" className="mt-7 inline-flex items-center gap-1 text-[13px] font-bold tracking-[.045em] text-[#ff5000] hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#00516b] lg:mt-auto lg:pt-8">LEARN MORE <OrangeArrow /></a>
+            <a href="/contact-us" className="mt-7 inline-flex items-center gap-1 text-[13px] font-bold tracking-[.045em] text-[#ff5000] hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#00516b] lg:mt-auto lg:pt-8">CONTACT US <OrangeArrow /></a>
           </div>
-          <a href="#contact" aria-label={`${industry.resource} — contact Capyngen to learn more`} className="group grid min-h-[360px] grid-cols-2 overflow-hidden rounded-[18px] bg-[#374e6b] text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#00516b] sm:min-h-[440px] lg:min-h-[550px]">
+          <a href="/contact-us" aria-label={`${industry.label} — contact Capyngen`} className="group grid min-h-[360px] grid-cols-2 overflow-hidden rounded-[18px] bg-[#374e6b] text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#00516b] sm:min-h-[440px] lg:min-h-[550px]">
             <div className="flex min-w-0 flex-col items-start px-5 py-6 sm:px-7">
-              <span className="text-sm font-bold">{industry.format}</span>
+              <span className="text-sm font-bold">Industries Capyngen Serves</span>
               <div className="mt-auto pt-20">
-                <p className="text-[clamp(23px,2vw,32px)] leading-[1.14] font-normal tracking-[-.035em]">{industry.resource}</p>
+                <p className="text-[clamp(23px,2vw,32px)] leading-[1.14] font-normal tracking-[-.035em]">{industry.label}</p>
                 <span className="mt-5 block text-[#ff5700] transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transform-none"><OrangeArrow large /></span>
               </div>
             </div>
