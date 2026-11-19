@@ -5,8 +5,8 @@ import CleaningCta from "../components/cleaning-cta";
 import InsuranceExperience from "../components/industries/insurance";
 
 export const metadata: Metadata = {
-  title: "Insurance | Capyngen",
-  description: "Capture life's best moments. Discover creative perspectives, thoughtful journeys, and practical ideas for growing businesses with Capyngen.",
+  title: "Insurance Software Development Services | Capyngen",
+  description: "Modernizing your InsurTech business with our insurance software development services.",
 };
 
 export default function InsurancePage() {
